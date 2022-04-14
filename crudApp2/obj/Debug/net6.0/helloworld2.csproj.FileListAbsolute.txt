@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\Desktop\NeDL\helloworld2\bin\Debug\net6.0\helloworld2.exe
+C:\Users\ABatenhorst\Desktop\NeDL\helloworld2\bin\Debug\net6.0\helloworld2.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\helloworld2\bin\Debug\net6.0\helloworld2.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\helloworld2\bin\Debug\net6.0\helloworld2.dll
+C:\Users\ABatenhorst\Desktop\NeDL\helloworld2\bin\Debug\net6.0\ref\helloworld2.dll
+C:\Users\ABatenhorst\Desktop\NeDL\helloworld2\bin\Debug\net6.0\helloworld2.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\helloworld2\obj\Debug\net6.0\helloworld2.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\helloworld2\obj\Debug\net6.0\helloworld2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\helloworld2\obj\Debug\net6.0\helloworld2.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\helloworld2\obj\Debug\net6.0\helloworld2.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\helloworld2\obj\Debug\net6.0\helloworld2.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\helloworld2\obj\Debug\net6.0\helloworld2.dll
+C:\Users\ABatenhorst\Desktop\NeDL\helloworld2\obj\Debug\net6.0\ref\helloworld2.dll
+C:\Users\ABatenhorst\Desktop\NeDL\helloworld2\obj\Debug\net6.0\helloworld2.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\helloworld2\obj\Debug\net6.0\helloworld2.genruntimeconfig.cache

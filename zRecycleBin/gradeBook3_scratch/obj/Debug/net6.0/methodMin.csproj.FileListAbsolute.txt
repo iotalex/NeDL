@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\Desktop\NeDL\methodsMin\bin\Debug\net6.0\methodMin.exe
+C:\Users\ABatenhorst\Desktop\NeDL\methodsMin\bin\Debug\net6.0\methodMin.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\methodsMin\bin\Debug\net6.0\methodMin.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\methodsMin\bin\Debug\net6.0\methodMin.dll
+C:\Users\ABatenhorst\Desktop\NeDL\methodsMin\bin\Debug\net6.0\ref\methodMin.dll
+C:\Users\ABatenhorst\Desktop\NeDL\methodsMin\bin\Debug\net6.0\methodMin.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\methodsMin\obj\Debug\net6.0\methodMin.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\methodsMin\obj\Debug\net6.0\methodMin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\methodsMin\obj\Debug\net6.0\methodMin.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\methodsMin\obj\Debug\net6.0\methodMin.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\methodsMin\obj\Debug\net6.0\methodMin.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\methodsMin\obj\Debug\net6.0\methodMin.dll
+C:\Users\ABatenhorst\Desktop\NeDL\methodsMin\obj\Debug\net6.0\ref\methodMin.dll
+C:\Users\ABatenhorst\Desktop\NeDL\methodsMin\obj\Debug\net6.0\methodMin.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\methodsMin\obj\Debug\net6.0\methodMin.genruntimeconfig.cache

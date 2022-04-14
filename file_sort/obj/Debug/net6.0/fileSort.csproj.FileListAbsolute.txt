@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\Desktop\NeDL\file_sort\bin\Debug\net6.0\fileSort.exe
+C:\Users\ABatenhorst\Desktop\NeDL\file_sort\bin\Debug\net6.0\fileSort.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\file_sort\bin\Debug\net6.0\fileSort.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\file_sort\bin\Debug\net6.0\fileSort.dll
+C:\Users\ABatenhorst\Desktop\NeDL\file_sort\bin\Debug\net6.0\ref\fileSort.dll
+C:\Users\ABatenhorst\Desktop\NeDL\file_sort\bin\Debug\net6.0\fileSort.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\file_sort\obj\Debug\net6.0\fileSort.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\file_sort\obj\Debug\net6.0\fileSort.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\file_sort\obj\Debug\net6.0\fileSort.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\file_sort\obj\Debug\net6.0\fileSort.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\file_sort\obj\Debug\net6.0\fileSort.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\file_sort\obj\Debug\net6.0\fileSort.dll
+C:\Users\ABatenhorst\Desktop\NeDL\file_sort\obj\Debug\net6.0\ref\fileSort.dll
+C:\Users\ABatenhorst\Desktop\NeDL\file_sort\obj\Debug\net6.0\fileSort.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\file_sort\obj\Debug\net6.0\fileSort.genruntimeconfig.cache

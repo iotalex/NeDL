@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\Desktop\NeDL\scratch\bin\Debug\net6.0\scratch.exe
+C:\Users\ABatenhorst\Desktop\NeDL\scratch\bin\Debug\net6.0\scratch.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\scratch\bin\Debug\net6.0\scratch.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\scratch\bin\Debug\net6.0\scratch.dll
+C:\Users\ABatenhorst\Desktop\NeDL\scratch\bin\Debug\net6.0\ref\scratch.dll
+C:\Users\ABatenhorst\Desktop\NeDL\scratch\bin\Debug\net6.0\scratch.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\scratch\obj\Debug\net6.0\scratch.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\scratch\obj\Debug\net6.0\scratch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\scratch\obj\Debug\net6.0\scratch.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\scratch\obj\Debug\net6.0\scratch.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\scratch\obj\Debug\net6.0\scratch.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\scratch\obj\Debug\net6.0\scratch.dll
+C:\Users\ABatenhorst\Desktop\NeDL\scratch\obj\Debug\net6.0\ref\scratch.dll
+C:\Users\ABatenhorst\Desktop\NeDL\scratch\obj\Debug\net6.0\scratch.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\scratch\obj\Debug\net6.0\scratch.genruntimeconfig.cache

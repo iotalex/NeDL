@@ -1,0 +1,30 @@
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt\bin\Debug\net6.0\getValidInt.exe
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt\bin\Debug\net6.0\getValidInt.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt\bin\Debug\net6.0\getValidInt.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt\bin\Debug\net6.0\getValidInt.dll
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt\bin\Debug\net6.0\ref\getValidInt.dll
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt\bin\Debug\net6.0\getValidInt.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt\obj\Debug\net6.0\getValidInt.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt\obj\Debug\net6.0\getValidInt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt\obj\Debug\net6.0\getValidInt.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt\obj\Debug\net6.0\getValidInt.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt\obj\Debug\net6.0\getValidInt.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt\obj\Debug\net6.0\getValidInt.dll
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt\obj\Debug\net6.0\ref\getValidInt.dll
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt\obj\Debug\net6.0\getValidInt.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt\obj\Debug\net6.0\getValidInt.genruntimeconfig.cache
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt-not done\bin\Debug\net6.0\getValidInt.exe
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt-not done\bin\Debug\net6.0\getValidInt.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt-not done\bin\Debug\net6.0\getValidInt.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt-not done\bin\Debug\net6.0\getValidInt.dll
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt-not done\bin\Debug\net6.0\ref\getValidInt.dll
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt-not done\bin\Debug\net6.0\getValidInt.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt-not done\obj\Debug\net6.0\getValidInt.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt-not done\obj\Debug\net6.0\getValidInt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt-not done\obj\Debug\net6.0\getValidInt.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt-not done\obj\Debug\net6.0\getValidInt.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt-not done\obj\Debug\net6.0\getValidInt.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt-not done\obj\Debug\net6.0\getValidInt.dll
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt-not done\obj\Debug\net6.0\ref\getValidInt.dll
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt-not done\obj\Debug\net6.0\getValidInt.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\getValidInt-not done\obj\Debug\net6.0\getValidInt.genruntimeconfig.cache

@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\Desktop\NeDL\quiz loops\bin\Debug\net6.0\quizloops.exe
+C:\Users\ABatenhorst\Desktop\NeDL\quiz loops\bin\Debug\net6.0\quizloops.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\quiz loops\bin\Debug\net6.0\quizloops.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\quiz loops\bin\Debug\net6.0\quizloops.dll
+C:\Users\ABatenhorst\Desktop\NeDL\quiz loops\bin\Debug\net6.0\ref\quizloops.dll
+C:\Users\ABatenhorst\Desktop\NeDL\quiz loops\bin\Debug\net6.0\quizloops.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\quiz loops\obj\Debug\net6.0\quizloops.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\quiz loops\obj\Debug\net6.0\quizloops.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\quiz loops\obj\Debug\net6.0\quizloops.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\quiz loops\obj\Debug\net6.0\quizloops.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\quiz loops\obj\Debug\net6.0\quizloops.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\quiz loops\obj\Debug\net6.0\quizloops.dll
+C:\Users\ABatenhorst\Desktop\NeDL\quiz loops\obj\Debug\net6.0\ref\quizloops.dll
+C:\Users\ABatenhorst\Desktop\NeDL\quiz loops\obj\Debug\net6.0\quizloops.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\quiz loops\obj\Debug\net6.0\quizloops.genruntimeconfig.cache

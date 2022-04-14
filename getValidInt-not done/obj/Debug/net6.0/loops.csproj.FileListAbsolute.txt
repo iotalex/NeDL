@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\desktop\NeDL\loops\obj\Debug\net6.0\loops.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\desktop\NeDL\loops\obj\Debug\net6.0\loops.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\desktop\NeDL\loops\obj\Debug\net6.0\loops.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\desktop\NeDL\loops\obj\Debug\net6.0\loops.AssemblyInfo.cs
+C:\Users\ABatenhorst\desktop\NeDL\loops\obj\Debug\net6.0\loops.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\loops\bin\Debug\net6.0\loops.exe
+C:\Users\ABatenhorst\Desktop\NeDL\loops\bin\Debug\net6.0\loops.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\loops\bin\Debug\net6.0\loops.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\loops\bin\Debug\net6.0\loops.dll
+C:\Users\ABatenhorst\Desktop\NeDL\loops\bin\Debug\net6.0\ref\loops.dll
+C:\Users\ABatenhorst\Desktop\NeDL\loops\bin\Debug\net6.0\loops.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\loops\obj\Debug\net6.0\loops.dll
+C:\Users\ABatenhorst\Desktop\NeDL\loops\obj\Debug\net6.0\ref\loops.dll
+C:\Users\ABatenhorst\Desktop\NeDL\loops\obj\Debug\net6.0\loops.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\loops\obj\Debug\net6.0\loops.genruntimeconfig.cache

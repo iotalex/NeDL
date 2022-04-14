@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\Desktop\NeDL\Convert\HelloWorld3\bin\Debug\net6.0\helloworld3.exe
+C:\Users\ABatenhorst\Desktop\NeDL\Convert\HelloWorld3\bin\Debug\net6.0\helloworld3.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\Convert\HelloWorld3\bin\Debug\net6.0\helloworld3.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\Convert\HelloWorld3\bin\Debug\net6.0\helloworld3.dll
+C:\Users\ABatenhorst\Desktop\NeDL\Convert\HelloWorld3\bin\Debug\net6.0\ref\helloworld3.dll
+C:\Users\ABatenhorst\Desktop\NeDL\Convert\HelloWorld3\bin\Debug\net6.0\helloworld3.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\Convert\HelloWorld3\obj\Debug\net6.0\helloworld3.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\Convert\HelloWorld3\obj\Debug\net6.0\helloworld3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\Convert\HelloWorld3\obj\Debug\net6.0\helloworld3.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\Convert\HelloWorld3\obj\Debug\net6.0\helloworld3.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\Convert\HelloWorld3\obj\Debug\net6.0\helloworld3.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\Convert\HelloWorld3\obj\Debug\net6.0\helloworld3.dll
+C:\Users\ABatenhorst\Desktop\NeDL\Convert\HelloWorld3\obj\Debug\net6.0\ref\helloworld3.dll
+C:\Users\ABatenhorst\Desktop\NeDL\Convert\HelloWorld3\obj\Debug\net6.0\helloworld3.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\Convert\HelloWorld3\obj\Debug\net6.0\helloworld3.genruntimeconfig.cache

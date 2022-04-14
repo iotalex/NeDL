@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\Desktop\NeDL\crudApp2\bin\Debug\net6.0\crudApp2.exe
+C:\Users\ABatenhorst\Desktop\NeDL\crudApp2\bin\Debug\net6.0\crudApp2.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\crudApp2\bin\Debug\net6.0\crudApp2.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\crudApp2\bin\Debug\net6.0\crudApp2.dll
+C:\Users\ABatenhorst\Desktop\NeDL\crudApp2\bin\Debug\net6.0\ref\crudApp2.dll
+C:\Users\ABatenhorst\Desktop\NeDL\crudApp2\bin\Debug\net6.0\crudApp2.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\crudApp2\obj\Debug\net6.0\crudApp2.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\crudApp2\obj\Debug\net6.0\crudApp2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\crudApp2\obj\Debug\net6.0\crudApp2.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\crudApp2\obj\Debug\net6.0\crudApp2.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\crudApp2\obj\Debug\net6.0\crudApp2.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\crudApp2\obj\Debug\net6.0\crudApp2.dll
+C:\Users\ABatenhorst\Desktop\NeDL\crudApp2\obj\Debug\net6.0\ref\crudApp2.dll
+C:\Users\ABatenhorst\Desktop\NeDL\crudApp2\obj\Debug\net6.0\crudApp2.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\crudApp2\obj\Debug\net6.0\crudApp2.genruntimeconfig.cache
