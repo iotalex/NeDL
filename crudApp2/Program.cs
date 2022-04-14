@@ -48,8 +48,7 @@ namespace HelloWorld
                 if(!userChoice)
                 {
                   Console.WriteLine("Please enter a valid option");
-                }
-                  
+                }    
             }//ends the second "do" which is to get "valid input"
             while (!userChoice);
 
@@ -77,7 +76,6 @@ namespace HelloWorld
                 }//end using    
 
         //   TODO: Else if the option is an S or s then store the array of strings into the text file  (DONE 4-14-22)##6 on website
-
                 else if (userChoiceString=="S" || userChoiceString=="s")
                 {
                     using (StreamReader sr = File.OpenText("names.txt"))
@@ -88,29 +86,12 @@ namespace HelloWorld
                     {
                         File.Delete("names.txt");
                     }
-                  
                     //create a file 
                     System.IO.File.WriteAllLines("names.txt", nameArray);
                 }
-                  
-                  //  {
-                    
-                  //  string s = "";
-                 //   int index = 0; 
-
-                    //  while ((s = sr.ReadLine()) != null)
-                    //  {
-                    //    nameArray[index]= s;
-                    //    index++;
-                    //  }
-                   // }
-                    
-
-        //   TODO: Else if the option is a C or c then add a name to the array (if there's room; eg. array of 10) //this isn't working now, ask STephen
-        // need to do an array check "null" in screen shots
-        //(note: user has to save manually)
-
-                else if (userChoiceString =="C" || userChoiceString =="c") //this is not working, was using someone's example 
+        //   TODO: Else if the option is a C or c then add a name to the array (if there's room; eg. array of 10) 
+        // need to do an array check "null" in screen shots //(note: user has to save manually)
+                else if (userChoiceString =="C" || userChoiceString =="c") 
                 {
                   Console.WriteLine("Enter a new name");
                   TextInfo tiVar1 = new CultureInfo("en-US", false).TextInfo;
@@ -125,9 +106,6 @@ namespace HelloWorld
                   }//end if
                 }
         // "R" needs to read the name from the array 
-        //Console.WriteLine("R: Read a name from the array.");
-        ////which name do I start with? 
-        //prompt user for which one (1-10)
                 else if (userChoiceString=="R" || userChoiceString=="R") //make changes, so they give you a name 
                 //tell user name found or name not found 
                 {
@@ -171,8 +149,7 @@ namespace HelloWorld
                   //Write name in the array (1-10?)
                 }
                 //display that input array (which is name 1-10)
-                
-                
+                      
         //   TODO: Elese if the option is a D or d then delete the name in the array (if it's there)                <done>
                else if (userChoiceString=="D" || userChoiceString=="d")
                {
@@ -199,13 +176,9 @@ namespace HelloWorld
                 {
                   Console.WriteLine("Goodbye, auf wiedersehen");
                 }
-
-
-
       }// ends the big "do"
        while(!(userChoiceString=="Q"));
-    
-       
+           
     } //ends main
     
     public static void DeleteFile()
