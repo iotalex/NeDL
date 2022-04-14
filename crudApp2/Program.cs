@@ -142,7 +142,7 @@ namespace HelloWorld
                       Console.WriteLine("User found");
                       found = true;
                     }
-                    //load the names, display names of the array ; !null
+                    //load all the names, display names of the array ; !null
                   }
                   if(found == false)//basically is "found" is still false, I didn't find anything 
                   {
