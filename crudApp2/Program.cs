@@ -150,7 +150,7 @@ namespace HelloWorld
                   }
                 }
 
-        //   TODO: Else if the option is a U or u then update a name in the array (if it's there) 
+        //   TODO: "adding quotes here" Else if the option is a U or u then update a name in the array (if it's there) 
                 //Console.WriteLine("U: Update a name in the array.");
                 else if (userChoiceString=="U" || userChoiceString=="u")
                 //prompt user for which one 
