@@ -48,8 +48,33 @@ namespace HelloWorld
             //  TODO: If the option is "O" or "o" then Open list of restaurants (names.txt) into the array of strings (nameArray)
                 if (userChoiceString=="O" || userChoiceString=="o")
                 {
-                    Console.WriteLine("O/o");
+                using (StreamReader sr = File.OpenText("names.txt"))//this is the name of the "new" file created 
+                    {
+                    int index = 0;
+                    string s;  
+                    //while liine of file I'm reading has content (aka isn't null)
+                    //push line contents to element of array 
+                    while ((s = sr.ReadLine()) != null)
+                    {
+                      eateryArray[index] = s;
+                      index++;
+                    }           
+                  }//end while 
+                  for(int index = 0; index < eateryArray.Length; index++)
+                  {
+                    if(eateryArray[index] != null)
+                    Console.WriteLine(eateryArray[index]); 
+                    //load the names, display names of the array ; !null 
+                  }
                 }
+                
+
+
+
+
+
+
+
                 //  TODO: If the option is is S or s save the user's list of restaurants/ store the array into a text file
                 if (userChoiceString=="S" || userChoiceString=="s")
                 //create a file 
