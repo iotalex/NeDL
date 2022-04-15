@@ -31,12 +31,12 @@ namespace HelloWorld
             userChoiceString = Console.ReadLine();
 
             userChoice =(userChoiceString == "O" || userChoiceString== "o" ||//done 
-                         userChoiceString == "S" || userChoiceString== "s" ||//
+                         userChoiceString == "S" || userChoiceString== "s" ||//done, tested/working
                          userChoiceString == "C" || userChoiceString == "c" ||// in progress 
                          userChoiceString == "R" || userChoiceString == "r" ||//
                          userChoiceString == "U" || userChoiceString== "u" ||
                          userChoiceString == "D" || userChoiceString == "d" || 
-                         userChoiceString == "Q" || userChoiceString == "q");//   
+                         userChoiceString == "Q" || userChoiceString == "q");//done/tested working   
         
 
                 if (!userChoice)
