@@ -71,16 +71,9 @@ namespace HelloWorld
                 if (userChoiceString=="S" || userChoiceString=="s")
                 //create a file 
                 {
-                //create a file 
+                //saves a file 
                     System.IO.File.WriteAllLines("names.txt", eateryArray); //equivilent of saying "CTR + S" 
                 }
-
-
-
-
-
-
-
                 //  TODO: If the option is is C or c add a restuarent name and rating --i.e. add a name & rating to the array 
                 if (userChoiceString=="C" || userChoiceString=="c")
                 {
@@ -121,16 +114,9 @@ namespace HelloWorld
             //            int userInput1 = Convert.ToInt16(numInput);
             //            myNumbers[i] = userInput1; 
              //       }
-                   
-                
-                
-                
+   
                 }
 
-
-
-
-                
                 //  TODO: If the option is is R or r PRINT a LIST of all the restaurants and their rating; i.e. Read a name from the array  
                 //"R{end here for the comp. check} Friday 
                 else if (userChoiceString=="R" || userChoiceString=="R") //make changes, so they give you a name 
@@ -138,6 +124,17 @@ namespace HelloWorld
                 {
                 Console.WriteLine("R/r");              
                 }
+
+
+
+
+
+
+
+
+
+
+
 
 
                 //  TODO: If the option is is U or u UPDATE the RATING for the restaurant; i.e. update the name in the array 
