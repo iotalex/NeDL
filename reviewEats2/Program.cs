@@ -67,7 +67,10 @@ namespace HelloWorld
                 string[] ArrLines ;
                 int ratingUserInputInt, i=0;
                 
-
+                //prompt user to enter restaurant name: 
+                //char[] myRestaurantName = {"One", "good", "thing", "about", "eating"};
+                
+                //prompt user to enter rating number 0-5
                 Console.Write("\n\n Please enter restaurant rating (0-5): \n");
                 ratingUserInputInt = Convert.ToInt16(Console.ReadLine());
                 ArrLines=new string[ratingUserInputInt];
@@ -75,14 +78,16 @@ namespace HelloWorld
                 {
                 Console.Write("-----------------------------------------------\n"); 
                 }
+                //array to collect ratings information 
                    int[] myNumbers = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; 
-                    for (i = 0; i < 10; i++)
+                    for (i = 1; i < 11; i++)
                     {
-                        Console.WriteLine("please enter rating for restaurant: " + i++);
+                        Console.WriteLine("Please enter rating for each restaurant " + "{name of eatery goes here" + i);//this is where input restaurant 1, reastaurant 2, restaurant 3...
                         string numInput = Console.ReadLine();
                         int userInput1 = Convert.ToInt16(numInput);
                         myNumbers[i] = userInput1; 
                     }
+                   
                 
                 
                 
