@@ -63,7 +63,18 @@ namespace HelloWorld
                     ////////////Console.WriteLine("Press enter to view restaurants & ratings"); //display list 
                 //https://www.w3resource.com/csharp-exercises/file-handling/csharp-file-handling-exercise-14.php
                 
-               
+                using (StreamReader sr = File.OpenText("names.txt"))//this is the name of the "new" file created 
+                    {
+                    int index = 0;
+                    string s;  
+                    //while liine of file I'm reading has content (aka isn't null)
+                    //push line contents to element of array 
+                    while ((s = sr.ReadLine()) != null)
+                    {
+                      eateryArray[index] = s;
+                      index++;
+                    }           
+                  }//end while 
                 
                 //prompt user to enter restaurant name: 
                 Console.WriteLine("Enter a new name");
