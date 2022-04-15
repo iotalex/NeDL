@@ -66,18 +66,26 @@ namespace HelloWorld
                 string fileName = @"mytest.txt"; 
                 string[] ArrLines ;
                 int ratingUserInputInt, i=0;
+                
 
                 Console.Write("\n\n Please enter restaurant rating (0-5): \n");
                 ratingUserInputInt = Convert.ToInt16(Console.ReadLine());
                 ArrLines=new string[ratingUserInputInt];
-                
-                int ratingUserInput;
-                
-                
 
-                
+                {
                 Console.Write("-----------------------------------------------\n"); 
-
+                }
+                   int[] myNumbers = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; 
+                    for (i = 0; i < 10; i++)
+                    {
+                        Console.WriteLine("please enter rating for restaurant: " + i++);
+                        string numInput = Console.ReadLine();
+                        int userInput1 = Convert.ToInt16(numInput);
+                        myNumbers[i] = userInput1; 
+                    }
+                
+                
+                
                 }
 
 
