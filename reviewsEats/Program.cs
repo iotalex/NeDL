@@ -51,7 +51,11 @@ namespace HelloWorld
             }
 
             //   TODO: If the option is is L or l then load (names.txt) into the array of strings (nameArray)
-
+            //   TODO: Else if the option is a Q or q then quit the program                   <done> 
+                else if (userChoiceString=="Q" || userChoiceString=="q")
+                {
+                  Console.WriteLine("Goodbye, thanks for your review");
+                }
         
             
 
