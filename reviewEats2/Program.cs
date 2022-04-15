@@ -69,7 +69,14 @@ namespace HelloWorld
                 Console.WriteLine("Enter a new name");
                   TextInfo tiVar1 = new CultureInfo("en-US", false).TextInfo;
                   string nameToAdd = tiVar1.ToTitleCase(Console.ReadLine());
-                                                
+                   for (int index = 1; index < eateryArray.Length; index++)
+                  {
+                    if (eateryArray[index] == null || eateryArray[index] == "")
+                        {
+                        eateryArray[index] = nameToAdd;
+                        break;
+                        }
+                  }//end if                             
              
 
                 //read last n number of lines of a file.
