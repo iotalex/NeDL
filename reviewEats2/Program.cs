@@ -44,24 +44,42 @@ namespace HelloWorld
                 }
             }//ends 2nd "do" which is to get valid input 
             while(!userChoice);
-            //  TODO: If the option is is O or o then Open list of restaurants (names.txt) into the array of strings (nameArray)
+            //  TODO: If the option is "O" or "o" then Open list of restaurants (names.txt) into the array of strings (nameArray)
                 if (userChoiceString=="O" || userChoiceString=="o")
                 {
                     Console.WriteLine("O/o");
                 }
-                
-                //  TODO: If the option is is O or o then Open list of restaurants (names.txt) into the array of strings (nameArray)
+                //  TODO: If the option is is S or s save the user's list of restaurants/ store the array into a text file
                 if (userChoiceString=="S" || userChoiceString=="s")
+                //create a file 
                 {
                     Console.WriteLine("S/s");
                 }
-                //  TODO: If the option is is O or o then Open list of restaurants (names.txt) into the array of strings (nameArray)
+                //  TODO: If the option is is C or c add a restuarent name and rating --i.e. add a name & rating to the array 
                 if (userChoiceString=="C" || userChoiceString=="c")
                 {
                     Console.WriteLine("C/c");
                 }
-
-            //   TODO: If the option is is L or l then load (names.txt) into the array of strings (nameArray)
+                //  TODO: If the option is is R or r PRINT a LIST of all the restaurants and their rating; i.e. Read a name from the array  
+                //"R{end here for the comp. check} Friday 
+                if (userChoiceString=="R" || userChoiceString=="r")
+                {
+                    Console.WriteLine("R/r");
+                }
+                //  TODO: If the option is is U or u UPDATE the RATING for the restaurant; i.e. update the name in the array 
+                //Monday 
+                if (userChoiceString=="U" || userChoiceString=="u")
+                {
+                    Console.WriteLine("U/u");
+                }
+                //  TODO: If the option is is D or d DELETE a restaurant; i.e.//Delete the name from the array 
+                //Monday 
+                //"D
+                if (userChoiceString=="D" || userChoiceString=="d")
+                {
+                    Console.WriteLine("D/d");
+                }
+            
             //   TODO: Else if the option is a Q or q then quit the program                   <done> 
                 else if (userChoiceString=="Q" || userChoiceString=="q")
                 {
