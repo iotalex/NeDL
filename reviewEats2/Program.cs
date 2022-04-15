@@ -65,23 +65,37 @@ namespace HelloWorld
                 else if (userChoiceString=="R" || userChoiceString=="R") //make changes, so they give you a name 
                 //tell user name found or name not found 
                 {
-                Console.WriteLine("Please enter a restaurant name: "); //please enter a restaurant name 
-                //read that number from user
-                string userInput = Console.ReadLine();
-                bool found = false;
-                 for(int index = 0; index < eateryArray.Length; index++)
-                  {
-                    if(eateryArray[index] == userInput)
+                ////////////Console.WriteLine("Press enter to view restaurants & ratings"); //display list 
+                //https://www.w3resource.com/csharp-exercises/file-handling/csharp-file-handling-exercise-14.php
+                
+                //read last n number of lines of a file.
+                string fileName = @"mytest.txt"; 
+                string[] ArrLines ;
+                int n,i,l,m=1;
+
+                Console.Write("\n\n Read last n number of lines from a file  :\n");
+                Console.Write("-----------------------------------------------\n"); 
+
+                    if (File.Exists(fileName))
                     {
-                      Console.WriteLine("Restaurant & rating found");
-                      found = true;
+                        File.Delete(fileName);
                     }
-                    //load all the names, display names of the array ; !null
-                  }
-                  if(found == false)//basically is "found" is still false, I didn't find anything 
-                  {
-                    Console.WriteLine("Restaurant & rating not");
-                  }
+                Console.Write(" Input number of lines to write in the file  :");
+                n= Convert.ToInt32(Console.ReadLine()); 
+                ArrLines=new string[n];      
+                Console.Write(" Input {0} strings below :\n",n);
+                for(i=0;i<n;i++)
+                {
+                Console.Write(" Input line {0} : ",i+1);
+                ArrLines[i] = Console.ReadLine();	
+                }	
+                System.IO.File.WriteAllLines(fileName, ArrLines);
+                
+                    Console.Write("\n Input last how many numbers of lines you want to display  :");
+                    l = Convert.ToInt32(Console.ReadLine()); 
+                    m=l;
+                    
+                  
                 }
 
 
