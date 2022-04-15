@@ -86,7 +86,7 @@ namespace HelloWorld
                 Console.Write(" Input {0} strings below :\n",n);
                 for(i=0;i<n;i++)
                 {
-                Console.Write(" Input line {0} : ",i+1);
+                Console.Write(" Inputzzz line {0} : ",i+1);
                 ArrLines[i] = Console.ReadLine();	
                 }	
                 System.IO.File.WriteAllLines(fileName, ArrLines);
@@ -94,6 +94,8 @@ namespace HelloWorld
                     Console.Write("\n Input last how many numbers of lines you want to display  :");
                     l = Convert.ToInt32(Console.ReadLine()); 
                     m=l;
+                    
+                
                     
                   
                 }
