@@ -66,8 +66,11 @@ namespace HelloWorld
                
                 
                 //prompt user to enter restaurant name: 
-                
-
+                Console.WriteLine("Enter a new name");
+                  TextInfo tiVar1 = new CultureInfo("en-US", false).TextInfo;
+                  string nameToAdd = tiVar1.ToTitleCase(Console.ReadLine());
+                                                
+             
 
                 //read last n number of lines of a file.
                 string fileName = @"mytest.txt"; 
