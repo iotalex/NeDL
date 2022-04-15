@@ -58,37 +58,32 @@ namespace HelloWorld
                 //  TODO: If the option is is C or c add a restuarent name and rating --i.e. add a name & rating to the array 
                 if (userChoiceString=="C" || userChoiceString=="c")
                 {
-                    Console.WriteLine("C/c");
+                    
                     ////////////Console.WriteLine("Press enter to view restaurants & ratings"); //display list 
                 //https://www.w3resource.com/csharp-exercises/file-handling/csharp-file-handling-exercise-14.php
                 
                 //read last n number of lines of a file.
                 string fileName = @"mytest.txt"; 
                 string[] ArrLines ;
-                int n,i,l,m=1;
+                int ratingUserInputInt, i=0;
 
-                Console.Write("\n\n Restaurant & ratings below:  :\n");
+                Console.Write("\n\n Please enter restaurant rating (0-5): \n");
+                ratingUserInputInt = Convert.ToInt16(Console.ReadLine());
+                ArrLines=new string[ratingUserInputInt];
+                
+                int ratingUserInput;
+                
+                
+
+                
                 Console.Write("-----------------------------------------------\n"); 
 
-                    if (File.Exists(fileName))
-                    {
-                        File.Delete(fileName);
-                    }
-                Console.Write(" Input number of lines to write in the file  :");
-                n= Convert.ToInt32(Console.ReadLine()); 
-                ArrLines=new string[n];      
-                Console.Write(" Input {0} strings below :\n",n);
-                for(i=0;i<n;i++)
-                {
-                Console.Write(" Inputzzz line {0} : ",i+1);
-                ArrLines[i] = Console.ReadLine();	
-                }	
-                System.IO.File.WriteAllLines(fileName, ArrLines);
-                
-                    Console.Write("\n Input last how many numbers of lines you want to display  :");
-                    l = Convert.ToInt32(Console.ReadLine()); 
-                    m=l;
                 }
+
+
+
+
+                
                 //  TODO: If the option is is R or r PRINT a LIST of all the restaurants and their rating; i.e. Read a name from the array  
                 //"R{end here for the comp. check} Friday 
                 else if (userChoiceString=="R" || userChoiceString=="R") //make changes, so they give you a name 
