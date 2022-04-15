@@ -17,7 +17,7 @@ namespace HelloWorld
             //Initialize variables
             userChoice = false;
             //   TODO: Provide the user a menu of options
-            Console.WriteLine("Please enter your Good Eat's review (0-5): ");
+            Console.WriteLine("Please select the following options: ");
             Console.WriteLine("O - Open the user's list of restaurants, ");// user array (Alec's notes)
             Console.WriteLine("S - Save the user's list of restaurants");// save the array to the data file 
             Console.WriteLine("C - Add a restaurant and rating, ");//add a name to the array 
@@ -67,7 +67,7 @@ namespace HelloWorld
                 string[] ArrLines ;
                 int n,i,l,m=1;
 
-                Console.Write("\n\n Read last n number of lines from a file  :\n");
+                Console.Write("\n\n Restaurant & ratings below:  :\n");
                 Console.Write("-----------------------------------------------\n"); 
 
                     if (File.Exists(fileName))
