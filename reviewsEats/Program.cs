@@ -44,11 +44,22 @@ namespace HelloWorld
                 }
             }//ends 2nd "do" which is to get valid input 
             while(!userChoice);
-            //   TODO: If the option is is O or o then Open list of restaurants (names.txt) into the array of strings (nameArray)
-            if (userChoiceString=="O" || userChoiceString=="o")
-            {
-                Console.WriteLine("dd");
-            }
+            //  TODO: If the option is is O or o then Open list of restaurants (names.txt) into the array of strings (nameArray)
+                if (userChoiceString=="O" || userChoiceString=="o")
+                {
+                    Console.WriteLine("O/o");
+                }
+                
+                //  TODO: If the option is is O or o then Open list of restaurants (names.txt) into the array of strings (nameArray)
+                if (userChoiceString=="S" || userChoiceString=="s")
+                {
+                    Console.WriteLine("S/s");
+                }
+                //  TODO: If the option is is O or o then Open list of restaurants (names.txt) into the array of strings (nameArray)
+                if (userChoiceString=="C" || userChoiceString=="c")
+                {
+                    Console.WriteLine("C/c");
+                }
 
             //   TODO: If the option is is L or l then load (names.txt) into the array of strings (nameArray)
             //   TODO: Else if the option is a Q or q then quit the program                   <done> 
