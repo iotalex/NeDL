@@ -62,10 +62,29 @@ namespace HelloWorld
                 }
                 //  TODO: If the option is is R or r PRINT a LIST of all the restaurants and their rating; i.e. Read a name from the array  
                 //"R{end here for the comp. check} Friday 
-                if (userChoiceString=="R" || userChoiceString=="r")
+                else if (userChoiceString=="R" || userChoiceString=="R") //make changes, so they give you a name 
+                //tell user name found or name not found 
                 {
-                    Console.WriteLine("R/r");
+                Console.WriteLine("Please enter a restaurant name: "); //please enter a restaurant name 
+                //read that number from user
+                string userInput = Console.ReadLine();
+                bool found = false;
+                 for(int index = 0; index < eateryArray.Length; index++)
+                  {
+                    if(eateryArray[index] == userInput)
+                    {
+                      Console.WriteLine("Restaurant & rating found");
+                      found = true;
+                    }
+                    //load all the names, display names of the array ; !null
+                  }
+                  if(found == false)//basically is "found" is still false, I didn't find anything 
+                  {
+                    Console.WriteLine("Restaurant & rating not");
+                  }
                 }
+
+
                 //  TODO: If the option is is U or u UPDATE the RATING for the restaurant; i.e. update the name in the array 
                 //Monday 
                 if (userChoiceString=="U" || userChoiceString=="u")
