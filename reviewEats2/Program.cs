@@ -59,25 +59,9 @@ namespace HelloWorld
                 //  TODO: If the option is is C or c add a restuarent name and rating --i.e. add a name & rating to the array 
                 if (userChoiceString=="C" || userChoiceString=="c")
                 {
-                    
-                    ////////////Console.WriteLine("Press enter to view restaurants & ratings"); //display list 
-                //https://www.w3resource.com/csharp-exercises/file-handling/csharp-file-handling-exercise-14.php
-                
-                using (StreamReader sr = File.OpenText("names.txt"))//this is the name of the "new" file created 
-                    {
-                    int index = 0;
-                    string s;  
-                    //while liine of file I'm reading has content (aka isn't null)
-                    //push line contents to element of array 
-                    while ((s = sr.ReadLine()) != null)
-                    {
-                      eateryArray[index] = s;
-                      index++;
-                    }           
-                  }//end while 
-                
+         
                 //prompt user to enter restaurant name: 
-                Console.WriteLine("Enter a new name");
+                Console.WriteLine("Enter restaurant name");
                   TextInfo tiVar1 = new CultureInfo("en-US", false).TextInfo;
                   string nameToAdd = tiVar1.ToTitleCase(Console.ReadLine());
                    for (int index = 1; index < eateryArray.Length; index++)
@@ -87,6 +71,7 @@ namespace HelloWorld
                         eateryArray[index] = nameToAdd;
                         break;
                         }
+                    
                   }//end if                             
              
 
@@ -95,22 +80,22 @@ namespace HelloWorld
                 string[] ArrLines ;
                 int ratingUserInputInt, i=0;
                 //prompt user to enter rating number 0-5
-                Console.Write("\n\n Please enter restaurant rating (0-5): \n");
+                Console.Write(" Please enter restaurant rating (0-5): ");
                 ratingUserInputInt = Convert.ToInt16(Console.ReadLine());
                 ArrLines=new string[ratingUserInputInt];
 
                 {
                 Console.Write("-----------------------------------------------\n"); 
                 }
-                //array to collect ratings information 
-                   int[] myNumbers = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; 
-                    for (i = 1; i < 11; i++)
-                    {
-                        Console.WriteLine("Please enter rating for each restaurant " + "{name of eatery goes here" + i);//this is where input restaurant 1, reastaurant 2, restaurant 3...
-                        string numInput = Console.ReadLine();
-                        int userInput1 = Convert.ToInt16(numInput);
-                        myNumbers[i] = userInput1; 
-                    }
+                //array to collect review ratings information 
+           //        int[] myNumbers = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; 
+            //        for (i = 1; i < 11; i++)
+            //        {
+            //            Console.WriteLine("Please enter rating for each restaurant " + "{name of eatery goes here" + " " + i);//this is where input restaurant 1, reastaurant 2, restaurant 3...
+            //            string numInput = Console.ReadLine();
+            //            int userInput1 = Convert.ToInt16(numInput);
+            //            myNumbers[i] = userInput1; 
+             //       }
                    
                 
                 
@@ -137,11 +122,11 @@ namespace HelloWorld
                     Console.WriteLine("U/u");
                 }
                 //  TODO: If the option is is D or d DELETE a restaurant; i.e.//Delete the name from the array 
-                //Monday 
+                //Monday ***********I'm borrowing this, so it works 
                 //"D
                 if (userChoiceString=="D" || userChoiceString=="d")
                 {
-                    Console.WriteLine("D/d");
+                 Console.WriteLine("D/d");
                 }
             
             //   TODO: Else if the option is a Q or q then quit the program                   <done> 
