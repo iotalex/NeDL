@@ -30,9 +30,9 @@ namespace HelloWorld
 
             userChoiceString = Console.ReadLine();
 
-            userChoice =(userChoiceString == "O" || userChoiceString== "o" ||//
+            userChoice =(userChoiceString == "O" || userChoiceString== "o" ||//done 
                          userChoiceString == "S" || userChoiceString== "s" ||//
-                         userChoiceString == "C" || userChoiceString == "c" ||//
+                         userChoiceString == "C" || userChoiceString == "c" ||// in progress 
                          userChoiceString == "R" || userChoiceString == "r" ||//
                          userChoiceString == "U" || userChoiceString== "u" ||
                          userChoiceString == "D" || userChoiceString == "d" || 
@@ -67,20 +67,20 @@ namespace HelloWorld
                     //load the names, display names of the array ; !null 
                   }
                 }
-                
-
-
-
-
-
-
-
                 //  TODO: If the option is is S or s save the user's list of restaurants/ store the array into a text file
                 if (userChoiceString=="S" || userChoiceString=="s")
                 //create a file 
                 {
-                    Console.WriteLine("S/s");
+                //create a file 
+                    System.IO.File.WriteAllLines("names.txt", eateryArray); //equivilent of saying "CTR + S" 
                 }
+
+
+
+
+
+
+
                 //  TODO: If the option is is C or c add a restuarent name and rating --i.e. add a name & rating to the array 
                 if (userChoiceString=="C" || userChoiceString=="c")
                 {
