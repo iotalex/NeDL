@@ -38,21 +38,29 @@ namespace HelloWorld
                         userChoiceString == "Q" || userChoiceString == "q");//   
         
 
-            if (!userChoice)
+                if (!userChoice)
+                {
+                    Console.WriteLine("Please enter a valid option");
+                }
+            }//ends 2nd "do" which is to get valid input 
+            while(!userChoice);
+            //   TODO: If the option is is O or o then Open list of restaurants (names.txt) into the array of strings (nameArray)
+            if (userChoiceString=="O" || userChoiceString=="o")
             {
-                Console.WriteLine("Please enter a valid option");
+                Console.WriteLine("dd");
             }
 
-            }//ends 2nd "do" 
+            //   TODO: If the option is is L or l then load (names.txt) into the array of strings (nameArray)
+
+        
             
-            while(!userChoice);
-        
+
+
         }//ends the big "do" 
-        
         while(!(userChoiceString=="Q"));    
     
     
-    }//ends static void   
+    }//ends main   
 
   }//class program  
 
