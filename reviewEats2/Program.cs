@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace HelloWorld
 {
@@ -62,14 +63,16 @@ namespace HelloWorld
                     ////////////Console.WriteLine("Press enter to view restaurants & ratings"); //display list 
                 //https://www.w3resource.com/csharp-exercises/file-handling/csharp-file-handling-exercise-14.php
                 
+               
+                
+                //prompt user to enter restaurant name: 
+                
+
+
                 //read last n number of lines of a file.
                 string fileName = @"mytest.txt"; 
                 string[] ArrLines ;
                 int ratingUserInputInt, i=0;
-                
-                //prompt user to enter restaurant name: 
-                //char[] myRestaurantName = {"One", "good", "thing", "about", "eating"};
-                
                 //prompt user to enter rating number 0-5
                 Console.Write("\n\n Please enter restaurant rating (0-5): \n");
                 ratingUserInputInt = Convert.ToInt16(Console.ReadLine());
