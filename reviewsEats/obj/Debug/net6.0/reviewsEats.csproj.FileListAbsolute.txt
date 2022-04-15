@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\desktop\NeDL\reviewsEats\bin\Debug\net6.0\reviewsEats.exe
+C:\Users\ABatenhorst\desktop\NeDL\reviewsEats\bin\Debug\net6.0\reviewsEats.deps.json
+C:\Users\ABatenhorst\desktop\NeDL\reviewsEats\bin\Debug\net6.0\reviewsEats.runtimeconfig.json
+C:\Users\ABatenhorst\desktop\NeDL\reviewsEats\bin\Debug\net6.0\reviewsEats.dll
+C:\Users\ABatenhorst\desktop\NeDL\reviewsEats\bin\Debug\net6.0\ref\reviewsEats.dll
+C:\Users\ABatenhorst\desktop\NeDL\reviewsEats\bin\Debug\net6.0\reviewsEats.pdb
+C:\Users\ABatenhorst\desktop\NeDL\reviewsEats\obj\Debug\net6.0\reviewsEats.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\desktop\NeDL\reviewsEats\obj\Debug\net6.0\reviewsEats.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\desktop\NeDL\reviewsEats\obj\Debug\net6.0\reviewsEats.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\desktop\NeDL\reviewsEats\obj\Debug\net6.0\reviewsEats.AssemblyInfo.cs
+C:\Users\ABatenhorst\desktop\NeDL\reviewsEats\obj\Debug\net6.0\reviewsEats.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\desktop\NeDL\reviewsEats\obj\Debug\net6.0\reviewsEats.dll
+C:\Users\ABatenhorst\desktop\NeDL\reviewsEats\obj\Debug\net6.0\ref\reviewsEats.dll
+C:\Users\ABatenhorst\desktop\NeDL\reviewsEats\obj\Debug\net6.0\reviewsEats.pdb
+C:\Users\ABatenhorst\desktop\NeDL\reviewsEats\obj\Debug\net6.0\reviewsEats.genruntimeconfig.cache

@@ -70,7 +70,7 @@ namespace HelloWorld
                   for(int index = 0; index < nameArray.Length; index++)
                   {
                     if(nameArray[index] != null)
-                    Console.WriteLine(nameArray[index]);
+                    Console.WriteLine(nameArray[index]); 
                     //load the names, display names of the array ; !null 
                   }
                 }//end using    
@@ -78,16 +78,8 @@ namespace HelloWorld
         //   TODO: Else if the option is an S or s then store the array of strings into the text file  (DONE 4-14-22)##6 on website
                 else if (userChoiceString=="S" || userChoiceString=="s")
                 {
-                    using (StreamReader sr = File.OpenText("names.txt"))
-                    Console.WriteLine("In the S/s area."); 
-                    
-                    //Delete the file if it exists 
-                    if (File.Exists("names.txt"))
-                    {
-                        File.Delete("names.txt");
-                    }
                     //create a file 
-                    System.IO.File.WriteAllLines("names.txt", nameArray);
+                    System.IO.File.WriteAllLines("names.txt", nameArray); //equivilent of saying "CTR + S" 
                 }
         //   TODO: Else if the option is a C or c then add a name to the array (if there's room; eg. array of 10) 
         // need to do an array check "null" in screen shots //(note: user has to save manually)
