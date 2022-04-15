@@ -59,13 +59,7 @@ namespace HelloWorld
                 if (userChoiceString=="C" || userChoiceString=="c")
                 {
                     Console.WriteLine("C/c");
-                }
-                //  TODO: If the option is is R or r PRINT a LIST of all the restaurants and their rating; i.e. Read a name from the array  
-                //"R{end here for the comp. check} Friday 
-                else if (userChoiceString=="R" || userChoiceString=="R") //make changes, so they give you a name 
-                //tell user name found or name not found 
-                {
-                ////////////Console.WriteLine("Press enter to view restaurants & ratings"); //display list 
+                    ////////////Console.WriteLine("Press enter to view restaurants & ratings"); //display list 
                 //https://www.w3resource.com/csharp-exercises/file-handling/csharp-file-handling-exercise-14.php
                 
                 //read last n number of lines of a file.
@@ -94,10 +88,13 @@ namespace HelloWorld
                     Console.Write("\n Input last how many numbers of lines you want to display  :");
                     l = Convert.ToInt32(Console.ReadLine()); 
                     m=l;
-                    
-                
-                    
-                  
+                }
+                //  TODO: If the option is is R or r PRINT a LIST of all the restaurants and their rating; i.e. Read a name from the array  
+                //"R{end here for the comp. check} Friday 
+                else if (userChoiceString=="R" || userChoiceString=="R") //make changes, so they give you a name 
+                //tell user name found or name not found 
+                {
+                Console.WriteLine("R/r");              
                 }
 
 
