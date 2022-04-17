@@ -10,31 +10,9 @@ namespace HelloWorld
             bool userChoice;
             string userChoiceString;
             string[] eateryArray = new string[25]; //reserves 10 spaces to hold string (memory)
-
-
-            string[] nameArray = new string[25];//hold the name of a restaurant
-            string[] ratingArray = new string[25];//hold the rating of a restuarant
-    //below is the code that's going to read the file
-                using (StreamReader sr = File.OpenText("names.txt"))//this is the name of the "new" file created 
-                    {
-                    int index = 0;
-                    string name = " ";
-                    string rating = " "; 
-                     
-                    //push line contents to element of array 
-                    while ((name = sr.ReadLine()) != null)
-                    {
-                      nameArray[index] = name;
-                      Console.WriteLine(name);
-                      rating = sr.ReadLine();
-                      ratingArray[index] = rating;
-                      Console.WriteLine(rating);
-                      index++;
-                    }           
-                  }//end while 
-
-
-
+            string[] nameArray = new string[25];//hold the name of a restaurant "O"  
+            string[] ratingArray = new string[25];//hold the rating of a restuarant "O" 
+    
     //Repeat main loop  
         do
         {
@@ -72,26 +50,24 @@ namespace HelloWorld
             while(!userChoice);
             //  TODO: If the option is "O" or "o" then Open list of restaurants (names.txt) into the array of strings (nameArray)
                 if (userChoiceString=="O" || userChoiceString=="o")
-                {
+                //below is the code that's going to read the file
                 using (StreamReader sr = File.OpenText("names.txt"))//this is the name of the "new" file created 
                     {
                     int index = 0;
-                    string s;  
-                    //while liine of file I'm reading has content (aka isn't null)
+                    string name = " ";
+                    string rating = " "; 
+                     
                     //push line contents to element of array 
-                    while ((s = sr.ReadLine()) != null)
+                    while ((name = sr.ReadLine()) != null)
                     {
-                      eateryArray[index] = s;
+                      nameArray[index] = name;
+                      Console.WriteLine(name);
+                      rating = sr.ReadLine();
+                      ratingArray[index] = rating;
+                      Console.WriteLine(rating);
                       index++;
                     }           
                   }//end while 
-                  for(int index = 0; index < eateryArray.Length; index++)
-                  {
-                    if(eateryArray[index] != null)
-                    Console.WriteLine(eateryArray[index]); 
-                    //load the names, display names of the array ; !null 
-                  }
-                }
                 //  TODO: If the option is is S or s save the user's list of restaurants/ store the array into a text file
                 if (userChoiceString=="S" || userChoiceString=="s")
                 //create a file 
