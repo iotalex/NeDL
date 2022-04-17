@@ -83,26 +83,26 @@ namespace HelloWorld
                 Console.WriteLine("Enter restaurant name");
                   TextInfo tiVar1 = new CultureInfo("en-US", false).TextInfo;
                   string nameToAdd = tiVar1.ToTitleCase(Console.ReadLine());
-                   for (int index = 1; index < nameArray.Length; index++)
+                   for (int index = 0; index < nameArray.Length; index++)//write on Line 1
                   {
                     if (eateryArray[index] == null || eateryArray[index] == "")
                         {
                         eateryArray[index] = nameToAdd;
                         break;
                         }
-                    
-                  }//end if                             
-                //read last n number of lines of a file.
-                string fileName = @"names.txt"; 
-                string[] ArrLines ;
-                int ratingUserInputInt, i=0;
-                //prompt user to enter rating number 0-5
-                Console.Write(" Please enter restaurant rating (0-5): ");
-                ratingUserInputInt = Convert.ToInt16(Console.ReadLine());
-                ArrLines=new string[ratingUserInputInt];
+                  }//end for loop 
+                Console.WriteLine("Please enter rating: ");
+                  string ratingToAdd = (Console.ReadLine());
+                    for (int index = 1; index < ratingArray.Length; index++)//write on Line 2
+                    {
+                      //this is where I left off 4-17-22 
+                    }
 
-               
-   
+                  //we need this to repeate the question and then write on line 3, 5, 7,...
+                  ///
+                
+                                             
+                
                 }//end of "if" for item "C" 
 
                 //  TODO: If the option is is R or r PRINT a LIST of all the restaurants and their rating; i.e. Read a name from the array  
