@@ -101,25 +101,16 @@ namespace HelloWorld
                 ratingUserInputInt = Convert.ToInt16(Console.ReadLine());
                 ArrLines=new string[ratingUserInputInt];
 
-                {
-                Console.Write("-----------------------------------------------\n"); 
-                }
-                //array to collect review ratings information 
-           //        int[] myNumbers = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; 
-            //        for (i = 1; i < 11; i++)
-            //        {
-            //            Console.WriteLine("Please enter rating for each restaurant " + "{name of eatery goes here" + " " + i);//this is where input restaurant 1, reastaurant 2, restaurant 3...
-            //            string numInput = Console.ReadLine();
-            //            int userInput1 = Convert.ToInt16(numInput);
-            //            myNumbers[i] = userInput1; 
-             //       }
+               
    
-                }
+                }//end of "if" for item "C" 
 
                 //  TODO: If the option is is R or r PRINT a LIST of all the restaurants and their rating; i.e. Read a name from the array  
                 //"R{end here for the comp. check} Friday 
                 else if (userChoiceString=="R" || userChoiceString=="R") //make changes, so they give you a name 
-                //tell user name found or name not found 
+                //read the results 
+
+                //read from an array 
                 {
                 Console.WriteLine("R/r");
 
