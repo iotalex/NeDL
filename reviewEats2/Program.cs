@@ -121,54 +121,9 @@ namespace HelloWorld
                 else if (userChoiceString=="R" || userChoiceString=="R") //make changes, so they give you a name 
                 //tell user name found or name not found 
                 {
-                string fileName = @"names.txt"; 
-                string[] ArrLines ;
-                int n,i,l;
-
-                Console.Write("\n\n Read a specific line from a file  :\n");
-                Console.Write("----------------------------------------\n"); 
-
-                    if (File.Exists(fileName))
-                    {
-                        File.Delete(fileName);
-                    }
-                Console.Write(" Input number of lines to write in the file  :");
-                n= Convert.ToInt32(Console.ReadLine()); 
-                ArrLines=new string[n];      
-               // Console.Write(" Input {0} strings below :\n",n);
-               	
-                System.IO.File.WriteAllLines(fileName, ArrLines);
-                
-                    Console.Write("\n Input which line you want to display  :");
-                    l = Convert.ToInt32(Console.ReadLine()); 
-                    if(l>=1 && l<=n)
-                    {
-                    Console.Write("\n The content of the line {0} of the file {1} is : \n",l,fileName);
-                    if (File.Exists(fileName))
-                        {
-                        string[] lines = File.ReadAllLines(fileName);
-                        Console.WriteLine(" {0}",lines[l-1]);
-                        }}
-                        else
-                        {
-                        Console.WriteLine(" Please input the correct line no.");
-                        }
-
-                    Console.WriteLine(); 
+                Console.WriteLine("R/r");
 
                 }
-
-
-
-
-
-
-
-
-
-
-
-
 
                 //  TODO: If the option is is U or u UPDATE the RATING for the restaurant; i.e. update the name in the array 
                 //Monday 
