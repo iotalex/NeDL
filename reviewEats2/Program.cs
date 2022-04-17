@@ -9,7 +9,7 @@ namespace HelloWorld
         {
             bool userChoice;
             string userChoiceString;
-            string[] eateryArray = new string[25]; //reserves 10 spaces to hold string (memory)
+            string[] eateryArray = new string[25]; //reserves 25 spaces to hold string (memory)
             string[] nameArray = new string[25];//hold the name of a restaurant "O"  
             string[] ratingArray = new string[25];//hold the rating of a restuarant "O" 
     
@@ -34,7 +34,7 @@ namespace HelloWorld
             userChoiceString = Console.ReadLine();
 
             userChoice =(userChoiceString == "O" || userChoiceString== "o" ||//done, 1.0
-                         userChoiceString == "S" || userChoiceString== "s" ||//done, tested/working
+                         userChoiceString == "S" || userChoiceString== "s" ||//glitch deletes out everything 
                          userChoiceString == "C" || userChoiceString == "c" ||// in progress 
                          userChoiceString == "R" || userChoiceString == "r" ||//
                          userChoiceString == "U" || userChoiceString==  "u" ||
@@ -83,7 +83,7 @@ namespace HelloWorld
                 Console.WriteLine("Enter restaurant name");
                   TextInfo tiVar1 = new CultureInfo("en-US", false).TextInfo;
                   string nameToAdd = tiVar1.ToTitleCase(Console.ReadLine());
-                   for (int index = 1; index < eateryArray.Length; index++)
+                   for (int index = 1; index < nameArray.Length; index++)
                   {
                     if (eateryArray[index] == null || eateryArray[index] == "")
                         {
@@ -92,10 +92,8 @@ namespace HelloWorld
                         }
                     
                   }//end if                             
-             
-
                 //read last n number of lines of a file.
-                string fileName = @"mytest.txt"; 
+                string fileName = @"names.txt"; 
                 string[] ArrLines ;
                 int ratingUserInputInt, i=0;
                 //prompt user to enter rating number 0-5
