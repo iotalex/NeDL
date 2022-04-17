@@ -33,7 +33,7 @@ namespace HelloWorld
 
             userChoiceString = Console.ReadLine();
 
-            userChoice =(userChoiceString == "O" || userChoiceString== "o" ||//done 
+            userChoice =(userChoiceString == "O" || userChoiceString== "o" ||//done, 1.0
                          userChoiceString == "S" || userChoiceString== "s" ||//done, tested/working
                          userChoiceString == "C" || userChoiceString == "c" ||// in progress 
                          userChoiceString == "R" || userChoiceString == "r" ||//
