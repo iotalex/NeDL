@@ -9,7 +9,32 @@ namespace HelloWorld
         {
             bool userChoice;
             string userChoiceString;
-            string[] eateryArray = new string[10]; //reservce 10 spaces to hold string (memory)
+            string[] eateryArray = new string[25]; //reserves 10 spaces to hold string (memory)
+
+
+            string[] nameArray = new string[25];//hold the name of a restaurant
+            string[] ratingArray = new string[25];//hold the rating of a restuarant
+    //below is the code that's going to read the file
+                using (StreamReader sr = File.OpenText("names.txt"))//this is the name of the "new" file created 
+                    {
+                    int index = 0;
+                    string name = " ";
+                    string rating = " "; 
+                     
+                    //push line contents to element of array 
+                    while ((name = sr.ReadLine()) != null)
+                    {
+                      nameArray[index] = name;
+                      Console.WriteLine(name);
+                      rating = sr.ReadLine();
+                      ratingArray[index] = rating;
+                      Console.WriteLine(rating);
+                      index++;
+                    }           
+                  }//end while 
+
+
+
     //Repeat main loop  
         do
         {
@@ -34,7 +59,7 @@ namespace HelloWorld
                          userChoiceString == "S" || userChoiceString== "s" ||//done, tested/working
                          userChoiceString == "C" || userChoiceString == "c" ||// in progress 
                          userChoiceString == "R" || userChoiceString == "r" ||//
-                         userChoiceString == "U" || userChoiceString== "u" ||
+                         userChoiceString == "U" || userChoiceString==  "u" ||
                          userChoiceString == "D" || userChoiceString == "d" || 
                          userChoiceString == "Q" || userChoiceString == "q");//done/tested working   
         
@@ -136,12 +161,8 @@ namespace HelloWorld
                 Console.Write(" Input number of lines to write in the file  :");
                 n= Convert.ToInt32(Console.ReadLine()); 
                 ArrLines=new string[n];      
-                Console.Write(" Input {0} strings below :\n",n);
-                for(i=0;i<n;i++)
-                {
-                Console.Write(" Input line {0} : ",i+1);
-                ArrLines[i] = Console.ReadLine();	
-                }	
+               // Console.Write(" Input {0} strings below :\n",n);
+               	
                 System.IO.File.WriteAllLines(fileName, ArrLines);
                 
                     Console.Write("\n Input which line you want to display  :");
