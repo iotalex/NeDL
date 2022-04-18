@@ -71,12 +71,18 @@ namespace HelloWorld
                 if (userChoiceString=="S" || userChoiceString=="s")
                 //create a file 
                 {
-                using (StreamWriter fileStr = File.CreateText("names.txt")) 
+                if (File.Exists("names.txt"))
             {
-                fileStr.WriteLine(" Hello and Welcome");
-                fileStr.WriteLine(" It is the first content");
-                fileStr.WriteLine(" of the text file mytest.txt");
+                File.Delete("names.txt");
             }
+                      Console.Write("\n\n Create a file with text and read the file  :\n");
+                      Console.Write("-------------------------------------------------\n");
+                using (StreamWriter fileStr = File.CreateText("names.txt")) 
+                  {
+                      Console.WriteLine(nameArray);
+                      Console.WriteLine(ratingArray);
+                      
+                  }
                 
                 }
                 //  TODO: If the option is is C or c add a restuarent name and rating --i.e. add a name & rating to the array 
