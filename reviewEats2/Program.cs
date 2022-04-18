@@ -143,12 +143,12 @@ namespace HelloWorld
 
                 //read from an array 
                 {
-                for(int index = 0; index < nameArray.Length; index++)//start with index of 0 
+                for(int i = 0; i < nameArray.Length; i++)//start with index of 0 
                   {
-                    if(!(nameArray[index] == null))//check to see if it's null, !-say's that it's "not"; as long as I have something here, print it; null=I don't want to print it
+                    if(!(nameArray[i] == null))//check to see if it's null, !-say's that it's "not"; as long as I have something here, print it; null=I don't want to print it
                       {
-                      Console.WriteLine(nameArray [index]);
-                      Console.WriteLine(ratingArray[index]);
+                      Console.WriteLine(nameArray [i]);
+                      Console.WriteLine(ratingArray[i]);
                       }
                   }
                   
