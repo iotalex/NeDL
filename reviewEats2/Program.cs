@@ -71,7 +71,12 @@ namespace HelloWorld
                 if (userChoiceString=="S" || userChoiceString=="s")
                 //create a file 
                 {
-                //saves a file 
+                using (StreamWriter fileStr = File.CreateText("names.txt")) 
+            {
+                fileStr.WriteLine(" Hello and Welcome");
+                fileStr.WriteLine(" It is the first content");
+                fileStr.WriteLine(" of the text file mytest.txt");
+            }
                 
                 }
                 //  TODO: If the option is is C or c add a restuarent name and rating --i.e. add a name & rating to the array 
@@ -105,13 +110,6 @@ namespace HelloWorld
                     nameArray[index] = newRestaurantName; //after we found a place to put it into, this put it in there. 
                     
                 }//end of "if" for item "C" 
-
-
-
-
-
-
-
 
                 //  TODO: If the option is is R or r PRINT a LIST of all the restaurants and their rating; i.e. Read a name from the array  
                 //"R{end here for the comp. check} Friday 
