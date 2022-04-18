@@ -8,7 +8,7 @@ namespace HelloWorld
         {
             bool userChoice;
             string userChoiceString;
-            string[] eateryArray = new string[25]; //reserves 25 spaces to hold string (memory)
+            //string[] eateryArray = new string[25]; //reserves 25 spaces to hold string (memory)
             string[] nameArray = new string[25];//hold the name of a restaurant "O"  
             string[] ratingArray = new string[25];//hold the rating of a restuarant "O" 
     
@@ -33,9 +33,9 @@ namespace HelloWorld
             userChoiceString = Console.ReadLine();
 
             userChoice =(userChoiceString == "O" || userChoiceString== "o" ||//done, 1.0
-                         userChoiceString == "S" || userChoiceString== "s" ||//glitch deletes out everything 
-                         userChoiceString == "C" || userChoiceString == "c" ||// in progress 
-                         userChoiceString == "R" || userChoiceString == "r" ||//
+                         userChoiceString == "S" || userChoiceString== "s" ||//done, glitchy, put zeros 
+                         userChoiceString == "C" || userChoiceString == "c" ||//done 1.0 
+                         userChoiceString == "R" || userChoiceString == "r" ||//done 1.0
                          userChoiceString == "U" || userChoiceString==  "u" ||
                          userChoiceString == "D" || userChoiceString == "d" || 
                          userChoiceString == "Q" || userChoiceString == "q");//done/tested working   
@@ -83,29 +83,27 @@ namespace HelloWorld
                     {
                         Console.WriteLine();
                         // TODO: Loop through the arrays
-        for (int i = 0; i < 25; i++)
-        {
-                        // Write the values from the arrays to the file
-                        // TODO: Get the restaurant name
-                        string name = nameArray[i];
-                        int rating = Convert.ToInt16(ratingArray[i]);//have to convert, that's why you always add "Convert.ToIn16 for integers, even in strings.
-                        
-                        
-                        
-                        // TODO: Get the restaurant rating
-                        // TODO: Write the two items to the file
-                        sw.WriteLine(name);
-                        sw.WriteLine(rating);
-                        
-                        
-
-        }
-                        //sw.WriteLine(" It is the first content");
-                        //sw.WriteLine(" of the text file mytest.txt");
-                       /// nameArray[index] = newRestaurantName;
+                    for (int i = 0; i < 25; i++)
+                    {
+                      // Write the values from the arrays to the file
+                      // TODO: Get the restaurant name
+                      string name = nameArray[i];
+                      int rating = Convert.ToInt16(ratingArray[i]);//have to convert, that's why you always add "Convert.ToIn16 for integers, even in strings.
+                      // TODO: Get the restaurant rating
+                      // TODO: Write the two items to the file
+                      sw.WriteLine(name);
+                      sw.WriteLine(rating);
+                      //get to stop writing extra zero's 
+                      //TODO: add a do-while? test the loop? 
+                      
+            
                     }
+                        
+                    }//ends file writer function 
                 
-                }
+                }//ends "S" function (loop)
+
+
                 //  TODO: If the option is is C or c add a restuarent name and rating --i.e. add a name & rating to the array 
                 if (userChoiceString=="C" || userChoiceString=="c")
                 {
@@ -131,8 +129,8 @@ namespace HelloWorld
                           index++;//we didn't find an open element, so add 1 to index (while means in the loop it will look for that one)
                         }
                       } 
-                    while (found == false);// line 90-102 is finds an open array index 
-
+                    while (found == false);// line 90-102 is finds an open array index
+                    
                     ratingArray[index] = newRatingReview;//put it into the array 
                     nameArray[index] = newRestaurantName; //after we found a place to put it into, this put it in there. 
                     
@@ -175,9 +173,6 @@ namespace HelloWorld
                 {
                   Console.WriteLine("Goodbye, thanks for your review");
                 }
-        
-            
-
 
         }//ends the big "do" 
         while(!(userChoiceString=="Q"));    
