@@ -58,12 +58,12 @@ namespace HelloWorld
                     string rating = " "; 
                      
                     //push line contents to element of array 
-                    while ((name = sr.ReadLine()) != null)
+                    while ((name = sr.ReadLine()) != null)//reads the first line, then loops into the next line (!= null-as long as something is here, it will read it )
                     {
-                      nameArray[index] = name;
+                      nameArray[index] = name;//puts the line read in the index (puts it in my nameArray)
                       Console.WriteLine(name);
-                      rating = sr.ReadLine();
-                      ratingArray[index] = rating;
+                      rating = sr.ReadLine();//still in my loop, this reads the next line in my data file 
+                      ratingArray[index] = rating;// puts the line read in the (puts ratingArray)
                       Console.WriteLine(rating);
                       index++;
                     }           
@@ -80,10 +80,10 @@ namespace HelloWorld
                 {
          
                 //prompt user to enter restaurant name: 
-                Console.WriteLine("Enter restaurant name");
-                  TextInfo tiVar1 = new CultureInfo("en-US", false).TextInfo;
-                  string nameToAdd = tiVar1.ToTitleCase(Console.ReadLine());
-                   for (int index = 0; index < nameArray.Length; index++)//write on Line 1
+                Console.WriteLine("Enter restaurant name"); //prompts user to enter restaurant name
+                  TextInfo tiVar1 = new CultureInfo("en-US", false).TextInfo;//text format, enables type in words
+                  string nameToAdd = tiVar1.ToTitleCase(Console.ReadLine());//enables user to write name into file
+                   for (int index = 0; index < nameArray.Length; index++)//write on Line 1, condition loop
                   {
                     if (eateryArray[index] == null || eateryArray[index] == "")
                         {
@@ -91,12 +91,15 @@ namespace HelloWorld
                         break;
                         }
                   }//end for loop 
-                Console.WriteLine("Please enter rating: ");
-                  string ratingToAdd = (Console.ReadLine());
-                    for (int index = 1; index < ratingArray.Length; index++)//write on Line 2
-                    {
-                      //this is where I left off 4-17-22 
-                    }
+                
+                
+                
+                //Console.WriteLine("Please enter rating: ");
+                  //string ratingToAdd = (Console.ReadLine());
+                    //for (int index = 1; index < ratingArray.Length; index++)//write on Line 2
+                    //{
+                    //Console.WriteLine("");
+                    //}
 
                   //we need this to repeate the question and then write on line 3, 5, 7,...
                   ///
@@ -112,10 +115,17 @@ namespace HelloWorld
 
                 //read from an array 
                 {
-                Console.WriteLine("R/r");
-
+                for(int index = 0; index < nameArray.Length; index++)//start with index of 0 
+                  {
+                    if(!(nameArray[index] == null))//check to see if it's null, !-say's that it's "not"; as long as I have something here, print it; null=I don't want to print it
+                      {
+                      Console.WriteLine(nameArray [index]);
+                      Console.WriteLine(ratingArray[index]);
+                      }
+                  }
+                  
+                  
                 }
-
                 //  TODO: If the option is is U or u UPDATE the RATING for the restaurant; i.e. update the name in the array 
                 //Monday 
                 if (userChoiceString=="U" || userChoiceString=="u")

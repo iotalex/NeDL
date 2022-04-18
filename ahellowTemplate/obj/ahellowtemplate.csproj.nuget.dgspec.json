@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ABatenhorst\\desktop\\nedl\\ahellowtemplate\\ahellowtemplate.csproj": {}
+    "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\ahellowTemplate\\ahellowtemplate.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ABatenhorst\\desktop\\nedl\\ahellowtemplate\\ahellowtemplate.csproj": {
+    "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\ahellowTemplate\\ahellowtemplate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ABatenhorst\\desktop\\nedl\\ahellowtemplate\\ahellowtemplate.csproj",
+        "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\ahellowTemplate\\ahellowtemplate.csproj",
         "projectName": "ahellowtemplate",
-        "projectPath": "C:\\Users\\ABatenhorst\\desktop\\nedl\\ahellowtemplate\\ahellowtemplate.csproj",
+        "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\ahellowTemplate\\ahellowtemplate.csproj",
         "packagesPath": "C:\\Users\\ABatenhorst\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ABatenhorst\\desktop\\nedl\\ahellowtemplate\\obj\\",
+        "outputPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\ahellowTemplate\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ABatenhorst\\AppData\\Roaming\\NuGet\\NuGet.Config",
