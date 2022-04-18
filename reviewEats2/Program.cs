@@ -88,11 +88,16 @@ namespace HelloWorld
                         // Write the values from the arrays to the file
                         // TODO: Get the restaurant name
                         string name = nameArray[i];
-                        //int rating = ratingArray[i];
+                        int rating = Convert.ToInt16(ratingArray[i]);//have to convert, that's why you always add "Convert.ToIn16 for integers, even in strings.
+                        
+                        
+                        
                         // TODO: Get the restaurant rating
                         // TODO: Write the two items to the file
                         sw.WriteLine(name);
-                      //so find where another letter wrote something from memory to the text.file 11:33am***
+                        sw.WriteLine(rating);
+                        
+                        
 
         }
                         //sw.WriteLine(" It is the first content");
