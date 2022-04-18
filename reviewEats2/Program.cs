@@ -56,33 +56,49 @@ namespace HelloWorld
                     string name = " ";
                     string rating = " "; 
                      
-                    //push line contents to element of array 
+                    // Reading a line from the file
                     while ((name = sr.ReadLine()) != null)//reads the first line, then loops into the next line (!= null-as long as something is here, it will read it )
                     {
                       nameArray[index] = name;//puts the line read in the index (puts it in my nameArray)
-                      Console.WriteLine(name);
+                      Console.WriteLine(name);///taking the names (values) from file & adding them to arrays 
                       rating = sr.ReadLine();//still in my loop, this reads the next line in my data file 
                       ratingArray[index] = rating;// puts the line read in the (puts ratingArray)
-                      Console.WriteLine(rating);
-                      index++;
+                      Console.WriteLine(rating);///taking the names (values) from file & adding them to arrays 
+                      index++; // Increment the index, so you move to the next item in the array
                     }           
                   }//end while 
                 //  TODO: If the option is is S or s save the user's list of restaurants/ store the array into a text file
                 if (userChoiceString=="S" || userChoiceString=="s")
                 //create a file 
                 {
-                if (File.Exists("names.txt"))
-            {
-                File.Delete("names.txt");
-            }
-                      Console.Write("\n\n Create a file with text and read the file  :\n");
-                      Console.Write("-------------------------------------------------\n");
-                using (StreamWriter fileStr = File.CreateText("names.txt")) 
-                  {
-                      Console.WriteLine(nameArray);
-                      Console.WriteLine(ratingArray);
-                      
-                  }
+                      // Delete the file if it exists.
+                    if (File.Exists("names.txt"))
+                    {
+                        File.Delete("names.txt");//if the file exists, this tell it to essentially "overwrite file" 
+                    }//you are here 
+                        Console.Write("\n\n Create a file with text and read the file  :\n");
+                        Console.Write("-------------------------------------------------\n");            
+                    // Create the writer for the file.
+                    using (StreamWriter sw = File.CreateText("names.txt")) 
+                    {
+                        Console.WriteLine();
+                        // TODO: Loop through the arrays
+        for (int i = 0; i < 25; i++)
+        {
+                        // Write the values from the arrays to the file
+                        // TODO: Get the restaurant name
+                        string name = nameArray[i];
+                        //int rating = ratingArray[i];
+                        // TODO: Get the restaurant rating
+                        // TODO: Write the two items to the file
+                        sw.WriteLine(name);
+                      //so find where another letter wrote something from memory to the text.file 11:33am***
+
+        }
+                        //sw.WriteLine(" It is the first content");
+                        //sw.WriteLine(" of the text file mytest.txt");
+                       /// nameArray[index] = newRestaurantName;
+                    }
                 
                 }
                 //  TODO: If the option is is C or c add a restuarent name and rating --i.e. add a name & rating to the array 
