@@ -22,8 +22,8 @@ namespace HelloWorld
             //   TODO: Provide the user a menu of options
             Console.WriteLine("Please select the following options: ");
             Console.WriteLine("O - Open the user's list of restaurants, ");// user array (Alec's notes)
-            Console.WriteLine("S - Save the user's list of restaurants");// save the array to the data file 
-            Console.WriteLine("C - Add a restaurant and rating, ");//add a name to the array 
+            Console.WriteLine("S - Save the user's list of restaurants");// prints names from sys-memory into text.txt file 
+            Console.WriteLine("C - Add a restaurant and rating, ");//adds a name/rating to the array 
             Console.WriteLine("R - Print a list of all the restaurants and their rating, ");//Read a name from the array. {end here for the comp. check}
             Console.WriteLine("U - Update the rating for a restaurant, ");//Update a name in the array
             Console.WriteLine("D - Delete a restaurant");//Delete a name from the array.
