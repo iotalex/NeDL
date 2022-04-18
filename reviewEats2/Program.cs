@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Globalization;
 
 namespace HelloWorld
 {
@@ -73,40 +72,46 @@ namespace HelloWorld
                 //create a file 
                 {
                 //saves a file 
-                    System.IO.File.WriteAllLines("names.txt", eateryArray); //equivilent of saying "CTR + S" 
+                
                 }
                 //  TODO: If the option is is C or c add a restuarent name and rating --i.e. add a name & rating to the array 
                 if (userChoiceString=="C" || userChoiceString=="c")
                 {
-         
-                //prompt user to enter restaurant name: 
-                Console.WriteLine("Enter restaurant name"); //prompts user to enter restaurant name
-                  TextInfo tiVar1 = new CultureInfo("en-US", false).TextInfo;//text format, enables type in words
-                  string nameToAdd = tiVar1.ToTitleCase(Console.ReadLine());//enables user to write name into file
-                   for (int index = 0; index < nameArray.Length; index++)//write on Line 1, condition loop
-                  {
-                    if (eateryArray[index] == null || eateryArray[index] == "")
-                        {
-                        eateryArray[index] = nameToAdd;
-                        break;
-                        }
-                  }//end for loop 
+                    string newRestaurantName; 
+                    //prompt user to enter restaurant name: 
+                    Console.WriteLine("Enter restaurant name"); //prompts user to enter restaurant name
+                    newRestaurantName = Console.ReadLine();//gets the new restaurant name 
                 
-                
-                
-                //Console.WriteLine("Please enter rating: ");
-                  //string ratingToAdd = (Console.ReadLine());
-                    //for (int index = 1; index < ratingArray.Length; index++)//write on Line 2
-                    //{
-                    //Console.WriteLine("");
-                    //}
+                    string newRatingReview;
 
-                  //we need this to repeate the question and then write on line 3, 5, 7,...
-                  ///
-                
-                                             
-                
+                    Console.WriteLine("Enter a rating 0-5: ");
+                    newRatingReview = Console.ReadLine();
+
+                    int index = 0; 
+                    bool found = false;
+                    do{
+                        if(nameArray[index] ==null)// if something is NOT there
+                        {
+                          found = true;//we found an open array element to place the new information  
+                        }
+                        else
+                        {
+                          index++;//we didn't find an open element, so add 1 to index (while means in the loop it will look for that one)
+                        }
+                      } 
+                    while (found == false);// line 90-102 is finds an open array index 
+
+                    ratingArray[index] = newRatingReview;//put it into the array 
+                    nameArray[index] = newRestaurantName; //after we found a place to put it into, this put it in there. 
+                    
                 }//end of "if" for item "C" 
+
+
+
+
+
+
+
 
                 //  TODO: If the option is is R or r PRINT a LIST of all the restaurants and their rating; i.e. Read a name from the array  
                 //"R{end here for the comp. check} Friday 
