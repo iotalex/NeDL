@@ -36,8 +36,8 @@ namespace HelloWorld
                          userChoiceString == "S" || userChoiceString== "s" ||//done, glitchy, put zeros 
                          userChoiceString == "C" || userChoiceString == "c" ||//done 1.0 
                          userChoiceString == "R" || userChoiceString == "r" ||//done 1.0
-                         userChoiceString == "U" || userChoiceString==  "u" ||
-                         userChoiceString == "D" || userChoiceString == "d" || 
+                         userChoiceString == "U" || userChoiceString==  "u" ||//with mentor if time 
+                         userChoiceString == "D" || userChoiceString == "d" ||
                          userChoiceString == "Q" || userChoiceString == "q");//done/tested working   
         
 
@@ -75,9 +75,8 @@ namespace HelloWorld
                     if (File.Exists("names.txt"))
                     {
                         File.Delete("names.txt");//if the file exists, this tell it to essentially "overwrite file" 
-                    }//you are here 
-                        Console.Write("\n\n Create a file with text and read the file  :\n");
-                        Console.Write("-------------------------------------------------\n");            
+                    }
+                                  
                     // Create the writer for the file.
                     using (StreamWriter sw = File.CreateText("names.txt")) 
                     {
@@ -85,16 +84,17 @@ namespace HelloWorld
                         // TODO: Loop through the arrays
                     for (int i = 0; i < 25; i++)
                     {
-                      // Write the values from the arrays to the file
-                      // TODO: Get the restaurant name
-                      string name = nameArray[i];
-                      int rating = Convert.ToInt16(ratingArray[i]);//have to convert, that's why you always add "Convert.ToIn16 for integers, even in strings.
-                      // TODO: Get the restaurant rating
-                      // TODO: Write the two items to the file
-                      sw.WriteLine(name);
-                      sw.WriteLine(rating);
-                      //get to stop writing extra zero's 
-                      //TODO: add a do-while? test the loop? 
+                      if(!(nameArray[i] == null))//if it's blank (don't write it); 
+                      {
+                          // Write the values from the arrays to the file
+                          // TODO: Get the restaurant name
+                          string name = nameArray[i];
+                          int rating = Convert.ToInt16(ratingArray[i]);//have to convert, that's why you always add "Convert.ToIn16 for integers, even in strings.
+                          // TODO: Get the restaurant rating
+                          // TODO: Write the two items to the file
+                          sw.WriteLine(name);
+                          sw.WriteLine(rating);
+                      }  
                       
             
                     }

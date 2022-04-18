@@ -6,3 +6,7 @@ Olive
 5
 SUbway
 1
+New4
+2
+Newness
+2
