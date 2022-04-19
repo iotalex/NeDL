@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\objectClass\\objectClass.csproj",
-      "projectName": "objectClass",
-      "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\objectClass\\objectClass.csproj",
+      "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\objectClass\\konomiClass.csproj",
+      "projectName": "konomiClass",
+      "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\objectClass\\konomiClass.csproj",
       "packagesPath": "C:\\Users\\ABatenhorst\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\objectClass\\obj\\",
       "projectStyle": "PackageReference",
