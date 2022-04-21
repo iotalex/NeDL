@@ -4,64 +4,36 @@ namespace MyWorkApplication
 {
   class Employee  // Base class (parent object) 
   {
-    string lastName = "Smith";
+    string getLastName = "Smith";
+    string getFirstName = "John";
+
+    string getTypeSalary = "Salary";
 
     static void Main(string[] args)      
        // public virtual void hourlyRate()
     {
-      Employee myObj1 = new Employee();
+      Employee lastName = new Employee(); //last name object 
+      Employee firstName = new Employee(); //first name object 
+      Employee typeSalary = new Employee(); //salary type object 
     
-
-    
-      Console.WriteLine("Employee last name: " + myObj1.lastName);
-      
-      
+      //outputs the lines using objects
+      Console.WriteLine("Employee's Last name: " + lastName.getLastName);
+      Console.WriteLine("First name: " + firstName.getFirstName);
+      Console.WriteLine("Reinbursement type: " + typeSalary.getTypeSalary);
      
-
-       //employee type method
-      
-
-
-    //first name
-    //Employee type
-    //hourly rate or salary 
-  
-
-
+    
     }
 
-    /*
+    
     class HourlyEmployee : Employee  // Derived class (child object) 
       {
-        public override void hourlyRate()
-        {
-          Console.WriteLine("$35.50 hr" + " " );
-        }
+        
       }
     class SalaryEmployee : Employee  // Derived class (child object) 
-  {
-    public override void hourlyRate()
-    {
-      Console.WriteLine("$65k a year");
-    }
-  }
-    class Program
-      */
-    /*  
       {
-        static void Main(string[] args)
-        {
-          Employee myEmployee = new Employee();  // Create an Employee object
-          Employee myHourly = new HourlyEmployee();  // Create a Hourly rate object
-          Employee mySalary = new SalaryEmployee(); //Create a salary rate object 
-          
-          myEmployee.hourlyRate();
-          myHourly.hourlyRate();
-          mySalary.hourlyRate();
-          //myPig.animalSound();
-          //myDog.animalSound();
-        }
-      }*/
+        
+      }
+    
        
 
   }//end class employee
