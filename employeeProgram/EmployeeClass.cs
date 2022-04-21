@@ -4,19 +4,33 @@ namespace MyWorkApplication
 {
   class Employee  // Base class (parent object) 
   {
-    public virtual void hourlyRate()        
-    {
-      //        Restaurant[] restaurantArray=new Restaurant[25];
+    string lastName = "Smith";
 
-      Employee[] employeeArray=new Employee[25]; 
-      Console.WriteLine("These are the pay types: ");
-    //last name
+    static void Main(string[] args)      
+       // public virtual void hourlyRate()
+    {
+      Employee myObj1 = new Employee();
+    
+
+    
+      Console.WriteLine("Employee last name: " + myObj1.lastName);
+      
+      
+     
+
+       //employee type method
+      
+
 
     //first name
     //Employee type
     //hourly rate or salary 
   
+
+
     }
+
+    /*
     class HourlyEmployee : Employee  // Derived class (child object) 
       {
         public override void hourlyRate()
@@ -31,9 +45,9 @@ namespace MyWorkApplication
       Console.WriteLine("$65k a year");
     }
   }
-    class Employee1
-
-      
+    class Program
+      */
+    /*  
       {
         static void Main(string[] args)
         {
@@ -47,8 +61,8 @@ namespace MyWorkApplication
           //myPig.animalSound();
           //myDog.animalSound();
         }
-      }
-
+      }*/
+       
 
   }//end class employee
 
