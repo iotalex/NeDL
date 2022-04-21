@@ -2,7 +2,7 @@
 
 namespace MyWorkApplication
 {
-  class Employee  // Base class (parent) 
+  class Employee  // Base class (parent object) 
   {
     public virtual void hourlyRate()
     {
@@ -10,15 +10,15 @@ namespace MyWorkApplication
     }
   }
 
-  class Hourly : Employee  // Derived class (child) 
+  class HourlyEmployee : Employee  // Derived class (child object) 
   {
     public override void hourlyRate()
     {
-      Console.WriteLine("$35.50 hr");
+      Console.WriteLine("$35.50 hr" + " " );
     }
   }
 
-  class Salary : Employee  // Derived class (child) 
+  class SalaryEmployee : Employee  // Derived class (child object) 
   {
     public override void hourlyRate()
     {
@@ -31,8 +31,8 @@ namespace MyWorkApplication
     static void Main(string[] args)
     {
       Employee myEmployee = new Employee();  // Create an Employee object
-      Employee myHourly = new Hourly();  // Create a Hourly rate object
-      Employee mySalary = new Salary(); //Create a salary rate object 
+      Employee myHourly = new HourlyEmployee();  // Create a Hourly rate object
+      Employee mySalary = new SalaryEmployee(); //Create a salary rate object 
       
       myEmployee.hourlyRate();
       myHourly.hourlyRate();
