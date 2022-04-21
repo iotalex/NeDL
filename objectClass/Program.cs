@@ -19,8 +19,9 @@ namespace konomiAPP
         // create two data values 
         //data value 1:
         songArray[1].setSongName("Butterfly");
+        
         //data value 2: difficulty level
-        // print each restaurant to test the property gets and the toString
+        // print each song detail to test the property gets and the toString
         for (int index = 0; index < songArray.Length; index++)
         {
             if (!(((songArray[index]).getName())==null))

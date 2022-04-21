@@ -2,7 +2,7 @@ using System;
 
 namespace konomiAPP
 {
-  class DDR
+  class DDR 
     {        
        
         private string SongName;  // Input for song name 
@@ -15,9 +15,9 @@ namespace konomiAPP
         public DDR ()
         {
             SongName = null;
-            SongRating = 5;
+            SongRating = 5;// should I put an array here? 
         }
-
+        
         // This is the constructor when two values are passed.
         public DDR (string newSong, int newRating)
         {
@@ -31,7 +31,7 @@ namespace konomiAPP
         {
             return SongName; 
         }  
-
+        
         public void setSongName (string newName)
         {
             SongName = newName;
@@ -40,8 +40,13 @@ namespace konomiAPP
 
         public override string ToString()
         {
-            return "Song Name: " + SongName + " " + "Song Diffculty: " + SongRating;
+            return "The song name is " + SongName + " " + " and it's footer level is " + SongRating;
         }
 
-    }// class Restaurant
-}// namespace restaurantAPP 
+    }// class DDR
+
+  class Song : DDR
+  {
+      
+  }  
+}// namespace KonomiApp  
