@@ -2,11 +2,12 @@
 
 namespace MyWorkApplication
 {
-  class Employee  // Base class (parent object) 
+    class Employee  // Base class (parent object) 
   {
     string getLastName = "Smith";
+    char lastName; //declares type
     string getFirstName = "John";
-
+    char firstName;//declares type 
     string getTypeSalary = "Salary";
 
     static void Main(string[] args)      
@@ -25,18 +26,8 @@ namespace MyWorkApplication
     }
 
     
-    class HourlyEmployee : Employee  // Derived class (child object) 
-      {
-        
-      }
-    class SalaryEmployee : Employee  // Derived class (child object) 
-      {
-        
-      }
     
        
 
   }//end class employee
-
-
-}//end main 
+}
