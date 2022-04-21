@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ABatenhorst\\desktop\\nedl\\ahellowtemplate\\ahellowtemplate.csproj",
-      "projectName": "ahellowtemplate",
-      "projectPath": "C:\\Users\\ABatenhorst\\desktop\\nedl\\ahellowtemplate\\ahellowtemplate.csproj",
+      "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\employeeProgram\\employeeProgram.csproj",
+      "projectName": "employeeProgram",
+      "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\employeeProgram\\employeeProgram.csproj",
       "packagesPath": "C:\\Users\\ABatenhorst\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ABatenhorst\\desktop\\nedl\\ahellowtemplate\\obj\\",
+      "outputPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\employeeProgram\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ABatenhorst\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
