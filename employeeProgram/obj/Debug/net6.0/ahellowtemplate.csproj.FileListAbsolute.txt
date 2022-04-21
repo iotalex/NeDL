@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\Desktop\NeDL\ahellowTemplate\bin\Debug\net6.0\ahellowtemplate.exe
+C:\Users\ABatenhorst\Desktop\NeDL\ahellowTemplate\bin\Debug\net6.0\ahellowtemplate.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\ahellowTemplate\bin\Debug\net6.0\ahellowtemplate.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\ahellowTemplate\bin\Debug\net6.0\ahellowtemplate.dll
+C:\Users\ABatenhorst\Desktop\NeDL\ahellowTemplate\bin\Debug\net6.0\ref\ahellowtemplate.dll
+C:\Users\ABatenhorst\Desktop\NeDL\ahellowTemplate\bin\Debug\net6.0\ahellowtemplate.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\ahellowTemplate\obj\Debug\net6.0\ahellowtemplate.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\ahellowTemplate\obj\Debug\net6.0\ahellowtemplate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\ahellowTemplate\obj\Debug\net6.0\ahellowtemplate.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\ahellowTemplate\obj\Debug\net6.0\ahellowtemplate.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\ahellowTemplate\obj\Debug\net6.0\ahellowtemplate.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\ahellowTemplate\obj\Debug\net6.0\ahellowtemplate.dll
+C:\Users\ABatenhorst\Desktop\NeDL\ahellowTemplate\obj\Debug\net6.0\ref\ahellowtemplate.dll
+C:\Users\ABatenhorst\Desktop\NeDL\ahellowTemplate\obj\Debug\net6.0\ahellowtemplate.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\ahellowTemplate\obj\Debug\net6.0\ahellowtemplate.genruntimeconfig.cache
