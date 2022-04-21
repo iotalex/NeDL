@@ -7,7 +7,18 @@ namespace MyWorkApplication
     public virtual void hourlyRate()
     {
       Console.WriteLine("These are the pay types: ");
+    //last name
+    
+    //first name
+    //Employee type
+    //hourly rate or salary 
+
+
+
+
     }
+
+    
   }
 
   class HourlyEmployee : Employee  // Derived class (child object) 
@@ -27,6 +38,8 @@ namespace MyWorkApplication
   }
 
   class Program
+
+  
   {
     static void Main(string[] args)
     {
