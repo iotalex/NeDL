@@ -24,10 +24,9 @@ namespace MyWorkApplication
             Employee typeBonus = new Employee(); //hourly type object 
             
             //outputs the lines using objects
-            Console.WriteLine("Reinbursement hourly: " + typeBonus.getTypeBonus);
-            Console.WriteLine("Emplyee name: " + lastName.getLastName + ", " + firstName.getFirstName);
-            Console.WriteLine("Reinbursement type: " + typeSalary.getTypeSalary);
-            Console.WriteLine("Bonus: " + typeBonus.getTypeBonus); 
+            Console.WriteLine("Emplyee name: " + lastName.getLastName + ", " + firstName.getFirstName); //main object class employee 
+            Console.WriteLine("Reinbursement type: " + typeSalary.getTypeSalary); //employeeHourly.cs & employeeSalary.cs
+            Console.WriteLine("Bonus: " + typeBonus.getTypeBonus);
             
             }
         }
