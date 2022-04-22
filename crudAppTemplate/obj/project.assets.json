@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\crudApp2\\crudApp2.csproj",
-      "projectName": "crudApp2",
-      "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\crudApp2\\crudApp2.csproj",
+      "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\crudAppTemplate\\crudTemplate.csproj",
+      "projectName": "crudTemplate",
+      "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\crudAppTemplate\\crudTemplate.csproj",
       "packagesPath": "C:\\Users\\ABatenhorst\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\crudApp2\\obj\\",
+      "outputPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\crudAppTemplate\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ABatenhorst\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
