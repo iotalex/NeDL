@@ -6,10 +6,28 @@ namespace MyWorkApplication
 
     //use inhertance here to move name/salarytype/ into the child classes 
     
+        
+
         class Employee  // Base class (parent object) 
         {
+        
+       
+            /*
+        public string RName
+        {get; set;}
+
+        public Employee()
+        {
+           getLastName = null; 
+        }
+
+        public string GetContactInfo()
+        {
+            return "Last name: " + getLastName; 
+        }
+        */
+
             string getLastName = "Smith";
-            char lastName; //declares type?
             string getFirstName = "John";
             char firstName;//declares type?
             string getTypeSalary = "Salary || hourly?";
