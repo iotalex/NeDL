@@ -7,7 +7,21 @@ namespace MyWorkApplication
 {
     class Program  
     {
-      
+      // TODO: Where is the data going to be stored within the application?
+      // TODO: Create an array of Employee[]
+      static void Main(string[] args)      //inside: reference other clases (4-22-22) *keep very very small* 
+                {
+                    Console.WriteLine("Start of the application.");
+
+                    EmployeeSalaried alex = new EmployeeSalaried(/* TODO: Input information for alex */);
+                    EmployeeHourly stephen = new EmployeeHourly(/* TODO: Input information for stephen */);
+
+                    // TODO: Add objects to the array
+
+                    // TODO: Iterate through the array
+
+                    // TODO: Output information to console (name, pay, bonus)
+                }
  
     }//end class
 }//end main 
