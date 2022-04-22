@@ -9,50 +9,45 @@ namespace MyWorkApplication
         
 
         class Employee  // Base class (parent object) 
-        {
-        
-       
-            /*
-        public string RName
-        {get; set;}
+        {                
+            public string FirstName
+            {get; set;}
+            public string LastName
+            {get; set;}
+            public string GetSalaryType
+            {get; set;}
+            public string GetTypeBonus
+            {get; set;}
 
-        public Employee()
-        {
-           getLastName = null; 
-        }
-
-        public string GetContactInfo()
-        {
-            return "Last name: " + getLastName; 
-        }
-        */
-
-            string getLastName = "Smith";
-            string getFirstName = "John";
-            char firstName;//declares type?
-            string getTypeSalary = "Salary || hourly?";
-
-            string getTypeBonus = "Calcuated bonus: goes here $$$";
-        static void Main(string[] args)      
-            // public virtual void hourlyRate()
+            public Employee()
             {
-            Employee lastName = new Employee(); //last name object
-            Employee firstName = new Employee(); //first name object 
-            Employee typeSalary = new Employee(); //salary type object
-            Employee typeBonus = new Employee(); //hourly type object 
-            
-            //outputs the lines using objects
-            Console.WriteLine("Emplyee name: " + lastName.getLastName + ", " + firstName.getFirstName); //main object class employee 
-            Console.WriteLine("Reinbursement type: " + typeSalary.getTypeSalary); //employeeHourly.cs & employeeSalary.cs
-            Console.WriteLine("Bonus: " + typeBonus.getTypeBonus);
-            
+                FirstName = null;
+                LastName = null;
+                GetSalaryType = null;
+                GetTypeBonus = null; 
+
             }
-        }
-        
-        
-        
+            public Employee (string newFirstName, string newLastName, string newGetSalaryType, string newGetBonus)
+            {
+                FirstName = newFirstName;
+                LastName = newLastName;
+                GetSalaryType = newGetSalaryType;
+                GetTypeBonus = newGetBonus;
+            }
+            public string GetContactInfo()
+            {
+                return $"First: {FirstName}, {LastName}"; 
+            }
+            public string GetSalaryInfo()
+            {
+                return $"Salary type: {GetSalaryType}, + Bonus: {GetTypeBonus}"; 
+            }
 
-    //end class employee
+                static void Main(string[] args)      //Stephen, I'm stuck here, need to move the args to the top, or I need to start fresh aga
+                {
+                    
+                }
 
-    
-    }
+        }// end class employee
+ 
+    } //end main 
