@@ -36,15 +36,15 @@ namespace MyWorkApplication
             }
             public string GetContactInfo()
             {
-                return $"First: {FirstName}, {LastName}"; 
+                return $"First: {FirstName}, {LastName}";  //contact string info 
             }
             public string GetSalaryInfo()
             {
-                return $"Salary type: {GetSalaryType}, + Bonus: {GetTypeBonus}"; 
+                return $"Salary type: {GetSalaryType}, + Bonus: {GetTypeBonus}"; //bonus type string info 
             }
 
                  public string GetFirstName() 
-                 { return FirstName; }
+                 { return FirstName; }//first inherit class to employeeHourly.cs file 
 
         }// end class employee
  

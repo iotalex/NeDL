@@ -2,7 +2,7 @@
 
 namespace MyWorkApplication
 {
-     class EmployeeHourly : Employee //appears to work, but avoid static void Main(string[] args)  
+     class EmployeeHourly : Employee //streamwriter to write to file, Hourly employee class
         {
            private string RName;   
           
