@@ -43,10 +43,8 @@ namespace MyWorkApplication
                 return $"Salary type: {GetSalaryType}, + Bonus: {GetTypeBonus}"; 
             }
 
-                static void Main(string[] args)      //Stephen, I'm stuck here, need to move the args to the top, or I need to start fresh aga
-                {
-                    
-                }
+                 public string GetFirstName() 
+                 { return FirstName; }
 
         }// end class employee
  
