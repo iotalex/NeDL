@@ -5,21 +5,21 @@ create a bonus calculate function—use polymorphism [two string]); will call de
 */
 namespace MyWorkApplication
   {
-    class Program
+    class Program  
     {
       class Employee  // Base class (parent object) 
       {
         string getLastName = "Smith";
-        char lastName; //declares type
+        char lastName; //declares type?
         string getFirstName = "John";
-        char firstName;//declares type 
+        char firstName;//declares type?
         string getTypeSalary = "Salary";
 
         string getTypeHourly = "Hourly";
       static void Main(string[] args)      
           // public virtual void hourlyRate()
         {
-          Employee lastName = new Employee(); //last name object 
+          Employee lastName = new Employee(); //last name object
           Employee firstName = new Employee(); //first name object 
           Employee typeSalary = new Employee(); //salary type object
           Employee typeHourly = new Employee(); //hourly type object 
