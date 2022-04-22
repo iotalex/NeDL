@@ -4,22 +4,23 @@ namespace MyWorkApplication
 {
      class EmployeeHourly : Employee //streamwriter to write to file, Hourly employee class
         {
-           private string RName;   
-          
+         private string RName;   
+         
 
-   public void WriteEmployeeToFile(StreamWriter sw)
-   {
-      bool userChoice; //do I need this? 
-      string userChoiceString;
-      string employeeNameArray[] = new string[10]; //hold the name of employees 
-      // TODO: Write first name to file
-      sw.WriteLine(GetFirstName());
-      // TODO: Write last name to file
-   
+         public void WriteEmployeeToFile(StreamWriter sw)
+         {
+            
+
+            
+            //string employeeNameArray[] = new string[10];//hold the name of employees 
+            // TODO: Write first name to file
+            sw.WriteLine(GetFirstName());
+            // TODO: Write last name to file
+         
 
 
 
-   }
+         }
     
      
         }//end class employeeHourly
