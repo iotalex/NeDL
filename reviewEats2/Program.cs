@@ -52,21 +52,21 @@ namespace HelloWorld
                 //below is the code that's going to read the file
                 using (StreamReader sr = File.OpenText("names.txt"))//this is the name of the "new" file created 
                     {
-                    int index = 0;
-                    string name = " ";
-                    string rating = " "; 
-                     
-                    // Reading a line from the file
-                    while ((name = sr.ReadLine()) != null)//reads the first line, then loops into the next line (!= null-as long as something is here, it will read it )
-                    {
-                      nameArray[index] = name;//puts the line read in the index (puts it in my nameArray)
-                      Console.WriteLine(name);///taking the names (values) from file & adding them to arrays 
-                      rating = sr.ReadLine();//still in my loop, this reads the next line in my data file 
-                      ratingArray[index] = rating;// puts the line read in the (puts ratingArray)
-                      Console.WriteLine(rating);///taking the names (values) from file & adding them to arrays 
-                      index++; // Increment the index, so you move to the next item in the array
-                    }           
-                  }//end while 
+                      int index = 0;
+                      string name = " ";
+                      string rating = " "; 
+                      
+                      // Reading a line from the file
+                      while ((name = sr.ReadLine()) != null)//reads the first line, then loops into the next line (!= null-as long as something is here, it will read it )
+                      {
+                        nameArray[index] = name;//puts the line read in the index (puts it in my nameArray)
+                        Console.WriteLine(name);///taking the names (values) from file & adding them to arrays 
+                        rating = sr.ReadLine();//still in my loop, this reads the next line in my data file 
+                        ratingArray[index] = rating;// puts the line read in the (puts ratingArray)
+                        Console.WriteLine(rating);///taking the names (values) from file & adding them to arrays 
+                        index++; // Increment the index, so you move to the next item in the array
+                      }           
+                    }//end while 
                 //  TODO: If the option is is S or s save the user's list of restaurants/ store the array into a text file
                 if (userChoiceString=="S" || userChoiceString=="s")
                 //create a file 

@@ -84,8 +84,22 @@ namespace MyWorkApplication
                 else if (userChoiceString=="R" || userChoiceString=="R") //make changes, so they give you a name 
                 
                 {
-                
+                for(int i = 0; i < nameArray.Length; i++)//start with index of 0 
+                  {
+                    if(!(nameArray[i] == null))//check to see if it's null, !-say's that it's "not"; as long as I have something here, print it; null=I don't want to print it
+                      {
+                      Console.WriteLine(nameArray [i]);
+                      //Console.WriteLine(ratingArray[i]);
+                      }
+                  }
                 }
+
+
+
+
+
+
+
 
         //   TODO: Else if the option is a Q or q then quit the program                
                 else if (userChoiceString=="Q" || userChoiceString=="q")
