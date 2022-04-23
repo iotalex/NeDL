@@ -2,7 +2,7 @@ using System;         //EMPLOYEE (*Salary*) SALARYTYPE, BONUS CALC. HERE
 
 namespace MyWorkApplication
 {
-    class EmployeeSalaried : Employee //streamwriter to write to file, Salary employee class
+    public class EmployeeSalaried : Employee //streamwriter to write to file, Salary employee class
     {
         public void WriteEmployeeToFile(StreamWriter sw)
         {

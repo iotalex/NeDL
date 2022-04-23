@@ -10,6 +10,21 @@ namespace MyWorkApplication
 
 public static class InputUtilities
 {
+    //TODO: create calculate to show bonus 
+
+    //employeeSalary = 80 hours X 26 weeks 
+    //= SUM + 10% bonus 
+    //= SUM + (.10 X 80/26(hourly))
+
+
+    
+
+    //TODO: class hourly
+
+    //TODO: class salary 
+
+
+
     //public string GetInputString()
     //{}
 }
