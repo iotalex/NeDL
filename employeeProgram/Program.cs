@@ -83,7 +83,7 @@ namespace MyWorkApplication
               //TODO: need to list array within text.file???
                 else if (userChoiceString=="R" || userChoiceString=="r") //make changes, so they give you a name 
                 {
-                  employeeData[0] = new EmployeeHourly("Janitor", "Stephen", "Slader", "Hourly", 15); 
+                  employeeData[0] = new EmployeeHourly("Manager", "Stephen", "Slader", "Hourly", 15); 
                 for(int i = 0; i < employeeData.Length; i++)//start with index of 0 
                   {
                     if(employeeData[i] != null)//check to see if it's null, !-say's that it's "not"; as long as I have something here, print it; null=I don't want to print it
