@@ -1,45 +1,12 @@
 ﻿using System;
 
-namespace AlecExample
+namespace EmployeeProgram
 {
     class Program
     {
         static void Main (string[] args)
         {
-            //create an employee object 
-            Employee newEmployee = new Employee("Smith", "John", 'H'); //this is creating the employee object
-            Employee newEmployee2 = new Employee("Cox", "Ryan", 'H');
-            //print the employee object
-            Console.WriteLine(newEmployee);
-            Console.WriteLine(newEmployee2);
-            //create an hourly employee object 
-            HourlyEmployee newHourlyEmployee = new HourlyEmployee("Smithson", "Will",'H', 15.25);
-            HourlyEmployee newHourlyEmployee2 = new HourlyEmployee("Jones", "Matt",'H', 25.25);
-              //print the new HoulyEmployee object
-            Console.WriteLine(newHourlyEmployee);
-            Console.WriteLine(newHourlyEmployee2);
-            //create an hourly employee object 
-            SalaryEmployee newSalaryEmployee = new SalaryEmployee("Fonda", "Henry",'S', 45000);
-            SalaryEmployee newSalaryEmployee2 = new SalaryEmployee("Johnson", "Blake",'S', 125000);
-              //print the new HoulyEmployee object
-            Console.WriteLine(newSalaryEmployee);
-            Console.WriteLine(newSalaryEmployee2);
-            
-            Employee[] employeeArray = new Employee[25]; 
-                employeeArray[1] = newEmployee; //main object
-                employeeArray[2] = newEmployee2;
-                employeeArray[3] = newHourlyEmployee;//main object, with child class
-                employeeArray[4] = newHourlyEmployee2;
-                employeeArray[5] = newSalaryEmployee;
-                employeeArray[6] = newSalaryEmployee2;
-                Console.WriteLine("printing the array: ");
-                for(int index = 0; index < employeeArray.Length; index++)
-                {
-                    if(!(employeeArray[index]==null))
-                    {
-                        Console.WriteLine(employeeArray[index]);
-                    }
-                }//start CRUD here
+           
 
             
             bool userChoice;
@@ -55,6 +22,7 @@ namespace AlecExample
 
                 Console.WriteLine("What's your pleasure?");
                 Console.WriteLine("L: Load the data file into an array.");
+                Console.WriteLine("C: Add name into the array.");
                 Console.WriteLine("Q: Quit the program.");
                 
                 
@@ -64,7 +32,8 @@ namespace AlecExample
                 
                 
                 userChoice = (userChoiceString== "L" || userChoiceString == "l" ||
-                            userChoiceString == "Q" || userChoiceString == "q");
+                              userChoiceString== "C" || userChoiceString == "c" ||
+                              userChoiceString == "Q" || userChoiceString == "q");
 
                 if(!userChoice)
                     {
@@ -74,22 +43,69 @@ namespace AlecExample
                 }
                 while (!userChoice);
 
-                //   TODO: If the option is is L or l then load (names.txt) into the array of strings (nameArray)  (not DONE 4-13-22)
+                //   TODO: If the option is is L or l print's a list of all the employees including their calculated bonus 
                 if (userChoiceString=="L" || userChoiceString=="l")
+                    {
+                            //create an employee object 
+                    Employee newEmployee = new Employee("Knox", "Jimmy", 'H'); //this is creating the employee object
+                    Employee newEmployee2 = new Employee("Fox", "Ryan", 'H');
+                    
+                    
+                    //print the employee object
+                    Console.WriteLine(newEmployee);
+                    Console.WriteLine(newEmployee2);
+                    //create an hourly employee object 
+                    HourlyEmployee newHourlyEmployee = new HourlyEmployee("Smithson", "Will",'H', 15.25);
+                    HourlyEmployee newHourlyEmployee2 = new HourlyEmployee("Jones", "Matt",'H', 25.25);
+                    //print the new HoulyEmployee object
+                    Console.WriteLine(newHourlyEmployee);
+                    Console.WriteLine(newHourlyEmployee2);
+                    //create an hourly employee object 
+                    SalaryEmployee newSalaryEmployee = new SalaryEmployee("Fonda", "Henry",'S', 45000);
+                    SalaryEmployee newSalaryEmployee2 = new SalaryEmployee("Arnoldson", "Blake",'S', 125000);
+                    //print the new HoulyEmployee object
+                    Console.WriteLine(newSalaryEmployee);
+                    Console.WriteLine(newSalaryEmployee2);
+                    
+            
+                    Employee[] employeeArray = new Employee[25]; 
+                        employeeArray[1] = newEmployee; //main object
+                        employeeArray[2] = newEmployee2;
+                        employeeArray[3] = newHourlyEmployee;//main object, with child class
+                        employeeArray[4] = newHourlyEmployee2;
+                        employeeArray[5] = newSalaryEmployee;
+                        employeeArray[6] = newSalaryEmployee2;
+                        Console.WriteLine("printing the array: ");
+                        for(int index = 0; index < employeeArray.Length; index++)
                         {
-                
+                            if(!(employeeArray[index]==null))
+                            {
+                                Console.WriteLine(employeeArray[index]);
+                            }
+                        }//start CRUD here
 
+                    }//end using "L"
+                    //   TODO: If the option is is L or l print's a list of all the employees including their calculated bonus 
+                if (userChoiceString=="C" || userChoiceString=="c")
+                    {
+                    string newEmployeeName1;
+                    //prompt user to enter new employee name 
+                    Console.WriteLine("Enter employee first name: ");
+                    newEmployeeName1 = Console.ReadLine(); //gets the employee firstname
 
-                        }//end using
-
+                    //int index =0;
+                    //bool found = false;
+                    
+                    }
                  
-        //   TODO: Else if the option is a Q or q then quit the program                
+            //   TODO: Else if the option is a Q or q then quit the program                
                 else if (userChoiceString=="Q" || userChoiceString=="q")
-                {
-                  Console.WriteLine("Goodbye, auf wiedersehen");
-                }
-            }//ends the big "do"
-            while(!(userChoiceString=="Q"));  
+                    {
+                    Console.WriteLine("Goodbye, auf wiedersehen");
+                    }
+
+                }//ends the big "do"
+                while(!(userChoiceString=="Q"));  
         }//ends static void
 
     }//ends class

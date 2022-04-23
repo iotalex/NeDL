@@ -1,6 +1,6 @@
 using System;
 
-namespace AlecExample
+namespace EmployeeProgram
 {
     class HourlyEmployee : Employee
     {
