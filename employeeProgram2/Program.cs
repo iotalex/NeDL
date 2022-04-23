@@ -27,12 +27,12 @@ namespace AlecExample
         
 
             Employee[] employeeArray = new Employee[25]; 
-            employeeArray[1] = newEmployee; 
-            employeeArray[5] = newEmployee2;
-            employeeArray[6] = newHourlyEmployee;
-            employeeArray[2] = newSalaryEmployee2;
-            employeeArray[3] = newHourlyEmployee2;
-            employeeArray[10] = newSalaryEmployee;
+            employeeArray[1] = newEmployee; //main object
+            employeeArray[2] = newEmployee2;
+            employeeArray[3] = newHourlyEmployee;//main object, with child class 
+            employeeArray[4] = newHourlyEmployee2;
+            employeeArray[5] = newSalaryEmployee;
+            employeeArray[6] = newSalaryEmployee2;
             Console.WriteLine("printing the array: ");
             for(int index = 0; index < employeeArray.Length; index++)
             {

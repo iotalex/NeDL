@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\newAlecExample\\newAlecExample.csproj",
-      "projectName": "newAlecExample",
-      "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\newAlecExample\\newAlecExample.csproj",
+      "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\employeeProgram2\\employeeProgram2.csproj",
+      "projectName": "employeeProgram2",
+      "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\employeeProgram2\\employeeProgram2.csproj",
       "packagesPath": "C:\\Users\\ABatenhorst\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\newAlecExample\\obj\\",
+      "outputPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\employeeProgram2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ABatenhorst\\AppData\\Roaming\\NuGet\\NuGet.Config",
