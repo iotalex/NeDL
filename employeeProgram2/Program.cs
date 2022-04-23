@@ -29,7 +29,7 @@ namespace AlecExample
             Employee[] employeeArray = new Employee[25]; 
             employeeArray[1] = newEmployee; //main object
             employeeArray[2] = newEmployee2;
-            employeeArray[3] = newHourlyEmployee;//main object, with child class 
+            employeeArray[3] = newHourlyEmployee;//main object, with child class
             employeeArray[4] = newHourlyEmployee2;
             employeeArray[5] = newSalaryEmployee;
             employeeArray[6] = newSalaryEmployee2;
