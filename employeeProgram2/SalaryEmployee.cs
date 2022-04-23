@@ -1,9 +1,10 @@
 using System;
 
-namespace AlecExample
+namespace EmployeeProgram
 {
     class SalaryEmployee : Employee
     {
+        
         public double salaryRate
             {get; set;}
 
