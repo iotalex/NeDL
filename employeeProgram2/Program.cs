@@ -40,17 +40,48 @@ namespace AlecExample
                 {
                     Console.WriteLine(employeeArray[index]);
                 }
-            }
+            }//print's to console all these items (above) ***// start your CRUD here: 
+            bool userChoice;
+            string userChoiceString;
+        //Repeat main loop 
+            do
+            {     
+            //  TODO: Get a valid input 
+                do
+                {
 
-        // start your CRUD here: 
+                userChoice = false;
 
+                Console.WriteLine("What's your pleasure?");
+                Console.WriteLine("L: Load the data file into an array.");
+                
+                
+                    //  reference guide:   https://www.w3resource.com/csharp-exercises/file-handling/index.php#editorr
+                //   TODO: Get a valid user option (valid means its on the menu)
+                userChoiceString = Console.ReadLine();
+                userChoiceString = userChoiceString.ToLower();
+                
+                userChoice = (userChoiceString== "L" || userChoiceString == "l" ||
+                            userChoiceString == "S" || userChoiceString == "s");
 
-        } //end main 
+                if(!userChoice)
+                    {
+                    Console.WriteLine("Please enter a valid option");
+                    }    
+                }//ends the second "do" which is to get "valid input"
 
+                while (!userChoice);
 
+                //   TODO: If the option is is L or l then load (names.txt) into the array of strings (nameArray)  (not DONE 4-13-22)
+                if (userChoiceString=="L" || userChoiceString=="l")
+                        {
+                        
+                        }//end using 
 
+                } 
+                while(!(userChoiceString=="Q"));
+        }//ends static void
 
-    }//end program 
+    }//ends class
 
-
-}//end name space
+}//ends name space 
