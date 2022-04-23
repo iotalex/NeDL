@@ -9,8 +9,7 @@ namespace HelloWorld
     {
         bool userChoice;
         string userChoiceString;
-        string[] nameArray = new string[10];//reserves 10 spaces to hold a string (memory)
-
+        
     //Repeat main loop 
         do
         {     
@@ -36,8 +35,9 @@ namespace HelloWorld
                 //  reference guide:   https://www.w3resource.com/csharp-exercises/file-handling/index.php#editorr
               //   TODO: Get a valid user option (valid means its on the menu)
               userChoiceString = Console.ReadLine();
+              userChoiceString = userChoiceString.ToLower();
              
-              userChoice = (userChoiceString== "L" ||  userChoiceString=="l" ||      
+              userChoice = (userChoiceString== "L" || userChoiceString == "l" ||  
                             userChoiceString == "S" || userChoiceString == "s" ||  
                             userChoiceString == "C" || userChoiceString == "c" ||    
                             userChoiceString == "R" || userChoiceString == "r" ||   
@@ -55,7 +55,7 @@ namespace HelloWorld
         //   TODO: If the option is is L or l then load (names.txt) into the array of strings (nameArray)  (not DONE 4-13-22)
                 if (userChoiceString=="L" || userChoiceString=="l")
                 {
-                  
+                
                 }//end using    
 
         //   TODO: Else if the option is an S or s then store the array of strings into the text file  (DONE 4-14-22)##6 on website
