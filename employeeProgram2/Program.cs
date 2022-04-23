@@ -24,23 +24,24 @@ namespace AlecExample
               //print the new HoulyEmployee object
             Console.WriteLine(newSalaryEmployee);
             Console.WriteLine(newSalaryEmployee2);
-        
-
+            
             Employee[] employeeArray = new Employee[25]; 
-            employeeArray[1] = newEmployee; //main object
-            employeeArray[2] = newEmployee2;
-            employeeArray[3] = newHourlyEmployee;//main object, with child class
-            employeeArray[4] = newHourlyEmployee2;
-            employeeArray[5] = newSalaryEmployee;
-            employeeArray[6] = newSalaryEmployee2;
-            Console.WriteLine("printing the array: ");
-            for(int index = 0; index < employeeArray.Length; index++)
-            {
-                if(!(employeeArray[index]==null))
+                employeeArray[1] = newEmployee; //main object
+                employeeArray[2] = newEmployee2;
+                employeeArray[3] = newHourlyEmployee;//main object, with child class
+                employeeArray[4] = newHourlyEmployee2;
+                employeeArray[5] = newSalaryEmployee;
+                employeeArray[6] = newSalaryEmployee2;
+                Console.WriteLine("printing the array: ");
+                for(int index = 0; index < employeeArray.Length; index++)
                 {
-                    Console.WriteLine(employeeArray[index]);
-                }
-            }//print's to console all these items (above) ***// start your CRUD here: 
+                    if(!(employeeArray[index]==null))
+                    {
+                        Console.WriteLine(employeeArray[index]);
+                    }
+                }//start CRUD here
+
+            
             bool userChoice;
             string userChoiceString;
         //Repeat main loop 
@@ -54,6 +55,7 @@ namespace AlecExample
 
                 Console.WriteLine("What's your pleasure?");
                 Console.WriteLine("L: Load the data file into an array.");
+                Console.WriteLine("Q: Quit the program.");
                 
                 
                     //  reference guide:   https://www.w3resource.com/csharp-exercises/file-handling/index.php#editorr
@@ -62,24 +64,32 @@ namespace AlecExample
                 userChoiceString = userChoiceString.ToLower();
                 
                 userChoice = (userChoiceString== "L" || userChoiceString == "l" ||
-                            userChoiceString == "S" || userChoiceString == "s");
+                            userChoiceString == "Q" || userChoiceString == "q");
 
                 if(!userChoice)
                     {
                     Console.WriteLine("Please enter a valid option");
-                    }    
-                }//ends the second "do" which is to get "valid input"
+                    }
 
+                }
                 while (!userChoice);
 
                 //   TODO: If the option is is L or l then load (names.txt) into the array of strings (nameArray)  (not DONE 4-13-22)
                 if (userChoiceString=="L" || userChoiceString=="l")
                         {
-                        
-                        }//end using 
+                
 
-                } 
-                while(!(userChoiceString=="Q"));
+
+                        }//end using
+
+                 
+        //   TODO: Else if the option is a Q or q then quit the program                
+                else if (userChoiceString=="Q" || userChoiceString=="q")
+                {
+                  Console.WriteLine("Goodbye, auf wiedersehen");
+                }
+            }//ends the big "do"
+            while(!(userChoiceString=="Q"));  
         }//ends static void
 
     }//ends class
