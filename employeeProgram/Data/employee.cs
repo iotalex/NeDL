@@ -21,7 +21,7 @@ namespace MyWorkApplication
 
             public Employee()
             {
-                EmployeeTitle = null; 
+                EmployeeTitle = null;
                 FirstName = null;
                 LastName = null;
                 EmployeeSalaryType = null;
