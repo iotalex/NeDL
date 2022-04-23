@@ -24,6 +24,11 @@ namespace AlecExample
             employeeType = newemployeeType;
         }
 
+        public virtual double GetBonus()
+        {
+            return 0.0; 
+        }
+
         public override string ToString()
         {
             return ("Employee: " + lastName + ", " + firstName + " | " + employeeType);
