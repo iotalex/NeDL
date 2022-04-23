@@ -61,7 +61,7 @@ namespace AlecExample
                     //  reference guide:   https://www.w3resource.com/csharp-exercises/file-handling/index.php#editorr
                 //   TODO: Get a valid user option (valid means its on the menu)
                 userChoiceString = Console.ReadLine();
-                userChoiceString = userChoiceString.ToLower();
+                
                 
                 userChoice = (userChoiceString== "L" || userChoiceString == "l" ||
                             userChoiceString == "Q" || userChoiceString == "q");
