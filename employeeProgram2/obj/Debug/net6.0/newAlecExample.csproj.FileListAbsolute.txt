@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\Desktop\NeDL\newAlecExample\bin\Debug\net6.0\newAlecExample.exe
+C:\Users\ABatenhorst\Desktop\NeDL\newAlecExample\bin\Debug\net6.0\newAlecExample.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\newAlecExample\bin\Debug\net6.0\newAlecExample.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\newAlecExample\bin\Debug\net6.0\newAlecExample.dll
+C:\Users\ABatenhorst\Desktop\NeDL\newAlecExample\bin\Debug\net6.0\newAlecExample.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\newAlecExample\obj\Debug\net6.0\newAlecExample.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\newAlecExample\obj\Debug\net6.0\newAlecExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\newAlecExample\obj\Debug\net6.0\newAlecExample.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\newAlecExample\obj\Debug\net6.0\newAlecExample.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\newAlecExample\obj\Debug\net6.0\newAlecExample.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\newAlecExample\obj\Debug\net6.0\newAlecExample.dll
+C:\Users\ABatenhorst\Desktop\NeDL\newAlecExample\obj\Debug\net6.0\refint\newAlecExample.dll
+C:\Users\ABatenhorst\Desktop\NeDL\newAlecExample\obj\Debug\net6.0\newAlecExample.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\newAlecExample\obj\Debug\net6.0\newAlecExample.genruntimeconfig.cache
+C:\Users\ABatenhorst\Desktop\NeDL\newAlecExample\obj\Debug\net6.0\ref\newAlecExample.dll
