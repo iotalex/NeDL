@@ -10,7 +10,7 @@ namespace EmployeeProgram
             bool userChoice;
             string userChoiceString;
 
-            string[] nameEnterArray = new string[25]; //hold the name of employee for "C" 
+            Employee[] nameEnterArray = new Employee[25]; //Declare and instantiate the array of Employee objects 
         //Repeat main loop 
             do
             {     
@@ -88,13 +88,7 @@ namespace EmployeeProgram
                     //   TODO: If the option is is L or l print's a list of all the employees including their calculated bonus 
                 if (userChoiceString=="C" || userChoiceString=="c")
                     {
-                    string newEmployeeName;
-                    //prompt user to enter new employee name 
-                    Console.WriteLine("Enter employee first name: ");
-                    newEmployeeName = Console.ReadLine(); //gets the employee firstname
-
-                    //int index =0;
-                    //bool found = false;
+                        
                     
                     }
                  
@@ -111,3 +105,28 @@ namespace EmployeeProgram
     }//ends class
 
 }//ends name space 
+
+
+//////*this can go where "C" was if all else fails***
+/*     string newEmployeeName;
+                    //prompt user to enter new employee name 
+                    Console.WriteLine("Enter employee first name: ");
+                    newEmployeeName = Console.ReadLine(); //gets the employee firstname
+
+                    int index = 0;
+                    bool found = false;
+
+                    do{
+                         if(nameEnterArray[index] ==null)//if something is not found
+                         {
+                            found = true; //we found an open array element 
+                         }
+                         else
+                         {
+                            index++;//we didn't find an open element, so add 1
+                         } 
+                      }
+                    while (found ==false);
+
+                    nameEnterArray[index] = newEmployeeName;
+            */
