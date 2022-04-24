@@ -61,7 +61,7 @@ namespace EmployeeProgram
                     Console.WriteLine(newHourlyEmployee);
                     Console.WriteLine(newHourlyEmployee2);
                     //create an hourly employee object 
-                    SalaryEmployee newSalaryEmployee = new SalaryEmployee("Fonda", "Henry",'S', 45000);
+                    SalaryEmployee newSalaryEmployee = new SalaryEmployee("Fonda", "Henry",'S', 85000);
                     SalaryEmployee newSalaryEmployee2 = new SalaryEmployee("Arnoldson", "Blake",'S', 125000);
                     //print the new HoulyEmployee object
                     Console.WriteLine(newSalaryEmployee);
