@@ -11,6 +11,7 @@ namespace EmployeeProgram
         public char employeeType
             {get; set;}
         
+       
         public Employee()//default constructor 
         {
             lastName = " ";

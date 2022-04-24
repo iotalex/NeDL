@@ -10,7 +10,8 @@ namespace EmployeeProgram
             bool userChoice;
             string userChoiceString;
 
-            Employee[] enterEmployeeArray = new Employee[25]; //Declare and instantiate the array of Employee objects 
+            Employee[] enterEmployeeArray = new Employee[25]; //Declare and instantiate the array of Employee objects
+            string[] newEmployeeArray = new string[25];//hold name of new employee
         //Repeat main loop 
             do
             {     
@@ -64,7 +65,27 @@ namespace EmployeeProgram
                     //   TODO: If the option is is C or c adds an employee including their calculated bonus 
                 if (userChoiceString=="C" || userChoiceString=="c")
                     {
-                     
+                     string newEmployeeName;
+                    //prompt user to enter new employee name 
+                    Console.WriteLine("Enter employee first name: ");
+                    newEmployeeName = Console.ReadLine(); //gets the employee firstname
+
+                    int index = 0;
+                    bool found = false;
+
+                    do{
+                         if(newEmployeeArray[index] ==null)//if something is not found
+                         {
+                            found = true; //we found an open array element 
+                         }
+                         else
+                         {
+                            index++;//we didn't find an open element, so add 1
+                         } 
+                      }
+                    while (found ==false);
+
+                    newEmployeeArray[index] = newEmployeeName;                
                     
                     }
                  
@@ -84,32 +105,12 @@ namespace EmployeeProgram
 
 
 //////*this can go where "C" was if all else fails***
-/*     string newEmployeeName;
-                    //prompt user to enter new employee name 
-                    Console.WriteLine("Enter employee first name: ");
-                    newEmployeeName = Console.ReadLine(); //gets the employee firstname
-
-                    int index = 0;
-                    bool found = false;
-
-                    do{
-                         if(nameEnterArray[index] ==null)//if something is not found
-                         {
-                            found = true; //we found an open array element 
-                         }
-                         else
-                         {
-                            index++;//we didn't find an open element, so add 1
-                         } 
-                      }
-                    while (found ==false);
-
-                    nameEnterArray[index] = newEmployeeName;
+/*     
             */
 
 
 
-  ////************* "L" TEST DATA, you can insert if want to borrow
+  ////************* "R" TEST DATA, you can insert if want to borrow
 
        /*                   
                             //create an employee object 
@@ -151,4 +152,4 @@ namespace EmployeeProgram
                         }//start CRUD here
 
     */ 
-    //************************END "L" test data 
+    //************************END "R" test data 
