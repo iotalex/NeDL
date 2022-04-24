@@ -9,7 +9,7 @@ namespace EmployeeProgram
            
             bool userChoice;
             string userChoiceString;
-
+//Employee[] employeeArray = new Employee[25]; 
             Employee[] enterEmployeeArray = new Employee[25]; //Declare and instantiate the array of Employee objects
             string[] newEmployeeArray = new string[25];//hold name of new employee
         //Repeat main loop 
