@@ -21,8 +21,8 @@ namespace EmployeeProgram
                 userChoice = false;
 
                 Console.WriteLine("What's your pleasure?");
-                Console.WriteLine("L: Load the data file into an array.");
-                Console.WriteLine("C: Add name into the array.");
+                Console.WriteLine("R: Print a list of all the employees inclduing their calculated bonus.");
+                Console.WriteLine("C: Add an employee.");
                 Console.WriteLine("Q: Quit the program.");
                 
                 
@@ -31,7 +31,7 @@ namespace EmployeeProgram
                 userChoiceString = Console.ReadLine();
                 
                 
-                userChoice = (userChoiceString== "L" || userChoiceString == "l" ||
+                userChoice = (userChoiceString== "R" || userChoiceString == "r" ||
                               userChoiceString== "C" || userChoiceString == "c" ||
                               userChoiceString == "Q" || userChoiceString == "q");
 
@@ -43,8 +43,8 @@ namespace EmployeeProgram
                 }
                 while (!userChoice);
 
-                //   TODO: If the option is is L or l print's a list of all the employees including their calculated bonus 
-                if (userChoiceString=="L" || userChoiceString=="l")
+                //   TODO: If the option is is R or r print's a list of all the employees including their calculated bonus 
+                if (userChoiceString=="R" || userChoiceString=="r")
                     {
                     for (int index = 0; index < enterEmployeeArray.Length; index++)
                     {
@@ -61,7 +61,7 @@ namespace EmployeeProgram
                     }
 
                     }//end using "L"
-                    //   TODO: If the option is is L or l print's a list of all the employees including their calculated bonus 
+                    //   TODO: If the option is is C or c adds an employee including their calculated bonus 
                 if (userChoiceString=="C" || userChoiceString=="c")
                     {
                      
