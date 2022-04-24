@@ -10,7 +10,7 @@ namespace EmployeeProgram
 
         public SalaryEmployee() : base()//default constructor 
         {
-            salaryRate = 25.0; 
+            salaryRate = 0.0; 
         }
         public SalaryEmployee(string newLastName, string newFirstName, char newEmployeeType, double newSalaryRate): base(newLastName, newFirstName, newEmployeeType)  //default constructor 
         {
