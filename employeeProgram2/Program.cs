@@ -7,10 +7,10 @@ namespace EmployeeProgram
         static void Main (string[] args)
         {
            
-
-            
             bool userChoice;
             string userChoiceString;
+
+            string[] nameEnterArray = new string[25]; //hold the name of employee for "C" 
         //Repeat main loop 
             do
             {     
@@ -88,10 +88,10 @@ namespace EmployeeProgram
                     //   TODO: If the option is is L or l print's a list of all the employees including their calculated bonus 
                 if (userChoiceString=="C" || userChoiceString=="c")
                     {
-                    string newEmployeeName1;
+                    string newEmployeeName;
                     //prompt user to enter new employee name 
                     Console.WriteLine("Enter employee first name: ");
-                    newEmployeeName1 = Console.ReadLine(); //gets the employee firstname
+                    newEmployeeName = Console.ReadLine(); //gets the employee firstname
 
                     //int index =0;
                     //bool found = false;
