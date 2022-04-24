@@ -10,7 +10,7 @@ namespace EmployeeProgram
             bool userChoice;
             string userChoiceString;
 
-            Employee[] nameEnterArray = new Employee[25]; //Declare and instantiate the array of Employee objects 
+            Employee[] enterEmployeeArray = new Employee[25]; //Declare and instantiate the array of Employee objects 
         //Repeat main loop 
             do
             {     
@@ -88,7 +88,17 @@ namespace EmployeeProgram
                     //   TODO: If the option is is L or l print's a list of all the employees including their calculated bonus 
                 if (userChoiceString=="C" || userChoiceString=="c")
                     {
-                        
+                    for (int index = 0; index < enterEmployeeArray.Length; index++)
+                    {
+                        enterEmployeeArray[index] = new Employee();
+                    }
+
+                    //print each employee to test the property gets and the toString
+                    for (int index = 0; index < enterEmployeeArray.Length; index++)
+                    {
+                        if (!(((enterEmployeeArray[index]).ToString())==null))
+                            Console.WriteLine(enterEmployeeArray[index]);
+                    } 
                     
                     }
                  

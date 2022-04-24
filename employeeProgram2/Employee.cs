@@ -26,12 +26,12 @@ namespace EmployeeProgram
 
         public virtual double GetBonus()
         {
-            return 0.0; 
+            return 5.0; 
         }
 
         public override string ToString()
         {
-            return ("Employee: " + lastName + ", " + firstName + " | " + employeeType);
+            return ("EmployeeYY: " + GetType() + lastName + ", " + firstName + " | " + employeeType + GetBonus());
         }
         
 
