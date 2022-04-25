@@ -6,27 +6,29 @@ namespace EmployeeProgram
     {
         static void Main (string[] args)
         {
+            
            
             bool userChoice;
             string userChoiceString;
-//Employee[] employeeArray = new Employee[25]; 
+            //Employee[] employeeArray = new Employee[25]; 
             
-            string[] newEmployeeHourly = new string[25];//hold name of new employee
-            string[] newEmployeeLastNameArray = new string[25];
-            Employee[] newEmployeeArray = new Employee[25];
-            for (int index = 0; index < newEmployeeArray.Length; index++) //making employee objects 
+            //string[] newEmployeeHourly = new string[25];//hold name of new employee
+            //string[] newEmployeeLastNameArray = new string[25];
+            Employee[] employeeArray = new Employee[25];
+            
+            for (int index = 0; index < employeeArray.Length; index++) //starts line 2 then loops every other line  
+                {
+                    employeeArray[index] = new SalaryEmployee();
+                }
+            for (int index = -1; index < employeeArray.Length; index++) 
+                {   
+                    while(index <index++)//For while loop every other line 
                     {
-                        newEmployeeArray[index] = new HourlyEmployee();
+                        Console.WriteLine(employeeArray);
+                        index++;//starts line 1, then loops every other line
                     }
-            for (int index = 0; index < newEmployeeArray.Length; index++) //making employee objects 
-            {
-                
-                newEmployeeArray[index] = new SalaryEmployee(); //prints all employees and types 
-            }
-
-            ///two loops 0-12
-            //OR if or else statments that loops through odds/events 
-           
+                    employeeArray[index] = new HourlyEmployee(); //prints Salary employees and types 
+                }
         //Repeat main loop 
             do
             {     
@@ -40,8 +42,6 @@ namespace EmployeeProgram
                 Console.WriteLine("R: Print a list of all the employees inclduing their calculated bonus.");
                 Console.WriteLine("C: Add an employee.");
                 Console.WriteLine("Q: Quit the program.");
-                
-                
                     //  reference guide:   https://www.w3resource.com/csharp-exercises/file-handling/index.php#editorr
                 //   TODO: Get a valid user option (valid means its on the menu)
                 userChoiceString = Console.ReadLine();
@@ -64,18 +64,18 @@ namespace EmployeeProgram
                     {
             
                     //print each employee to test the property gets and the toString
-                    for (int index = 0; index < newEmployeeArray.Length; index++)
+                    for (int index = 0; index < employeeArray.Length; index++)
                     {
-                        if (!(((newEmployeeArray[index]).ToString())==null))
-                            Console.WriteLine(newEmployeeArray[index]);
+                        if (!(((employeeArray[index]).ToString())==null))
+                            Console.WriteLine(employeeArray[index]);
                     }
 
                     }//end using "R"
 
+       /*        
 
-////************* "R" TEST DATA, you can insert if want to borrow
 
-       /*                   
+        old old            
                             //create an employee object 
                     Employee newEmployee = new Employee("Knox", "Jimmy", 'H'); //this is creating the employee object
                     Employee newEmployee2 = new Employee("Fox", "Ryan", 'H');
