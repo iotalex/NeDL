@@ -7,14 +7,14 @@ namespace konomiAPP
     static void Main(string[] args)
     { 
         // Declare and instantiate the array of song objects
-        ChartName[] songArray=new ChartName[25];
+        DDR[] songArray=new DDR[25];
 
         // Now, loop through each array element and instantiate a Song object for each.
         // Note that the constructor with no parameters will be used.
 
         for (int index = 0; index < songArray.Length; index++)
         {
-            songArray[index] = new ChartName();
+            songArray[index] = new DDR();
         }
         // create two data values 
         //data value 1:
