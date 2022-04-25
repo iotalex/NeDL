@@ -25,13 +25,13 @@ namespace EmployeeProgram
             lastName = newLastName;
             firstName = newFirstName; 
             employeeType = newemployeeType;
-            RName = null; 
+            RName = null; //still working other part
         }
-        private string RName;           
+        private string RName;  //still working on other part         
 
         public virtual string GetName()
         {
-            return RName;
+            return RName; //this was added, can delete if not needed, working on first part yet
         }
         public virtual double GetBonus()
         {
