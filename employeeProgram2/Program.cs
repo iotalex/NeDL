@@ -11,9 +11,10 @@ namespace EmployeeProgram
             string userChoiceString;
 //Employee[] employeeArray = new Employee[25]; 
             
-            string[] newEmployeeArray = new string[25];//hold name of new employee
-            string[] newEmployeeLastNameArray = new string[25]; 
-
+            string[] newEmployeeFirstNameArray = new string[25];//hold name of new employee
+            string[] newEmployeeLastNameArray = new string[25];
+            Employee[] newEmployeeArray = new Employee[25]; 
+           
         //Repeat main loop 
             do
             {     
@@ -49,17 +50,86 @@ namespace EmployeeProgram
                 //   TODO: If the option is is R or r print's a list of all the employees including their calculated bonus 
                 if (userChoiceString=="R" || userChoiceString=="r")
                     {
-                    for(int index = 0; index < newEmployeeArray.Length; index++)
+                    for(int index = 0; index < newEmployeeFirstNameArray.Length; index++)
                       {
-                         if(!(newEmployeeArray[index] == null))
+                         if(!(newEmployeeFirstNameArray[index] == null))
                          {
-                          Console.WriteLine(newEmployeeArray[index]);
-                          Console.WriteLine(newEmployeeLastNameArray[index]);
+                          Console.WriteLine(newEmployeeFirstNameArray[index] + " " + newEmployeeLastNameArray[index]);
+                          //Console.WriteLine(newEmployeeLastNameArray[index]);
                          }
                       }
                     
 
                     }//end using "L"
+
+
+////************* "R" TEST DATA, you can insert if want to borrow
+
+       /*                   
+                            //create an employee object 
+                    Employee newEmployee = new Employee("Knox", "Jimmy", 'H'); //this is creating the employee object
+                    Employee newEmployee2 = new Employee("Fox", "Ryan", 'H');
+                    
+                    
+                    //print the employee object
+                    Console.WriteLine(newEmployee);
+                    Console.WriteLine(newEmployee2);
+                    //create an hourly employee object 
+                    HourlyEmployee newHourlyEmployee = new HourlyEmployee("Smithson", "Will",'H', 15.25);
+                    HourlyEmployee newHourlyEmployee2 = new HourlyEmployee("Jones", "Matt",'H', 25.25);
+                    //print the new HoulyEmployee object
+                    Console.WriteLine(newHourlyEmployee);
+                    Console.WriteLine(newHourlyEmployee2);
+                    //create an hourly employee object 
+                    SalaryEmployee newSalaryEmployee = new SalaryEmployee("Fonda", "Henry",'S', 85000);
+                    SalaryEmployee newSalaryEmployee2 = new SalaryEmployee("Arnoldson", "Blake",'S', 125000);
+                    //print the new HoulyEmployee object
+                    Console.WriteLine(newSalaryEmployee);
+                    Console.WriteLine(newSalaryEmployee2);
+                    
+            
+                    Employee[] employeeArray = new Employee[25]; 
+                        employeeArray[1] = newEmployee; //main object
+                        employeeArray[2] = newEmployee2;
+                        employeeArray[3] = newHourlyEmployee;//main object, with child class
+                        employeeArray[4] = newHourlyEmployee2;
+                        employeeArray[5] = newSalaryEmployee;
+                        employeeArray[6] = newSalaryEmployee2;
+                        Console.WriteLine("printing the array: ");
+                        for(int index = 0; index < employeeArray.Length; index++)
+                        {
+                            if(!(employeeArray[index]==null))
+                            {
+                                Console.WriteLine(employeeArray[index]);
+                            }
+                        }//start CRUD here
+
+    */ 
+    //************************END "R" test data 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     //   TODO: If the option is is C or c adds an employee including their calculated bonus 
                 if (userChoiceString=="C" || userChoiceString=="c")
                     {
@@ -75,7 +145,7 @@ namespace EmployeeProgram
                     bool found = false;
 
                     do{
-                         if(newEmployeeArray[index] ==null)//if something is not found
+                         if(newEmployeeFirstNameArray[index] ==null)//if something is not found
                          {
                             found = true; //we found an open array element 
                          }
@@ -86,7 +156,7 @@ namespace EmployeeProgram
                       }
                     while (found ==false);
 
-                    newEmployeeArray [index] = newEmployeeFirstName;               
+                    newEmployeeFirstNameArray [index] = newEmployeeFirstName;               
                     newEmployeeLastNameArray [index] = newEmployeeLastName; 
                     }
                  
@@ -148,46 +218,4 @@ namespace EmployeeProgram
 
 
 
-  ////************* "R" TEST DATA, you can insert if want to borrow
-
-       /*                   
-                            //create an employee object 
-                    Employee newEmployee = new Employee("Knox", "Jimmy", 'H'); //this is creating the employee object
-                    Employee newEmployee2 = new Employee("Fox", "Ryan", 'H');
-                    
-                    
-                    //print the employee object
-                    Console.WriteLine(newEmployee);
-                    Console.WriteLine(newEmployee2);
-                    //create an hourly employee object 
-                    HourlyEmployee newHourlyEmployee = new HourlyEmployee("Smithson", "Will",'H', 15.25);
-                    HourlyEmployee newHourlyEmployee2 = new HourlyEmployee("Jones", "Matt",'H', 25.25);
-                    //print the new HoulyEmployee object
-                    Console.WriteLine(newHourlyEmployee);
-                    Console.WriteLine(newHourlyEmployee2);
-                    //create an hourly employee object 
-                    SalaryEmployee newSalaryEmployee = new SalaryEmployee("Fonda", "Henry",'S', 85000);
-                    SalaryEmployee newSalaryEmployee2 = new SalaryEmployee("Arnoldson", "Blake",'S', 125000);
-                    //print the new HoulyEmployee object
-                    Console.WriteLine(newSalaryEmployee);
-                    Console.WriteLine(newSalaryEmployee2);
-                    
-            
-                    Employee[] employeeArray = new Employee[25]; 
-                        employeeArray[1] = newEmployee; //main object
-                        employeeArray[2] = newEmployee2;
-                        employeeArray[3] = newHourlyEmployee;//main object, with child class
-                        employeeArray[4] = newHourlyEmployee2;
-                        employeeArray[5] = newSalaryEmployee;
-                        employeeArray[6] = newSalaryEmployee2;
-                        Console.WriteLine("printing the array: ");
-                        for(int index = 0; index < employeeArray.Length; index++)
-                        {
-                            if(!(employeeArray[index]==null))
-                            {
-                                Console.WriteLine(employeeArray[index]);
-                            }
-                        }//start CRUD here
-
-    */ 
-    //************************END "R" test data 
+  
