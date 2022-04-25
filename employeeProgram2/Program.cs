@@ -10,8 +10,10 @@ namespace EmployeeProgram
             bool userChoice;
             string userChoiceString;
 //Employee[] employeeArray = new Employee[25]; 
-            Employee[] enterEmployeeArray = new Employee[25]; //Declare and instantiate the array of Employee objects
+            
             string[] newEmployeeArray = new string[25];//hold name of new employee
+            string[] newEmployeeLastNameArray = new string[25]; 
+
         //Repeat main loop 
             do
             {     
@@ -47,28 +49,27 @@ namespace EmployeeProgram
                 //   TODO: If the option is is R or r print's a list of all the employees including their calculated bonus 
                 if (userChoiceString=="R" || userChoiceString=="r")
                     {
-                    for (int index = 0; index < enterEmployeeArray.Length; index++)
-                    {
-                        enterEmployeeArray[index] = new Employee();
-                        enterEmployeeArray[index] = new HourlyEmployee();
-                        enterEmployeeArray[index] = new SalaryEmployee(); //prints all employees and types 
-                    }
-
-                    //print each employee to test the property gets and the toString
-                    for (int index = 0; index < enterEmployeeArray.Length; index++)
-                    {
-                        if (!(((enterEmployeeArray[index]).ToString())==null))
-                            Console.WriteLine(enterEmployeeArray[index]);
-                    }
+                    for(int index = 0; index < newEmployeeArray.Length; index++)
+                      {
+                         if(!(newEmployeeArray[index] == null))
+                         {
+                          Console.WriteLine(newEmployeeArray[index]);
+                          Console.WriteLine(newEmployeeLastNameArray[index]);
+                         }
+                      }
+                    
 
                     }//end using "L"
                     //   TODO: If the option is is C or c adds an employee including their calculated bonus 
                 if (userChoiceString=="C" || userChoiceString=="c")
                     {
-                     string newEmployeeName;
+                    string newEmployeeFirstName;
+                    string newEmployeeLastName;
                     //prompt user to enter new employee name 
                     Console.WriteLine("Enter employee first name: ");
-                    newEmployeeName = Console.ReadLine(); //gets the employee firstname
+                    newEmployeeFirstName = Console.ReadLine(); //gets the employee firstname
+                    Console.WriteLine("Enter employee last name: ");
+                    newEmployeeLastName = Console.ReadLine(); //gets the employee firstname
 
                     int index = 0;
                     bool found = false;
@@ -85,8 +86,8 @@ namespace EmployeeProgram
                       }
                     while (found ==false);
 
-                    newEmployeeArray[index] = newEmployeeName;                
-                    
+                    newEmployeeArray [index] = newEmployeeFirstName;               
+                    newEmployeeLastNameArray [index] = newEmployeeLastName; 
                     }
                  
             //   TODO: Else if the option is a Q or q then quit the program                
@@ -102,6 +103,43 @@ namespace EmployeeProgram
     }//ends class
 
 }//ends name space 
+
+
+
+
+/*  **************THIS IS "R", can put back 
+//Declare and instantiate the array of Employee objects
+                    Employee[] enterEmployeeArray = new Employee[25];
+                    
+                    for (int index = 0; index < enterEmployeeArray.Length; index++)
+                    {
+                        enterEmployeeArray[index] = new Employee();
+                        enterEmployeeArray[index] = new HourlyEmployee();
+                        enterEmployeeArray[index] = new SalaryEmployee(); //prints all employees and types 
+                    }
+
+                    //print each employee to test the property gets and the toString
+                    for (int index = 0; index < enterEmployeeArray.Length; index++)
+                    {
+                        if (!(((enterEmployeeArray[index]).ToString())==null))
+                            Console.WriteLine(enterEmployeeArray[index]);
+                    }
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 //////*this can go where "C" was if all else fails***
