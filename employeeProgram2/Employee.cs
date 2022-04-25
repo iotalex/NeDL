@@ -40,7 +40,7 @@ namespace EmployeeProgram
        
         public override string ToString()
         {
-            return "EmployeeYY: " + lastName + ", " + firstName + " | " + employeeType + GetBonus();
+            return "EmployeeYY: " + lastName + ", " + firstName + " | " + employeeType; //delete "GetBonus() here; 4-25-22
         }
         
 

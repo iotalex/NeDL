@@ -10,7 +10,7 @@ namespace EmployeeProgram
 
         public HourlyEmployee() : base()  //hourly constructor 
         {
-            hourlyRate = 35.0;
+            hourlyRate = 0.0;
         }
         public HourlyEmployee(string newLastName, string newFirstName, char newEmployeeType, double newHourlyRate) : base(newLastName, newFirstName, newEmployeeType)// constructor 
         {

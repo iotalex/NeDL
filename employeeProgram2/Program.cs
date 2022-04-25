@@ -78,7 +78,9 @@ namespace EmployeeProgram
                     //   TODO: If the option is is C or c adds an employee including their calculated bonus 
                 if (userChoiceString=="C" || userChoiceString=="c")
                     {
+                        
                     //prompt user to enter new employee FRIST name 
+                    
                     string newEmployeeFirstName;
                     Console.WriteLine("Enter employee first name: ");
                     newEmployeeFirstName = Console.ReadLine(); //gets the employee firstname
@@ -98,7 +100,7 @@ namespace EmployeeProgram
                          else
                          {
                             index++;//we didn't find an open element, so add 1
-                         } 
+                         }
                       }
                     while (found ==false);
 

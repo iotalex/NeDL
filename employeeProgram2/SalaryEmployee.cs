@@ -19,7 +19,7 @@ namespace EmployeeProgram
 
         public override double GetBonus()//power of polymorphism 
         {
-            return salaryRate * .10; 
+            return salaryRate * .1; 
         }
 
         public override string ToString()
