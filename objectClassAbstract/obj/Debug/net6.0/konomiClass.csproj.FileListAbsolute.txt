@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\Desktop\NeDL\objectClass\obj\Debug\net6.0\konomiClass.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\objectClass\obj\Debug\net6.0\konomiClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\objectClass\obj\Debug\net6.0\konomiClass.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\objectClass\obj\Debug\net6.0\konomiClass.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\objectClass\obj\Debug\net6.0\konomiClass.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\objectClass\bin\Debug\net6.0\konomiClass.exe
+C:\Users\ABatenhorst\Desktop\NeDL\objectClass\bin\Debug\net6.0\konomiClass.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\objectClass\bin\Debug\net6.0\konomiClass.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\objectClass\bin\Debug\net6.0\konomiClass.dll
+C:\Users\ABatenhorst\Desktop\NeDL\objectClass\bin\Debug\net6.0\konomiClass.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\objectClass\obj\Debug\net6.0\konomiClass.dll
+C:\Users\ABatenhorst\Desktop\NeDL\objectClass\obj\Debug\net6.0\ref\konomiClass.dll
+C:\Users\ABatenhorst\Desktop\NeDL\objectClass\obj\Debug\net6.0\konomiClass.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\objectClass\obj\Debug\net6.0\konomiClass.genruntimeconfig.cache
+C:\Users\ABatenhorst\Desktop\NeDL\objectClass\obj\Debug\net6.0\refint\konomiClass.dll
