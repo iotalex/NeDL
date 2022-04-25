@@ -11,7 +11,7 @@ namespace EmployeeProgram
         public char employeeType
             {get; set;}
         
-       
+               
         public Employee()//default constructor 
         {
             lastName = " ";
@@ -29,7 +29,7 @@ namespace EmployeeProgram
         {
             return 0.0; 
         }
-
+       
         public override string ToString()
         {
             return ("EmployeeYY: " + lastName + ", " + firstName + " | " + employeeType + GetBonus());
