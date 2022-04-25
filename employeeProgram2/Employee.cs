@@ -14,6 +14,8 @@ namespace EmployeeProgram
                
         public Employee()//default constructor 
         {
+            
+            RName = " ";
             lastName = " ";
             firstName = " "; 
             employeeType = ' '; //char,  H or S 
@@ -23,8 +25,14 @@ namespace EmployeeProgram
             lastName = newLastName;
             firstName = newFirstName; 
             employeeType = newemployeeType;
+            RName = null; 
         }
+        private string RName;           
 
+        public virtual string GetName()
+        {
+            return RName;
+        }
         public virtual double GetBonus()
         {
             return 0.0; 
@@ -32,7 +40,7 @@ namespace EmployeeProgram
        
         public override string ToString()
         {
-            return ("EmployeeYY: " + lastName + ", " + firstName + " | " + employeeType + GetBonus());
+            return "EmployeeYY: " + lastName + ", " + firstName + " | " + employeeType + GetBonus();
         }
         
 

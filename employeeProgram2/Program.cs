@@ -11,9 +11,21 @@ namespace EmployeeProgram
             string userChoiceString;
 //Employee[] employeeArray = new Employee[25]; 
             
-            string[] newEmployeeFirstNameArray = new string[25];//hold name of new employee
+            string[] newEmployeeHourly = new string[25];//hold name of new employee
             string[] newEmployeeLastNameArray = new string[25];
-            Employee[] newEmployeeArray = new Employee[25]; 
+            Employee[] newEmployeeArray = new Employee[25];
+            for (int index = 0; index < newEmployeeArray.Length; index++) //making employee objects 
+                    {
+                        newEmployeeArray[index] = new HourlyEmployee();
+                    }
+            for (int index = 0; index < newEmployeeArray.Length; index++) //making employee objects 
+            {
+                
+                newEmployeeArray[index] = new SalaryEmployee(); //prints all employees and types 
+            }
+
+            ///two loops 0-12
+            //OR if or else statments that loops through odds/events 
            
         //Repeat main loop 
             do
@@ -50,17 +62,15 @@ namespace EmployeeProgram
                 //   TODO: If the option is is R or r print's a list of all the employees including their calculated bonus 
                 if (userChoiceString=="R" || userChoiceString=="r")
                     {
-                    for(int index = 0; index < newEmployeeFirstNameArray.Length; index++)
-                      {
-                         if(!(newEmployeeFirstNameArray[index] == null))
-                         {
-                          Console.WriteLine(newEmployeeFirstNameArray[index] + " " + newEmployeeLastNameArray[index]);
-                          //Console.WriteLine(newEmployeeLastNameArray[index]);
-                         }
-                      }
-                    
+            
+                    //print each employee to test the property gets and the toString
+                    for (int index = 0; index < newEmployeeArray.Length; index++)
+                    {
+                        if (!(((newEmployeeArray[index]).ToString())==null))
+                            Console.WriteLine(newEmployeeArray[index]);
+                    }
 
-                    }//end using "L"
+                    }//end using "R"
 
 
 ////************* "R" TEST DATA, you can insert if want to borrow
@@ -110,7 +120,21 @@ namespace EmployeeProgram
 
 
 
+/*   old readline, may re-use
+ {
+                    for(int index = 0; index < newEmployeeFirstNameArray.Length; index++)
+                      {
+                         if(!(newEmployeeFirstNameArray[index] == null))
+                         {
+                          Console.WriteLine(newEmployeeFirstNameArray[index] + " " + newEmployeeLastNameArray[index]);
+                          //Console.WriteLine(newEmployeeLastNameArray[index]);
+                         }
 
+                         
+                      }
+
+
+*/
 
 
 
@@ -133,7 +157,7 @@ namespace EmployeeProgram
                     //   TODO: If the option is is C or c adds an employee including their calculated bonus 
                 if (userChoiceString=="C" || userChoiceString=="c")
                     {
-                    string newEmployeeFirstName;
+         /*           string newEmployeeFirstName;
                     string newEmployeeLastName;
                     //prompt user to enter new employee name 
                     Console.WriteLine("Enter employee first name: ");
@@ -157,7 +181,7 @@ namespace EmployeeProgram
                     while (found ==false);
 
                     newEmployeeFirstNameArray [index] = newEmployeeFirstName;               
-                    newEmployeeLastNameArray [index] = newEmployeeLastName; 
+                    newEmployeeLastNameArray [index] = newEmployeeLastName;   */
                     }
                  
             //   TODO: Else if the option is a Q or q then quit the program                
