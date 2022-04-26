@@ -20,7 +20,9 @@ namespace Stepmania // Note: actual namespace depends on the project name.
         
         public override string ToString()
         {
-            return (base.ToString() + " | " + "Difficulty: " + aceSeries);
+            string outputString = $"{base.ToString()} | Difficulty: {aceSeries}";
+            return outputString;
+            //return (base.ToString() +  " | " + "Difficulty: " + aceSeries);
         }
 
     }//end class song
