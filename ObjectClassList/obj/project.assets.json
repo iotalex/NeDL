@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\ObjectClassAbstract2\\ObjectClassAbstract2.csproj",
-      "projectName": "ObjectClassAbstract2",
-      "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\ObjectClassAbstract2\\ObjectClassAbstract2.csproj",
+      "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\ObjectClassList\\ObjectClassList.csproj",
+      "projectName": "ObjectClassList",
+      "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\ObjectClassList\\ObjectClassList.csproj",
       "packagesPath": "C:\\Users\\ABatenhorst\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\ObjectClassAbstract2\\obj\\",
+      "outputPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\ObjectClassList\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ABatenhorst\\AppData\\Roaming\\NuGet\\NuGet.Config",
