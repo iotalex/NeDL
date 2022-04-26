@@ -10,19 +10,22 @@ namespace Stepmania // Note: actual namespace depends on the project name.
         Console.WriteLine ("Lets dance!");
         //array of DDRSong's  
         DDRSong[] ddrSongArray =new DDRSong[25];
+        AceDDRSong[] ddrAceSongArray = new AceDDRSong[25];
         
         //now load in some test data 
-        DDRSong newSong = new DDRSong("Butterfly", 9, "Extreme");// DDR object 
-
+        AceDDRSong newExtremeSong = new AceDDRSong("Butterfly", 9, "Extreme", "Purple");// DDR object 
+        DDRSong newDDRAceSong = new DDRSong("I'm an Albatraoz", 11, "Ace");// DDR object
         //now print object
-        Console.WriteLine(newSong);
+        Console.WriteLine(newExtremeSong);
+        Console.WriteLine(newDDRAceSong);
 
-        ddrSongArray[1] = newSong; //main object 
+        ddrSongArray[1] = newExtremeSong; //main object 
+        ddrSongArray[2] = newDDRAceSong; //main object 
 
         Console.WriteLine("Print the array: ");
         
         //TODO: get item to print 
-        
+
 
 
 
