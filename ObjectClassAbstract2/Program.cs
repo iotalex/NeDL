@@ -7,7 +7,25 @@ namespace Stepmania // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            Console.WriteLine ("Lets dance!");
+        Console.WriteLine ("Lets dance!");
+        //array of DDRSong's  
+        DDRSong[] ddrSongArray =new DDRSong[25];
+        
+        //now load in some test data 
+        DDRSong newSong = new DDRSong("Butterfly", 9, "Extreme");// DDR object 
+
+        //now print object
+        Console.WriteLine(newSong);
+
+        ddrSongArray[1] = newSong; //main object 
+
+        Console.WriteLine("Print the array: ");
+        
+        //TODO: get item to print 
+        
+
+
+
         }
     }//end class 
 }//end name space 
