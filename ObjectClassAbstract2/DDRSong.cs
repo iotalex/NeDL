@@ -12,13 +12,11 @@ namespace Stepmania // Note: actual namespace depends on the project name.
         public string seriesType
             {get; set;}
         
-        
         public DDRSong()
         {
             songName = " ";
             footer = 0;
             seriesType = " "; 
-
         }
 
         public DDRSong(string newSongName, int newFooter, string newSeriesType)//default constructor 
@@ -28,6 +26,6 @@ namespace Stepmania // Note: actual namespace depends on the project name.
             seriesType = newSeriesType;
         }
 
-    }//end class song 
+    }//end class song
 
 }//end name space

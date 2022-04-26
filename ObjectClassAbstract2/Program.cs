@@ -7,7 +7,7 @@ namespace Stepmania // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            class DDRSong[] = ddrSongArray = new DDRSong[25];//array of songs
+            Console.WriteLine ("Lets dance!");
         }
     }//end class 
 }//end name space 
