@@ -13,14 +13,14 @@ namespace Stepmania // Note: actual namespace depends on the project name.
             aceSeries = " ";
         }
 
-        public AceDDRSong(string newName, int newFooter, string newSeriesType, string newAceSeries) : base(newName, newFooter, newSeriesType)
+        public AceDDRSong(string newName, int newFooter, int newSeriesType, string newAceSeries) : base(newName, newFooter, newSeriesType)
         {
             aceSeries = newAceSeries;
         }
         
         public override string ToString()
         {
-            string outputString = $"{base.ToString()} | Difficulty: {aceSeries}";
+            string outputString = $"{base.ToString()} | Series: {aceSeries}";
             return outputString;
             //return (base.ToString() +  " | " + "Difficulty: " + aceSeries);
         }

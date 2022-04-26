@@ -4,7 +4,7 @@
 namespace Stepmania // Note: actual namespace depends on the project name.
 {
      class DifficultyInfo
-    {
+    {        //////*********DON'T USE THIS; going to CRUD or INTERFACE solution! 
         //mark base class as abstract 
 
         

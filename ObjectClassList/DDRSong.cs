@@ -9,26 +9,26 @@ namespace Stepmania // Note: actual namespace depends on the project name.
             {get; set;}
         int footer
             {get; set;}
-        public string color
+        public int difficulty
             {get; set;}
         
         public DDRSong()
         {
             songName = " ";
             footer = 0;
-            color = " "; 
+            difficulty = 0; 
         }
-
-        public DDRSong(string newSongName, int newFooter, string newColor)//default constructor 
+      
+        public DDRSong(string newSongName, int newFooter, int newDifficulty)//default constructor 
         {
             songName = newSongName;
             footer = newFooter;
-            color = newColor;
+            difficulty = newDifficulty;
         }
         
         public override string ToString()
         {
-            string outputString = $"Song Name: {songName} | Footer: {footer} | Series: {color}";
+            string outputString = $"Song Name: {songName} | Footer: {footer} | Difficulty: {difficulty}";
             return outputString;
         }
 
