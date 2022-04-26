@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\Desktop\NeDL\ObjectClassAbstract2\bin\Debug\net6.0\ObjectClassAbstract2.exe
+C:\Users\ABatenhorst\Desktop\NeDL\ObjectClassAbstract2\bin\Debug\net6.0\ObjectClassAbstract2.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\ObjectClassAbstract2\bin\Debug\net6.0\ObjectClassAbstract2.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\ObjectClassAbstract2\bin\Debug\net6.0\ObjectClassAbstract2.dll
+C:\Users\ABatenhorst\Desktop\NeDL\ObjectClassAbstract2\bin\Debug\net6.0\ObjectClassAbstract2.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\ObjectClassAbstract2\obj\Debug\net6.0\ObjectClassAbstract2.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\ObjectClassAbstract2\obj\Debug\net6.0\ObjectClassAbstract2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\ObjectClassAbstract2\obj\Debug\net6.0\ObjectClassAbstract2.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\ObjectClassAbstract2\obj\Debug\net6.0\ObjectClassAbstract2.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\ObjectClassAbstract2\obj\Debug\net6.0\ObjectClassAbstract2.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\ObjectClassAbstract2\obj\Debug\net6.0\ObjectClassAbstract2.dll
+C:\Users\ABatenhorst\Desktop\NeDL\ObjectClassAbstract2\obj\Debug\net6.0\refint\ObjectClassAbstract2.dll
+C:\Users\ABatenhorst\Desktop\NeDL\ObjectClassAbstract2\obj\Debug\net6.0\ObjectClassAbstract2.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\ObjectClassAbstract2\obj\Debug\net6.0\ObjectClassAbstract2.genruntimeconfig.cache
+C:\Users\ABatenhorst\Desktop\NeDL\ObjectClassAbstract2\obj\Debug\net6.0\ref\ObjectClassAbstract2.dll
