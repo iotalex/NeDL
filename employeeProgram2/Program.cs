@@ -89,22 +89,25 @@ foreach(Employee anEmployee in employeeList)
                 if (userChoiceString=="C" || userChoiceString=="c")
                 {
                     //TODO: get a last name
-                    Console.WriteLine("Plese enter last name: ");
+                    Console.WriteLine("Plese enter last name to add: ");
                     //not going to be using null ; 4-27-22
                     string newLastName = Console.ReadLine();
+                    Console.WriteLine("Plese enter first name to add: ");
                     //TODO: get a first name from the user
                     string newFirstName = Console.ReadLine();
-                    //TODO: Get the type from the user
-                    
-                    char newEmployeeType = Convert.ToChar(Console.ReadLine());
-                    
+                    //TODO: Get the type from the user                                     
+                    char newEmployeeType = Convert.ToChar(Console.ReadLine());//allows us to use 'Char' 
+                    Console.WriteLine("Plese enter employee type to add (S or H): ");
+
                     switch(newEmployeeType)
                     {
-                        case 'S': 
+                        case 'S': //If the type is an 's' or 'S'
                         case 's':
-                            Console.WriteLine("Please enter annual salary");
-                            double newEmployeeSalary = Convert.ToInt16(Console.ReadLine());
+                            Console.WriteLine("Please enter hourly salary: ");
+                            double newEmployeeSalary = Convert.ToDouble(Console.ReadLine()); //TODO: get salary from user
+                            //Creates a salary object with lastName, firstName, type, Salary 
                             employeeList.Add(new HourlyEmployee(newLastName, newFirstName, newEmployeeType, newEmployeeSalary));
+                            Console.WriteLine("Hourly employee added. Printing new list.");
                         break;
                     }
                     // print the list again
@@ -112,12 +115,11 @@ foreach(Employee anEmployee in employeeList)
                             Console.WriteLine(anEmployee);
                     
 
-                    // TODO: if the type is an 's',
+                    
                     
 
-                            //TODO: get salary from user 
 
-                            //TODO: create a salary object with lastName, firstName, type, Salary 
+                            
 
                             //TODO: find an index where we can place salary object 
 
