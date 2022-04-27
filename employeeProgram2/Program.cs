@@ -91,12 +91,25 @@ foreach(Employee anEmployee in employeeList)
                     //TODO: get a last name
                     Console.WriteLine("Plese enter last name: ");
                     //not going to be using null ; 4-27-22
-                    string newEmployeeLastName = Console.ReadLine();
+                    string newLastName = Console.ReadLine();
                     //TODO: get a first name from the user
-                    string newEmployeeFirstName = Console.ReadLine();
+                    string newFirstName = Console.ReadLine();
                     //TODO: Get the type from the user
-                    string newEmployeeType = Console.ReadLine();
                     
+                    char newEmployeeType = Convert.ToChar(Console.ReadLine());
+                    
+                    switch(newEmployeeType)
+                    {
+                        case 'S': 
+                        case 's':
+                            Console.WriteLine("Please enter annual salary");
+                            double newEmployeeSalary = Convert.ToInt16(Console.ReadLine());
+                            employeeList.Add(new HourlyEmployee(newLastName, newFirstName, newEmployeeType, newEmployeeSalary));
+                        break;
+                    }
+                    // print the list again
+                    foreach (Employee anEmployee in employeeList)
+                            Console.WriteLine(anEmployee);
                     
 
                     // TODO: if the type is an 's',
