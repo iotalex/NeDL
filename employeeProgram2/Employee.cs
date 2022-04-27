@@ -26,9 +26,6 @@ namespace EmployeeProgram
             employeeType = newemployeeType;
             
         }
-              
-
-        
         public virtual double GetBonus()
         {
             return 0.0; 
