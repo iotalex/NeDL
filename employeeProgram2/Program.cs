@@ -96,17 +96,17 @@ foreach(Employee anEmployee in employeeList)
                     //TODO: get a first name from the user
                     string newFirstName = Console.ReadLine();
                     //TODO: Get the type from the user                                     
-                    char newEmployeeType = Convert.ToChar(Console.ReadLine());//allows us to use 'Char' 
                     Console.WriteLine("Plese enter employee type to add (S or H): ");
+                    char newEmployeeType = Convert.ToChar(Console.ReadLine());//allows us to use 'Char' 
 
                     switch(newEmployeeType)
                     {
-                        case 'S': //If the type is an 's' or 'S'
-                        case 's':
+                        case 'H': //If the type is an 's' or 'S'
+                        case 'h':
                             Console.WriteLine("Please enter hourly salary: ");
-                            double newEmployeeSalary = Convert.ToDouble(Console.ReadLine()); //TODO: get salary from user
+                            double newEmployeeHourly = Convert.ToDouble(Console.ReadLine()); //TODO: get salary from user
                             //Creates a salary object with lastName, firstName, type, Salary 
-                            employeeList.Add(new HourlyEmployee(newLastName, newFirstName, newEmployeeType, newEmployeeSalary));
+                            employeeList.Add(new HourlyEmployee(newLastName, newFirstName, newEmployeeType, newEmployeeHourly));
                             Console.WriteLine("Hourly employee added. Printing new list.");
                         break;
                     }
