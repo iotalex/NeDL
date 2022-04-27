@@ -33,7 +33,7 @@ namespace EmployeeProgram
        
         public override string ToString()
         {
-            return "Employee: " + lastName + ", " + firstName + " | " + employeeType + GetBonus();
+            return "Employee: " + lastName + ", " + firstName + " | " + employeeType + " " + GetBonus();
         }
         
 
