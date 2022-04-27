@@ -8,11 +8,14 @@ namespace EmployeeProgram
         {
             bool userChoice;
             string userChoiceString;
-            
-            Employee[] employeeArray = new Employee[25];//array of employees 
-            
+
+            List<Employee> employeeList = new List<Employee>();//array of employees 
+            //        List<DDRSong> DDRSongList =new List<DDRSong>();//changed to a list
+
             Employee newEmployee = new Employee("Knox", "Jimmy", 'H'); //this is creating the employee object
+            employeeList.Add(newEmployee);
             Employee newEmployee2 = new Employee("Fox", "Ryan", 'H');
+            employeeList.Add(newEmployee2);//these are converted, work the rest 
                     
                     
             //print the employee object
@@ -32,22 +35,21 @@ namespace EmployeeProgram
             Console.WriteLine(newSalaryEmployee2);
                     
             
-             
-            employeeArray[1] = newEmployee; //main object
-            employeeArray[2] = newEmployee2;
-            employeeArray[3] = newHourlyEmployee;//main object, with child class
-            employeeArray[4] = newHourlyEmployee2;
-            employeeArray[5] = newSalaryEmployee;
-            employeeArray[6] = newSalaryEmployee2;
-            Console.WriteLine("printing the array: ");
-            for(int index = 0; index < employeeArray.Length; index++)
-            {
-                if(!(employeeArray[index]==null))
+         
+            Console.WriteLine("printing the list: ");
+            foreach(Employee anEmployee in employeeList)
                 {
-                    Console.WriteLine(employeeArray[index]);
-                }
-                }//start CRUD here
+                    Console.WriteLine(employeeList);
 
+                }//start CRUD here
+/*
+ foreach (DDRSong anDDRSong in DDRSongList) //added list to print here
+            {
+                Console.WriteLine(anDDRSong);
+            }//start CRUD here (for later)
+
+
+*/
 
             
         //Repeat main loop 
@@ -56,8 +58,10 @@ namespace EmployeeProgram
             //  TODO: Get a valid input 
                 do
                 {
+                
+                bool found = false;
 
-                userChoice = false;
+                //userChoice = false;
 
                 Console.WriteLine("What's your pleasure?");
                 Console.WriteLine("R: Print a list of all the employees inclduing their calculated bonus.");
@@ -85,18 +89,28 @@ namespace EmployeeProgram
                     {
             
                     //print each employee to test the property gets and the toString
-                    for (int index = 0; index < employeeArray.Length; index++)
+                    foreach (Employee anEmployee in employeeList)
                     {
-                        if (!(((employeeArray[index]))==null))
-                            Console.WriteLine(employeeArray[index]);
+                        
+                            Console.WriteLine(anEmployee);
                     }
 
                     }//end using "R"
+/*
 
+foreach(Employee anEmployee in employeeList)
+                {
+                    Console.WriteLine(employeeList);
+
+                }
+
+*/
 
                     //   TODO: If the option is is C or c adds an employee including their calculated bonus 
                 if (userChoiceString=="C" || userChoiceString=="c")
                     {
+                       
+                       ///**won't have null, because you are using a list 
                        //TODO: get a last name 
 
                        //TODO: get a first name from the user 
@@ -119,7 +133,7 @@ namespace EmployeeProgram
 
                                 //TODO: create a hourly object with lastName, firstName, type, HourlyRate
 
-                                //TODO: find an index where we can place hourly object 
+                                //TODO: find an (it's going to be list) 4-27-22; index where we can place hourly object 
 
                                 //TODO: place the object at the index
 
