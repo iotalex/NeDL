@@ -31,7 +31,6 @@ namespace EmployeeProgram
             foreach(Employee anEmployee in employeeList)//prints the "list" above
                 {
                     Console.WriteLine(employeeList);
-
                 }//start CRUD here
 
         //Repeat main loop 
@@ -88,37 +87,71 @@ foreach(Employee anEmployee in employeeList)
 
                     //   TODO: If the option is is C or c adds an employee including their calculated bonus 
                 if (userChoiceString=="C" || userChoiceString=="c")
-                    {
-                       //TODO: get a last name  
-                       //not going to be using null ; 4-27-22
-
-                       //TODO: get a first name from the user 
-
-                       //TODO: Get the type from the user
-
-                       // TODO: if the type is an 's', 
-                       
-
-                                //TODO: get salary from user 
-
-                                //TODO: create a salary object with lastName, firstName, type, Salary 
-
-                                //TODO: find an index where we can place salary object 
-
-                                //TODO: place the object at the index 
-
-                        //if type is an 'h',
-                                //TODO: get houlry rate from user 
-
-                                //TODO: create a hourly object with lastName, firstName, type, HourlyRate
-
-                                //TODO: find an (uisng a list now 4-27-22) where we can place hourly object 
-
-                                //TODO: place the object at the index
-
-                               
+                {
+                    //TODO: get a last name
+                    Console.WriteLine("Plese enter last name: ");
+                    //not going to be using null ; 4-27-22
+                    string newEmployeeLastName = Console.ReadLine();
+                    //TODO: get a first name from the user
+                    string newEmployeeFirstName = Console.ReadLine();
+                    //TODO: Get the type from the user
+                    string newEmployeeType = Console.ReadLine();
                     
+                    
+
+                    // TODO: if the type is an 's',
+                    
+
+                            //TODO: get salary from user 
+
+                            //TODO: create a salary object with lastName, firstName, type, Salary 
+
+                            //TODO: find an index where we can place salary object 
+
+                            //TODO: place the object at the index 
+
+                    //if type is an 'h',
+                            //TODO: get houlry rate from user 
+
+                            //TODO: create a hourly object with lastName, firstName, type, HourlyRate
+
+                            //TODO: find an (uisng a list now 4-27-22) where we can place hourly object 
+
+                            //TODO: place the object at the index
+/*
+//prompt user to enter new employee FRIST name 
+                
+                string newEmployeeFirstName;
+                Console.WriteLine("Enter employee first name: ");
+                newEmployeeFirstName = Console.ReadLine(); //gets the employee firstname
+                //prompt user to enter new employee LAST name 
+                string newEmployeeLastName;
+                Console.WriteLine("Enter employee last name: ");
+                newEmployeeLastName = Console.ReadLine(); //gets the employee firstname
+
+                int index = 0;
+                bool found = false;
+
+                do{
+                        if(newEmployeeLastNameArray[index] ==null)//if something is not found
+                        {
+                        found = true; //we found an open array element 
+                        }
+                        else
+                        {
+                        index++;//we didn't find an open element, so add 1
+                        }
+
                     }
+                while (found ==false);
+
+                newEmployeeFirstNameArray [index] = newEmployeeFirstName;               
+                newEmployeeLastNameArray [index] = newEmployeeLastName;  
+
+                */
+                            
+                
+                }
                  
             //   TODO: Else if the option is a Q or q then quit the program                
                 else if (userChoiceString=="Q" || userChoiceString=="q")
