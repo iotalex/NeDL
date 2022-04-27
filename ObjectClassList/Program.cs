@@ -9,7 +9,7 @@ namespace Stepmania // Note: actual namespace depends on the project name.
         {
         Console.WriteLine ("Lets dance!");
         //array of DDRSong's  
-        DDRSong[] newDDRSongArray =new DDRSong[25];//eventually change this to a list ***************** change to a list 
+        List<DDRSong> newDDRSongList =new List<DDRSong>();//changed to a list
               
 
         //now load in some test data
@@ -35,19 +35,19 @@ namespace Stepmania // Note: actual namespace depends on the project name.
         Console.WriteLine(newAceDDRSong2);
 
 
-        newDDRSongArray[1] = newDDRSong; //main object ///********instead of adding to array, add to list*** 
-        newDDRSongArray[2] = newDDRSong2;
-        newDDRSongArray[3] = newExtremeDDRSong;// main object, with child class 
-        newDDRSongArray[4] = newExtremeDDRSong2;
-        newDDRSongArray[5] = newAceDDRSong;// DDRAce object
-        newDDRSongArray[6] = newAceDDRSong2;
+        newDDRSongList[1] = newDDRSong; //main object ///********instead of adding to array, add to list*** 
+        newDDRSongList[2] = newDDRSong2;
+        newDDRSongList[3] = newExtremeDDRSong;// main object, with child class 
+        newDDRSongList[4] = newExtremeDDRSong2;
+        newDDRSongList[5] = newAceDDRSong;// DDRAce object
+        newDDRSongList[6] = newAceDDRSong2;
 
         Console.WriteLine("Print the array: ");
-        for(int index = 0; index < newDDRSongArray.Length; index++)
+        for(int index = 0; index < newDDRSongList.Length; index++)
             {
-                if(!(newDDRSongArray[index]==null))
+                if(!(newDDRSongList[index]==null))
                 {
-                    Console.WriteLine(newDDRSongArray[index]);
+                    Console.WriteLine(newDDRSongList[index]);
                 }
             }//start CRUD here (for later)
       
