@@ -10,58 +10,38 @@ namespace EmployeeProgram
             string userChoiceString;
 
             List<Employee> employeeList = new List<Employee>();//array of employees 
-            //        List<DDRSong> DDRSongList =new List<DDRSong>();//changed to a list
 
             Employee newEmployee = new Employee("Knox", "Jimmy", 'H'); //this is creating the employee object
             employeeList.Add(newEmployee);
             Employee newEmployee2 = new Employee("Fox", "Ryan", 'H');
-            employeeList.Add(newEmployee2);//these are converted, work the rest 
-                    
-                    
-            //print the employee object
-            Console.WriteLine(newEmployee);
-            Console.WriteLine(newEmployee2);
-            //create an hourly employee object 
-            HourlyEmployee newHourlyEmployee = new HourlyEmployee("Smithson", "Will",'H', 15.25);
-            HourlyEmployee newHourlyEmployee2 = new HourlyEmployee("Jones", "Matt",'H', 25.25);
-            //print the new HoulyEmployee object
-            Console.WriteLine(newHourlyEmployee);
-            Console.WriteLine(newHourlyEmployee2);
-            //create an hourly employee object 
-            SalaryEmployee newSalaryEmployee = new SalaryEmployee("Fonda", "Henry",'S', 85000);
-            SalaryEmployee newSalaryEmployee2 = new SalaryEmployee("Arnoldson", "Blake",'S', 125000);
-            //print the new HoulyEmployee object
-            Console.WriteLine(newSalaryEmployee);
-            Console.WriteLine(newSalaryEmployee2);
-                    
+            employeeList.Add(newEmployee2);
             
-         
-            Console.WriteLine("printing the list: ");
-            foreach(Employee anEmployee in employeeList)
+            //create an hourly employee object 
+            HourlyEmployee newHourlyEmployee = new HourlyEmployee("Smithson", "Will",'H', 15.25);//creating Hourly employee object
+            employeeList.Add(newHourlyEmployee);
+            HourlyEmployee newHourlyEmployee2 = new HourlyEmployee("Jones", "Matt",'H', 25.25);
+            employeeList.Add(newHourlyEmployee2);
+           
+            //create an hourly employee object 
+            SalaryEmployee newSalaryEmployee = new SalaryEmployee("Fonda", "Henry",'S', 85000);//creating Salary employee object 
+            employeeList.Add(newSalaryEmployee);
+            SalaryEmployee newSalaryEmployee2 = new SalaryEmployee("Arnoldson", "Blake",'S', 125000);
+            employeeList.Add(newSalaryEmployee2);         
+  
+            foreach(Employee anEmployee in employeeList)//prints the "list" above
                 {
                     Console.WriteLine(employeeList);
 
                 }//start CRUD here
-/*
- foreach (DDRSong anDDRSong in DDRSongList) //added list to print here
-            {
-                Console.WriteLine(anDDRSong);
-            }//start CRUD here (for later)
 
-
-*/
-
-            
         //Repeat main loop 
             do
             {     
             //  TODO: Get a valid input 
                 do
                 {
-                
-                bool found = false;
 
-                //userChoice = false;
+                userChoice = false;
 
                 Console.WriteLine("What's your pleasure?");
                 Console.WriteLine("R: Print a list of all the employees inclduing their calculated bonus.");
@@ -109,9 +89,8 @@ foreach(Employee anEmployee in employeeList)
                     //   TODO: If the option is is C or c adds an employee including their calculated bonus 
                 if (userChoiceString=="C" || userChoiceString=="c")
                     {
-                       
-                       ///**won't have null, because you are using a list 
-                       //TODO: get a last name 
+                       //TODO: get a last name  
+                       //not going to be using null ; 4-27-22
 
                        //TODO: get a first name from the user 
 
@@ -133,7 +112,7 @@ foreach(Employee anEmployee in employeeList)
 
                                 //TODO: create a hourly object with lastName, firstName, type, HourlyRate
 
-                                //TODO: find an (it's going to be list) 4-27-22; index where we can place hourly object 
+                                //TODO: find an (uisng a list now 4-27-22) where we can place hourly object 
 
                                 //TODO: place the object at the index
 
