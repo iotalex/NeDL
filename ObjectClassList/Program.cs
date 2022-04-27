@@ -20,8 +20,8 @@ namespace Stepmania // Note: actual namespace depends on the project name.
         Console.WriteLine(newDDRSong2);
         
         //now create DDR Extreme object
-        ExtremeDDRSong newExtremeDDRSong = new ExtremeDDRSong("Oh When the Saints", 9, 3, "Extreme");// DDR object 
-        ExtremeDDRSong newExtremeDDRSong2 = new ExtremeDDRSong("Ska a go go", 7, 2, "Extreme");// DDR object 
+        ExtremeDDRSong newExtremeDDRSong = new ExtremeDDRSong("Oh When the Saints", 9, 3, "Extreme");// DDR object
+        ExtremeDDRSong newExtremeDDRSong2 = new ExtremeDDRSong("Ska a go go", 7, 2, "Extreme");// DDR object
         
         //now print DDR Extreme object
         Console.WriteLine(newExtremeDDRSong);
@@ -34,21 +34,10 @@ namespace Stepmania // Note: actual namespace depends on the project name.
         Console.WriteLine(newAceDDRSong);
         Console.WriteLine(newAceDDRSong2);
 
-
-        DDRSongList[1] = newDDRSong; //main object ///********instead of adding to array, add to list*** 
-        DDRSongList[2] = newDDRSong2;
-        DDRSongList[3] = newExtremeDDRSong;// main object, with child class 
-        DDRSongList[4] = newExtremeDDRSong2;
-        DDRSongList[5] = newAceDDRSong;// DDRAce object
-        DDRSongList[6] = newAceDDRSong2;
-
-        Console.WriteLine("Print the array: ");
-        foreach (DDRSong anDDRSong in DDRSongList)
+        foreach (DDRSong anDDRSong in DDRSongList) //added list to print here
             {
                 Console.WriteLine(anDDRSong);
             }//start CRUD here (for later)
-      
-
 
         }
     }//end class 
