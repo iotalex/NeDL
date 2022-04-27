@@ -101,13 +101,25 @@ foreach(Employee anEmployee in employeeList)
 
                     switch(newEmployeeType)
                     {
-                        case 'H': //If the type is an 's' or 'S'
+                        case 'H': //If the type is an 'H' or 'h'
                         case 'h':
                             Console.WriteLine("Please enter hourly salary: ");
-                            double newEmployeeHourly = Convert.ToDouble(Console.ReadLine()); //TODO: get salary from user
-                            //Creates a salary object with lastName, firstName, type, Salary 
+                            double newEmployeeHourly = Convert.ToDouble(Console.ReadLine()); //TODO: get total hour salary from user
+                            //Creates an Hourly Employee object with lastName, firstName, type, total hourly Salary 
                             employeeList.Add(new HourlyEmployee(newLastName, newFirstName, newEmployeeType, newEmployeeHourly));
                             Console.WriteLine("Hourly employee added. Printing new list.");
+                        break;
+                        
+                        case 'S'://IF the type is 'Salary' or 'salary' 
+                        case 's':
+                            Console.WriteLine("Please enter annual salary: ");
+                            double newEmployeeSalary = Convert.ToDouble(Console.ReadLine());// get's annual salary from user
+                            //Creates a salary employee object with lastName, firstName, type, annual Salary
+                            employeeList.Add(new SalaryEmployee(newLastName, newFirstName, newEmployeeType, newEmployeeSalary));
+                            Console.WriteLine("Salary employee added. Printing new list.");
+                        break;
+                        default:
+                            Console.WriteLine("Ope, wrong option and you only get one change here! Nothing was added."); 
                         break;
                     }
                     // print the list again
@@ -118,53 +130,6 @@ foreach(Employee anEmployee in employeeList)
                     
                     
 
-
-                            
-
-                            //TODO: find an index where we can place salary object 
-
-                            //TODO: place the object at the index 
-
-                    //if type is an 'h',
-                            //TODO: get houlry rate from user 
-
-                            //TODO: create a hourly object with lastName, firstName, type, HourlyRate
-
-                            //TODO: find an (uisng a list now 4-27-22) where we can place hourly object 
-
-                            //TODO: place the object at the index
-/*
-//prompt user to enter new employee FRIST name 
-                
-                string newEmployeeFirstName;
-                Console.WriteLine("Enter employee first name: ");
-                newEmployeeFirstName = Console.ReadLine(); //gets the employee firstname
-                //prompt user to enter new employee LAST name 
-                string newEmployeeLastName;
-                Console.WriteLine("Enter employee last name: ");
-                newEmployeeLastName = Console.ReadLine(); //gets the employee firstname
-
-                int index = 0;
-                bool found = false;
-
-                do{
-                        if(newEmployeeLastNameArray[index] ==null)//if something is not found
-                        {
-                        found = true; //we found an open array element 
-                        }
-                        else
-                        {
-                        index++;//we didn't find an open element, so add 1
-                        }
-
-                    }
-                while (found ==false);
-
-                newEmployeeFirstNameArray [index] = newEmployeeFirstName;               
-                newEmployeeLastNameArray [index] = newEmployeeLastName;  
-
-                */
-                            
                 
                 }
                  
