@@ -5,8 +5,14 @@ namespace BankingApp
     
     class Account{
         //strings getters/setters
-        //account id, the type of account, and current balance.
-        //get accountId
+        public string accountID
+            {get; set;}
+        public string accountType
+            {get; set;}
+        public string currentBalance
+            {get; set;}
+
+    
 
         //get type of accountType
 
