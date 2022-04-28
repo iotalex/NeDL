@@ -25,10 +25,18 @@ namespace BankingApp
             currentBalance = newCurrentBalance;
         }
 
-        //public Account(string );
-
-        //method(s) like 
-
+        public virtual double DepositMethod(){
+            return 0.0;
+        }
+        public override string ToString(){
+            string outPutString = $"Account#: {accountId} | Account Type: {accountType} | Current Balance $: {currentBalance} | ";
+            return outPutString;
+        }
+        
+/*
+string outputString = $"{base.ToString()} | Series: {aceSeries}";
+            return outputString;
+*/
             //depositmethod
 
             //abstract withdrawal method
