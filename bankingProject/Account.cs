@@ -1,29 +1,30 @@
 ﻿using System;
 
 namespace BankingApp 
-{
-    
+{   
     class Account{
         //strings getters/setters
-        public string accountID
+        public int accountId
             {get; set;}
         public string accountType
             {get; set;}
-        public string currentBalance
+        public int currentBalance
             {get; set;}
 
-    
-
-        //get type of accountType
-
-        //get currentBalance
-
-
-        //contructors
+        //default parent contructor
         public Account(){
             //types from above
+            accountId = 0;  
+            accountType = " ";  
+            currentBalance = 0;
         }
-        //default constructor strings 
+        //default constructor strings
+        public Account(int newAccountId, string newAccountType, int newCurrentBalance){
+            accountId = newAccountId;
+            accountType = newAccountType;
+            currentBalance = newCurrentBalance;
+        }
+
         //public Account(string );
 
         //method(s) like 
