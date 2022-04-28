@@ -6,11 +6,28 @@ namespace BankingApp{
             
              
             List<Account> accountList = new List<Account>();//list of accounts
-
-            Account newAccount = new Account(1001, "Checking", 13.50);
+            
+        //main parent class == Account == test data  
+            Account newAccount = new Account(0001, "Checking", 13.50);
             accountList.Add(newAccount);
-            Account newAccount2 = new Account(1001, "Savings", 18.75);
+            Account newAccount2 = new Account(0002, "Savings", 18.75);
             accountList.Add(newAccount2);
+        //First child class == Checking == test data  
+            Account newCheckingAccount = new Account(2001, "Checking", 57.50);
+            accountList.Add(newAccount);
+            Account newCheckingAccount2 = new Account(2002, "Checking", 138.75);
+            accountList.Add(newAccount2);
+
+            //parent class: Account 
+            //checkingAccount --interface method 
+            //savingsAccount--interface method 
+            //CdAccount--interface method 
+            
+
+            //deposit - is built into "D"; CRUD and use   if else or (pull the integer and then add to it)
+            
+            
+            //withdrawal--abstract method; 
 
             
             foreach(Account aListItem in accountList){
