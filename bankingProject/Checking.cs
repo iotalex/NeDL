@@ -7,7 +7,7 @@ namespace BankingApp
         //strings getters/setters
         public double checkingAccountBalance //property 
             {get; set;}
-        public CheckingAccount() : base()      // default constructor
+        public CheckingAccount()      // default constructor
         {
             checkingAccountBalance =  0;
         }
@@ -18,10 +18,7 @@ namespace BankingApp
             checkingAccountBalance = newCheckingAccountBalance;            
         }
           
-            //base ToString()
-        public override string ToString(){
-            return base.ToString(); 
-        }
+         
 
 
 

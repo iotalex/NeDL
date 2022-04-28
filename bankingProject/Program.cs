@@ -9,9 +9,9 @@ namespace BankingApp{
             
         //main parent class == Account == test data  
                     
-            Account newAccount = new Account(0001, "Checking", 13.50);
+            Account newAccount = new Account(1001, "Checking", 13.50);
             accountList.Add(newAccount);
-            Account newAccount2 = new Account(0002, "Savings", 18.75);
+            Account newAccount2 = new Account(1002, "Savings", 18.75);
             accountList.Add(newAccount2);
         //First child class == Checking == test data  
             CheckingAccount newCheckingAccount = new CheckingAccount(2001, "Checking", 57.50);
