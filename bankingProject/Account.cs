@@ -8,7 +8,7 @@ namespace BankingApp
             {get; set;}
         public string accountType
             {get; set;}
-        public int currentBalance
+        public double currentBalance
             {get; set;}
 
         //default parent contructor
@@ -16,10 +16,10 @@ namespace BankingApp
             //types from above
             accountId = 0;  
             accountType = " ";  
-            currentBalance = 0;
+            currentBalance = 0.00;//double 
         }
         //default constructor strings
-        public Account(int newAccountId, string newAccountType, int newCurrentBalance){
+        public Account(int newAccountId, string newAccountType, double newCurrentBalance){
             accountId = newAccountId;
             accountType = newAccountType;
             currentBalance = newCurrentBalance;

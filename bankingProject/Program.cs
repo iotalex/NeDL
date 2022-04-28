@@ -6,8 +6,17 @@ namespace BankingApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+            List<Account> accountList = new List<Account>();//list of accounts
+
+            Account newAccount = new Account(1001, "Checking", 3.50);
+
+
+
+
+
+
+
+        }//end static main 
 /*
 List<Employee> employeeList = new List<Employee>();//array of employees 
 
