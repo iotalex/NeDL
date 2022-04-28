@@ -26,11 +26,6 @@ namespace BankingApp
             currentBalance = newCurrentBalance;
         }
 
-        public virtual void GetFee(double newBalance)
-        {
-            //do nothing here
-        }
-
             //usefull ToString()
         public override string ToString(){
             string outPutString = $"Account#: {accountId} | Account Type: {accountType} | Current Balance $: {currentBalance} | ";

@@ -8,15 +8,16 @@ namespace BankingApp{
             List<Account> accountList = new List<Account>();//list of accounts
             
         //main parent class == Account == test data  
+                    
             Account newAccount = new Account(0001, "Checking", 13.50);
             accountList.Add(newAccount);
             Account newAccount2 = new Account(0002, "Savings", 18.75);
             accountList.Add(newAccount2);
         //First child class == Checking == test data  
-            Account newCheckingAccount = new Account(2001, "Checking", 57.50);
-            accountList.Add(newAccount);
-            Account newCheckingAccount2 = new Account(2002, "Checking", 138.75);
-            accountList.Add(newAccount2);
+            CheckingAccount newCheckingAccount = new CheckingAccount(2001, "Checking", 57.50);
+            accountList.Add(newCheckingAccount);
+            CheckingAccount newCheckingAccount2 = new CheckingAccount(2002, "Checking", 138.75);
+            accountList.Add(newCheckingAccount2);
 
             //parent class: Account 
             //checkingAccount --interface method 
