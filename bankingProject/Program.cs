@@ -1,27 +1,34 @@
 ﻿using System;
 
-namespace BankingApp 
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
+namespace BankingApp{
+    internal class Program{
+        static void Main(string[] args){
+            
+             
             List<Account> accountList = new List<Account>();//list of accounts
 
             Account newAccount = new Account(1001, "Checking", 3.50);
+            accountList.Add(newAccount);
+            Account newAccount2 = new Account(1001, "Savings", 18.75);
+            accountList.Add(newAccount2);
+
+            
+            foreach(Account aListItem in accountList){
+                Console.WriteLine(accountList);//prints the list above (test data)
+            }
+
+
+            
 
 
 
-
-
-
-
-        }//end static main 
+        }//end static main
+        
 /*
-List<Employee> employeeList = new List<Employee>();//array of employees 
-
-            Employee newEmployee = new Employee("Knox", "Jimmy", 'H'); //this is creating the employee object
-            employeeList.Add(newEmployee);
+foreach(Employee anEmployee in employeeList)//prints the "list" above
+                {
+                    Console.WriteLine(employeeList);
+                }//start CRUD here
 
 */
 

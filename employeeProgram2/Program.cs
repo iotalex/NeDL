@@ -30,7 +30,7 @@ namespace EmployeeProgram
   
             foreach(Employee anEmployee in employeeList)//prints the "list" above
                 {
-                    Console.WriteLine(employeeList);
+                    Console.WriteLine(anEmployee);
                 }//start CRUD here
 
         //Repeat main loop 
