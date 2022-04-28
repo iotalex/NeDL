@@ -13,7 +13,7 @@ namespace Stepmania // Note: actual namespace depends on the project name.
               
 
         //now load in some test data
-        DDRSong newDDRSong = new DDRSong("Captin Jack", 7, 1);//This is creating a new DDR object 
+        DDRSong newDDRSong = new DDRSong("Captin Jack", 7, 1);//This is creating a new DDR object
         DDRSong newDDRSong2 = new DDRSong("I'm an Albatraoz", 12, 2);// DDR object
         //now print DDR object
         Console.WriteLine(newDDRSong);
