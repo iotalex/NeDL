@@ -7,14 +7,14 @@ namespace BankingApp{
              
             List<Account> accountList = new List<Account>();//list of accounts
 
-            Account newAccount = new Account(1001, "Checking", 3.50);
+            Account newAccount = new Account(1001, "Checking", 13.50);
             accountList.Add(newAccount);
             Account newAccount2 = new Account(1001, "Savings", 18.75);
             accountList.Add(newAccount2);
 
             
             foreach(Account aListItem in accountList){
-                Console.WriteLine(accountList);//prints the list above (test data)
+                Console.WriteLine(aListItem);//prints the list above (test data)
             }
 
 

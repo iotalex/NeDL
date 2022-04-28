@@ -16,7 +16,7 @@ namespace BankingApp
             //types from above
             accountId = 0;  
             accountType = " ";  
-            currentBalance = 0.00;//double 
+            currentBalance = 0.00;//double
         }
         //default constructor strings
         public Account(int newAccountId, string newAccountType, double newCurrentBalance){
@@ -25,7 +25,7 @@ namespace BankingApp
             currentBalance = newCurrentBalance;
         }
             //Deposit Method, two parameters (e.g. int x, int y) then return (int x, int y)
-        static double DepositMethod(int x, int y){
+        public double DepositMethod(int x, int y){
             return x + y;
         }
         
