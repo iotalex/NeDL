@@ -18,6 +18,11 @@ namespace BankingApp{
             accountList.Add(newCheckingAccount);
             CheckingAccount newCheckingAccount2 = new CheckingAccount(2002, "Checking", 138.75);
             accountList.Add(newCheckingAccount2);
+        //Second child class == Savings == test data  
+            SavingsAccount newSavingsAccount = new SavingsAccount(3001, "Savings", 69.50);
+            accountList.Add(newSavingsAccount);
+            SavingsAccount newSavingsAccoun2 = new SavingsAccount(3002, "Savings", 2000.75);
+            accountList.Add(newSavingsAccoun2);
 
             //parent class: Account 
             //checkingAccount --interface method 
