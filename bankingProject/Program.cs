@@ -9,10 +9,13 @@ namespace BankingApp{
             List<Account> accountList = new List<Account>();//list of accounts
             
         //main parent class == Account == test data                     
-            accountList.Add(new Account(1001, "CheckingBase", 55));
-            accountList.Add(new Account(1002, "SavingsBase", 69));
-            accountList.Add(new CheckingAccount(2001, "Checking", 55.56));
-            accountList.Add(new CheckingAccount(2002, "Checking2", 169.50));
+           // accountList.Add(new Account(1001, "CheckingBase", 55.98));
+           // accountList.Add(new Account(1002, "SavingsBase", 69.56));
+            accountList.Add(new CheckingAccount(2001, "Checking", 129.25, 55));
+            accountList.Add(new CheckingAccount(2002, "Checking2", 169.65, 25));
+
+            
+            
            /* 
             Account newAccount2 = new Account(1002, "Savings", 18.75);
             accountList.Add(newAccount2);
@@ -53,7 +56,8 @@ namespace BankingApp{
 
                 Console.WriteLine("Please select an option below: ");
                 Console.WriteLine("L: Load the accounts.");
-                Console.WriteLine("S: Deposit.");
+                Console.WriteLine("D: Make a desposit");
+                Console.WriteLine("W: Make a desposit");
                
 
                 //  TODO: Get a user option (valid means its on the menu)
@@ -61,7 +65,8 @@ namespace BankingApp{
                 userChoiceString = Console.ReadLine();
 
                 userChoice = (userChoiceString=="L" || userChoiceString=="l" ||
-                            userChoiceString == "S" || userChoiceString == "s" );
+                             userChoiceString=="W" || userChoiceString=="w" ||
+                            userChoiceString == "D" || userChoiceString == "d" );
 
                 if (!userChoice)
                 {
@@ -82,18 +87,51 @@ namespace BankingApp{
             
             }
 
-        //  TODO: Else if the option is an S or s then store the array of strings into the text file
+        //  TODO: Else if the option is an D or d -- perform a desposit 
 
-            else if (userChoiceString=="S" || userChoiceString=="s")
+            else if (userChoiceString=="D" || userChoiceString=="d")
             {
-                Console.WriteLine("In the S/s area");
+                double depositAmount;
+                int accountId; 
+
+                Console.WriteLine("Please enter deposit amount: ");
+                depositAmount = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Please enter account number"); 
+                accountId = Convert.ToInt32(Console.ReadLine());
+                
+                foreach(Account anAccount in accountList)
+                {
+                    if(anAccount.accountId==accountId)
+                        {
+                            anAccount.MakeDeposit(depositAmount);
+                            Console.WriteLine("Deposit made");//prints the list above (test data)
+                        }//end if 
+                }//end foreach     
+           
+       
+       
             }
 
         //  TODO: Else if the option is a C or c then add a name to the array (if there's room)
 
-            else if (userChoiceString=="C" || userChoiceString=="c")
+            else if (userChoiceString=="W" || userChoiceString=="w")
             {
-                Console.WriteLine("In the C/c area");
+                double withDrawalAmount;
+                int accountId; 
+
+                Console.WriteLine("Please enter withdrawal amount: ");
+                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Please enter account number"); 
+                accountId = Convert.ToInt32(Console.ReadLine());
+                
+                foreach(Account anAccount in accountList)
+                {
+                    if(anAccount.accountId==accountId)
+                        {
+                            anAccount.MakeWithdrawal(withDrawalAmount);
+                            Console.WriteLine("Withdrawal made");//prints the list above (test data)
+                        }//end if 
+                }//end foreach     
             }
 
         

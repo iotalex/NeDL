@@ -4,31 +4,43 @@ namespace BankingApp
 {   
     class CheckingAccount : Account
     {               
-        //strings getters/setters
-        public int accountId
+
+        public double feeChecking
             {get; set;}
-        public string accountType
-            {get; set;}
-        public double currentBalance
-            {get; set;}
+        
 
         //default parent contructor
         public CheckingAccount(){
             //types from above
             accountId = ' ';  
             accountType = " ";  
-            currentBalance = 0.00;//double
+            feeChecking = 0;
         }
         //default constructor strings
-        public CheckingAccount(int newAccountId, string newAccountType, double newCurrentBalance){
-            accountId = newAccountId;
-            accountType = newAccountType;
-            currentBalance = newCurrentBalance;
+        public CheckingAccount(int newAccountId, string newAccountType, double newCurrentBalance, int newFeeChecking) : base (newAccountId, newAccountType, newCurrentBalance)
+        {
+                
+            feeChecking = newFeeChecking; 
+        }
+        
+        //interface method Get()
+        public double GetBalance()
+        {
+            return currentBalance;
+        }
+        public override void MakeWithdrawal(double withDrawalAmount)
+        {
+            currentBalance = currentBalance - withDrawalAmount;  //if logic parenters of 50%, in program.cs 
         }
 
+        public override void SetBalance(double newCurrentBalance)
+        {
+
+        }
+ 
             //usefull ToString()
         public override string ToString(){
-            return $"Account#: {accountId} | Account Type: {accountType} | Current Balance: ${currentBalance} | ";
+            return $"Account#: {accountId} | Account Type: {accountType} | Current Balance: ${currentBalance} | Annual Fee: -${feeChecking} ";
         }
 
 

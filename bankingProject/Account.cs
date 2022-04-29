@@ -2,14 +2,14 @@
 
 namespace BankingApp 
 {   
-    class Account
+    abstract class Account
     {               
         //strings getters/setters
         public int accountId
             {get; set;}
         public string accountType
             {get; set;}
-        public int currentBalance
+        public double currentBalance
             {get; set;}
 
         //default parent contructor
@@ -17,16 +17,26 @@ namespace BankingApp
             //types from above
             accountId = ' ';  
             accountType = " ";  
-            currentBalance = 0;//double
+            currentBalance = ' ';//double
         }
         //default constructor strings
-        public Account(int newAccountId, string newAccountType, int newCurrentBalance){
+        public Account(int newAccountId, string newAccountType, double newCurrentBalance){
             accountId = newAccountId;
             accountType = newAccountType;
             currentBalance = newCurrentBalance;
         }
-      
-     
+
+        public void MakeDeposit(double depositAmount)
+        {
+            currentBalance = currentBalance + depositAmount;
+        }
+
+        public abstract void MakeWithdrawal(double withDrawalAmount); 
+
+        public virtual void SetBalance(double newCurrentBalance)  // interface method
+        {
+            // nothing to do here
+        }
 
             //usefull ToString()
         public override string ToString(){
@@ -47,21 +57,3 @@ namespace BankingApp
 
 
 
-
-
-  //parent class: Account 
-            //checkingAccount --interface method 
-            //savingsAccount--interface method 
-            //CdAccount--interface method 
-            //withdrawal--abstract method  
-
-
-//I reserached this, but it's too soon to implement; deposit should be standard method?
-
-/*
-            //Deposit Method, two parameters return (int x, int y)
-        static double Deposit(double x, double y){
-            return x + y;
-        }
-
-            */
