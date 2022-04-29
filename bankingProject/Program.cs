@@ -36,7 +36,7 @@ namespace BankingApp{
          // Declare variables
         bool userChoice;
         string userChoiceString;
-        string[] nameArray = new string[10];
+        
 
       // Repeat main loop
       do
@@ -51,9 +51,9 @@ namespace BankingApp{
 
                 //  TODO: Provide the user a menu of options
 
-                Console.WriteLine("Please select an option beloew: ");
+                Console.WriteLine("Please select an option below: ");
                 Console.WriteLine("L: Load the accounts.");
-                Console.WriteLine("S: Save the array to the data file.");
+                Console.WriteLine("S: Deposit.");
                
 
                 //  TODO: Get a user option (valid means its on the menu)
@@ -96,17 +96,7 @@ namespace BankingApp{
                 Console.WriteLine("In the C/c area");
             }
 
-        //  TODO: Else if the option is an R or r then print the array
-
-            else if (userChoiceString=="R" || userChoiceString=="r")
-            {
-                Console.WriteLine("In the R/r area");
-                for (int index = 0; index < 10; index++)
-                {
-                    Console.WriteLine(nameArray[index]);
-                }
-
-            }
+        
         //  TODO: Else if the option is a U or u then update a name in the array (if it's there)
 
             else if (userChoiceString=="U" || userChoiceString=="u")
