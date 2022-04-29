@@ -17,6 +17,9 @@ namespace BankingApp{
             accountList.Add(new SavingsAccount(3001, "Savings", 6950.35, 0));
             accountList.Add(new SavingsAccount(3001, "Savings2", 2600.50, 0));
 
+            accountList.Add(new CdAccount(4001, "CD", 32000, 0));
+            accountList.Add(new CdAccount(4001, "CD2", 18000, 0));
+
             
             
            /* 
@@ -97,9 +100,7 @@ namespace BankingApp{
                             Console.WriteLine("Deposit made");//prints the list above (test data)
                         }//end if 
                 }//end foreach     
-           
-       
-       
+
             }
 
         //  TODO: Else if the option is a C or c then add a name to the array (if there's room)

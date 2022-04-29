@@ -2,7 +2,7 @@
 
 namespace BankingApp 
 {   
-    abstract class Account
+    abstract class Account //cool, so abstract class allows us to override boolean issues stuff??
     {               
         //strings getters/setters
         public int accountId

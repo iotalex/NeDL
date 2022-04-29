@@ -2,24 +2,24 @@
 
 namespace BankingApp 
 {   
-    class SavingsAccount : Account
+    class CdAccount : Account
     {               
 
-        public double feeSavings
+        public double feeCD
             {get; set;}
 
         //default parent contructor
-        public SavingsAccount(){
+        public CdAccount(){
             //types from above
             accountId = ' ';  
             accountType = " "; 
-            feeSavings = ' ';
+            feeCD = ' ';
         }
         //default constructor strings
-        public SavingsAccount(int newAccountId, string newAccountType, double newCurrentBalance, int newFeeChecking) : base (newAccountId, newAccountType, newCurrentBalance)
+        public CdAccount(int newAccountId, string newAccountType, double newCurrentBalance, int newfeeCD) : base (newAccountId, newAccountType, newCurrentBalance)
         {
                 
-            feeSavings = newFeeChecking; 
+            feeCD = newfeeCD; 
         }
         
         //interface method Get()
@@ -29,11 +29,11 @@ namespace BankingApp
         }
         public override void MakeWithdrawal(double withDrawalAmount)
         {
-            currentBalance = currentBalance - withDrawalAmount; 
+            currentBalance = currentBalance - withDrawalAmount;  
         }
           //usefull ToString()
         public override string ToString(){
-            return $"Account#: {accountId} | Account Type: {accountType} | Current Balance: ${currentBalance} | Annual Fee: ${feeSavings} ";
+            return $"Account#: {accountId} | Account Type: {accountType} | Current Balance: ${currentBalance} | Annual Fee: ${feeCD} ";
         }
 
 
