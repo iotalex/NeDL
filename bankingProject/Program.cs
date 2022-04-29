@@ -18,18 +18,8 @@ namespace BankingApp{
             accountList.Add(new SavingsAccount(3001, "Savings2", 2600.50, 0));
 
             accountList.Add(new CdAccount(4001, "CD", 32000, 0));
-            accountList.Add(new CdAccount(4001, "CD2", 18000, 0));
-
-            
-            
-           /* 
-        //Second child class == Savings == test data  
-            CdAccount newCdAccount = new CdAccount(4001, "CD", 2400.51);
-            accountList.Add(newCdAccount);
-            CdAccount newCdAccoun2 = new CdAccount(4002, "CD", 18500.60);
-            accountList.Add(newCdAccoun2);
-*/
-            
+            accountList.Add(new CdAccount(4002, "CD2", 18000, 0));
+   
          // Declare variables
         bool userChoice;
         string userChoiceString;
@@ -68,7 +58,7 @@ namespace BankingApp{
 
             } while (!userChoice);
 
-        //  TODO: If the option is L or l then load the text file (names.txt) into the array of strings (nameArray)
+        //  TODO: If the option is L or l prints the list above (test data)
 
             if (userChoiceString=="L" || userChoiceString=="l")
             {
@@ -97,9 +87,18 @@ namespace BankingApp{
                     if(anAccount.accountId==accountId)
                         {
                             anAccount.MakeDeposit(depositAmount);
-                            Console.WriteLine("Deposit made");//prints the list above (test data)
+                            Console.WriteLine("Deposit made");
                         }//end if 
-                }//end foreach     
+                }//end foreach
+                
+                while(depositAmount <= 0)
+                {
+                    Console.WriteLine("Hey, please enter a positive number.");
+                    break;
+                }
+                
+                
+
 
             }
 

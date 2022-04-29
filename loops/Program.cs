@@ -11,7 +11,6 @@ namespace MyApplication
         int feetLoops = Convert.ToInt32(numFeet);
     
       while (feetLoops <= 0)
-     
       {
         Console.WriteLine("hey, please enter a positive number");
         numFeet = Console.ReadLine(); 
