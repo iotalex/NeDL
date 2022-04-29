@@ -7,7 +7,7 @@ namespace BankingApp
         //strings getters/setters
         public double checkingAccountBalance //property 
             {get; set;}
-        public CheckingAccount()      // default constructor
+        public CheckingAccount()      // Checking constructor
         {
             checkingAccountBalance =  0;
         }
