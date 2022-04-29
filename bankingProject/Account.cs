@@ -33,22 +33,12 @@ namespace BankingApp
 
         public abstract void MakeWithdrawal(double withDrawalAmount); 
 
-        public virtual void SetBalance(double newCurrentBalance)  // interface method
-        {
-            // nothing to do here
-        }
+      
 
             //usefull ToString()
         public override string ToString(){
             return $"Account#: {accountId} | Account Type: {accountType} | Current Balance: ${currentBalance} | ";
         }
-
-
-            
-
-
-            
-
 
         
     }//end class Account 
