@@ -41,6 +41,7 @@ namespace BankingApp{
                 Console.WriteLine("L: Load the accounts.");
                 Console.WriteLine("D: Make a desposit");
                 Console.WriteLine("W: Make a Withdrawal");
+                Console.WriteLine("Z: Make a checking transaction");
                
 
                 //  TODO: Get a user option (valid means its on the menu)
@@ -49,6 +50,7 @@ namespace BankingApp{
 
                 userChoice = (userChoiceString=="L" || userChoiceString=="l" ||
                              userChoiceString=="W" || userChoiceString=="w" ||
+                             userChoiceString=="Z" || userChoiceString=="z" ||
                             userChoiceString == "D" || userChoiceString == "d" );
 
                 if (!userChoice)
@@ -76,19 +78,12 @@ namespace BankingApp{
             {
                 double depositAmount;
                 int accountId;
-                
-               // string accountType;
-
-                //Console.WriteLine("Please enter account type (C, S, or CD): ");
-                //accountType = Convert.ToString(Console.ReadLine());
-
-
-
+ 
                 Console.WriteLine("Please enter deposit amount: ");
                 depositAmount = Convert.ToDouble(Console.ReadLine());
                     while(depositAmount <= 0) //acount balance divided by %50
                     {
-                    Console.WriteLine("Hey, please enter a positive number.");
+                    Console.WriteLine("Hey, please enter a positive number.");//warns user to enter positive integer
                     break;   
                     }
                 Console.WriteLine("Please enter account number"); 
@@ -104,11 +99,6 @@ namespace BankingApp{
                
                 
                 }//end foreach
-                
-                
-
-                
-                
 
 
             }
@@ -136,11 +126,15 @@ namespace BankingApp{
             }
 
         
-        //  TODO: Else if the option is a U or u then update a name in the array (if it's there)
+        //  TODO: Else if the option is a Z or z then make  
 
-            else if (userChoiceString=="U" || userChoiceString=="u")
+            else if (userChoiceString=="Z" || userChoiceString=="z")
             {
-                Console.WriteLine("In the U/u area");
+               
+
+
+
+                
             }
 
         //  TODO: Else if the option is a D or d then delete the name in the array (if it's there)
@@ -158,13 +152,7 @@ namespace BankingApp{
         } while (!(userChoiceString=="Q") && !(userChoiceString=="q"));
         }//end static main
         
-/*
-foreach(Employee anEmployee in employeeList)//prints the "list" above
-                {
-                    Console.WriteLine(employeeList);
-                }//start CRUD here
 
-*/
 
 
         
