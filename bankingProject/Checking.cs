@@ -5,18 +5,27 @@ namespace BankingApp
     class CheckingAccount : Account
     {
         //strings getters/setters
-        public double checkingAccountBalance //property 
+        public int accountId
             {get; set;}
-        public CheckingAccount()      // Checking constructor
+      
+        public CheckingAccount() : base()      // Checking constructor
         {
-            checkingAccountBalance =  0;
+            //types from above
+            accountId =  0;
         }
 
-        //Checking child contructor
-        public CheckingAccount(int newAccountId, string newAccountType, double newCheckingAccountBalance) : base (newAccountId, newAccountType, newCheckingAccountBalance) //another constructor 
-        { 
-            checkingAccountBalance = newCheckingAccountBalance;            
+        
+        public override void SetBalance(int newAccountId)  // interface method
+        {
+            accountId = newAccountId;
         }
+        
+         public override string ToString()
+        {
+            return base.ToString() + " | AccountID" + accountId + " | Balance?: $";
+        }
+
+      
           
          
 

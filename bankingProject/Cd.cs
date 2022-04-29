@@ -2,20 +2,20 @@
 
 namespace BankingApp 
 {   
-    class SavingsAccount : Account
+    class CdAccount : Account
     {
         //strings getters/setters
-        public double savingsAccountBalance //property 
+        public double cdAccountBalance //property 
             {get; set;}
-        public SavingsAccount()      // default constructor
+        public CdAccount()      // default constructor
         {
-            savingsAccountBalance =  0;
+            cdAccountBalance =  0;
         }
 
-        //Savings child contructor
-        public SavingsAccount(int newAccountId, string newAccountType, double newSavingsAccountBalance) : base (newAccountId, newAccountType, newSavingsAccountBalance) //another constructor 
+        //Cd child contructor
+        public CdAccount(int newAccountId, string newAccountType, double newcdAccountBalance) : base (newAccountId, newAccountType, newcdAccountBalance) //another constructor 
         { 
-            savingsAccountBalance = newSavingsAccountBalance;            
+            cdAccountBalance = newcdAccountBalance;            
         }
           
          

@@ -3,7 +3,7 @@
 namespace BankingApp 
 {   
     class Account
-    {
+    {               
         //strings getters/setters
         public int accountId
             {get; set;}
@@ -15,7 +15,7 @@ namespace BankingApp
         //default parent contructor
         public Account(){
             //types from above
-            accountId = 0;  
+            accountId = ' ';  
             accountType = " ";  
             currentBalance = 0.00;//double
         }
@@ -24,6 +24,11 @@ namespace BankingApp
             accountId = newAccountId;
             accountType = newAccountType;
             currentBalance = newCurrentBalance;
+        }
+      
+        public virtual void SetBalance(int newAccountId)
+        {
+            //do nothing here 
         }
 
             //usefull ToString()
