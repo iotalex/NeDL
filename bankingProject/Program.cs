@@ -75,13 +75,25 @@ namespace BankingApp{
             else if (userChoiceString=="D" || userChoiceString=="d")
             {
                 double depositAmount;
-                int accountId; 
+                int accountId;
+                
+               // string accountType;
+
+                //Console.WriteLine("Please enter account type (C, S, or CD): ");
+                //accountType = Convert.ToString(Console.ReadLine());
+
+
 
                 Console.WriteLine("Please enter deposit amount: ");
                 depositAmount = Convert.ToDouble(Console.ReadLine());
+                    while(depositAmount <= 0) //acount balance divided by %50
+                    {
+                    Console.WriteLine("Hey, please enter a positive number.");
+                    break;   
+                    }
                 Console.WriteLine("Please enter account number"); 
                 accountId = Convert.ToInt32(Console.ReadLine());
-                
+            
                 foreach(Account anAccount in accountList)
                 {
                     if(anAccount.accountId==accountId)
@@ -89,13 +101,12 @@ namespace BankingApp{
                             anAccount.MakeDeposit(depositAmount);
                             Console.WriteLine("Deposit made");
                         }//end if 
+               
+                
                 }//end foreach
                 
-                while(depositAmount <= 0)
-                {
-                    Console.WriteLine("Hey, please enter a positive number.");
-                    break;
-                }
+                
+
                 
                 
 
