@@ -7,6 +7,7 @@ namespace BankingApp
 
         public double feeChecking
             {get; set;}
+      
 
         //default parent contructor
         public CheckingAccount(){
@@ -22,19 +23,21 @@ namespace BankingApp
             feeChecking = newFeeChecking; 
         }
         
-        //interface method Get()
+        //interface method Get(valid input)
         public double GetBalance()
         {
             return currentBalance;
         }
         public override void MakeWithdrawal(double withDrawalAmount)
         {
-            currentBalance = currentBalance - withDrawalAmount;  //if logic parenters of 50%, in program.cs 
+            currentBalance = currentBalance - withDrawalAmount;  //if logic parenters of 50%, in program.cs
         }
           //usefull ToString()
         public override string ToString(){
             return $"Account#: {accountId} | Account Type: {accountType} | Current Balance: ${currentBalance} | Annual Fee: ${feeChecking} ";
         }
+       
+
 
 
             

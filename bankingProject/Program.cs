@@ -125,12 +125,22 @@ namespace BankingApp{
                 }//end foreach     
             }
 
-        
+
+            //savings: withdrawal is allowed but only as long as the balance is great than the withdrawal amount 
+
+            ///CD: withdrawal is allowed but with early penalty (applied) so the balance needs to be greater than the withdrawl aomun and penalty combined 
+
         //  TODO: Else if the option is a Z or z then make  
 
             else if (userChoiceString=="Z" || userChoiceString=="z")
             {
-               
+             
+            //TODO: 4-29-22, left off here last Friday; 
+                        // Checking account withdrawal is allowed but only up to 50% of the account balance.
+
+                
+                
+            
 
 
 
