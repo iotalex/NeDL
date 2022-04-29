@@ -2,24 +2,24 @@
 
 namespace BankingApp 
 {   
-    class CheckingAccount : Account
+    class SavingsAccount : Account
     {               
 
-        public double feeChecking
+        public double feeSavings
             {get; set;}
 
         //default parent contructor
-        public CheckingAccount(){
+        public SavingsAccount(){
             //types from above
             accountId = ' ';  
             accountType = " "; 
-            feeChecking = ' ';
+            feeSavings = ' ';
         }
         //default constructor strings
-        public CheckingAccount(int newAccountId, string newAccountType, double newCurrentBalance, int newFeeChecking) : base (newAccountId, newAccountType, newCurrentBalance)
+        public SavingsAccount(int newAccountId, string newAccountType, double newCurrentBalance, int newFeeChecking) : base (newAccountId, newAccountType, newCurrentBalance)
         {
                 
-            feeChecking = newFeeChecking; 
+            feeSavings = newFeeChecking; 
         }
         
         //interface method Get()
@@ -33,7 +33,7 @@ namespace BankingApp
         }
           //usefull ToString()
         public override string ToString(){
-            return $"Account#: {accountId} | Account Type: {accountType} | Current Balance: ${currentBalance} | Annual Fee: ${feeChecking} ";
+            return $"Account#: {accountId} | Account Type: {accountType} | Current Balance: ${currentBalance} | Annual Fee: ${feeSavings} ";
         }
 
 

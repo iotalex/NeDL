@@ -14,6 +14,8 @@ namespace BankingApp{
             accountList.Add(new CheckingAccount(2001, "Checking", 129.25, 55));
             accountList.Add(new CheckingAccount(2002, "Checking2", 169.65, 25));
 
+            accountList.Add(new SavingsAccount(3001, "Savings", 26.35, 0));
+
             
             
            /* 
