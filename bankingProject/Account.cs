@@ -9,7 +9,7 @@ namespace BankingApp
             {get; set;}
         public string accountType
             {get; set;}
-        public double currentBalance
+        public int currentBalance
             {get; set;}
 
         //default parent contructor
@@ -17,24 +17,20 @@ namespace BankingApp
             //types from above
             accountId = ' ';  
             accountType = " ";  
-            currentBalance = 0.00;//double
+            currentBalance = 0;//double
         }
         //default constructor strings
-        public Account(int newAccountId, string newAccountType, double newCurrentBalance){
+        public Account(int newAccountId, string newAccountType, int newCurrentBalance){
             accountId = newAccountId;
             accountType = newAccountType;
             currentBalance = newCurrentBalance;
         }
       
-        public virtual void SetBalance(int newAccountId)
-        {
-            //do nothing here 
-        }
+     
 
             //usefull ToString()
         public override string ToString(){
-            string outPutString = $"Account#: {accountId} | Account Type: {accountType} | Current Balance: ${currentBalance} | ";
-            return outPutString;
+            return $"Account#: {accountId} | Account Type: {accountType} | Current Balance: ${currentBalance} | ";
         }
 
 

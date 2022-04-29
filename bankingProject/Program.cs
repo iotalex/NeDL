@@ -7,9 +7,11 @@ namespace BankingApp{
             List<Account> accountList = new List<Account>();//list of accounts
             
         //main parent class == Account == test data                     
-            accountList.Add(new Account(1001, "Checking1", 55.62));
-            accountList.Add(new Account(1002, "Checking2", 193.34));
-            
+            accountList.Add(new Account(1001, "CheckingBase", 55));
+            accountList.Add(new Account(1002, "SavingsBase", 69));
+            accountList.Add(new CheckingAccount(2001, "Checking", 55.56));
+            accountList.Add(new CheckingAccount(2002, "Checking2", 169.50));
+           /* 
             Account newAccount2 = new Account(1002, "Savings", 18.75);
             accountList.Add(newAccount2);
         //First child class == Checking == test data  
@@ -27,7 +29,7 @@ namespace BankingApp{
             accountList.Add(newCdAccount);
             CdAccount newCdAccoun2 = new CdAccount(4002, "CD", 18500.60);
             accountList.Add(newCdAccoun2);
-
+*/
             foreach(Account anAccountList in accountList)
             {
                 Console.WriteLine(anAccountList);//prints the list above (test data)
