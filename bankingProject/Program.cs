@@ -14,23 +14,12 @@ namespace BankingApp{
             accountList.Add(new CheckingAccount(2001, "Checking", 129.25, 55));
             accountList.Add(new CheckingAccount(2002, "Checking2", 169.65, 25));
 
-            accountList.Add(new SavingsAccount(3001, "Savings", 26.35, 0));
+            accountList.Add(new SavingsAccount(3001, "Savings", 6950.35, 0));
+            accountList.Add(new SavingsAccount(3001, "Savings2", 2600.50, 0));
 
             
             
            /* 
-            Account newAccount2 = new Account(1002, "Savings", 18.75);
-            accountList.Add(newAccount2);
-        //First child class == Checking == test data  
-            CheckingAccount newCheckingAccount = new CheckingAccount();
-            accountList.Add(newCheckingAccount);
-            CheckingAccount newCheckingAccount2 = new CheckingAccount();
-            accountList.Add(newCheckingAccount2);
-        //Second child class == Savings == test data  
-            SavingsAccount newSavingsAccount = new SavingsAccount(3001, "Savings", 69.50);
-            accountList.Add(newSavingsAccount);
-            SavingsAccount newSavingsAccoun2 = new SavingsAccount(3002, "Savings", 2000.75);
-            accountList.Add(newSavingsAccoun2);
         //Second child class == Savings == test data  
             CdAccount newCdAccount = new CdAccount(4001, "CD", 2400.51);
             accountList.Add(newCdAccount);
@@ -41,7 +30,6 @@ namespace BankingApp{
          // Declare variables
         bool userChoice;
         string userChoiceString;
-        
 
       // Repeat main loop
       do
@@ -59,7 +47,7 @@ namespace BankingApp{
                 Console.WriteLine("Please select an option below: ");
                 Console.WriteLine("L: Load the accounts.");
                 Console.WriteLine("D: Make a desposit");
-                Console.WriteLine("W: Make a desposit");
+                Console.WriteLine("W: Make a Withdrawal");
                
 
                 //  TODO: Get a user option (valid means its on the menu)
