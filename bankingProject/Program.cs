@@ -64,13 +64,13 @@ namespace BankingApp{
 
             if (userChoiceString=="L" || userChoiceString=="l")
             {
-                Console.WriteLine("In the L/l area");
-            foreach(Account anAccountList in accountList)
-            {
-                Console.WriteLine(anAccountList);//prints the list above (test data)
-            }//end foreach 
-            
-            }
+                Console.WriteLine("List of accounts: ");
+                Console.WriteLine("----------------------------------------------------------------------------------------");
+                foreach(Account anAccountList in accountList)
+                    {
+                        Console.WriteLine(anAccountList);//prints the list above (test data)
+                    }//end foreach       
+            }//end if
 
         //  TODO: Else if the option is an D or d -- perform a desposit 
 
@@ -83,8 +83,13 @@ namespace BankingApp{
                 depositAmount = Convert.ToDouble(Console.ReadLine());
                     while(depositAmount <= 0) //acount balance divided by %50
                     {
-                    Console.WriteLine("Hey, please enter a positive number.");//warns user to enter positive integer
-                    break;   
+                    Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
+                    Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
+                        if(depositAmount < 0)
+                            {
+                                depositAmount = Convert.ToDouble(Console.ReadLine());
+                            }
+                        break;   
                     }
                 Console.WriteLine("Please enter account number"); 
                 accountId = Convert.ToInt32(Console.ReadLine());
@@ -117,11 +122,11 @@ namespace BankingApp{
                 
                 foreach(Account anAccount in accountList)
                 {
-                      if (withDrawalAmount <= 0)
-                {
-                            Console.WriteLine("Hey, please enter a positive number.");
-                            break;
-                }
+                    if (withDrawalAmount <= 0)
+                        {
+                        Console.WriteLine("Hey, please enter a positive number."); //forces user to enter positive number
+                        break;
+                        }//end if
                     if(anAccount.accountId==accountId)
                         {
                             anAccount.MakeWithdrawal(withDrawalAmount);
@@ -142,9 +147,32 @@ namespace BankingApp{
              
             //TODO: 4-29-22, left off here last Friday; 
                         // Checking account withdrawal is allowed but only up to 50% of the account balance.
+                double withDrawalAmount;
+                int accountId;
 
+                Console.WriteLine("Please enter Checking account withdrawal amount: ");
+                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Please enter account number"); 
+                accountId = Convert.ToInt32(Console.ReadLine());
                 
+               
+               
+               /* 
+                foreach(Account anAccount in accountList)
+                {
+                    if (withDrawalAmount <= 0)
+                        {
+                        Console.WriteLine("Hey, please enter a positive number."); //forces user to enter positive number
+                        break;
+                        }//end if
+                    if(anAccount.accountId==accountId)
+                        {
+                            anAccount.MakeWithdrawal(withDrawalAmount);
+                            Console.WriteLine("Withdrawal made");//prints the list above (test data)
+                        }//end if 
+                }//end foreach
                 
+                */
             
 
 
