@@ -113,28 +113,29 @@ namespace BankingApp{
 
                 Console.WriteLine("Please enter withdrawal amount: ");
                 withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                while(withDrawalAmount <= 0)
+                    {
+                    Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
+                    Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
+                    if(withDrawalAmount < 0)//second chance to enter positive number
+                        {
+                            withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                        }
+                    break; 
+                    }//end if
+                
                 Console.WriteLine("Please enter account number"); 
                 accountId = Convert.ToInt32(Console.ReadLine());
                 
                 foreach(Account anAccount in accountList)
                 {
-                    if (withDrawalAmount <= 0)
-                        {
-                        Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
-                        Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
-                        if(withDrawalAmount < 0)//second chance to enter positive number
-                            {
-                                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
-                            }
-                        break; 
-                        }//end if
                     if(anAccount.accountId==accountId)
                         {
                             anAccount.MakeWithdrawal(withDrawalAmount);
                             Console.WriteLine("Withdrawal made");//prints the list above (test data)
                         }//end if 
-                }//end foreach     
-            }
+                }     
+            }//end foreach "W" 
 
 
             //savings: withdrawal is allowed but only as long as the balance is great than the withdrawal amount 
