@@ -156,6 +156,18 @@ namespace BankingApp{
                 
                 foreach(Account anAccount in accountList)
                 {
+                    while(accountId <= 2000)//requires valid ID#
+                    break;
+                    while(accountId >= 2999)
+                    {
+                    Console.WriteLine("-------------Warning-------------");
+                    Console.WriteLine("PLEASE ENTER VALID ID#!");
+                    if(accountId <= 0)//second chance to enter valid ID# number
+                        {
+                            accountId = Convert.ToChar(Console.ReadLine());
+                        }
+                    break; 
+                    }
                     if(anAccount.accountId==accountId)
                         {
                             anAccount.MakeWithdrawal(withDrawalAmount);
@@ -197,9 +209,9 @@ namespace BankingApp{
                     break;
                     while(accountId >= 3999)
                     {
-                    Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
-                    Console.WriteLine("PLEASE ENTER VALID ID#!");//warns user to enter positive integer
-                    if(accountId <= 0)//second chance to enter positive number
+                    Console.WriteLine("-------------Warning-------------");
+                    Console.WriteLine("PLEASE ENTER VALID ID#!");
+                    if(accountId <= 0)//second chance to enter valid ID# number
                         {
                             accountId = Convert.ToChar(Console.ReadLine());
                         }
