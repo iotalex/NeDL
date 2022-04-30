@@ -193,11 +193,13 @@ namespace BankingApp{
                 
                 foreach(Account anAccount in accountList)
                 {
-                    while(accountId <= 2000)//attempt valid ID#
+                    while(accountId <= 3000)//requires valid ID#
+                    break;
+                    while(accountId >= 3999)
                     {
                     Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
                     Console.WriteLine("PLEASE ENTER VALID ID#!");//warns user to enter positive integer
-                    if(accountId >= 3000)//second chance to enter positive number
+                    if(accountId <= 0)//second chance to enter positive number
                         {
                             accountId = Convert.ToChar(Console.ReadLine());
                         }
