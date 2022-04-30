@@ -22,16 +22,21 @@ namespace BankingApp
             feeCD = newfeeCD; 
         }
         
+        
         //interface method Get()
         public double GetBalance()
         {
             return currentBalance;
         }
-        public override void MakeWithdrawal(double withDrawalAmount)
+        public override void MakeWithdrawal(double withDrawalAmount)//withdrawal method
         {
             currentBalance = currentBalance - withDrawalAmount;  
         }
-          //usefull ToString()
+
+        //public override void CalculateAnnualInterest(double annualInterestAmount)
+        
+
+
         public override string ToString(){
             return $"AccountID#:{accountId} | Type: {accountType} | Current Balance: ${currentBalance} | Annual Earned Interest: {feeCD} ";
         }

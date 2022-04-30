@@ -26,12 +26,13 @@ namespace BankingApp
             currentBalance = newCurrentBalance;
         }
 
-        public void MakeDeposit(double depositAmount)
+        public void MakeDeposit(double depositAmount)//deposit method 
         {
             currentBalance = currentBalance + depositAmount;
         }
-
-        public abstract void MakeWithdrawal(double withDrawalAmount); 
+        
+        
+        public abstract void MakeWithdrawal(double withDrawalAmount);//withdrawal method 
 
       
 
