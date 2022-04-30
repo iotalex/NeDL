@@ -21,7 +21,7 @@ namespace BankingApp
                 
             feeSavings = newFeeChecking;
         }
-        
+              
         //interface method Get()
         public double GetBalance()
         {

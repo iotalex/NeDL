@@ -32,21 +32,10 @@ namespace BankingApp
         {
             currentBalance = currentBalance - withDrawalAmount;  
         }
-
-        //public override void CalculateAnnualInterest(double annualInterestAmount)
-        
-
-
+   
         public override string ToString(){
-            return $"AccountID#:{accountId} | Type: {accountType} | Current Balance: ${currentBalance} | Annual Earned Interest: {feeCD} ";
+            return $"AccountID#:{accountId} | Type: {accountType} | Current Balance: ${currentBalance} | Annual Earned Interest: ${feeCD} ";
         }
-
-
-            
-
-
-            
-
 
         
     }//end class Account 
