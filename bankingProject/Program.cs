@@ -184,14 +184,10 @@ namespace BankingApp{
                             {
                             //typicall if statements 
                             }
-                    
-                    //   TODO: Else if the option is a R or r then quit the program                
-                            else if (userChoiceString2=="R" || userChoiceString2=="r")
-                            {
-                            Console.WriteLine("=============ATTEMPTING TO RETURN TO MAIN MENU=============");
-                            }
+                 
+                            
                 }// ends the big "do"
-                while(!(userChoiceString2=="R"));
+                while(!(userChoiceString2=="R") && !!(userChoiceString=="r"));
 
             }//end if
 
@@ -207,9 +203,8 @@ namespace BankingApp{
 
             else 
             {
-                Console.WriteLine("===============THANKS FOR TRUSTING US WITH YOUR BANKING NEEDS===============");
-                    Console.WriteLine(" ");//line space
-                Console.WriteLine("******************************PLEASE COME AGAIN SOON!*******************************");
+                Console.WriteLine("===============THANKS FOR BANKING WITH US TODAY===============");
+                Console.WriteLine("                 ****PLEASE COME AGAIN SOON!****                 ");
             }
         } while (!(userChoiceString=="Q") && !(userChoiceString=="q"));
         }//end static main
