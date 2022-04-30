@@ -13,13 +13,13 @@ namespace BankingApp
             //types from above
             accountId = ' ';  
             accountType = " "; 
-            feeSavings = ' ';
+            feeSavings = 0.00;
         }
         //default constructor strings
-        public SavingsAccount(int newAccountId, string newAccountType, double newCurrentBalance, int newFeeChecking) : base (newAccountId, newAccountType, newCurrentBalance)
+        public SavingsAccount(int newAccountId, string newAccountType, double newCurrentBalance, double newFeeChecking) : base (newAccountId, newAccountType, newCurrentBalance)
         {
                 
-            feeSavings = newFeeChecking; 
+            feeSavings = newFeeChecking;
         }
         
         //interface method Get()
@@ -33,7 +33,7 @@ namespace BankingApp
         }
           //usefull ToString()
         public override string ToString(){
-            return $"AccountID#:{accountId} | Type: {accountType} | Current Balance: ${currentBalance} | Annual Fee: ${feeSavings} ";
+            return $"AccountID#:{accountId} | Type: {accountType} | Current Balance: ${currentBalance} | Annual Earned Interest: ${feeSavings} ";
         }
 
 
