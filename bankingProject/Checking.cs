@@ -28,7 +28,7 @@ namespace BankingApp
         {
             return currentBalance;
         }
-        public override void MakeWithdrawal(double withDrawalAmount)
+        public override void MakeWithdrawal(double withDrawalAmount)//withdrawal method
         {
             currentBalance = currentBalance - withDrawalAmount;  //if logic parenters of 50%, in program.cs
         }
