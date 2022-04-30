@@ -45,7 +45,7 @@ namespace BankingApp{
                 //  TODO: Get a user option (valid means its on the menu)
 
                 userChoiceString = Console.ReadLine();
-
+    //==============================================MAIN MENU================================================
                 userChoice = (userChoiceString=="L" || userChoiceString=="l" ||
                              userChoiceString == "D" || userChoiceString == "d" ||
                              userChoiceString == "W" || userChoiceString == "w" ||
@@ -105,30 +105,25 @@ namespace BankingApp{
             else if (userChoiceString=="W" || userChoiceString=="w")
             {
                     bool userChoice2;
-                    string userChoiceString2;
-                    
+                    string userChoiceString2;  
                 //Repeat main Withdrawal Account select loop 
                     do
                     {     
                     //  TODO: Get a valid input 
                     do
                     {
-                        //Initialize variables
-                        
                         userChoice2 = false;
-                        
-                        //   TODO: Provide the user a menu of options
+        //==============================================WITHDRAWAL TRANSACTIONS MENU================================================
                         Console.WriteLine("===================WITHDRAWAL TRANSACTION MENU===================");
-
                         Console.WriteLine("Which account would you like to make an withdrawal?");
                         Console.WriteLine("C: Checking account.");
                         Console.WriteLine("S: Savings account");
-                        Console.WriteLine("Cd account");
-                        Console.WriteLine("R: Return to main menu");
+                        Console.WriteLine("B: CD Bonds account");
+                        Console.WriteLine("R: Return to Main Menu");
                         userChoiceString2 = Console.ReadLine();
                         userChoice2 = (userChoiceString2== "C" || userChoiceString2 == "c" ||  
                                         userChoiceString2 == "S" || userChoiceString2 == "s" ||  
-                                        userChoiceString2 == "CD" || userChoiceString2 == "cd" ||      
+                                        userChoiceString2 == "B" || userChoiceString2 == "b" ||      
                                         userChoiceString2 == "R" || userChoiceString2 == "r");  
                                 
                             if(!userChoice2)
@@ -177,7 +172,7 @@ namespace BankingApp{
                             //equivilent of saying "CTR + S" 
                             }
                     //   Select CD account  
-                            else if (userChoiceString2 =="CD" || userChoiceString2 =="cd") 
+                            else if (userChoiceString2 =="B" || userChoiceString2 =="b") 
                             {
                             //typicall if statements 
                             }
@@ -200,7 +195,29 @@ namespace BankingApp{
 
             else if (userChoiceString=="Z" || userChoiceString=="z")
             {
-                double withDrawalAmount;
+                   
+                
+            }//end foreach "W" 
+
+            else 
+            {
+                Console.WriteLine("===============THANKS FOR TRUSTING US WITH YOUR BANKING NEEDS===============");
+                Console.WriteLine("Good-bye!");
+            }
+        } while (!(userChoiceString=="Q") && !(userChoiceString=="q"));
+        }//end static main
+
+    }//end class Program 
+}//end namespace
+
+
+
+          
+          
+
+///////////////////////////BACKUP TEMPLATE FOR ACCOUNTS 
+          /*
+ double withDrawalAmount;
                 int accountId; 
                 Console.WriteLine("=========================CHECKING ACCOUNT=============================");
                 Console.WriteLine("How much would you like to withdrawal?");
@@ -226,38 +243,5 @@ namespace BankingApp{
                             anAccount.MakeWithdrawal(withDrawalAmount);
                             Console.WriteLine("Withdrawal made");//prints the list above (test data)
                         }//end if 
-                }     
-                
-            }//end foreach "W" 
-
-        //  TODO: Else if the option is a D or d then delete the name in the array (if it's there)
-
-            else if (userChoiceString=="D" || userChoiceString=="d")
-            {
-                Console.WriteLine("In the D/d area");
-            }
-        //  TODO: Else if the option is a Q or q then quit the program
-
-            else 
-            {
-                Console.WriteLine("Good-bye!");
-            }
-        } while (!(userChoiceString=="Q") && !(userChoiceString=="q"));
-        }//end static main
-
-    }//end class Program 
-}//end namespace
-
-
- //parent class: Account 
-            //checkingAccount --interface method 
-            //savingsAccount--interface method 
-            //CdAccount--interface method 
-            
-
-            //deposit - is built into "D"; CRUD and use   if else or (pull the integer and then add to it)
-            
-            
-            //withdrawal--abstract method; 
-
-            
+                } 
+          */
