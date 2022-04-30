@@ -11,11 +11,11 @@ namespace BankingApp{
         //main parent class == Account == test data                     
            // accountList.Add(new Account(1001, "CheckingBase", 55.98));
            // accountList.Add(new Account(1002, "SavingsBase", 69.56));
-            accountList.Add(new CheckingAccount(2001, "Checking", 129.25, 55));
-            accountList.Add(new CheckingAccount(2002, "Checking2", 169.65, 25));
+            accountList.Add(new CheckingAccount(2001, "Checking", 100.00, 50));
+            accountList.Add(new CheckingAccount(2002, "Checking2", 169.65, 50));
 
             accountList.Add(new SavingsAccount(3001, "Savings", 6950.35, 0));
-            accountList.Add(new SavingsAccount(3001, "Savings2", 2600.50, 0));
+            accountList.Add(new SavingsAccount(3002, "Savings2", 2600.50, 0));
 
             accountList.Add(new CdAccount(4001, "CD", 32000, 0));
             accountList.Add(new CdAccount(4002, "CD2", 18000, 0));
