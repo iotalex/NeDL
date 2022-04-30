@@ -135,7 +135,7 @@ namespace BankingApp{
                     //   Select checking account
                             if (userChoiceString2=="C" || userChoiceString2=="c")
                             {
-                                 double withDrawalAmount;
+                double withDrawalAmount;
                 int accountId; 
                 Console.WriteLine("=========================CHECKING ACCOUNT=============================");
                 Console.WriteLine("How much would you like to withdrawal?");
@@ -171,7 +171,44 @@ namespace BankingApp{
                     //   Select savings account
                             else if (userChoiceString2=="S" || userChoiceString2=="s")
                             {
-                            //equivilent of saying "CTR + S"
+                            double withDrawalAmount;
+                int accountId; 
+                Console.WriteLine("=========================Savings ACCOUNT=============================");
+                Console.WriteLine("How much would you like to withdrawal?");
+                
+                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                while(withDrawalAmount <= 0)
+                    {
+                    Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
+                    Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
+                    if(withDrawalAmount < 0)//second chance to enter positive number
+                        {
+                            withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                        }
+                    break; 
+                    }//end if
+                
+                Console.WriteLine("Please enter your account ID#"); 
+                accountId = Convert.ToInt32(Console.ReadLine());
+                
+                foreach(Account anAccount in accountList)
+                {
+                    while(accountId <= 2000)//attempt valid ID#
+                    {
+                    Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
+                    Console.WriteLine("PLEASE ENTER VALID ID#!");//warns user to enter positive integer
+                    if(accountId >= 3000)//second chance to enter positive number
+                        {
+                            accountId = Convert.ToChar(Console.ReadLine());
+                        }
+                    break; 
+                    }
+                    if(anAccount.accountId==accountId)
+                        {
+                            anAccount.MakeWithdrawal(withDrawalAmount);
+                            Console.WriteLine("Withdrawal successfuly made");//prints the list above (test data)
+                        }//end if 
+                } 
                             }
                     
                     
@@ -186,7 +223,7 @@ namespace BankingApp{
                  
                             
                 }// ends the big "do"
-                while(!(userChoiceString2=="R") && !!(userChoiceString=="r"));
+                while(!(userChoiceString2=="R") && !!(userChoiceString=="r"));//goes right back to main menu
 
             }//end if
 
