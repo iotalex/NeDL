@@ -13,10 +13,10 @@ namespace BankingApp
             //types from above
             accountId = ' ';  
             accountType = " "; 
-            feeCD = ' ';
+            feeCD = 0.0;
         }
         //default constructor strings
-        public CdAccount(int newAccountId, string newAccountType, double newCurrentBalance, int newfeeCD) : base (newAccountId, newAccountType, newCurrentBalance)
+        public CdAccount(int newAccountId, string newAccountType, double newCurrentBalance, double newfeeCD) : base (newAccountId, newAccountType, newCurrentBalance)
         {
                 
             feeCD = newfeeCD; 
@@ -33,7 +33,7 @@ namespace BankingApp
         }
           //usefull ToString()
         public override string ToString(){
-            return $"AccountID#:{accountId} | Type: {accountType} | Current Balance: ${currentBalance} | Annual Fee: ${feeCD} ";
+            return $"AccountID#:{accountId} | Type: {accountType} | Current Balance: ${currentBalance} | CD Interest Rates: {feeCD}% ";
         }
 
 

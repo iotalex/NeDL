@@ -17,8 +17,8 @@ namespace BankingApp{
             accountList.Add(new SavingsAccount(3001, "Savings", 6950.35, 0));
             accountList.Add(new SavingsAccount(3002, "Savings2", 2600.50, 0));
 
-            accountList.Add(new CdAccount(4001, "CD", 32000, 0));
-            accountList.Add(new CdAccount(4002, "CD2", 18000, 0));
+            accountList.Add(new CdAccount(4001, "CD", 32000, 0.0456));
+            accountList.Add(new CdAccount(4002, "CD2", 18000, 0.065));
    
          // Declare variables
         bool userChoice;

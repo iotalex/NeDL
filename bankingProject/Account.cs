@@ -17,7 +17,7 @@ namespace BankingApp
             //types from above
             accountId = ' ';  
             accountType = " ";  
-            currentBalance = ' ';//double
+            currentBalance = 0.00;//double
         }
         //default constructor strings
         public Account(int newAccountId, string newAccountType, double newCurrentBalance){
