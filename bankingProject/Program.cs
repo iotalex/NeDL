@@ -41,7 +41,7 @@ namespace BankingApp{
                 Console.WriteLine("L: Print account List/Balance(s)");
                 Console.WriteLine("D: Make a desposit");
                 Console.WriteLine("W: Make a withdrawal: ");
-                Console.WriteLine("Z: Make a checking transaction");
+                Console.WriteLine("Q: Quit Banking Program");
                 //  TODO: Get a user option (valid means its on the menu)
 
                 userChoiceString = Console.ReadLine();
@@ -49,7 +49,7 @@ namespace BankingApp{
                 userChoice = (userChoiceString=="L" || userChoiceString=="l" ||
                              userChoiceString == "D" || userChoiceString == "d" ||
                              userChoiceString == "W" || userChoiceString == "w" ||
-                             userChoiceString=="Z" || userChoiceString=="z");
+                             userChoiceString=="Q" || userChoiceString=="q");
 
                 if (!userChoice)
                 {
@@ -79,7 +79,7 @@ namespace BankingApp{
  
                 Console.WriteLine("Please enter deposit amount: ");
                 depositAmount = Convert.ToDouble(Console.ReadLine());
-                    while(depositAmount <= 0) //acount balance divided by %50
+                    while(depositAmount <= 0)//user must enter positive number 
                     {
                     Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
                     Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
@@ -165,12 +165,20 @@ namespace BankingApp{
                 } 
                             
                             }//end using    
+    //TODO:   //savings: withdrawal is allowed but only as long as the balance is great than the withdrawal amount 
 
+          
+          
                     //   Select savings account
                             else if (userChoiceString2=="S" || userChoiceString2=="s")
                             {
-                            //equivilent of saying "CTR + S" 
+                            //equivilent of saying "CTR + S"
                             }
+                    
+                    
+                    
+    //TODO:  ///CD: withdrawal is allowed but with early penalty (applied) so the balance needs to be greater than the withdrawl aomun and penalty combined 
+
                     //   Select CD account  
                             else if (userChoiceString2 =="B" || userChoiceString2 =="b") 
                             {
@@ -187,9 +195,7 @@ namespace BankingApp{
 
             }//end if
 
-            //savings: withdrawal is allowed but only as long as the balance is great than the withdrawal amount 
 
-            ///CD: withdrawal is allowed but with early penalty (applied) so the balance needs to be greater than the withdrawl aomun and penalty combined 
 
         //  TODO: "Z" make a CHECKING withdrawal  
 
@@ -202,7 +208,8 @@ namespace BankingApp{
             else 
             {
                 Console.WriteLine("===============THANKS FOR TRUSTING US WITH YOUR BANKING NEEDS===============");
-                Console.WriteLine("Good-bye!");
+                    Console.WriteLine(" ");//line space
+                Console.WriteLine("******************************PLEASE COME AGAIN SOON!*******************************");
             }
         } while (!(userChoiceString=="Q") && !(userChoiceString=="q"));
         }//end static main
@@ -212,8 +219,6 @@ namespace BankingApp{
 
 
 
-          
-          
 
 ///////////////////////////BACKUP TEMPLATE FOR ACCOUNTS 
           /*
