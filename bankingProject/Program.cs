@@ -41,6 +41,7 @@ namespace BankingApp{
                 Console.WriteLine("L: Load the accounts.");
                 Console.WriteLine("D: Make a desposit");
                 Console.WriteLine("W: Make a Withdrawal");
+                Console.WriteLine("P: Pick an account: ");
                 Console.WriteLine("Z: Make a checking transaction");
                
 
@@ -50,8 +51,9 @@ namespace BankingApp{
 
                 userChoice = (userChoiceString=="L" || userChoiceString=="l" ||
                              userChoiceString=="W" || userChoiceString=="w" ||
-                             userChoiceString=="Z" || userChoiceString=="z" ||
-                            userChoiceString == "D" || userChoiceString == "d" );
+                             userChoiceString == "D" || userChoiceString == "d" ||
+                             userChoiceString == "P" || userChoiceString == "p" ||
+                             userChoiceString=="Z" || userChoiceString=="z");
 
                 if (!userChoice)
                 {
@@ -102,7 +104,7 @@ namespace BankingApp{
                             Console.WriteLine("Deposit made");
                         }
                 }
-            }//end foreach "D" 
+            }//end foreach " " 
 
         //  TODO: "W" make a withdrawal 
             else if (userChoiceString=="W" || userChoiceString=="w")
@@ -134,6 +136,24 @@ namespace BankingApp{
                         }//end if 
                 }     
             }//end foreach "W" 
+
+            
+            //************************************************************
+            
+            
+            
+            else if (userChoiceString=="P" || userChoiceString=="p")
+            {
+                Console.WriteLine("List of accounts: ");
+                Console.WriteLine("----------------------------------------------------------------------------------------");
+                foreach(Account anAccountList in accountList)
+                    {
+                        Console.WriteLine(anAccountList);//prints the list above (test data)
+                    }//end foreach       
+            }//end if
+
+
+
 
 
             //savings: withdrawal is allowed but only as long as the balance is great than the withdrawal amount 
