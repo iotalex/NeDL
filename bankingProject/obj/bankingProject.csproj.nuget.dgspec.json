@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\bankingProject\\bankingProject.csproj": {}
+    "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\bankingproject\\bankingProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\bankingProject\\bankingProject.csproj": {
+    "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\bankingproject\\bankingProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\bankingProject\\bankingProject.csproj",
+        "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\bankingproject\\bankingProject.csproj",
         "projectName": "bankingProject",
-        "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\bankingProject\\bankingProject.csproj",
+        "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\bankingproject\\bankingProject.csproj",
         "packagesPath": "C:\\Users\\ABatenhorst\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\bankingProject\\obj\\",
+        "outputPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\bankingproject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ABatenhorst\\AppData\\Roaming\\NuGet\\NuGet.Config",

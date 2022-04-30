@@ -117,6 +117,11 @@ namespace BankingApp{
                 
                 foreach(Account anAccount in accountList)
                 {
+                      if (withDrawalAmount <= 0)
+                {
+                            Console.WriteLine("Hey, please enter a positive number.");
+                            break;
+                }
                     if(anAccount.accountId==accountId)
                         {
                             anAccount.MakeWithdrawal(withDrawalAmount);
