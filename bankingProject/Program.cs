@@ -39,8 +39,8 @@ namespace BankingApp{
 
                 Console.WriteLine("Please select an option below: ");
                 Console.WriteLine("L: Print account List/Balance(s)");
-                Console.WriteLine("D: Make a desposit");
-                Console.WriteLine("W: Make a withdrawal: ");
+                Console.WriteLine("D: Deposit Money to an Account");
+                Console.WriteLine("W: Withdrawal Transaction Menu");
                 Console.WriteLine("Q: Quit Banking Program");
                 //  TODO: Get a user option (valid means its on the menu)
 
@@ -62,8 +62,7 @@ namespace BankingApp{
 
             if (userChoiceString=="L" || userChoiceString=="l")
             {
-                Console.WriteLine("List of accounts: ");
-                Console.WriteLine("----------------------------------------------------------------------------------------");
+                Console.WriteLine("===================ACCOUNT BALANCE MENU===================");
                 foreach(Account anAccountList in accountList)
                     {
                         Console.WriteLine(anAccountList);//prints the list above (test data)
@@ -76,8 +75,8 @@ namespace BankingApp{
             {
                 double depositAmount;
                 int accountId;
- 
-                Console.WriteLine("Please enter deposit amount: ");
+                Console.WriteLine("===================DEPOSIT TRANSACTION MENU===================");
+                Console.WriteLine("Please enter deposit amount: $ ");
                 depositAmount = Convert.ToDouble(Console.ReadLine());
                     while(depositAmount <= 0)//user must enter positive number 
                     {
@@ -152,7 +151,7 @@ namespace BankingApp{
                         }
                     break; 
                     }//end if
-                Console.WriteLine("Please enter account number"); 
+                Console.WriteLine("Please enter your account ID#"); 
                 accountId = Convert.ToInt32(Console.ReadLine());
                 
                 foreach(Account anAccount in accountList)
@@ -160,7 +159,7 @@ namespace BankingApp{
                     if(anAccount.accountId==accountId)
                         {
                             anAccount.MakeWithdrawal(withDrawalAmount);
-                            Console.WriteLine("Withdrawal made");//prints the list above (test data)
+                            Console.WriteLine("Withdrawal successfuly made");//prints the list above (test data)
                         }//end if 
                 } 
                             

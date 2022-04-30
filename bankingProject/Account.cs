@@ -37,7 +37,7 @@ namespace BankingApp
 
             //usefull ToString()
         public override string ToString(){
-            return $"Account#: {accountId} | Account Type: {accountType} | Current Balance: ${currentBalance} | ";
+            return $"AccountID#: {accountId} | Type: {accountType} | Current Balance: ${currentBalance} | ";
         }
 
         
