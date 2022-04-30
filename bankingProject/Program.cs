@@ -38,19 +38,17 @@ namespace BankingApp{
                 //  TODO: Provide the user a menu of options
 
                 Console.WriteLine("Please select an option below: ");
-                Console.WriteLine("L: Load the accounts.");
+                Console.WriteLine("L: Print account List/Balance(s)");
                 Console.WriteLine("D: Make a desposit");
-                Console.WriteLine("W: Make a Withdrawal");
-                Console.WriteLine("P: Pick an account: ");
+                Console.WriteLine("W: Make a withdrawal: ");
                 Console.WriteLine("Z: Make a checking transaction");
                 //  TODO: Get a user option (valid means its on the menu)
 
                 userChoiceString = Console.ReadLine();
 
                 userChoice = (userChoiceString=="L" || userChoiceString=="l" ||
-                             userChoiceString=="W" || userChoiceString=="w" ||
                              userChoiceString == "D" || userChoiceString == "d" ||
-                             userChoiceString == "P" || userChoiceString == "p" ||
+                             userChoiceString == "W" || userChoiceString == "w" ||
                              userChoiceString=="Z" || userChoiceString=="z");
 
                 if (!userChoice)
@@ -104,75 +102,34 @@ namespace BankingApp{
                 }
             }//end foreach " " 
 
-        //  TODO: "W" make a withdrawal 
             else if (userChoiceString=="W" || userChoiceString=="w")
             {
-                double withDrawalAmount;
-                int accountId; 
-
-                Console.WriteLine("Please enter withdrawal amount: ");
-                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
-                while(withDrawalAmount <= 0)
-                    {
-                    Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
-                    Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
-                    if(withDrawalAmount < 0)//second chance to enter positive number
-                        {
-                            withDrawalAmount = Convert.ToDouble(Console.ReadLine());
-                        }
-                    break; 
-                    }//end if
-                Console.WriteLine("Please enter account number"); 
-                accountId = Convert.ToInt32(Console.ReadLine());
-                
-                foreach(Account anAccount in accountList)
-                {
-                    if(anAccount.accountId==accountId)
-                        {
-                            anAccount.MakeWithdrawal(withDrawalAmount);
-                            Console.WriteLine("Withdrawal made");//prints the list above (test data)
-                        }//end if 
-                }     
-            }//end foreach "W" 
-
-            
-            //************************************************************
-            
-            
-            
-            else if (userChoiceString=="P" || userChoiceString=="p")
-            {
-                   bool userChoice2;
+                    bool userChoice2;
                     string userChoiceString2;
                     
-                //Repeat main loop 
+                //Repeat main Withdrawal Account select loop 
                     do
                     {     
                     //  TODO: Get a valid input 
                     do
                     {
-
                         //Initialize variables
                         
                         userChoice2 = false;
                         
                         //   TODO: Provide the user a menu of options
+                        Console.WriteLine("===================WITHDRAWAL TRANSACTION MENU===================");
 
-                        Console.WriteLine("What's your pleasure?");
+                        Console.WriteLine("Which account would you like to make an withdrawal?");
                         Console.WriteLine("C: Checking account.");
                         Console.WriteLine("S: Savings account");
-                        Console.WriteLine("Cd account: .");
-                        Console.WriteLine("Q: Quit the program.");
-                        
-                            
-                        //   TODO: Get a valid user option (valid means its on the menu)
+                        Console.WriteLine("Cd account");
+                        Console.WriteLine("R: Return to main menu");
                         userChoiceString2 = Console.ReadLine();
-                        
-                        
                         userChoice2 = (userChoiceString2== "C" || userChoiceString2 == "c" ||  
                                         userChoiceString2 == "S" || userChoiceString2 == "s" ||  
-                                        userChoiceString2 == "D" || userChoiceString2 == "d" ||      
-                                        userChoiceString2 == "Q" || userChoiceString2 == "q");  
+                                        userChoiceString2 == "CD" || userChoiceString2 == "cd" ||      
+                                        userChoiceString2 == "R" || userChoiceString2 == "r");  
                                 
                             if(!userChoice2)
                             {
@@ -225,13 +182,13 @@ namespace BankingApp{
                             //typicall if statements 
                             }
                     
-                    //   TODO: Else if the option is a Q or q then quit the program                
-                            else if (userChoiceString2=="Q" || userChoiceString2=="q")
+                    //   TODO: Else if the option is a R or r then quit the program                
+                            else if (userChoiceString2=="R" || userChoiceString2=="r")
                             {
-                            Console.WriteLine("Goodbye, auf wiedersehen");
+                            Console.WriteLine("=============ATTEMPTING TO RETURN TO MAIN MENU=============");
                             }
                 }// ends the big "do"
-                while(!(userChoiceString2=="Q"));
+                while(!(userChoiceString2=="R"));
 
             }//end if
 
