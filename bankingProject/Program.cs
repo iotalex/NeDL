@@ -85,7 +85,7 @@ namespace BankingApp{
                     {
                     Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
                     Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
-                        if(depositAmount < 0)
+                        if(depositAmount < 0)//second chance to enter positive number
                             {
                                 depositAmount = Convert.ToDouble(Console.ReadLine());
                             }
@@ -100,17 +100,50 @@ namespace BankingApp{
                         {
                             anAccount.MakeDeposit(depositAmount);
                             Console.WriteLine("Deposit made");
-                        }//end if 
-               
-                
-                }//end foreach
+                        }
+                }
+            }//end foreach "D" 
 
-
-            }
-
-        //  TODO: Else if the option is a C or c then add a name to the array (if there's room)
+        //  TODO: Else if the option is a W or w then add a name to the array (if there's room)
 
             else if (userChoiceString=="W" || userChoiceString=="w")
+            {
+                double withDrawalAmount;
+                int accountId; 
+
+                Console.WriteLine("Please enter withdrawal amount: ");
+                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Please enter account number"); 
+                accountId = Convert.ToInt32(Console.ReadLine());
+                
+                foreach(Account anAccount in accountList)
+                {
+                    if (withDrawalAmount <= 0)
+                        {
+                        Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
+                        Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
+                        if(withDrawalAmount < 0)//second chance to enter positive number
+                            {
+                                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                            }
+                        break; 
+                        }//end if
+                    if(anAccount.accountId==accountId)
+                        {
+                            anAccount.MakeWithdrawal(withDrawalAmount);
+                            Console.WriteLine("Withdrawal made");//prints the list above (test data)
+                        }//end if 
+                }//end foreach     
+            }
+
+
+            //savings: withdrawal is allowed but only as long as the balance is great than the withdrawal amount 
+
+            ///CD: withdrawal is allowed but with early penalty (applied) so the balance needs to be greater than the withdrawl aomun and penalty combined 
+
+        //  TODO: Else if the option is a Z or z then make  
+
+            else if (userChoiceString=="Z" || userChoiceString=="z")
             {
                 double withDrawalAmount;
                 int accountId; 
@@ -132,53 +165,9 @@ namespace BankingApp{
                             anAccount.MakeWithdrawal(withDrawalAmount);
                             Console.WriteLine("Withdrawal made");//prints the list above (test data)
                         }//end if 
-                }//end foreach     
-            }
-
-
-            //savings: withdrawal is allowed but only as long as the balance is great than the withdrawal amount 
-
-            ///CD: withdrawal is allowed but with early penalty (applied) so the balance needs to be greater than the withdrawl aomun and penalty combined 
-
-        //  TODO: Else if the option is a Z or z then make  
-
-            else if (userChoiceString=="Z" || userChoiceString=="z")
-            {
-             
-            //TODO: 4-29-22, left off here last Friday; 
-                        // Checking account withdrawal is allowed but only up to 50% of the account balance.
-                double withDrawalAmount;
-                int accountId;
-
-                Console.WriteLine("Please enter Checking account withdrawal amount: ");
-                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine("Please enter account number"); 
-                accountId = Convert.ToInt32(Console.ReadLine());
+                }
                 
-               
-               
-               /* 
-                foreach(Account anAccount in accountList)
-                {
-                    if (withDrawalAmount <= 0)
-                        {
-                        Console.WriteLine("Hey, please enter a positive number."); //forces user to enter positive number
-                        break;
-                        }//end if
-                    if(anAccount.accountId==accountId)
-                        {
-                            anAccount.MakeWithdrawal(withDrawalAmount);
-                            Console.WriteLine("Withdrawal made");//prints the list above (test data)
-                        }//end if 
-                }//end foreach
-                
-                */
-            
-
-
-
-                
-            }
+            }//end foreach "W" 
 
         //  TODO: Else if the option is a D or d then delete the name in the array (if it's there)
 
@@ -194,11 +183,7 @@ namespace BankingApp{
             }
         } while (!(userChoiceString=="Q") && !(userChoiceString=="q"));
         }//end static main
-        
 
-
-
-        
     }//end class Program 
 }//end namespace
 
