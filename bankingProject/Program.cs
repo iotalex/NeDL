@@ -7,12 +7,13 @@ namespace BankingApp{
         {
 
             List<Account> accountList = new List<Account>();//list of accounts
+            List<CheckingAccount> checkingAccountList = new List<CheckingAccount>();//list of checking accounts
             
         //main parent class == Account == test data                     
            // accountList.Add(new Account(1001, "CheckingBase", 55.98));
            // accountList.Add(new Account(1002, "SavingsBase", 69.56));
-            accountList.Add(new CheckingAccount(2001, "Checking", 100.00, 50));
-            accountList.Add(new CheckingAccount(2002, "Checking2", 169.65, 50));
+            checkingAccountList.Add(new CheckingAccount(2001, "Checking", 10.00, 10));
+            checkingAccountList.Add(new CheckingAccount(2002, "Checking2", 169.65, 50));
 
             accountList.Add(new SavingsAccount(3001, "Savings", 6950.35, 5.26));
             accountList.Add(new SavingsAccount(3002, "Savings2", 2600.50, 6.88));
@@ -39,6 +40,7 @@ namespace BankingApp{
 
                 Console.WriteLine("Please select an option below: ");
                 Console.WriteLine("L: Print account List/Balance(s)");
+                Console.WriteLine("F: Checking test");
                 Console.WriteLine("D: Deposit Money to an Account");
                 Console.WriteLine("W: Withdrawal Transaction Menu");
                 Console.WriteLine("Q: Quit Banking Program");
@@ -47,6 +49,7 @@ namespace BankingApp{
                 userChoiceString = Console.ReadLine();
     //==============================================MAIN MENU================================================
                 userChoice = (userChoiceString=="L" || userChoiceString=="l" ||
+                            userChoiceString == "F" || userChoiceString == "f" ||
                              userChoiceString == "D" || userChoiceString == "d" ||
                              userChoiceString == "W" || userChoiceString == "w" ||
                              userChoiceString=="Q" || userChoiceString=="q");
@@ -57,7 +60,13 @@ namespace BankingApp{
                 }
 
             } while (!userChoice);
-
+        //====================testing checking account template area ========================
+                
+        
+        
+        
+        
+        
         //  TODO: If the option is L or l prints the list above (test data)
 
             if (userChoiceString=="L" || userChoiceString=="l")
@@ -68,6 +77,22 @@ namespace BankingApp{
                         Console.WriteLine(anAccountList);//prints the list above (test data)
                     }//end foreach       
             }//end if
+            if (userChoiceString=="F" || userChoiceString=="f")
+            {
+                Console.WriteLine("===================ACCOUNT BALANCE MENU===================");
+                foreach(CheckingAccount anAccountList in checkingAccountList)
+                    {
+                        Console.WriteLine(anAccountList);//prints the list above (test data)
+                    }//end foreach 
+                
+                
+                
+                
+                
+                
+                
+            }//end if "F" 
+            
 
         //  TODO: "D" make a Desposit
 
@@ -135,12 +160,42 @@ namespace BankingApp{
                     //   Select checking account
                             if (userChoiceString2=="C" || userChoiceString2=="c")
                             {
+                                                        //TODO: 2.0, get it to read account from the lsit
+                    int accountId; 
+                    
+                  //TODO: enter account number 
+                    Console.WriteLine("Please enter account#:");                      
+                //TODO: pull up account
+                    accountId = Convert.ToInt32(Console.ReadLine());
+                    //TODO: read balance from list account Checking1 
+                    foreach(CheckingAccount anAccountList in checkingAccountList)
+                    {
+                        Console.WriteLine(anAccountList);//prints the list above (test data)
+                    }//end foreach  
+
+
+                //TODO
+                
+                
+                
+                /*
                 double withDrawalAmount;
-                int accountId; 
+                int accountId;
+                double currentBalance;
                 Console.WriteLine("=========================CHECKING ACCOUNT=============================");
                 Console.WriteLine("How much would you like to withdrawal?");
                 
                 withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                //TODO: Get line to read balance
+                currentBalance = Convert.ToDouble(Console.ReadLine());
+                //TODO: Get line to write balance
+                while(withDrawalAmount >= currentBalance)
+                    {
+                        Console.WriteLine("You cannot make this transaction.");
+                        break;
+                    }
+               
+              
                 while(withDrawalAmount <= 0)
                     {
                     Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
@@ -174,6 +229,7 @@ namespace BankingApp{
                             Console.WriteLine("Withdrawal successfuly made");//prints the list above (test data)
                         }//end if 
                 } 
+                */
                             
                             }//end using    
     //TODO:   //savings: withdrawal is allowed but only as long as the balance is great than the withdrawal amount 
@@ -256,7 +312,7 @@ namespace BankingApp{
                 Console.WriteLine("===============THANKS FOR BANKING WITH US TODAY===============");
                 Console.WriteLine("                 ****PLEASE COME AGAIN SOON!****                 ");
             }
-        } while (!(userChoiceString=="Q") && !(userChoiceString=="q"));
+        } while (!(userChoiceString=="Q") & !(userChoiceString=="q"));
         }//end static main
 
     }//end class Program 
