@@ -13,15 +13,12 @@ namespace BankingApp{
             List<CheckingAccount> checkingAccountList = new List<CheckingAccount>();//list of accounts
             List<SavingsAccount> savingsAccountList = new List<SavingsAccount>();//list of checking accounts
             List<CdAccount> CdAccountList = new List<CdAccount>();//list of checking accounts
-            
-            
+     
         //main parent class == Account == test data                     
            // accountList.Add(new Account(1001, "CheckingBase", 55.98));
            // accountList.Add(new Account(1002, "SavingsBase", 69.56));
             checkingAccountList.Add(new CheckingAccount(2001, "Checking", 10.00, 10));
             checkingAccountList.Add(new CheckingAccount(2002, "Checking2", 169.65, 50));
-
-            
 
             savingsAccountList.Add(new SavingsAccount(3001, "Savings", 6950.35, 5.26));
             savingsAccountList.Add(new SavingsAccount(3002, "Savings2", 2600.50, 6.88));
@@ -74,10 +71,10 @@ namespace BankingApp{
             {
                 double withDrawalAmount;
                 int accountId; 
-                Console.WriteLine("=========================Checking ACCOUNT=============================");
+                Console.WriteLine("=========================TEST Checking ACCOUNT=============================");
                 Console.WriteLine("How much would you like to withdrawal?");
                 
-                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                withDrawalAmount = Convert.ToDouble(Console.ReadLine()); //end amount 
                 while(withDrawalAmount <= 0)
                     {
                     Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
@@ -132,7 +129,7 @@ namespace BankingApp{
                 }//end foreach
                 foreach(CdAccount cdAccount in CdAccountList)  
                 {
-                    Console.WriteLine(CdAccountList);//prints the list above (test data)
+                    Console.WriteLine(cdAccount);//prints the list above (test data)
                 }//end foreach  
    
             }//end if "L" 
