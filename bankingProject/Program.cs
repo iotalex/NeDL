@@ -134,32 +134,7 @@ namespace BankingApp{
                 {
                     Console.WriteLine(CdAccountList);//prints the list above (test data)
                 }//end foreach  
-                
-                
-                /*
-                foreach(CheckingAccount anAccountList in checkingAccountList)
-                    {
-                        Console.WriteLine(anAccountList);//prints the list above (test data)
-                    }
-
-                Console.WriteLine("Please enter account ID#");
-                userAccountIdInput = Convert.ToInt16(Console.ReadLine());//allows user input to be read
-                
-
-                if (accountId = userAccountIdInput)
-                {
-                    Console.WriteLine("ID# is" + accountId);
-            }
-                    */
-                 
-
-                
-                
-                
-                
-                
-                
-                
+   
             }//end if "L" 
             
 
@@ -229,25 +204,6 @@ namespace BankingApp{
                     //   Select checking account
                             if (userChoiceString2=="C" || userChoiceString2=="c")
                             {
-                                                        //TODO: 2.0, get it to read account from the lsit
-                    int accountId; 
-                    
-                  //TODO: enter account number 
-                    Console.WriteLine("Please enter account#:");                      
-                //TODO: pull up account
-                    accountId = Convert.ToInt32(Console.ReadLine());
-                    //TODO: read balance from list account Checking1 
-                    foreach(CheckingAccount anAccountList in checkingAccountList)
-                    {
-                        Console.WriteLine(anAccountList);//prints the list above (test data)
-                    }//end foreach  
-
-
-                //TODO
-                
-                
-                
-                /*
                 double withDrawalAmount;
                 int accountId;
                 double currentBalance;
@@ -263,8 +219,6 @@ namespace BankingApp{
                         Console.WriteLine("You cannot make this transaction.");
                         break;
                     }
-               
-              
                 while(withDrawalAmount <= 0)
                     {
                     Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
@@ -278,7 +232,7 @@ namespace BankingApp{
                 Console.WriteLine("Please enter your account ID#"); 
                 accountId = Convert.ToInt32(Console.ReadLine());
                 
-                foreach(Account anAccount in accountList)
+                foreach(Account anAccount in checkingAccountList)
                 {
                     while(accountId <= 2000)//requires valid ID#
                     break;
@@ -296,15 +250,12 @@ namespace BankingApp{
                         {
                             anAccount.MakeWithdrawal(withDrawalAmount);
                             Console.WriteLine("Withdrawal successfuly made");//prints the list above (test data)
-                        }//end if 
-                } 
-                */
-                            
-                            }//end using    
-                        //TODO:   //savings: withdrawal is allowed but only as long as the balance is great than the withdrawal amount 
+                        }//end if
 
-          
-          
+                }//end foreach
+       
+            }//end using "C" for checking withdrawal    
+
                     //   Select savings account
                             else if (userChoiceString2=="S" || userChoiceString2=="s")
                             {
@@ -357,7 +308,46 @@ namespace BankingApp{
                     //   Select CD account  
                             else if (userChoiceString2 =="B" || userChoiceString2 =="b") 
                             {
-                            //typicall if statements 
+                            double withDrawalAmount;
+                int accountId; 
+                Console.WriteLine("=========================CD ACCOUNT=============================");
+                Console.WriteLine("How much would you like to withdrawal?");
+                
+                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                while(withDrawalAmount <= 0)
+                    {
+                    Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
+                    Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
+                    if(withDrawalAmount < 0)//second chance to enter positive number
+                        {
+                            withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                        }
+                    break; 
+                    }//end if
+                
+                Console.WriteLine("Please enter your account ID#"); 
+                accountId = Convert.ToInt32(Console.ReadLine());
+                
+                foreach(Account anAccount in CdAccountList)
+                {
+                    while(accountId <= 4000)//requires valid ID#
+                    break;
+                    while(accountId >= 4999)
+                    {
+                    Console.WriteLine("-------------Warning-------------");
+                    Console.WriteLine("PLEASE ENTER VALID ID#!");
+                    if(accountId <= 0)//second chance to enter valid ID# number
+                        {
+                            accountId = Convert.ToChar(Console.ReadLine());
+                        }
+                    break; 
+                    }
+                    if(anAccount.accountId==accountId)
+                        {
+                            anAccount.MakeWithdrawal(withDrawalAmount);
+                            Console.WriteLine("Withdrawal successfuly made");//prints the list above (test data)
+                        }//end if 
+                }//foreach
                             }
                  
                             
