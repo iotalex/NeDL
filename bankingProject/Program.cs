@@ -1,4 +1,8 @@
 ﻿using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace BankingApp{
     internal class Program
@@ -9,11 +13,14 @@ namespace BankingApp{
             List<Account> accountList = new List<Account>();//list of accounts
             List<CheckingAccount> checkingAccountList = new List<CheckingAccount>();//list of checking accounts
             
+            
         //main parent class == Account == test data                     
            // accountList.Add(new Account(1001, "CheckingBase", 55.98));
            // accountList.Add(new Account(1002, "SavingsBase", 69.56));
             checkingAccountList.Add(new CheckingAccount(2001, "Checking", 10.00, 10));
             checkingAccountList.Add(new CheckingAccount(2002, "Checking2", 169.65, 50));
+
+            
 
             accountList.Add(new SavingsAccount(3001, "Savings", 6950.35, 5.26));
             accountList.Add(new SavingsAccount(3002, "Savings2", 2600.50, 6.88));
@@ -79,11 +86,26 @@ namespace BankingApp{
             }//end if
             if (userChoiceString=="F" || userChoiceString=="f")
             {
-                Console.WriteLine("===================ACCOUNT BALANCE MENU===================");
+                
+                Console.WriteLine("Please enter valid account ID#: ");
+                
+                /*
                 foreach(CheckingAccount anAccountList in checkingAccountList)
                     {
                         Console.WriteLine(anAccountList);//prints the list above (test data)
-                    }//end foreach 
+                    }
+
+                Console.WriteLine("Please enter account ID#");
+                userAccountIdInput = Convert.ToInt16(Console.ReadLine());//allows user input to be read
+                
+
+                if (accountId = userAccountIdInput)
+                {
+                    Console.WriteLine("ID# is" + accountId);
+                }
+                    */
+                 
+
                 
                 
                 
