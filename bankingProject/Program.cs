@@ -12,7 +12,7 @@ namespace BankingApp{
 
             List<CheckingAccount> checkingAccountList = new List<CheckingAccount>();//list of accounts
             List<SavingsAccount> savingsAccountList = new List<SavingsAccount>();//list of checking accounts
-            List<CdAccount> CDAccountList = new List<CdAccount>();//list of checking accounts
+            List<CdAccount> CdAccountList = new List<CdAccount>();//list of checking accounts
             
             
         //main parent class == Account == test data                     
@@ -26,8 +26,8 @@ namespace BankingApp{
             savingsAccountList.Add(new SavingsAccount(3001, "Savings", 6950.35, 5.26));
             savingsAccountList.Add(new SavingsAccount(3002, "Savings2", 2600.50, 6.88));
 
-            CDAccountList.Add(new CdAccount(4001, "CD", 32000, 13.56));
-            CDAccountList.Add(new CdAccount(4002, "CD2", 18000, 14.59));
+            CdAccountList.Add(new CdAccount(4001, "CD", 32000, 13.56));
+            CdAccountList.Add(new CdAccount(4002, "CD2", 18000, 14.59));
    
          // Declare variables
         bool userChoice;
@@ -70,24 +70,8 @@ namespace BankingApp{
             } while (!userChoice);
         //====================testing checking account template area ========================
                 
-        
-        
-        
-        
-        
-        //  TODO: If the option is L or l prints the list above (test data)
-
-            if (userChoiceString=="L" || userChoiceString=="l")
+        if (userChoiceString=="F" || userChoiceString=="f")
             {
-               Console.WriteLine("List of accounts: ");
-                Console.WriteLine("----------------------------------------------------------------------------------------");
-                foreach(Account anAccountList in checkingAccountList)
-                    {
-                        Console.WriteLine(anAccountList);//prints the list above (test data)
-                    }//end foreach   
-           
-                
-                    
                 
                 
                 
@@ -116,6 +100,53 @@ namespace BankingApp{
                 
                 
             }//end if "F" 
+        
+        
+        
+        
+        //  TODO: If the option is L or l prints the list above (test data)
+
+            if (userChoiceString=="L" || userChoiceString=="l")
+            {
+                foreach(CheckingAccount checkingAccount in checkingAccountList)  
+                    {
+                        Console.WriteLine(checkingAccount);//prints the list above (test data)
+                    }//end foreach
+                foreach(SavingsAccount savingsAccount in savingsAccountList)  
+                {
+                    Console.WriteLine(savingsAccount);//prints the list above (test data)
+                }//end foreach
+                foreach(CdAccount cdAccount in CdAccountList)  
+                {
+                    Console.WriteLine(CdAccountList);//prints the list above (test data)
+                }//end foreach  
+                
+                
+                /*
+                foreach(CheckingAccount anAccountList in checkingAccountList)
+                    {
+                        Console.WriteLine(anAccountList);//prints the list above (test data)
+                    }
+
+                Console.WriteLine("Please enter account ID#");
+                userAccountIdInput = Convert.ToInt16(Console.ReadLine());//allows user input to be read
+                
+
+                if (accountId = userAccountIdInput)
+                {
+                    Console.WriteLine("ID# is" + accountId);
+            }
+                    */
+                 
+
+                
+                
+                
+                
+                
+                
+                
+            }//end if "L" 
             
 
         //  TODO: "D" make a Desposit
@@ -192,13 +223,10 @@ namespace BankingApp{
                 //TODO: pull up account
                     accountId = Convert.ToInt32(Console.ReadLine());
                     //TODO: read balance from list account Checking1 
-                    foreach(CheckingAccount CheckingAccount in checkingAccountList)
-                    
+                    foreach(CheckingAccount anAccountList in checkingAccountList)
                     {
-                        Console.WriteLine(CheckingAccount);//prints the list above (test data)
-                        
-                    }//end foreach
-                      
+                        Console.WriteLine(anAccountList);//prints the list above (test data)
+                    }//end foreach  
 
 
                 //TODO
