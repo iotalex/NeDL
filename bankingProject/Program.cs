@@ -72,32 +72,46 @@ namespace BankingApp{
                 
         if (userChoiceString=="F" || userChoiceString=="f")
             {
+                double withDrawalAmount;
+                int accountId; 
+                Console.WriteLine("=========================Checking ACCOUNT=============================");
+                Console.WriteLine("How much would you like to withdrawal?");
                 
-                
-                
-                /*
-                foreach(CheckingAccount anAccountList in checkingAccountList)
+                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                while(withDrawalAmount <= 0)
                     {
-                        Console.WriteLine(anAccountList);//prints the list above (test data)
-                    }
-
-                Console.WriteLine("Please enter account ID#");
-                userAccountIdInput = Convert.ToInt16(Console.ReadLine());//allows user input to be read
+                    Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
+                    Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
+                    if(withDrawalAmount < 0)//second chance to enter positive number
+                        {
+                            withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                        }
+                    break; 
+                    }//end if
                 
-
-                if (accountId = userAccountIdInput)
+                Console.WriteLine("Please enter your account ID#"); 
+                accountId = Convert.ToInt32(Console.ReadLine());
+                
+                foreach(Account anAccount in checkingAccountList)
                 {
-                    Console.WriteLine("ID# is" + accountId);
-            }
-                    */
-                 
-
-                
-                
-                
-                
-                
-                
+                    while(accountId <= 2000)//requires valid ID#
+                    break;
+                    while(accountId >= 2999)
+                    {
+                    Console.WriteLine("-------------Warning-------------");
+                    Console.WriteLine("PLEASE ENTER VALID ID#!");
+                    if(accountId <= 0)//second chance to enter valid ID# number
+                        {
+                            accountId = Convert.ToChar(Console.ReadLine());
+                        }
+                    break; 
+                    }
+                    if(anAccount.accountId==accountId)
+                        {
+                            anAccount.MakeWithdrawal(withDrawalAmount);
+                            Console.WriteLine("Withdrawal successfuly made");//prints the list above (test data)
+                        }//end if 
+                }//foreach
                 
             }//end if "F" 
         
@@ -287,14 +301,14 @@ namespace BankingApp{
                 */
                             
                             }//end using    
-    //TODO:   //savings: withdrawal is allowed but only as long as the balance is great than the withdrawal amount 
+                        //TODO:   //savings: withdrawal is allowed but only as long as the balance is great than the withdrawal amount 
 
           
           
                     //   Select savings account
                             else if (userChoiceString2=="S" || userChoiceString2=="s")
                             {
-                            double withDrawalAmount;
+                double withDrawalAmount;
                 int accountId; 
                 Console.WriteLine("=========================Savings ACCOUNT=============================");
                 Console.WriteLine("How much would you like to withdrawal?");
@@ -333,8 +347,8 @@ namespace BankingApp{
                             anAccount.MakeWithdrawal(withDrawalAmount);
                             Console.WriteLine("Withdrawal successfuly made");//prints the list above (test data)
                         }//end if 
-                } 
-                            }
+                }//foreach
+            }//end "S" savings withdrawal 
                     
                     
                     
