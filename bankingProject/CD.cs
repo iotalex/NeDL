@@ -32,7 +32,7 @@ namespace BankingApp
         {
             currentBalance = currentBalance - withDrawalAmount;  
         }
-   
+
         public override string ToString(){
             return $"AccountID#:{accountId} | Type: {accountType} | Current Balance: ${currentBalance} | Annual Earned Interest: ${feeCD} ";
         }

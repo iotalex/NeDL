@@ -32,6 +32,7 @@ namespace BankingApp
         {
             currentBalance = currentBalance - withDrawalAmount;  //if logic parenters of 50%, in program.cs
         }
+
           //usefull ToString()
         public override string ToString(){
             return $"AccountID#:{accountId} | Type: {accountType} | Current Balance: ${currentBalance} | Annual Fee: ${feeChecking} ";

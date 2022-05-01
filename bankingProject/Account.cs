@@ -32,9 +32,8 @@ namespace BankingApp
         }
         
         
-        public abstract void MakeWithdrawal(double withDrawalAmount);//withdrawal method 
-
-      
+        public abstract void MakeWithdrawal(double withDrawalAmount);//withdrawal method
+            
 
             //usefull ToString()
         public override string ToString(){

@@ -70,21 +70,16 @@ namespace BankingApp{
         if (userChoiceString=="F" || userChoiceString=="f")
             {
                 double withDrawalAmount;
-                int accountId; 
+                int accountId;
+     
                 Console.WriteLine("=========================TEST Checking ACCOUNT=============================");
                 Console.WriteLine("How much would you like to withdrawal?");
                 
-                withDrawalAmount = Convert.ToDouble(Console.ReadLine()); //end amount 
-                while(withDrawalAmount <= 0)
-                    {
-                    Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
-                    Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
-                    if(withDrawalAmount < 0)//second chance to enter positive number
-                        {
-                            withDrawalAmount = Convert.ToDouble(Console.ReadLine());
-                        }
-                    break; 
-                    }//end if
+                withDrawalAmount = Convert.ToDouble(Console.ReadLine()); //enter amount 
+               // while(withDrawalAmount <= depositAmount)
+                   // {
+                    
+                  //  }//end if
                 
                 Console.WriteLine("Please enter your account ID#"); 
                 accountId = Convert.ToInt32(Console.ReadLine());
