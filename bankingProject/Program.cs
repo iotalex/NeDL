@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;   // needed for Lists
 using System.Linq;
 using System.Text;
@@ -9,23 +10,24 @@ namespace BankingApp{
         static void Main(string[] args)
         {
 
-            List<Account> accountList = new List<Account>();//list of accounts
-            List<CheckingAccount> checkingAccountList = new List<CheckingAccount>();//list of checking accounts
+            List<CheckingAccount> checkingAccountList = new List<CheckingAccount>();//list of accounts
+            List<SavingsAccount> savingsAccountList = new List<SavingsAccount>();//list of checking accounts
+            List<CdAccount> CDAccountList = new List<CdAccount>();//list of checking accounts
             
             
         //main parent class == Account == test data                     
            // accountList.Add(new Account(1001, "CheckingBase", 55.98));
            // accountList.Add(new Account(1002, "SavingsBase", 69.56));
-            accountList.Add(new CheckingAccount(2001, "Checking", 10.00, 10));
-            accountList.Add(new CheckingAccount(2002, "Checking2", 169.65, 50));
+            checkingAccountList.Add(new CheckingAccount(2001, "Checking", 10.00, 10));
+            checkingAccountList.Add(new CheckingAccount(2002, "Checking2", 169.65, 50));
 
             
 
-            accountList.Add(new SavingsAccount(3001, "Savings", 6950.35, 5.26));
-            accountList.Add(new SavingsAccount(3002, "Savings2", 2600.50, 6.88));
+            savingsAccountList.Add(new SavingsAccount(3001, "Savings", 6950.35, 5.26));
+            savingsAccountList.Add(new SavingsAccount(3002, "Savings2", 2600.50, 6.88));
 
-            accountList.Add(new CdAccount(4001, "CD", 32000, 13.56));
-            accountList.Add(new CdAccount(4002, "CD2", 18000, 14.59));
+            CDAccountList.Add(new CdAccount(4001, "CD", 32000, 13.56));
+            CDAccountList.Add(new CdAccount(4002, "CD2", 18000, 14.59));
    
          // Declare variables
         bool userChoice;
@@ -77,21 +79,13 @@ namespace BankingApp{
 
             if (userChoiceString=="L" || userChoiceString=="l")
             {
-                Console.WriteLine("===================ACCOUNT BALANCE MENU===================");
-                foreach(Account anAccountList in accountList)
+               Console.WriteLine("List of accounts: ");
+                Console.WriteLine("----------------------------------------------------------------------------------------");
+                foreach(Account anAccountList in checkingAccountList)
                     {
                         Console.WriteLine(anAccountList);//prints the list above (test data)
-                    }//end foreach       
-            }//end if
-            if (userChoiceString=="F" || userChoiceString=="f")
-            {
-            int accountId;
-
-            Console.WriteLine("Please enter account#:");                      
-                //TODO: pull up account
-                    accountId = Convert.ToInt32(Console.ReadLine());
-                    //TODO: read balance from list account Checking1
-                for (int i = 0; i < Linke)  //won't workf
+                    }//end foreach   
+           
                 
                     
                 
@@ -110,7 +104,7 @@ namespace BankingApp{
                 if (accountId = userAccountIdInput)
                 {
                     Console.WriteLine("ID# is" + accountId);
-                }
+            }
                     */
                  
 
@@ -146,7 +140,7 @@ namespace BankingApp{
                 Console.WriteLine("Please enter account number"); 
                 accountId = Convert.ToInt32(Console.ReadLine());
             
-                foreach(Account anAccount in accountList)
+                foreach(Account anAccount in savingsAccountList)
                 {
                     if(anAccount.accountId==accountId)
                         {
@@ -198,10 +192,13 @@ namespace BankingApp{
                 //TODO: pull up account
                     accountId = Convert.ToInt32(Console.ReadLine());
                     //TODO: read balance from list account Checking1 
-                    foreach(CheckingAccount anAccountList in checkingAccountList)
+                    foreach(CheckingAccount CheckingAccount in checkingAccountList)
+                    
                     {
-                        Console.WriteLine(anAccountList);//prints the list above (test data)
-                    }//end foreach  
+                        Console.WriteLine(CheckingAccount);//prints the list above (test data)
+                        
+                    }//end foreach
+                      
 
 
                 //TODO
@@ -289,7 +286,7 @@ namespace BankingApp{
                 Console.WriteLine("Please enter your account ID#"); 
                 accountId = Convert.ToInt32(Console.ReadLine());
                 
-                foreach(Account anAccount in accountList)
+                foreach(Account anAccount in savingsAccountList)
                 {
                     while(accountId <= 3000)//requires valid ID#
                     break;
