@@ -1,6 +1,5 @@
 ﻿using System;
-using System;
-using System.Collections.Generic;
+using System.Collections.Generic;   // needed for Lists
 using System.Linq;
 using System.Text;
 
@@ -86,21 +85,16 @@ namespace BankingApp{
             }//end if
             if (userChoiceString=="F" || userChoiceString=="f")
             {
-                
-                Console.WriteLine("Please enter valid account ID#: ");
-                string findID = Console.ReadLine();
-                bool found = false; 
+            int accountId;
 
-                foreach (Account anAccount in accountList)
-                {
-                    if(anAccount.accountType == findID)
-                    {
-                        Console.WriteLine(anAccount);
-                        found = true;
-                    }
-                }
-                if (!(found))
-                    Console.WriteLine("not found");
+            Console.WriteLine("Please enter account#:");                      
+                //TODO: pull up account
+                    accountId = Convert.ToInt32(Console.ReadLine());
+                    //TODO: read balance from list account Checking1
+                
+                    
+                
+                
                 
                 /*
                 foreach(CheckingAccount anAccountList in checkingAccountList)
