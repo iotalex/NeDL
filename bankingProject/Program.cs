@@ -17,8 +17,8 @@ namespace BankingApp{
         //main parent class == Account == test data                     
            // accountList.Add(new Account(1001, "CheckingBase", 55.98));
            // accountList.Add(new Account(1002, "SavingsBase", 69.56));
-            checkingAccountList.Add(new CheckingAccount(2001, "Checking", 10.00, 10));
-            checkingAccountList.Add(new CheckingAccount(2002, "Checking2", 169.65, 50));
+            accountList.Add(new CheckingAccount(2001, "Checking", 10.00, 10));
+            accountList.Add(new CheckingAccount(2002, "Checking2", 169.65, 50));
 
             
 
@@ -88,6 +88,19 @@ namespace BankingApp{
             {
                 
                 Console.WriteLine("Please enter valid account ID#: ");
+                string findID = Console.ReadLine();
+                bool found = false; 
+
+                foreach (Account anAccount in accountList)
+                {
+                    if(anAccount.accountType == findID)
+                    {
+                        Console.WriteLine(anAccount);
+                        found = true;
+                    }
+                }
+                if (!(found))
+                    Console.WriteLine("not found");
                 
                 /*
                 foreach(CheckingAccount anAccountList in checkingAccountList)
