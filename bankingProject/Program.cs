@@ -91,6 +91,7 @@ namespace BankingApp{
                 //TODO: pull up account
                     accountId = Convert.ToInt32(Console.ReadLine());
                     //TODO: read balance from list account Checking1
+                for (int i = 0; i < Linke)  //won't workf
                 
                     
                 
