@@ -32,9 +32,18 @@ namespace BankingApp
             currentBalance = currentBalance - withDrawalAmount; 
         }
 
-        public override bool MakeWithdrawl(double withDrawalAmount)//withdrawal method
+         public override bool MakeWithdrawl(double withDrawalAmount)//withdrawal method
         {
-            return true;    
+            // TODO: Check if WITHDRAWL amount > 50% of current balance 
+            // TODO: If so, then return false
+            
+            if (withDrawalAmount > (currentBalance / 2.0d))//2.0d - tells/declares a "double" 'd' after the number 
+                return false;
+
+            // TODO: Do normal stuff here
+            currentBalance = currentBalance - withDrawalAmount;  //if logic parenters of 50%, in program.cs
+            // TODO: return true
+            return true;
         }
 
           //usefull ToString()

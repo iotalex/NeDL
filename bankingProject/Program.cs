@@ -10,9 +10,10 @@ namespace BankingApp{
         static void Main(string[] args)
         {
             List<Account> accountList = new List<Account>();//list of accounts
+            
         //main parent class == Account == test data                     
-           // accountList.Add(new Account(1001, "CheckingBase", 55.98));
-           // accountList.Add(new Account(1002, "SavingsBase", 69.56));
+           //accountList.Add(new Account(1001, "CheckingBase", 55.98));
+          // accountList.Add(new Account(1002, "SavingsBase", 69.56));
             accountList.Add(new CheckingAccount(2001, "Checking", 10.00, 10));
             accountList.Add(new CheckingAccount(2002, "Checking2", 169.65, 50));
 
@@ -61,7 +62,19 @@ namespace BankingApp{
 
             } while (!userChoice);
         //====================testing checking account template area ========================
+         //  TODO: If the option is L or l prints the list above (test data)
+
+        if (userChoiceString=="L" || userChoiceString=="l")
+        {
+            foreach(Account anAccount in accountList)  
+                {
+                    Console.WriteLine(anAccount);//prints the list above (test data)
+                }//end foreach
+         
+         
                 
+        }//end if "L"     
+
         if (userChoiceString=="F" || userChoiceString=="f")
             {
                 double withDrawalAmount;
@@ -114,23 +127,8 @@ namespace BankingApp{
                 }//end foreach
                 
             }//end if "F" 
-        
-        
-        
-        
-        //  TODO: If the option is L or l prints the list above (test data)
 
-            if (userChoiceString=="L" || userChoiceString=="l")
-            {
-                foreach(CheckingAccount anAccount in accountList)  
-                    {
-                        Console.WriteLine(anAccount);//prints the list above (test data)
-                    }//end foreach
-                 
-   
-            }//end if "L" 
-            
-
+       
         //  TODO: "D" make a Desposit
 
             else if (userChoiceString=="D" || userChoiceString=="d")
