@@ -40,9 +40,6 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         }
         
 
-
-
-
     }//end class
 
 }//end main 
