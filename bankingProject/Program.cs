@@ -75,32 +75,42 @@ namespace BankingApp{
                 
         }//end if "L"     
 
-        if (userChoiceString=="F" || userChoiceString=="f")
+        else if (userChoiceString=="F" || userChoiceString=="f")
             {
                 double withDrawalAmount;
                 int accountId;
                 double currentBalance;
-                
-                
+                //prompts user and accepts user input number 
                 withDrawalAmount = InputUtilities.PromptForDoubleInput("How much would you like to withdrawal?");
-                //TODO: Get line to read balance
-                currentBalance = Convert.ToDouble(Console.ReadLine());
-                //TODO: Get line to write balance
-                while(withDrawalAmount >= currentBalance)
+                
+                currentBalance = InputUtilities.PromptForDoubleInput("What is this?");
+                
+                if(withDrawalAmount >= currentBalance)
                     {
                         Console.WriteLine("You cannot make this transaction.");
                         break;
                     }
-                while(withDrawalAmount <= 0)
-                    {
-                   
-                    if(withDrawalAmount < 0)//second chance to enter positive number
+                Console.WriteLine("Please enter your account ID#"); //plumbing not working, come back to this later; 5-2-22
+                accountId = Convert.ToInt32(Console.ReadLine());
+                
+                foreach(CheckingAccount anAccount in accountList)
+                {
+ 
+                    if(anAccount.accountId==accountId)
                         {
-                            withDrawalAmount = InputUtilities.PromptForDoubleInput("Please enter a positive number!");
-//                            withDrawalAmount = Convert.ToDouble(Console.ReadLine()); replace this, cool 
-                        }
-                    break; 
-                    }//end if
+                            anAccount.MakeWithdrawal(withDrawalAmount);
+                            Console.WriteLine("Withdrawal successfuly made");//prints the list above (test data)
+                        }//end if
+                    if(anAccount.accountId==accountId)
+                        {
+                            anAccount.MakeWithdrawal(currentBalance);
+                            Console.WriteLine("Withdrawal successfuly made");//prints the list above (test data)
+                        }//end if
+
+                }//end foreach
+
+
+        /*
                 Console.WriteLine("Please enter your account ID#"); 
                 accountId = Convert.ToInt32(Console.ReadLine());
                 
@@ -125,6 +135,7 @@ namespace BankingApp{
                         }//end if
 
                 }//end foreach
+            */
                 
             }//end if "F" 
 
@@ -162,12 +173,13 @@ namespace BankingApp{
                 
             }//end foreach " " 
 
-            else 
-            {
-                Console.WriteLine("===============THANKS FOR BANKING WITH US TODAY===============");
-                Console.WriteLine("                 ****PLEASE COME AGAIN SOON!****                 ");
-            }
-        } while (!(userChoiceString=="Q") & !(userChoiceString=="q"));
+           //   TODO: Else if the option is a Q or q then quit the program                
+                else if (userChoiceString=="Q" || userChoiceString=="q")
+                {
+                  Console.WriteLine("Goodbye, auf wiedersehen");
+                }
+      }// ends the big "do"
+       while(!(userChoiceString=="Q"));
         }//end static main
 
     }//end class Program 

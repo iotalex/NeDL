@@ -16,9 +16,22 @@ namespace BankingApp
                 return Convert.ToDouble(inputString);
             }
 
-            // public static int PromptForIntegerInput(string inputMessage = "", int minValue = Int32.MinValue, int maxValue = Int32.MaxValue)
-            // {
-
-            // }
+            
     }
 }
+
+
+/*       **this is my positive number logic 
+
+ while(withDrawalAmount <= 0)
+                    {
+                   
+                    if(withDrawalAmount < 0)//second chance to enter positive number
+                        {
+                            withDrawalAmount = InputUtilities.PromptForDoubleInput("Please enter a positive number!");
+//                            withDrawalAmount = Convert.ToDouble(Console.ReadLine()); replace this, cool 
+                        }
+                    break; 
+                    }//end if
+
+*/
