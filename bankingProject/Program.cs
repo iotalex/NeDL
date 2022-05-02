@@ -67,10 +67,9 @@ namespace BankingApp{
                 double withDrawalAmount;
                 int accountId;
                 double currentBalance;
-                Console.WriteLine("=========================CHECKING ACCOUNT=============================");
-                Console.WriteLine("How much would you like to withdrawal?");
                 
-                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                
+                withDrawalAmount = InputUtilities.PromptForDoubleInput("How much would you like to withdrawal?");
                 //TODO: Get line to read balance
                 currentBalance = Convert.ToDouble(Console.ReadLine());
                 //TODO: Get line to write balance
@@ -123,9 +122,9 @@ namespace BankingApp{
 
             if (userChoiceString=="L" || userChoiceString=="l")
             {
-                foreach(CheckingAccount checkingAccount in accountList)  
+                foreach(CheckingAccount anAccount in accountList)  
                     {
-                        Console.WriteLine(checkingAccount);//prints the list above (test data)
+                        Console.WriteLine(anAccount);//prints the list above (test data)
                     }//end foreach
                  
    
@@ -164,192 +163,6 @@ namespace BankingApp{
                 }
                 
             }//end foreach " " 
-
-            else if (userChoiceString=="W" || userChoiceString=="w")
-            {
-                    bool userChoice2;
-                    string userChoiceString2;  
-                //Repeat main Withdrawal Account select loop 
-                    do
-                    {     
-                    //  TODO: Get a valid input 
-                    do
-                    {
-                        userChoice2 = false;
-        //==============================================WITHDRAWAL TRANSACTIONS MENU================================================
-                        Console.WriteLine("===================WITHDRAWAL TRANSACTION MENU===================");
-                        Console.WriteLine("Which account would you like to make an withdrawal?");
-                        Console.WriteLine("C: Checking account.");
-                        Console.WriteLine("S: Savings account");
-                        Console.WriteLine("B: CD Bonds account");
-                        Console.WriteLine("R: Return to Main Menu");
-                        userChoiceString2 = Console.ReadLine();
-                        userChoice2 = (userChoiceString2== "C" || userChoiceString2 == "c" ||  
-                                        userChoiceString2 == "S" || userChoiceString2 == "s" ||  
-                                        userChoiceString2 == "B" || userChoiceString2 == "b" ||      
-                                        userChoiceString2 == "R" || userChoiceString2 == "r");  
-                                
-                            if(!userChoice2)
-                            {
-                            Console.WriteLine("Please enter a valid option");
-                            }    
-                        }//ends the second "do" which is to get "valid input"
-                        while (!userChoice2);
-
-                    //   Select checking account
-                            if (userChoiceString2=="C" || userChoiceString2=="c")
-                            {
-                double withDrawalAmount;
-                int accountId;
-                double currentBalance;
-                Console.WriteLine("=========================CHECKING ACCOUNT=============================");
-                Console.WriteLine("How much would you like to withdrawal?");
-                
-                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
-                //TODO: Get line to read balance
-                currentBalance = Convert.ToDouble(Console.ReadLine());
-                //TODO: Get line to write balance
-                while(withDrawalAmount >= currentBalance)
-                    {
-                        Console.WriteLine("You cannot make this transaction.");
-                        break;
-                    }
-                while(withDrawalAmount <= 0)
-                    {
-                    Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
-                    Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
-                    if(withDrawalAmount < 0)//second chance to enter positive number
-                        {
-                            withDrawalAmount = Convert.ToDouble(Console.ReadLine());
-                        }
-                    break; 
-                    }//end if
-                Console.WriteLine("Please enter your account ID#"); 
-                accountId = Convert.ToInt32(Console.ReadLine());
-                
-                foreach(Account anAccount in accountList)
-                {
-                    while(accountId <= 2000)//requires valid ID#
-                    break;
-                    while(accountId >= 2999)
-                    {
-                    Console.WriteLine("-------------Warning-------------");
-                    Console.WriteLine("PLEASE ENTER VALID ID#!");
-                    if(accountId <= 0)//second chance to enter valid ID# number
-                        {
-                            accountId = Convert.ToChar(Console.ReadLine());
-                        }
-                    break; 
-                    }
-                    if(anAccount.accountId==accountId)
-                        {
-                            anAccount.MakeWithdrawal(withDrawalAmount);
-                            Console.WriteLine("Withdrawal successfuly made");//prints the list above (test data)
-                        }//end if
-
-                }//end foreach
-       
-            }//end using "C" for checking withdrawal    
-
-                    //   Select savings account
-                            else if (userChoiceString2=="S" || userChoiceString2=="s")
-                            {
-                double withDrawalAmount;
-                int accountId; 
-                Console.WriteLine("=========================Savings ACCOUNT=============================");
-                Console.WriteLine("How much would you like to withdrawal?");
-                
-                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
-                while(withDrawalAmount <= 0)
-                    {
-                    Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
-                    Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
-                    if(withDrawalAmount < 0)//second chance to enter positive number
-                        {
-                            withDrawalAmount = Convert.ToDouble(Console.ReadLine());
-                        }
-                    break; 
-                    }//end if
-                
-                Console.WriteLine("Please enter your account ID#"); 
-                accountId = Convert.ToInt32(Console.ReadLine());
-                
-                foreach(Account anAccount in accountList)
-                {
-                    while(accountId <= 3000)//requires valid ID#
-                    break;
-                    while(accountId >= 3999)
-                    {
-                    Console.WriteLine("-------------Warning-------------");
-                    Console.WriteLine("PLEASE ENTER VALID ID#!");
-                    if(accountId <= 0)//second chance to enter valid ID# number
-                        {
-                            accountId = Convert.ToChar(Console.ReadLine());
-                        }
-                    break; 
-                    }
-                    if(anAccount.accountId==accountId)
-                        {
-                            anAccount.MakeWithdrawal(withDrawalAmount);
-                            Console.WriteLine("Withdrawal successfuly made");//prints the list above (test data)
-                        }//end if 
-                }//foreach
-            }//end "S" savings withdrawal 
-                    
-                    
-                    
-    //TODO:  ///CD: withdrawal is allowed but with early penalty (applied) so the balance needs to be greater than the withdrawl aomun and penalty combined 
-
-                    //   Select CD account  
-                            else if (userChoiceString2 =="B" || userChoiceString2 =="b") 
-                            {
-                            double withDrawalAmount;
-                int accountId; 
-                Console.WriteLine("=========================CD ACCOUNT=============================");
-                Console.WriteLine("How much would you like to withdrawal?");
-                
-                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
-                while(withDrawalAmount <= 0)
-                    {
-                    Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
-                    Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
-                    if(withDrawalAmount < 0)//second chance to enter positive number
-                        {
-                            withDrawalAmount = Convert.ToDouble(Console.ReadLine());
-                        }
-                    break; 
-                    }//end if
-                
-                Console.WriteLine("Please enter your account ID#"); 
-                accountId = Convert.ToInt32(Console.ReadLine());
-                
-                foreach(Account anAccount in accountList)
-                {
-                    while(accountId <= 4000)//requires valid ID#
-                    break;
-                    while(accountId >= 4999)
-                    {
-                    Console.WriteLine("-------------Warning-------------");
-                    Console.WriteLine("PLEASE ENTER VALID ID#!");
-                    if(accountId <= 0)//second chance to enter valid ID# number
-                        {
-                            accountId = Convert.ToChar(Console.ReadLine());
-                        }
-                    break; 
-                    }
-                    if(anAccount.accountId==accountId)
-                        {
-                            anAccount.MakeWithdrawal(withDrawalAmount);
-                            Console.WriteLine("Withdrawal successfuly made");//prints the list above (test data)
-                        }//end if 
-                }//foreach
-                            }
-                 
-                            
-                }// ends the big "do"
-                while(!(userChoiceString2=="R") && !!(userChoiceString=="r"));//goes right back to main menu
-
-            }//end if
 
             else 
             {
