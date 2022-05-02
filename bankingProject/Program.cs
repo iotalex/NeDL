@@ -157,7 +157,23 @@ namespace BankingApp{
                     if(anAccount.accountId==accountId)
                         {
                             anAccount.MakeDeposit(depositAmount);
-                            Console.WriteLine("Deposit made");
+                            Console.WriteLine("Savings deposit made");
+                        }
+                }
+                foreach(Account anAccount in checkingAccountList)
+                {
+                    if(anAccount.accountId==accountId)
+                        {
+                            anAccount.MakeDeposit(depositAmount);
+                            Console.WriteLine("Checking deposit made");
+                        }
+                }
+                foreach(Account anAccount in CdAccountList)
+                {
+                    if(anAccount.accountId==accountId)
+                        {
+                            anAccount.MakeDeposit(depositAmount);
+                            Console.WriteLine("CD deposit made");
                         }
                 }
             }//end foreach " " 
@@ -347,16 +363,6 @@ namespace BankingApp{
                 while(!(userChoiceString2=="R") && !!(userChoiceString=="r"));//goes right back to main menu
 
             }//end if
-
-
-
-        //  TODO: "Z" make a CHECKING withdrawal  
-
-            else if (userChoiceString=="Z" || userChoiceString=="z")
-            {
-                   
-                
-            }//end foreach "W" 
 
             else 
             {
