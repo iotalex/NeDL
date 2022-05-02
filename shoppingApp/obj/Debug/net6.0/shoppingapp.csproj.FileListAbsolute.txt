@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\Desktop\NeDL\shoppingapp\obj\Debug\net6.0\shoppingapp.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\shoppingapp\obj\Debug\net6.0\shoppingapp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\shoppingapp\obj\Debug\net6.0\shoppingapp.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\shoppingapp\obj\Debug\net6.0\shoppingapp.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\shoppingapp\obj\Debug\net6.0\shoppingapp.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\shoppingapp\bin\Debug\net6.0\shoppingapp.exe
+C:\Users\ABatenhorst\Desktop\NeDL\shoppingapp\bin\Debug\net6.0\shoppingapp.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\shoppingapp\bin\Debug\net6.0\shoppingapp.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\shoppingapp\bin\Debug\net6.0\shoppingapp.dll
+C:\Users\ABatenhorst\Desktop\NeDL\shoppingapp\bin\Debug\net6.0\shoppingapp.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\shoppingapp\obj\Debug\net6.0\shoppingapp.dll
+C:\Users\ABatenhorst\Desktop\NeDL\shoppingapp\obj\Debug\net6.0\refint\shoppingapp.dll
+C:\Users\ABatenhorst\Desktop\NeDL\shoppingapp\obj\Debug\net6.0\shoppingapp.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\shoppingapp\obj\Debug\net6.0\shoppingapp.genruntimeconfig.cache
+C:\Users\ABatenhorst\Desktop\NeDL\shoppingapp\obj\Debug\net6.0\ref\shoppingapp.dll
