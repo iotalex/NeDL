@@ -9,10 +9,7 @@ namespace BankingApp{
     {
         static void Main(string[] args)
         {
-
             List<Account> accountList = new List<Account>();//list of accounts
-           
-     
         //main parent class == Account == test data                     
            // accountList.Add(new Account(1001, "CheckingBase", 55.98));
            // accountList.Add(new Account(1002, "SavingsBase", 69.56));
@@ -37,7 +34,6 @@ namespace BankingApp{
             do
             {
                 //  Initialize variables
-
                 userChoice = false;
 
                 //  TODO: Provide the user a menu of options
@@ -85,12 +81,11 @@ namespace BankingApp{
                     }
                 while(withDrawalAmount <= 0)
                     {
-                    Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
-                    Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
+                   
                     if(withDrawalAmount < 0)//second chance to enter positive number
                         {
-                            withDrawalAmount = InputUtilities.PromptForDoubleInput("type initial message ot user");
-//                            withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                            withDrawalAmount = InputUtilities.PromptForDoubleInput("Please enter a positive number!");
+//                            withDrawalAmount = Convert.ToDouble(Console.ReadLine()); replace this, cool 
                         }
                     break; 
                     }//end if
@@ -370,33 +365,3 @@ namespace BankingApp{
 
 
 
-///////////////////////////BACKUP TEMPLATE FOR ACCOUNTS 
-          /*
- double withDrawalAmount;
-                int accountId; 
-                Console.WriteLine("=========================CHECKING ACCOUNT=============================");
-                Console.WriteLine("How much would you like to withdrawal?");
-                
-                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
-                while(withDrawalAmount <= 0)
-                    {
-                    Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
-                    Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
-                    if(withDrawalAmount < 0)//second chance to enter positive number
-                        {
-                            withDrawalAmount = Convert.ToDouble(Console.ReadLine());
-                        }
-                    break; 
-                    }//end if
-                Console.WriteLine("Please enter account number"); 
-                accountId = Convert.ToInt32(Console.ReadLine());
-                
-                foreach(Account anAccount in accountList)
-                {
-                    if(anAccount.accountId==accountId)
-                        {
-                            anAccount.MakeWithdrawal(withDrawalAmount);
-                            Console.WriteLine("Withdrawal made");//prints the list above (test data)
-                        }//end if 
-                } 
-          */
