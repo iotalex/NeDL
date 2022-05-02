@@ -32,8 +32,11 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             membershipType = newMembershipType;
             annualCost = newAnnualCost;
             currentMonthPurchases = newCurrentMonthPurchases;
+        }
 
-
+        public override string ToString()
+        {
+            return$"Member ID#: {memberId} | Email Address: {emailAddress} | Type: {membershipType} | Annual fee: {annualCost} | Monthly Purchases: $ {currentMonthPurchases} "; 
         }
         
 

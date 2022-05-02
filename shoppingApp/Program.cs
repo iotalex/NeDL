@@ -13,7 +13,8 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         List<Member> memberList = new List<Member>();
 
         // Add a couple of employees to the list to test
-        memberList.Add(new Member ("Enge", "Alec", "H", 6, 5));
+        memberList.Add(new Member ("Alex", "al@bates.com", "Standard Member", 60, 5));
+        memberList.Add(new Member ("Katie", "woot@aol.org", "Regular Member" , 45, 99));
 
             // Print the list
             foreach (Member anMember in memberList)
