@@ -32,6 +32,11 @@ namespace BankingApp
             currentBalance = currentBalance - withDrawalAmount; 
         }
 
+        public override bool MakeWithdrawl(double withDrawalAmount)//withdrawal method
+        {
+            return true;    
+        }
+
           //usefull ToString()
         public override string ToString(){
             return $"AccountID#:{accountId} | Type: {accountType} | Current Balance: ${currentBalance} | Annual Earned Interest: ${feeSavings} ";

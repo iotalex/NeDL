@@ -32,7 +32,21 @@ namespace BankingApp
         {
             currentBalance = currentBalance - withDrawalAmount;  //if logic parenters of 50%, in program.cs
         }
+        public override bool MakeWithdrawl(double withDrawalAmount)//withdrawal method
+        {
+            // TODO: Check if WITHDRAWL amount > 50% of current balance 
+            // TODO: If so, then return false
+            
+            if (withDrawalAmount > (currentBalance / 2.0d))//2.0d - tells/declares a "double" 'd' after the number 
+                return false;
 
+            // TODO: Do normal stuff here
+            currentBalance = currentBalance - withDrawalAmount;  //if logic parenters of 50%, in program.cs
+            // TODO: return true
+            return true;
+        }
+        
+        
           //usefull ToString()
         public override string ToString(){
             return $"AccountID#:{accountId} | Type: {accountType} | Current Balance: ${currentBalance} | Annual Fee: ${feeChecking} ";

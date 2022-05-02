@@ -10,21 +10,20 @@ namespace BankingApp{
         static void Main(string[] args)
         {
 
-            List<CheckingAccount> checkingAccountList = new List<CheckingAccount>();//list of accounts
-            List<SavingsAccount> savingsAccountList = new List<SavingsAccount>();//list of checking accounts
-            List<CdAccount> CdAccountList = new List<CdAccount>();//list of checking accounts
+            List<Account> accountList = new List<Account>();//list of accounts
+           
      
         //main parent class == Account == test data                     
            // accountList.Add(new Account(1001, "CheckingBase", 55.98));
            // accountList.Add(new Account(1002, "SavingsBase", 69.56));
-            checkingAccountList.Add(new CheckingAccount(2001, "Checking", 10.00, 10));
-            checkingAccountList.Add(new CheckingAccount(2002, "Checking2", 169.65, 50));
+            accountList.Add(new CheckingAccount(2001, "Checking", 10.00, 10));
+            accountList.Add(new CheckingAccount(2002, "Checking2", 169.65, 50));
 
-            savingsAccountList.Add(new SavingsAccount(3001, "Savings", 6950.35, 5.26));
-            savingsAccountList.Add(new SavingsAccount(3002, "Savings2", 2600.50, 6.88));
+            accountList.Add(new SavingsAccount(3001, "Savings", 6950.35, 5.26));
+            accountList.Add(new SavingsAccount(3002, "Savings2", 2600.50, 6.88));
 
-            CdAccountList.Add(new CdAccount(4001, "CD", 32000, 13.56));
-            CdAccountList.Add(new CdAccount(4002, "CD2", 18000, 14.59));
+            accountList.Add(new CdAccount(4001, "CD", 32000, 13.56));
+            accountList.Add(new CdAccount(4002, "CD2", 18000, 14.59));
    
          // Declare variables
         bool userChoice;
@@ -71,20 +70,34 @@ namespace BankingApp{
             {
                 double withDrawalAmount;
                 int accountId;
-     
-                Console.WriteLine("=========================TEST Checking ACCOUNT=============================");
+                double currentBalance;
+                Console.WriteLine("=========================CHECKING ACCOUNT=============================");
                 Console.WriteLine("How much would you like to withdrawal?");
                 
-                withDrawalAmount = Convert.ToDouble(Console.ReadLine()); //enter amount 
-               // while(withDrawalAmount <= depositAmount)
-                   // {
-                    
-                  //  }//end if
-                
+                withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                //TODO: Get line to read balance
+                currentBalance = Convert.ToDouble(Console.ReadLine());
+                //TODO: Get line to write balance
+                while(withDrawalAmount >= currentBalance)
+                    {
+                        Console.WriteLine("You cannot make this transaction.");
+                        break;
+                    }
+                while(withDrawalAmount <= 0)
+                    {
+                    Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
+                    Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
+                    if(withDrawalAmount < 0)//second chance to enter positive number
+                        {
+                            withDrawalAmount = InputUtilities.PromptForDoubleInput("type initial message ot user");
+//                            withDrawalAmount = Convert.ToDouble(Console.ReadLine());
+                        }
+                    break; 
+                    }//end if
                 Console.WriteLine("Please enter your account ID#"); 
                 accountId = Convert.ToInt32(Console.ReadLine());
                 
-                foreach(Account anAccount in checkingAccountList)
+                foreach(Account anAccount in accountList)
                 {
                     while(accountId <= 2000)//requires valid ID#
                     break;
@@ -102,8 +115,9 @@ namespace BankingApp{
                         {
                             anAccount.MakeWithdrawal(withDrawalAmount);
                             Console.WriteLine("Withdrawal successfuly made");//prints the list above (test data)
-                        }//end if 
-                }//foreach
+                        }//end if
+
+                }//end foreach
                 
             }//end if "F" 
         
@@ -114,18 +128,11 @@ namespace BankingApp{
 
             if (userChoiceString=="L" || userChoiceString=="l")
             {
-                foreach(CheckingAccount checkingAccount in checkingAccountList)  
+                foreach(CheckingAccount checkingAccount in accountList)  
                     {
                         Console.WriteLine(checkingAccount);//prints the list above (test data)
                     }//end foreach
-                foreach(SavingsAccount savingsAccount in savingsAccountList)  
-                {
-                    Console.WriteLine(savingsAccount);//prints the list above (test data)
-                }//end foreach
-                foreach(CdAccount cdAccount in CdAccountList)  
-                {
-                    Console.WriteLine(cdAccount);//prints the list above (test data)
-                }//end foreach  
+                 
    
             }//end if "L" 
             
@@ -152,7 +159,7 @@ namespace BankingApp{
                 Console.WriteLine("Please enter account number"); 
                 accountId = Convert.ToInt32(Console.ReadLine());
             
-                foreach(Account anAccount in savingsAccountList)
+                foreach(Account anAccount in accountList)
                 {
                     if(anAccount.accountId==accountId)
                         {
@@ -160,22 +167,7 @@ namespace BankingApp{
                             Console.WriteLine("Savings deposit made");
                         }
                 }
-                foreach(Account anAccount in checkingAccountList)
-                {
-                    if(anAccount.accountId==accountId)
-                        {
-                            anAccount.MakeDeposit(depositAmount);
-                            Console.WriteLine("Checking deposit made");
-                        }
-                }
-                foreach(Account anAccount in CdAccountList)
-                {
-                    if(anAccount.accountId==accountId)
-                        {
-                            anAccount.MakeDeposit(depositAmount);
-                            Console.WriteLine("CD deposit made");
-                        }
-                }
+                
             }//end foreach " " 
 
             else if (userChoiceString=="W" || userChoiceString=="w")
@@ -240,7 +232,7 @@ namespace BankingApp{
                 Console.WriteLine("Please enter your account ID#"); 
                 accountId = Convert.ToInt32(Console.ReadLine());
                 
-                foreach(Account anAccount in checkingAccountList)
+                foreach(Account anAccount in accountList)
                 {
                     while(accountId <= 2000)//requires valid ID#
                     break;
@@ -287,7 +279,7 @@ namespace BankingApp{
                 Console.WriteLine("Please enter your account ID#"); 
                 accountId = Convert.ToInt32(Console.ReadLine());
                 
-                foreach(Account anAccount in savingsAccountList)
+                foreach(Account anAccount in accountList)
                 {
                     while(accountId <= 3000)//requires valid ID#
                     break;
@@ -336,7 +328,7 @@ namespace BankingApp{
                 Console.WriteLine("Please enter your account ID#"); 
                 accountId = Convert.ToInt32(Console.ReadLine());
                 
-                foreach(Account anAccount in CdAccountList)
+                foreach(Account anAccount in accountList)
                 {
                     while(accountId <= 4000)//requires valid ID#
                     break;
