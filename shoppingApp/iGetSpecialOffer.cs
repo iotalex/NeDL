@@ -1,13 +1,21 @@
-﻿/*
-using System;
+﻿using System;
 
-interface GetSpecialOffer // Note: actual namespace depends on the project name.
+namespace ShopKo
 {
-    class Regular : Member //abstract class, objects can't be instantiated (objects of this type can't be created)    
+    interface GetSpecialOffer
     {
+        
+        double GetSpecialOffer()
+        {
+            return 0;
+        }
+            
+        
+       
+        
 
     }//end class
 
 }//end main 
 
-*/
+
