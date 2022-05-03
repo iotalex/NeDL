@@ -1,12 +1,9 @@
-﻿using System;
-
-namespace ShopKo
-{
-    interface GetSpecialOffer
+﻿interface IGetSpecialOffer
     {  
         double GetSpecialOffer();//interface method 
+              
     }
 
-}//end main 
+
 
 
