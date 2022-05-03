@@ -3,18 +3,9 @@
 namespace ShopKo
 {
     interface GetSpecialOffer
-    {
-        
-        double GetSpecialOffer()
-        {
-            return 0;
-        }
-            
-        
-       
-        
-
-    }//end class
+    {  
+        double GetSpecialOffer();//interface method 
+    }
 
 }//end main 
 
