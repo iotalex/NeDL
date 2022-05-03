@@ -2,7 +2,7 @@
 
 namespace ShopKo // Note: actual namespace depends on the project name.
 {
-    class Executive : Member, GetSpecialOffer //abstract class, objects can't be instantiated (objects of this type can't be created)    
+    class Executive : Member, IGetSpecialOffer //abstract class, objects can't be instantiated (objects of this type can't be created)    
     {
         public double cashBack
             {get; set;}
