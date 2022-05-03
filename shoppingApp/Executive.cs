@@ -2,7 +2,7 @@
 
 namespace ShopKo // Note: actual namespace depends on the project name.
 {
-    class Executive : Member, IGetSpecialOffer //abstract class, objects can't be instantiated (objects of this type can't be created)    
+    class Executive : Member, IGetSpecialOffer, IGetCashBack //abstract class, objects can't be instantiated (objects of this type can't be created)    
     {
         public double cashBack
             {get; set;}
@@ -21,27 +21,50 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         {
             return annualCost * .50;
         }
+        //TODO: add implement cash back method
+        public double GetCashBackExecutive()//interface method
+        {
+            if(currentMonthPurchases < 1000);
+            {
+              return ((1000 * .02) + currentMonthPurchases);  
+            }
+            
+        }
+        
 
         //abstract method
         public override double ICalculate() // abstract <2% for <1000; % cash back for montlhy purchases >1000
-        {
-            int x;
-            int y;
-            //TODO: if statements for <2% and stop at 1000;
-            x = 5;
-            //TODO: if statements for <5% and start at 1000 to infinity; 
-            y = 5;
-            
-            
+        { 
+            return currentMonthPurchases * .02;
+        }
+
+            /*
+
+if(currentMonthPurchases < 1000);
+            {
+              return 169;  
+            }
+
+ return (1000 * .02) + currentMonthPurchases;
+                
+                if (currentMonthPurchases <= 1000)
+                    return((currentMonthPurchases * .05) - 1000);
+                
+            */
+
 
             //return output
-            return (x + y);
-            //return currentMonthPurchases * .02;//standard cashback
-        }
+
+            //return currentMonthPurchases * .02;//standard cashback          
+
+
+
+
+        
 
         public override string ToString()
         {
-            return base.ToString() + $" || Cashback: {ICalculate()} Special Offer: ${GetSpecialOffer()}";
+            return base.ToString() + $" || Cashback: {GetCashBackExecutive()} Special Offer: ${GetSpecialOffer()}";
         }
         
 
