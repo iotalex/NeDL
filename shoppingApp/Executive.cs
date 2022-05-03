@@ -19,7 +19,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         //TODO: add implement method
         public double GetSpecialOffer()//interface method
         {
-            return annualCost * .25;
+            return annualCost * .50;
         }
 
         //abstract method
