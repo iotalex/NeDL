@@ -10,19 +10,19 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         static void Main(string[] args)
         {
             // Create a list of Employees
-        List<Member> regularMemberList = new List<Member>();
+        List<Member> memberList = new List<Member>();
 
         // Add a couple of employees to the list to test
         //memberList.Add(new Member ("Alex", "al@bates.com", "Standard Member", 60, 5));
        //memberList.Add(new Member ("Katie", "woot@aol.org", "Regular Member" , 45, 99));
 
-        regularMemberList.Add(new Regular ("Alex", "al@bates.com", "Regular Member", 60, 5.55));
+        memberList.Add(new Regular (1001, "al@bates.com", "Regular Member", 50, 500.00, 50.23));
 
-        regularMemberList.Add(new Regular ("Katie", "woot@aol.org", "Regular Member" , 45, 99));
+        memberList.Add(new Regular (1002, "woot@aol.org", "Regular Member" , 100, 250.00, 50.23));
 
 
             // Print the list
-            foreach (Member anMember in regularMemberList)
+            foreach (Regular anMember in memberList)
             {
                 Console.WriteLine(anMember);
             }  // end foreach  

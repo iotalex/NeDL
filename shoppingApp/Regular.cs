@@ -12,19 +12,19 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             cashBack = 0.0;
         }
             //constructors  
-        public Regular(int newMemberId, string newEmailAddress, string newMembershipType, int newAnnualCost, double newCurrentMonthPurchases, double newcashBack): base(newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases) //another constructor
+        public Regular(int newMemberId, string newEmailAddress, string newMembershipType, int newAnnualCost, double newCurrentMonthPurchases, double newCashBack): base(newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases) //another constructor
         {
-            cashBack = newcashBack;
+            cashBack = newCashBack;
         }
         //TODO: add implement method
         public override double ICalculate() // this is the abstract method that all children must implement
         {
-            return cashBack * .02;
+            return currentMonthPurchases * .02;
         }
 
         public override string ToString()
         {
-            return base.ToString() + $" | ????: ${cashBack} | Cashback: {ICalculate()}"; 
+            return base.ToString() + $" || Cashback: {ICalculate()}";
         }
         
 

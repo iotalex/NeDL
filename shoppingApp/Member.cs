@@ -4,7 +4,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
 {
     abstract class Member //abstract class, objects can't be instantiated (objects of this type can't be created)    
     {
-        public string memberId
+        public int memberId
             {get; set;}
         public string emailAddress
             {get; set;}
@@ -18,14 +18,14 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         //create getters and setters (properties)
         public Member()
         {
-            memberId = " "; 
+            memberId = 0; 
             emailAddress = " ";
             membershipType = " ";
             annualCost = 0.0;
             currentMonthPurchases = 0.0; 
         }
             //constructors  
-        public Member(string newMemberId, string newEmailAddress, string newMembershipType, int newAnnualCost, double newCurrentMonthPurchases)//defualt constructor
+        public Member(int newMemberId, string newEmailAddress, string newMembershipType, int newAnnualCost, double newCurrentMonthPurchases)//defualt constructor
         {
             memberId = newMemberId;
             emailAddress = newEmailAddress;
@@ -33,6 +33,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             annualCost = newAnnualCost;
             currentMonthPurchases = newCurrentMonthPurchases;
         }
+        public abstract double ICalculate();  // (cashback) this is the abstract method that all children must implement
 
         public override string ToString()
         {
