@@ -2,7 +2,7 @@
 
 namespace ShopKo // Note: actual namespace depends on the project name.
 {
-    class Member //abstract class, objects can't be instantiated (objects of this type can't be created)    
+    abstract class Member //abstract class, objects can't be instantiated (objects of this type can't be created)    
     {
         public string memberId
             {get; set;}
