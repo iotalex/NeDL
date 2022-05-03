@@ -23,9 +23,20 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         }
 
         //abstract method
-        public override double ICalculate() // this is the abstract method that all children must implement
+        public override double ICalculate() // abstract <2% for <1000; % cash back for montlhy purchases >1000
         {
-            return currentMonthPurchases * .05;
+            int x;
+            int y;
+            //TODO: if statements for <2% and stop at 1000;
+            x = 5;
+            //TODO: if statements for <5% and start at 1000 to infinity; 
+            y = 5;
+            
+            
+
+            //return output
+            return (x + y);
+            //return currentMonthPurchases * .02;//standard cashback
         }
 
         public override string ToString()
