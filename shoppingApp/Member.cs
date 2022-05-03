@@ -33,14 +33,21 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             annualCost = newAnnualCost;
             currentMonthPurchases = newCurrentMonthPurchases;
         }
-        public abstract double ICalculate();  // (cashback) this is the abstract method that all children must implement
-
+        
         public override string ToString()
         {
             return$"Member ID#: {memberId} | Email Address: {emailAddress} | Type: {membershipType} | Annual fee: {annualCost} | Monthly Purchases: $ {currentMonthPurchases} "; 
         }
         
+        // Defining a function as abstract says that all derived classes MUST implement this function.
+        public abstract double GetCashBack(double monthlyPurchaseAmount);
 
+        // Defining a function as virtual says that all derived classes MAY implement and override this function.
+        // If they override it, then their version takes precedence; otherwise, the base class version is used.
+        // public virtual double GetCashBack(double monthlyPurchaseAmount)
+        // {
+        //     return 0.0d;
+        // }
     }//end class
 
 }//end main 
