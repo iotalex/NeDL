@@ -2,7 +2,7 @@
 
 namespace ShopKo // Note: actual namespace depends on the project name.
 {
-    class Executive : Member, IGetSpecialOffer, IGetCashBack //abstract class, objects can't be instantiated (objects of this type can't be created)    
+    class Executive : Member, IGetSpecialOffer //abstract class, objects can't be instantiated (objects of this type can't be created)    
     {
         public double cashBack
             {get; set;}
@@ -21,53 +21,18 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         {
             return annualCost * .50;
         }
-        //TODO: add implement cash back method
-        public double GetCashBackExecutive()//interface method
-        {
-            if(currentMonthPurchases < 1000);
-            {
-              return ((1000 * .02) + currentMonthPurchases);  
-            }
-            
-        }
-        
-
-        //abstract method
-        public override double ICalculate() // abstract <2% for <1000; % cash back for montlhy purchases >1000
-        { 
-            return currentMonthPurchases * .02;
-        }
-
-            /*
-
-if(currentMonthPurchases < 1000);
-            {
-              return 169;  
-            }
-
- return (1000 * .02) + currentMonthPurchases;
-                
-                if (currentMonthPurchases <= 1000)
-                    return((currentMonthPurchases * .05) - 1000);
-                
-            */
-
-
-            //return output
-
-            //return currentMonthPurchases * .02;//standard cashback          
-
-
-
-
-        
-
+     
+     
         public override string ToString()
         {
-            return base.ToString() + $" || Cashback: {GetCashBackExecutive()} Special Offer: ${GetSpecialOffer()}";
+            return base.ToString() + $" || Cashback: {GetCashBack(currentMonthPurchases)} Special Offer: ${GetSpecialOffer()}";
         }
         
-
+public override double GetCashBack(double monthlyPurchaseAmount)
+{
+            double percentage = (monthlyPurchaseAmount > 1000.0d) ? 0.05d : 0.02d;///// ternary  <2% for <1000; % cash back for montlhy purchases >1000 
+            return currentMonthPurchases * percentage;
+}
     }//end class
 
 }//end main 

@@ -22,18 +22,17 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             return annualCost * .25;
         }
 
-        //abstract method
-        public override double ICalculate() // this is the abstract method that all children must implement
-        {
-            return currentMonthPurchases * .02;
-        }
+       
 
         public override string ToString()
         {
-            return base.ToString() + $" || Cashback: {ICalculate()} Special Offer: ${GetSpecialOffer()}"; //GetSpecialOffer can be removed
+            return base.ToString() + $" || Cashback: {GetCashBack(currentMonthPurchases)} Special Offer: ${GetSpecialOffer()}"; //GetSpecialOffer can be removed
         }
-        
 
+        public override double GetCashBack(double monthlyPurchaseAmount)
+        {
+            return 0.02d * monthlyPurchaseAmount;
+        }
     }//end class
 
 }//end main 

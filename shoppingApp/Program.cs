@@ -21,8 +21,8 @@ namespace ShopKo // Note: actual namespace depends on the project name.
 
         memberList.Add(new Regular (1002, "woot@aol.com", "Regular Member" , 75, 250.00, 50.23));
 
-        memberList.Add(new Executive (2001, "bread@beads.org", "Executive Member" , 150, 1250.00, 100));
-        memberList.Add(new Executive (2001, "lumber@truss.biz", "Executive Member" , 300, 2250.00, 10.5));
+        memberList.Add(new Executive (2001, "bread@beads.org", "Executive Member" , 150, 500.00, 100));
+        memberList.Add(new Executive (2001, "lumber@truss.biz", "Executive Member" , 300, 1000.01, 10.5));
 
 
             // Print the list
