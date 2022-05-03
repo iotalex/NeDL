@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\shoppingapp\\shoppingapp.csproj": {}
+    "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\shoppingApp\\shoppingapp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\shoppingapp\\shoppingapp.csproj": {
+    "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\shoppingApp\\shoppingapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\shoppingapp\\shoppingapp.csproj",
+        "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\shoppingApp\\shoppingapp.csproj",
         "projectName": "shoppingapp",
-        "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\shoppingapp\\shoppingapp.csproj",
+        "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\shoppingApp\\shoppingapp.csproj",
         "packagesPath": "C:\\Users\\ABatenhorst\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\shoppingapp\\obj\\",
+        "outputPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\shoppingApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ABatenhorst\\AppData\\Roaming\\NuGet\\NuGet.Config",
