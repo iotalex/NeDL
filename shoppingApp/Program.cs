@@ -75,11 +75,12 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                     //if success, continue on
                 //once valid, set the newMemberID to the new object memberID
                 
+                string newEmailAddress = InputUtilities.PromptForStringInput("Please enter email address: ");
+                int newAnnualCost = InputUtilities.PromptForIntInput("Please enter annual cost: ");
 
-                Console.WriteLine("Please enter email address: ");
-                string newEmailAddress = Convert.ToString(Console.ReadLine());
-                Console.WriteLine("Please enter annual cost: ");
-                int newAnnualCost = Convert.ToInt32(Console.ReadLine());
+                
+                //Console.WriteLine("Please enter annual cost: ");
+                //int newAnnualCost = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Please enter amount purchases: ");
                 double newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
                 //if new membership type = regular

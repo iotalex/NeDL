@@ -10,7 +10,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             {get; set;}
         public string membershipType
             {get; set;}
-        public double annualCost
+        public int annualCost
             {get; set;}
         public double currentMonthPurchases
             {get; set;}
@@ -21,7 +21,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             memberId = 0; 
             emailAddress = " ";
             membershipType = " ";
-            annualCost = 0.0;
+            annualCost = 0;
             currentMonthPurchases = 0.0; 
         }
             //constructors  
