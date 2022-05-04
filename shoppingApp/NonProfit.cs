@@ -2,7 +2,7 @@
 
 namespace ShopKo // Note: actual namespace depends on the project name.
 {
-    class NonProfit : Member, IGetSpecialOffer //abstract class, objects can't be instantiated (objects of this type can't be created)    
+    class NonProfit : Member //abstract class, objects can't be instantiated (objects of this type can't be created)    
     {
       
             //constructors  
@@ -10,21 +10,16 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         {
             //do nothing here
         }
-        //TODO: add implement method
-        public double GetSpecialOffer()//interface method
-        {
-            return annualCost * .50;
-        }
-     
+
      
         public override string ToString()
         {
-            return base.ToString() + $" || Cashback: {GetCashBack(currentMonthPurchases)} Special Offer: ${GetSpecialOffer()}";
+            return base.ToString() + $" || Cashback: {GetCashBack(currentMonthPurchases)}";
         }
         
 public override double GetCashBack(double monthlyPurchaseAmount)
 {
-            double percentage = (monthlyPurchaseAmount > 1000.0d) ? 0.05d : 0.02d;///// ternary  <2% for <1000; % cash back for montlhy purchases >1000 
+            double percentage = monthlyPurchaseAmount * .04d;///// .04d, converts to decimal
             return currentMonthPurchases * percentage;
 }
     }//end class
