@@ -11,7 +11,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             //constructors  
         public Regular(int newMemberId, string newEmailAddress, string newMembershipType, int newAnnualCost, double newCurrentMonthPurchases, double newCashBack): base(newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases) //another constructor
         {
-            //do nothing here, can add if needed later
+            cashBack = newCashBack;
         }
         //TODO: add implement method
         public double GetSpecialOffer()//interface method
