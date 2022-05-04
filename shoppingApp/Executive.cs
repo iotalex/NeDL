@@ -4,18 +4,13 @@ namespace ShopKo // Note: actual namespace depends on the project name.
 {
     class Executive : Member, IGetSpecialOffer //abstract class, objects can't be instantiated (objects of this type can't be created)    
     {
-        public double cashBack
-            {get; set;}
-        
-        public Executive() : base() //defualt constructor
-        {
-            cashBack = 0.0;
-        }
+     
             //constructors  
-        public Executive(int newMemberId, string newEmailAddress, string newMembershipType, int newAnnualCost, double newCurrentMonthPurchases, double newCashBack): base(newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases) //another constructor
+        public Executive(int newMemberId, string newEmailAddress, string newMembershipType, int newAnnualCost, double newCurrentMonthPurchases): base(newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases) //another constructor
         {
-            cashBack = newCashBack;
+            //do nothing here, can add if needed later
         }
+        
         //TODO: add implement method
         public double GetSpecialOffer()//interface method
         {
