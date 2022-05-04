@@ -4,17 +4,11 @@ namespace ShopKo // Note: actual namespace depends on the project name.
 {
     class NonProfit : Member, IGetSpecialOffer //abstract class, objects can't be instantiated (objects of this type can't be created)    
     {
-        public double cashBack
-            {get; set;}
-        
-        public NonProfit() : base() //defualt constructor
-        {
-            cashBack = 0.0;
-        }
+      
             //constructors  
-        public NonProfit(int newMemberId, string newEmailAddress, string newMembershipType, int newAnnualCost, double newCurrentMonthPurchases, double newCashBack): base(newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases) //another constructor
+        public NonProfit(int newMemberId, string newEmailAddress, string newMembershipType, int newAnnualCost, double newCurrentMonthPurchases): base(newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases) //another constructor
         {
-            cashBack = newCashBack;
+            //do nothing here
         }
         //TODO: add implement method
         public double GetSpecialOffer()//interface method
