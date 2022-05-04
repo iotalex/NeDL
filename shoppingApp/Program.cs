@@ -27,6 +27,9 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         memberList.Add(new NonProfit (3001, "susan@daycare.edu", "Non-Profit Member" , 200, 1300.01));
         memberList.Add(new NonProfit (3002, "robert@church.edu", "Non-Profit Member" , 1800, 1300.01));
 
+        memberList.Add(new NonProfit (4001, "justin@shopko.com", "Corporate" , 750, 10300.01));
+        memberList.Add(new NonProfit (4002, "justice@shopko.com", "Corporate" , 750, 15000.01));
+
             // Print the list
             foreach (Member anMember in memberList)
             {

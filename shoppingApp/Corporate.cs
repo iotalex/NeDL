@@ -2,11 +2,11 @@
 
 namespace ShopKo // Note: actual namespace depends on the project name.
 {
-    class NonProfit : Member //abstract class, objects can't be instantiated (objects of this type can't be created)    
+    class Corporate : Member //abstract class, objects can't be instantiated (objects of this type can't be created)    
     {
       
             //constructors  
-        public NonProfit(int newMemberId, string newEmailAddress, string newMembershipType, int newAnnualCost, double newCurrentMonthPurchases): base(newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases) //another constructor
+        public Corporate(int newMemberId, string newEmailAddress, string newMembershipType, int newAnnualCost, double newCurrentMonthPurchases): base(newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases) //another constructor
         {
             //do nothing here
         }
@@ -19,7 +19,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         
 public override double GetCashBack(double monthlyPurchaseAmount)
         {
-            return 0.04d * monthlyPurchaseAmount;
+            return 0.03d * monthlyPurchaseAmount;
         }
     }//end class
 
