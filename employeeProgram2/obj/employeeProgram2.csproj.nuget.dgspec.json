@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\employeeProgram2\\employeeProgram2.csproj": {}
+    "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\employeeprogram2\\employeeProgram2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\employeeProgram2\\employeeProgram2.csproj": {
+    "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\employeeprogram2\\employeeProgram2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\employeeProgram2\\employeeProgram2.csproj",
+        "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\employeeprogram2\\employeeProgram2.csproj",
         "projectName": "employeeProgram2",
-        "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\employeeProgram2\\employeeProgram2.csproj",
+        "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\employeeprogram2\\employeeProgram2.csproj",
         "packagesPath": "C:\\Users\\ABatenhorst\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\employeeProgram2\\obj\\",
+        "outputPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\employeeprogram2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ABatenhorst\\AppData\\Roaming\\NuGet\\NuGet.Config",

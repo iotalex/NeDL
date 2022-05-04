@@ -12,9 +12,9 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             
             // Create a list of Employees
         List<Member> memberList = new List<Member>();
+                
 
         memberList.Add(new Regular (1001, "al@bates.com", "Regular", 50, 14000, 50.23));
-
         memberList.Add(new Regular (1002, "woot@aol.com", "Regular" , 75, 250.00, 50.23));
 
         memberList.Add(new Executive (2001, "bread@beads.org", "Executive" , 150, 500.00));
@@ -35,55 +35,81 @@ namespace ShopKo // Note: actual namespace depends on the project name.
           //  TODO: Get a valid input 
           do
           {
-
-              //Initialize variables
-              
               userChoice = false;
-              
-              //   TODO: Provide the user a menu of options
 
               Console.WriteLine("What's your pleasure?");
               Console.WriteLine("C: Create a new member and add to the membership list.");
+              Console.WriteLine("R: Read list.");
+
              
               Console.WriteLine("Q: Quit the program.");
-              
-                //  reference guide:   https://www.w3resource.com/csharp-exercises/file-handling/index.php#editorr
-              //   TODO: Get a valid user option (valid means its on the menu)
-              userChoiceString = Console.ReadLine();
-              
-             
-              userChoice = (userChoiceString== "C" || userChoiceString == "c" ||  
+
+              userChoiceString = Console.ReadLine() ?? "";//?? if userstring is null, asign to next userstring 
+
+              userChoice = (userChoiceString.ToUpper()== "C" || 
+                            userChoiceString.ToUpper()== "R" ||     
                          
-                            userChoiceString == "Q" || userChoiceString == "q");  
+                            userChoiceString.ToUpper()== "Q");  
                       
                 if(!userChoice)
                 {
-                  Console.WriteLine("Please enter a valid option");
+                  Console.WriteLine("Please enter a valid option.");
                 }    
             }//ends the second "do" which is to get "valid input"
             while (!userChoice);
 
-        //   TODO: C - create new member, make a list to check membership ID 
-                if (userChoiceString=="C" || userChoiceString=="c")
-                {
-                // Print the list
-            foreach (Member anMember in memberList)
+    //   TODO: C - create new member, make a list to check membership ID 
+            if (userChoiceString=="C" || userChoiceString=="c")
             {
-                Console.WriteLine(anMember);
-            }  // end foreach  
-                }//end using "C" 
+                Console.WriteLine("Please enter membership typte: ");
+                string newMembershipType = Console.ReadLine();
+                //1st question: ask what type of member ship? *depending on answer, will drive which member object you create. 
+
+                Console.WriteLine("Please enter ID#: "); 
+                int newMemberId = Convert.ToInt32(Console.ReadLine());
+                
+                //TODO: loop through member list and verify no member has newMemberID
+                //while (newMemberId <= 0)
+                //{
+                //    newMemberId = Convert.ToInt32(Console.ReadLine());
+               // }
+ 
+                    //if success, continue on
+                //once valid, set the newMemberID to the new object memberID
+
+                Console.WriteLine("Please enter email address: ");
+
+                string newEmailAddress = Convert.ToString(Console.ReadLine());
+                //asign new email address to object.email address 
+                //asign new annualCost  to object.annualcost 
+
+                Console.WriteLine("Please enter annual cost: ");
+
+                int newAnnualCost = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Please enter amount purchases: ");
+                double newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
+                
+                //if new membership type = regular
+                if(newMembershipType == "Regular")
+                    //add (create a new regular member and add to the list)
+                    memberList.Add(new Regular (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases, 0));
+
+                //else if(the membership type is executive)
+                //else(if)
+                    //create a new exectutive member to add tothe list 
+                        //2 X for the other ones
 
 
 
-
-
+            }//end using "C" 
 
 
 
         //   TODO: Else if the option is an S or s then store the array of strings into the text file  (DONE 4-14-22)##6 on website
-                else if (userChoiceString=="S" || userChoiceString=="s")
+                else if (userChoiceString=="R" || userChoiceString=="r")
                 {
-                  //equivilent of saying "CTR + S" 
+                  foreach (Member anMember in memberList)
+                            Console.WriteLine(anMember);
                 }
         
         //   TODO: Else if the option is a Q or q then quit the program                
@@ -106,3 +132,35 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         
     }//end class
 }//end name space
+
+
+/*
+Console.WriteLine("Please enter membership typte: ");
+                string newMembershipType = Console.ReadLine();
+                //1st question: ask what type of member ship? *depending on answer, will drive which member object you create. 
+
+                Console.WriteLine("Please enter ID#: "); 
+                int newMemberId = Convert.ToInt32(Console.ReadLine());
+                
+                //TODO: loop through member list and verify no member has newMemberID
+                while (newMemberId <= 0)
+                {
+                    newMemberId = Convert.ToInt32(Console.ReadLine());
+                }
+ 
+                    //if success, continue on
+                //once valid, set the newMemberID to the new object memberID
+
+                Console.WriteLine("Please enter email address: ");
+
+                string newEmailAddress = Convert.ToString(Console.ReadLine());
+                //asign new email address to object.email address 
+                //asign new annualCost  to object.annualcost 
+
+                Console.WriteLine("Please enter annual cost: ");
+
+                int newAnnualCost = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Please enter amount purchases: ");
+                double newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
+
+                */
