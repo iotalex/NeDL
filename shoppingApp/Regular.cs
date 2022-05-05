@@ -30,6 +30,9 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         {
             return 0.02d * monthlyPurchaseAmount;
         }
+
+    
+
     }//end class
 
 }//end main 

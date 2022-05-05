@@ -42,6 +42,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         // Defining a function as abstract says that all derived classes MUST implement this function.
         public abstract double GetCashBack(double monthlyPurchaseAmount);
 
+
         // Defining a function as virtual says that all derived classes MAY implement and override this function.
         // If they override it, then their version takes precedence; otherwise, the base class version is used.
         // public virtual double GetCashBack(double monthlyPurchaseAmount)

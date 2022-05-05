@@ -35,30 +35,58 @@ namespace ShopKo // Note: actual namespace depends on the project name.
           //  TODO: Get a valid input 
           do
           {
-              userChoice = false;
+            userChoice = false;
 
-              Console.WriteLine("What's your pleasure?");
-              Console.WriteLine("C: Create a new member and add to the membership list.");
-              Console.WriteLine("R: Read list.");
+            Console.WriteLine("What's your pleasure?");
+            Console.WriteLine("R: Read list.");
+            Console.WriteLine("C: Add new member.");
+            Console.WriteLine("U: Update current member.");
 
-             
-              Console.WriteLine("Q: Quit the program.");
+            
+            Console.WriteLine("Q: Quit the program.");
 
-              userChoiceString = Console.ReadLine() ?? "";//?? if userstring is null, asign to next userstring 
+            userChoiceString = Console.ReadLine() ?? "";//?? if userstring is null, asign to next userstring 
 
-              userChoice = (userChoiceString.ToUpper()== "C" || 
-                            userChoiceString.ToUpper()== "R" ||     
-                         
-                            userChoiceString.ToUpper()== "Q");  
-                      
+            userChoice = (userChoiceString.ToUpper()== "C" || 
+                        userChoiceString.ToUpper()== "R" ||
+                        userChoiceString.ToUpper()== "U" ||     
+                        
+                        userChoiceString.ToUpper()== "Q");  
+                    
                 if(!userChoice)
                 {
-                  Console.WriteLine("Please enter a valid option.");
+                    Console.WriteLine("Please enter a valid option.");
                 }    
             }//ends the second "do" which is to get "valid input"
             while (!userChoice);
+    //   TODO: U - UPDATE new member
+            if (userChoiceString=="U" || userChoiceString=="u")
+            {
+                int newMemberId = InputUtilities.PromptForIntInput("Please enter ID#: ");//TODO: verify ID
+                bool found = false;
+                found = false;
+                for (int index = 0; index < memberList.Count; index++)
+                {
+                    if ((memberList[index].memberId == newMemberId))
+                    {
+                        found = true;
+                        int memberId = Convert.ToInt32(Console.ReadLine());
+                        memberList[index].SetRate(memberId);
+                    }
+                }  // end foreach
 
-    //   TODO: C - create new member, make a list to check membership ID 
+                    if (found)
+                        Console.WriteLine("Employee was updated.  I hope that is what you wanted!");
+                    else
+                        Console.WriteLine("Employee not found.  No one was updated.");
+                // print the list again
+                foreach (Member anMember in memberList)
+                    Console.WriteLine(anMember);
+                
+            }//end using "C" 
+    
+    
+    //   TODO: C - create new member
             if (userChoiceString=="C" || userChoiceString=="c")
             {
                 //once valid, set the newMemberID to the new object memberID
@@ -72,7 +100,6 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 {
                 if ((memberList[index].memberId == newMemberId))
                     {
-                    
                     found = true;
                     }
                 }                       
@@ -83,7 +110,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 Console.WriteLine("Vaid continue, ID#!");//want user to continue
                 string newEmailAddress = InputUtilities.PromptForStringInput("Please enter email address: ");
                 int newAnnualCost = InputUtilities.PromptForIntInput("Please enter annual cost: ");//left off here 
-                double newCurrentMonthPurchases = InputUtilities.PromptForDoubleInput("Please enter amount purchases: ");//left off here 
+                double newCurrentMonthPurchases = InputUtilities.PromptForDoubleInput("Please enter amount purchases: ");
 
                 //if new membership type = regular
                 switch(newMembershipType)
@@ -145,34 +172,3 @@ namespace ShopKo // Note: actual namespace depends on the project name.
     }//end class
 }//end name space
 
-
-/*
-Console.WriteLine("Please enter membership typte: ");
-                string newMembershipType = Console.ReadLine();
-                //1st question: ask what type of member ship? *depending on answer, will drive which member object you create. 
-
-                Console.WriteLine("Please enter ID#: "); 
-                int newMemberId = Convert.ToInt32(Console.ReadLine());
-                
-                //TODO: loop through member list and verify no member has newMemberID
-                while (newMemberId <= 0)
-                {
-                    newMemberId = Convert.ToInt32(Console.ReadLine());
-                }
- 
-                    //if success, continue on
-                //once valid, set the newMemberID to the new object memberID
-
-                Console.WriteLine("Please enter email address: ");
-
-                string newEmailAddress = Convert.ToString(Console.ReadLine());
-                //asign new email address to object.email address 
-                //asign new annualCost  to object.annualcost 
-
-                Console.WriteLine("Please enter annual cost: ");
-
-                int newAnnualCost = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Please enter amount purchases: ");
-                double newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
-
-                */
