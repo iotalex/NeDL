@@ -191,23 +191,28 @@ namespace ShopKo // Note: actual namespace depends on the project name.
 
                 else if (userChoiceString=="T" || userChoiceString=="t")
                 {
-                double newCurrentMonthPurchases;
-                int memberId;
-                Console.WriteLine("Please enter account number"); 
-                memberId = Convert.ToInt32(Console.ReadLine());//makes sure it's valid 
-
-                Console.WriteLine("Please enter deposit amount: ");// if valid, ask for amount 
-                newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
-
-                foreach(Member anMember in memberList)
+                
+                //this is where you left off 5-5-2022, this is a template for what the soultion might be 
+                /*
+                bool found = false;
+                Console.WriteLine("Please enter member ID# to update: ");
+                string findMemberId = Console.ReadLine();//gets user input, asks for ID#
+                found = false;//true or false 
+                for (int index = 0; index < memberList.Count; index++)//searches the list 
                 {
-                    if(anMember.memberId==memberId)
-                        {
-                            double updatedPurchaseTotal = anMember.MakePurchase(newCurrentMonthPurchases);//need a method to invoke a purchases 
-                            Console.WriteLine($"Updated amount:$ {updatedPurchaseTotal} ");
-                        }
-                }
-                  
+                    if ((memberList[index].memberId == Convert.ToInt32(findMemberId)))
+                    {
+                        Console.WriteLine("Member found. Please enter new email");
+                        string newEmail = Console.ReadLine();
+                        found = true;
+                        memberList[index].emailAddress= newEmail; 
+                    }
+                }  // end foreach   
+                
+                if (!found)
+                    Console.WriteLine("Member not found");
+                
+                    */ 
                   
                 }// end "P" purchases
                 
