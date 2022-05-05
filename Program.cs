@@ -37,10 +37,9 @@ namespace ShopKo // Note: actual namespace depends on the project name.
           {
             userChoice = false;
 
-            Console.WriteLine("Welcome to Admin Menu, please make a selection:");
-            Console.WriteLine("C: Add new member and account.");
-            Console.WriteLine("P: add amount to member's monthly total.");
-            
+            Console.WriteLine("What's your pleasure?");
+            Console.WriteLine("R: Read list.");
+            Console.WriteLine("C: Add new member.");
             Console.WriteLine("U: Update current member.");
             Console.WriteLine("D: Delete a current member.");
 
@@ -50,7 +49,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             userChoiceString = Console.ReadLine() ?? "";//?? if userstring is null, asign to next userstring 
 
             userChoice = (userChoiceString.ToUpper()== "C" || 
-                        userChoiceString.ToUpper()== "P" ||
+                        userChoiceString.ToUpper()== "R" ||
                         userChoiceString.ToUpper()== "U" ||
                         userChoiceString.ToUpper()== "D" ||     
                         
@@ -165,11 +164,11 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             }//end using "C" 
 
 
-        //   TODO: "P": get membership# from user, purshase amount; if account exisists, add amount to monthly purchase total.
-                else if (userChoiceString=="P" || userChoiceString=="p")
+        //   TODO: Else if the option is an S or s then store the array of strings into the text file  (DONE 4-14-22)##6 on website
+                else if (userChoiceString=="R" || userChoiceString=="r")
                 {
-                  
-                  
+                  foreach (Member anMember in memberList)
+                            Console.WriteLine(anMember);
                 }
         
         //   TODO: Else if the option is a Q or q then quit the program                
