@@ -41,7 +41,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             Console.WriteLine("C: Add new member and account.");
             Console.WriteLine("P: add amount to member's monthly total.");
             
-            Console.WriteLine("U: Update current member.");
+            Console.WriteLine("R:READ - temp.");
             Console.WriteLine("D: Delete a current member.");
 
             
@@ -51,7 +51,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
 
             userChoice = (userChoiceString.ToUpper()== "C" || 
                         userChoiceString.ToUpper()== "P" ||
-                        userChoiceString.ToUpper()== "U" ||
+                        userChoiceString.ToUpper()== "R" ||
                         userChoiceString.ToUpper()== "D" ||     
                         
                         userChoiceString.ToUpper()== "Q");  
@@ -168,9 +168,32 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         //   TODO: "P": get membership# from user, purshase amount; if account exisists, add amount to monthly purchase total.
                 else if (userChoiceString=="P" || userChoiceString=="p")
                 {
+                bool found = false;
+                Console.WriteLine("Please enter member ID# to update: ");
+                string findMemberId = Console.ReadLine();//gets user input, asks for ID#
+                found = false;//true or false 
+                for (int index = 0; index < memberList.Count; index++)//searches the list 
+                {
+                    if ((memberList[index].memberId == Convert.ToInt32(findMemberId)))
+                    {
+                        Console.WriteLine("Member found. Please enter new email");
+                        string newEmail = Console.ReadLine();
+                        found = true;
+                        memberList[index].emailAddress= newEmail; 
+                    }
+                }  // end foreach   
+                
+                if (!found)
+                    Console.WriteLine("Member not found");
                   
                   
                 }
+            //   TODO: Else if the option is an S or s then store the array of strings into the text file  (DONE 4-14-22)##6 on website
+        else if (userChoiceString=="R" || userChoiceString=="r")
+        {
+            foreach (Member anMember in memberList)
+                    Console.WriteLine(anMember);
+        }
         
         //   TODO: Else if the option is a Q or q then quit the program                
                 else if (userChoiceString=="Q" || userChoiceString=="q")
