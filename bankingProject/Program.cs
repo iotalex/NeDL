@@ -146,19 +146,10 @@ namespace BankingApp{
             {
                 double depositAmount;
                 int accountId;
-                Console.WriteLine("===================DEPOSIT TRANSACTION MENU===================");
                 Console.WriteLine("Please enter deposit amount: $ ");
                 depositAmount = Convert.ToDouble(Console.ReadLine());
-                    while(depositAmount <= 0)//user must enter positive number 
-                    {
-                    Console.WriteLine("-------------Warning-------------");//warns user to enter positive integer
-                    Console.WriteLine("PLEASE ENTER A POSITIVE NUMBER!");//warns user to enter positive integer
-                        if(depositAmount < 0)//second chance to enter positive number
-                            {
-                                depositAmount = Convert.ToDouble(Console.ReadLine());
-                            }
-                        break;   
-                    }
+                    
+                
                 Console.WriteLine("Please enter account number"); 
                 accountId = Convert.ToInt32(Console.ReadLine());
             

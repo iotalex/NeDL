@@ -165,30 +165,25 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             }//end using "C" 
 
 
-        //   TODO: "P": get membership# from user, purshase amount; if account exisists, add amount to monthly purchase total.
+        //   TODO: "P": get membership# from user, purchase amount; if account exisists, add amount to monthly purchase total.
                 else if (userChoiceString=="P" || userChoiceString=="p")
                 {
-                bool found = false;
-                Console.Write("Please enter an employee last name to update: ");
-                int findMemberId = Convert.ToInt32(Console.ReadLine());
-                found = false;
-                for (int index = 0; index < memberList.Count; index++)
+                double newCurrentMonthPurchases;
+                int memberId;
+                Console.WriteLine("Please enter account number"); 
+                memberId = Convert.ToInt32(Console.ReadLine());//makes sure it's valid 
+
+                Console.WriteLine("Please enter deposit amount: ");// if valid, ask for amount 
+                newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
+
+                foreach(Member anMember in memberList)
                 {
-                    if ((memberList[index].memberId == findMemberId))//if member is found
-                    {
-                        Console.Write("Member found!  Please enter the new amount:");
-                        double newAmount = Convert.ToDouble(Console.ReadLine()); //enter amount here
-                        memberList[index].GetCashBack(newAmount);
-                        found = true;
-                    }
-                }  // end foreach  
-                if (found)
-                    Console.WriteLine("Employee was updated.  I hope that is what you wanted!");
-                else
-                    Console.WriteLine("Employee not found.  No one was updated.");
-                // print the list again
-                foreach (Member anMember in memberList)
-                        Console.WriteLine(anMember);
+                    if(anMember.memberId==memberId)
+                        {
+                            anMember.MakePurchase(newCurrentMonthPurchases);//need a method to invoke a purchases 
+                            Console.WriteLine("Member purchase made");
+                        }
+                }
                   
                   
                 }
