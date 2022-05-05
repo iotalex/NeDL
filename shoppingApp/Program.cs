@@ -67,38 +67,42 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 //TODO: loop through member list and verify no member has newMemberID
                 //while (newMemberId <= 0)
                 //{
-                //    newMemberId = Convert.ToInt32(Console.ReadLine());
-               // }
+                 //   newMemberId = Convert.ToInt32(Console.ReadLine());
+                //}
  
                     //if success, continue on
                 string newEmailAddress = InputUtilities.PromptForStringInput("Please enter email address: ");
                 int newAnnualCost = InputUtilities.PromptForIntInput("Please enter annual cost: ");//left off here 
                 double newCurrentMonthPurchases = InputUtilities.PromptForDoubleInput("Please enter amount purchases: ");//left off here 
 
-               
                 //if new membership type = regular
-                if(newMembershipType == "Regular")
-                    //add (create a new regular member and add to the list)
+                switch(newMembershipType)
+                {
+                    case "Regular":
+                    case "regular":
                     memberList.Add(new Regular (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases, 0));
-                    //if new membership type = executive
-                    else if(newMembershipType == "Executive")
-                    //add (create a new regular member and add to the list)
+                    Console.WriteLine("Regular member added! Printing out new list.");
+                    break;
+                    case "Executive":
+                    case "executive":
                     memberList.Add(new Executive (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
-                    else if(newMembershipType == "Non-profit")
-                    //add (create a new regular member and add to the list)
+                    Console.WriteLine("Executive member added! Printing out new list.");
+                    break;
+                    case "Non-profit":
+                    case "non-profit":
                     memberList.Add(new NonProfit (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
-                    else if(newMembershipType == "Corporate")
-                    //add (create a new regular member and add to the list)
+                    Console.WriteLine("Non-Profit member added! Printing out new list.");
+                    break;
+                    case "Corporate":
+                    case "corporate":
                     memberList.Add(new Corporate (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
-                
-                
-                //else if(the membership type is executive)
-                //else(if)
-                    //create a new exectutive member to add tothe list 
-                        //2 X for the other ones
-
-
-
+                    Console.WriteLine("Corporate member added! Printing out new list.");
+                    break;
+                }
+                // print the list again
+                foreach (Member anMember in memberList)
+                Console.WriteLine(anMember);
+ 
             }//end using "C" 
 
 
