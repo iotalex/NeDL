@@ -180,13 +180,16 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 {
                     if(anMember.memberId==memberId)
                         {
-                            anMember.MakePurchase(newCurrentMonthPurchases);//need a method to invoke a purchases 
-                            Console.WriteLine("Member purchase made");
+                            double updatedPurchaseTotal = anMember.MakePurchase(newCurrentMonthPurchases);//need a method to invoke a purchases 
+                            Console.WriteLine($"Updated amount:$ {updatedPurchaseTotal} ");
                         }
                 }
                   
                   
-                }
+                }// end "P" purchases
+
+                
+
             //   TODO: Else if the option is an S or s then store the array of strings into the text file  (DONE 4-14-22)##6 on website
         else if (userChoiceString=="R" || userChoiceString=="r")
         {
