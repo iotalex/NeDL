@@ -176,11 +176,16 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 {
                     if ((memberList[index].memberId == Convert.ToInt32(findMemberId)))
                     {
-                        Console.WriteLine("Member found. Please enter to apply to monthly amount spent:");
-                        double newMonlthyAmount = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine($"How much would you like to apply?");
+                        double newAmount = Convert.ToDouble(Console.ReadLine());
+                        memberList[index].GetCashBack(newAmount);
                         found = true;
-                        memberList[index].currentMonthPurchases= newMonlthyAmount;
+                        foreach (Member anMember in memberList)
+                        Console.WriteLine(anMember);
+                        
+                        
                     }
+
                 }  // end foreach   
                 
                 if (!found)
