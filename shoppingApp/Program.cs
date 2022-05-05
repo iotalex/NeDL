@@ -70,39 +70,24 @@ namespace ShopKo // Note: actual namespace depends on the project name.
 
                 for(int index = 0; index < memberList.Count; index++)
                 {
-                    if ((memberList[index].memberId == newMemberId))
-                        {
-                        memberList.RemoveAt(index);
-                        found = true;                        
-                        }
-                        else
-                        Console.WriteLine("Invalid ID#!");
-                        }
+                if ((memberList[index].memberId == newMemberId))
+                    {
                     
-/*
-                for(int index = 0; index < memberList.Count; index++)
-                {
-                    if ((memberList[index].memberId == newMemberId))
-                        {
-                        memberList.RemoveAt(index);
-                        
-                        }
+                    found = true;
+                    }
+                }                       
+                if (found)
+                Console.WriteLine("Already used or duplicate ID#!");
                 else
-                Console.WriteLine("Invalid ID#!");
-                // print the list again
-*/ 
-                
- 
-                    //if success, continue on
-
-
+                {
+                Console.WriteLine("Vaid continue, ID#!");//want user to continue
                 string newEmailAddress = InputUtilities.PromptForStringInput("Please enter email address: ");
                 int newAnnualCost = InputUtilities.PromptForIntInput("Please enter annual cost: ");//left off here 
                 double newCurrentMonthPurchases = InputUtilities.PromptForDoubleInput("Please enter amount purchases: ");//left off here 
 
                 //if new membership type = regular
                 switch(newMembershipType)
-                {
+                    {
                     case "Regular":
                     case "regular":
                     memberList.Add(new Regular (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases, 0));
@@ -123,13 +108,13 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                     memberList.Add(new Corporate (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
                     Console.WriteLine("Corporate member added! Printing out new list.");
                     break;
-                }
-                // print the list again
+                    }//end switch case ID lookup/add new account
+
                 foreach (Member anMember in memberList)
                 Console.WriteLine(anMember);
- 
+                }//end else statement 
+           
             }//end using "C" 
-
 
 
         //   TODO: Else if the option is an S or s then store the array of strings into the text file  (DONE 4-14-22)##6 on website
