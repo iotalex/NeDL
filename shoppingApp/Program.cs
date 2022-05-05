@@ -39,7 +39,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
 
             Console.WriteLine("Welcome to Admin Menu, please make a selection:");
             Console.WriteLine("C: Add new member and account.");
-            Console.WriteLine("P: add amount to member's monthly total.");
+            Console.WriteLine("P: Apply new monthly amount to member.");
             
             Console.WriteLine("R:READ - temp.");
             Console.WriteLine("D: Delete a current member.");
@@ -176,10 +176,10 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 {
                     if ((memberList[index].memberId == Convert.ToInt32(findMemberId)))
                     {
-                        Console.WriteLine("Member found. Please enter new email");
-                        string newEmail = Console.ReadLine();
+                        Console.WriteLine("Member found. Please enter to apply to monthly amount spent:");
+                        double newMonlthyAmount = Convert.ToDouble(Console.ReadLine());
                         found = true;
-                        memberList[index].emailAddress= newEmail; 
+                        memberList[index].currentMonthPurchases= newMonlthyAmount;
                     }
                 }  // end foreach   
                 
