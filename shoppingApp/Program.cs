@@ -169,27 +169,26 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 else if (userChoiceString=="P" || userChoiceString=="p")
                 {
                 bool found = false;
-                Console.WriteLine("Please enter member ID# to update: ");
-                string findMemberId = Console.ReadLine();//gets user input, asks for ID#
-                found = false;//true or false 
-                for (int index = 0; index < memberList.Count; index++)//searches the list 
+                Console.Write("Please enter an employee last name to update: ");
+                int findMemberId = Convert.ToInt32(Console.ReadLine());
+                found = false;
+                for (int index = 0; index < memberList.Count; index++)
                 {
-                    if ((memberList[index].memberId == Convert.ToInt32(findMemberId)))
+                    if ((memberList[index].memberId == findMemberId))//if member is found
                     {
-                        Console.WriteLine($"How much would you like to apply?");
-                        double newAmount = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("Member found!  Please enter the new amount:");
+                        double newAmount = Convert.ToDouble(Console.ReadLine()); //enter amount here
                         memberList[index].GetCashBack(newAmount);
                         found = true;
-                        foreach (Member anMember in memberList)
-                        Console.WriteLine(anMember);
-                        
-                        
                     }
-
-                }  // end foreach   
-                
-                if (!found)
-                    Console.WriteLine("Member not found");
+                }  // end foreach  
+                if (found)
+                    Console.WriteLine("Employee was updated.  I hope that is what you wanted!");
+                else
+                    Console.WriteLine("Employee not found.  No one was updated.");
+                // print the list again
+                foreach (Member anMember in memberList)
+                        Console.WriteLine(anMember);
                   
                   
                 }
