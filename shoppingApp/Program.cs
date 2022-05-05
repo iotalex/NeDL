@@ -93,13 +93,13 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 for (int index = 0; index < memberList.Count; index++)//searches the list 
                 {
                     if ((memberList[index].memberId == Convert.ToInt32(findMemberId)))
-                    {
-                        Console.WriteLine("Member found. Please enter new email");
-                        string newEmail = Console.ReadLine();
+                    {         
+                        memberList.RemoveAt(index);
                         found = true;
-                        memberList[index].emailAddress= newEmail; 
                     }
-                }  // end foreach   
+                }  // end foreach
+                if(found)
+                    Console.WriteLine("Member found, Member Deleted");  
                 
                 if (!found)
                     Console.WriteLine("Member not found");
