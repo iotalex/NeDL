@@ -41,6 +41,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             Console.WriteLine("R: Read list.");
             Console.WriteLine("C: Add new member.");
             Console.WriteLine("U: Update current member.");
+            Console.WriteLine("D: Delete a current member.");
 
             
             Console.WriteLine("Q: Quit the program.");
@@ -49,7 +50,8 @@ namespace ShopKo // Note: actual namespace depends on the project name.
 
             userChoice = (userChoiceString.ToUpper()== "C" || 
                         userChoiceString.ToUpper()== "R" ||
-                        userChoiceString.ToUpper()== "U" ||     
+                        userChoiceString.ToUpper()== "U" ||
+                        userChoiceString.ToUpper()== "D" ||     
                         
                         userChoiceString.ToUpper()== "Q");  
                     
@@ -81,7 +83,28 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                     Console.WriteLine("Member not found");
                
             }//end using "C" 
-    
+    //   TODO: D - delete new member
+            if (userChoiceString=="D" || userChoiceString=="d")
+            {
+                bool found = false;
+                Console.WriteLine("Please enter member ID# to delete: ");
+                string findMemberId = Console.ReadLine();//gets user input, asks for ID#
+                found = false;//true or false 
+                for (int index = 0; index < memberList.Count; index++)//searches the list 
+                {
+                    if ((memberList[index].memberId == Convert.ToInt32(findMemberId)))
+                    {
+                        Console.WriteLine("Member found. Please enter new email");
+                        string newEmail = Console.ReadLine();
+                        found = true;
+                        memberList[index].emailAddress= newEmail; 
+                    }
+                }  // end foreach   
+                
+                if (!found)
+                    Console.WriteLine("Member not found");
+           
+            }//end using "D" 
     
     //   TODO: C - create new member
             if (userChoiceString=="C" || userChoiceString=="c")
