@@ -62,27 +62,24 @@ namespace ShopKo // Note: actual namespace depends on the project name.
     //   TODO: U - UPDATE new member
             if (userChoiceString=="U" || userChoiceString=="u")
             {
-                int newMemberId = InputUtilities.PromptForIntInput("Please enter ID#: ");//TODO: verify ID
                 bool found = false;
-                found = false;
-                for (int index = 0; index < memberList.Count; index++)
+                Console.WriteLine("Please enter member ID# to update: ");
+                string findMemberId = Console.ReadLine();//gets user input, asks for ID#
+                found = false;//true or false 
+                for (int index = 0; index < memberList.Count; index++)//searches the list 
                 {
-                    if ((memberList[index].memberId == newMemberId))
+                    if ((memberList[index].memberId == Convert.ToInt32(findMemberId)))
                     {
+                        Console.WriteLine("Member found. Please enter new email");
+                        string newEmail = Console.ReadLine();
                         found = true;
-                        int memberId = Convert.ToInt32(Console.ReadLine());
-                        memberList[index].SetRate(memberId);
+                        memberList[index].emailAddress= newEmail; 
                     }
-                }  // end foreach
-
-                    if (found)
-                        Console.WriteLine("Employee was updated.  I hope that is what you wanted!");
-                    else
-                        Console.WriteLine("Employee not found.  No one was updated.");
-                // print the list again
-                foreach (Member anMember in memberList)
-                    Console.WriteLine(anMember);
+                }  // end foreach   
                 
+                if (!found)
+                    Console.WriteLine("Member not found");
+               
             }//end using "C" 
     
     
@@ -107,7 +104,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 Console.WriteLine("Already used or duplicate ID#!");
                 else
                 {
-                Console.WriteLine("Vaid continue, ID#!");//want user to continue
+                Console.WriteLine("Vaid please continue, ID#!");//want user to continue
                 string newEmailAddress = InputUtilities.PromptForStringInput("Please enter email address: ");
                 int newAnnualCost = InputUtilities.PromptForIntInput("Please enter annual cost: ");//left off here 
                 double newCurrentMonthPurchases = InputUtilities.PromptForDoubleInput("Please enter amount purchases: ");
