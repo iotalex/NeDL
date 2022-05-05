@@ -99,7 +99,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                     }
                 }  // end foreach
                 if(found)
-                    Console.WriteLine("Member found, Member Deleted");  
+                    Console.WriteLine("Member found & removed from system");
                 
                 if (!found)
                     Console.WriteLine("Member not found");
