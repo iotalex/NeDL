@@ -28,7 +28,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             public static int PromptForIntInput(string inputMessage = "")
             {
                 if (!string.IsNullOrWhiteSpace(inputMessage))
-                    Console.Write($"{inputMessage}: " );    
+                    Console.Write($"{inputMessage}" );   
 
                 string inputString = Console.ReadLine();
 

@@ -75,20 +75,23 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 int newAnnualCost = InputUtilities.PromptForIntInput("Please enter annual cost: ");//left off here 
                 double newCurrentMonthPurchases = InputUtilities.PromptForDoubleInput("Please enter amount purchases: ");//left off here 
 
-                
-                
-
-                
-                //Console.WriteLine("Please enter annual cost: ");
-                //int newAnnualCost = Convert.ToInt32(Console.ReadLine());
                
                 //if new membership type = regular
                 if(newMembershipType == "Regular")
                     //add (create a new regular member and add to the list)
                     memberList.Add(new Regular (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases, 0));
+                //if new membership type = executive
                 if(newMembershipType == "Executive")
                     //add (create a new regular member and add to the list)
                     memberList.Add(new Executive (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
+                    if(newMembershipType == "Non-profit")
+                    //add (create a new regular member and add to the list)
+                    memberList.Add(new NonProfit (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
+                    if(newMembershipType == "Corporate")
+                    //add (create a new regular member and add to the list)
+                    memberList.Add(new Corporate (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
+                
+                
                 //else if(the membership type is executive)
                 //else(if)
                     //create a new exectutive member to add tothe list 
