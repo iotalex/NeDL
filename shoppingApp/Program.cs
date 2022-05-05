@@ -38,9 +38,9 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             userChoice = false;
 
             Console.WriteLine("Welcome to Admin Menu, please make a selection:");
-            Console.WriteLine("C: Add new member and account.");
             Console.WriteLine("P: Apply new monthly amount to member.");
-            
+            Console.WriteLine("T: Make a transaction.");
+           
             Console.WriteLine("R:READ - temp.");
             Console.WriteLine("D: Delete a current member.");
 
@@ -51,6 +51,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
 
             userChoice = (userChoiceString.ToUpper()== "C" || 
                         userChoiceString.ToUpper()== "P" ||
+                        userChoiceString.ToUpper()== "T" ||
                         userChoiceString.ToUpper()== "R" ||
                         userChoiceString.ToUpper()== "D" ||     
                         
@@ -164,7 +165,6 @@ namespace ShopKo // Note: actual namespace depends on the project name.
            
             }//end using "C" 
 
-
         //   TODO: "P": get membership# from user, purchase amount; if account exisists, add amount to monthly purchase total.
                 else if (userChoiceString=="P" || userChoiceString=="p")
                 {
@@ -187,7 +187,29 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                   
                   
                 }// end "P" purchases
+//   TODO: "T": get membership# from user, return amount; if account exists sub amount from monthly purchase total. (so this is just read?) 
 
+                else if (userChoiceString=="T" || userChoiceString=="t")
+                {
+                double newCurrentMonthPurchases;
+                int memberId;
+                Console.WriteLine("Please enter account number"); 
+                memberId = Convert.ToInt32(Console.ReadLine());//makes sure it's valid 
+
+                Console.WriteLine("Please enter deposit amount: ");// if valid, ask for amount 
+                newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
+
+                foreach(Member anMember in memberList)
+                {
+                    if(anMember.memberId==memberId)
+                        {
+                            double updatedPurchaseTotal = anMember.MakePurchase(newCurrentMonthPurchases);//need a method to invoke a purchases 
+                            Console.WriteLine($"Updated amount:$ {updatedPurchaseTotal} ");
+                        }
+                }
+                  
+                  
+                }// end "P" purchases
                 
 
             //   TODO: Else if the option is an S or s then store the array of strings into the text file  (DONE 4-14-22)##6 on website
