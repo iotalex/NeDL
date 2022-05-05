@@ -80,14 +80,14 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 if(newMembershipType == "Regular")
                     //add (create a new regular member and add to the list)
                     memberList.Add(new Regular (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases, 0));
-                //if new membership type = executive
-                if(newMembershipType == "Executive")
+                    //if new membership type = executive
+                    else if(newMembershipType == "Executive")
                     //add (create a new regular member and add to the list)
                     memberList.Add(new Executive (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
-                    if(newMembershipType == "Non-profit")
+                    else if(newMembershipType == "Non-profit")
                     //add (create a new regular member and add to the list)
                     memberList.Add(new NonProfit (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
-                    if(newMembershipType == "Corporate")
+                    else if(newMembershipType == "Corporate")
                     //add (create a new regular member and add to the list)
                     memberList.Add(new Corporate (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
                 
