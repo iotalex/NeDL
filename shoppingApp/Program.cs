@@ -62,15 +62,40 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             if (userChoiceString=="C" || userChoiceString=="c")
             {
                 //once valid, set the newMemberID to the new object memberID
-                string newMembershipType = InputUtilities.PromptForStringInput("Please enter membership typte: ");
+                string newMembershipType = InputUtilities.PromptForStringInput("Please enter membership type: ");
                 int newMemberId = InputUtilities.PromptForIntInput("Please enter ID#: ");//TODO: verify ID
                 //TODO: loop through member list and verify no member has newMemberID
-                //while (newMemberId <= 0)
-                //{
-                 //   newMemberId = Convert.ToInt32(Console.ReadLine());
-                //}
+                bool found = false;
+                found = false;
+
+                for(int index = 0; index < memberList.Count; index++)
+                {
+                    if ((memberList[index].memberId == newMemberId))
+                        {
+                        memberList.RemoveAt(index);
+                        found = true;                        
+                        }
+                        else
+                        Console.WriteLine("Invalid ID#!");
+                        }
+                    
+/*
+                for(int index = 0; index < memberList.Count; index++)
+                {
+                    if ((memberList[index].memberId == newMemberId))
+                        {
+                        memberList.RemoveAt(index);
+                        
+                        }
+                else
+                Console.WriteLine("Invalid ID#!");
+                // print the list again
+*/ 
+                
  
                     //if success, continue on
+
+
                 string newEmailAddress = InputUtilities.PromptForStringInput("Please enter email address: ");
                 int newAnnualCost = InputUtilities.PromptForIntInput("Please enter annual cost: ");//left off here 
                 double newCurrentMonthPurchases = InputUtilities.PromptForDoubleInput("Please enter amount purchases: ");//left off here 
