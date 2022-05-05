@@ -61,11 +61,9 @@ namespace ShopKo // Note: actual namespace depends on the project name.
     //   TODO: C - create new member, make a list to check membership ID 
             if (userChoiceString=="C" || userChoiceString=="c")
             {
-                Console.WriteLine("Please enter membership typte: ");
-                string newMembershipType = Console.ReadLine();
-                //1st question: ask what type of member ship? *depending on answer, will drive which member object you create. 
-                Console.WriteLine("Please enter ID#: "); 
-                int newMemberId = Convert.ToInt32(Console.ReadLine());
+                //once valid, set the newMemberID to the new object memberID
+                string newMembershipType = InputUtilities.PromptForStringInput("Please enter membership typte: ");
+                int newMemberId = InputUtilities.PromptForIntInput("Please enter ID#: ");//TODO: verify ID
                 //TODO: loop through member list and verify no member has newMemberID
                 //while (newMemberId <= 0)
                 //{
@@ -73,21 +71,24 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                // }
  
                     //if success, continue on
-                //once valid, set the newMemberID to the new object memberID
-                
                 string newEmailAddress = InputUtilities.PromptForStringInput("Please enter email address: ");
                 int newAnnualCost = InputUtilities.PromptForIntInput("Please enter annual cost: ");//left off here 
+                double newCurrentMonthPurchases = InputUtilities.PromptForDoubleInput("Please enter amount purchases: ");//left off here 
+
+                
+                
 
                 
                 //Console.WriteLine("Please enter annual cost: ");
                 //int newAnnualCost = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Please enter amount purchases: ");
-                double newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
+               
                 //if new membership type = regular
                 if(newMembershipType == "Regular")
                     //add (create a new regular member and add to the list)
                     memberList.Add(new Regular (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases, 0));
-
+                if(newMembershipType == "Executive")
+                    //add (create a new regular member and add to the list)
+                    memberList.Add(new Executive (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
                 //else if(the membership type is executive)
                 //else(if)
                     //create a new exectutive member to add tothe list 
