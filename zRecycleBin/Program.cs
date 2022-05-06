@@ -37,10 +37,11 @@ namespace ShopKo // Note: actual namespace depends on the project name.
           {
             userChoice = false;
 
-            Console.WriteLine("What's your pleasure?");
-            Console.WriteLine("R: Read list.");
-            Console.WriteLine("C: Add new member.");
-            Console.WriteLine("U: Update current member.");
+            Console.WriteLine("Welcome to Admin Menu, please make a selection:");
+            Console.WriteLine("P: Apply new monthly amount to member.");
+            Console.WriteLine("T: Make a transaction.");
+           
+            Console.WriteLine("R:READ - temp.");
             Console.WriteLine("D: Delete a current member.");
 
             
@@ -49,8 +50,9 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             userChoiceString = Console.ReadLine() ?? "";//?? if userstring is null, asign to next userstring 
 
             userChoice = (userChoiceString.ToUpper()== "C" || 
+                        userChoiceString.ToUpper()== "P" ||
+                        userChoiceString.ToUpper()== "T" ||
                         userChoiceString.ToUpper()== "R" ||
-                        userChoiceString.ToUpper()== "U" ||
                         userChoiceString.ToUpper()== "D" ||     
                         
                         userChoiceString.ToUpper()== "Q");  
@@ -61,9 +63,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 }    
             }//ends the second "do" which is to get "valid input"
             while (!userChoice);
-
-//==============START===ADMIN=MENU==================================================
-//   TODO: U - UPDATE new member
+    //   TODO: U - UPDATE new member
             if (userChoiceString=="U" || userChoiceString=="u")
             {
                 bool found = false;
@@ -209,99 +209,14 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                     }              
                   
                 }// end "T" return purchase
-       
-//===========================================END==OF==ADMIN==MENU===========================================\\
-
-
-
-    
-    //   TODO: D - delete new member
-            if (userChoiceString=="D" || userChoiceString=="d")
-            {
-                bool found = false;
-                Console.WriteLine("Please enter member ID# to delete: ");
-                string findMemberId = Console.ReadLine();//gets user input, asks for ID#
-                found = false;//true or false 
-                for (int index = 0; index < memberList.Count; index++)//searches the list 
-                {
-                    if ((memberList[index].memberId == Convert.ToInt32(findMemberId)))
-                    {         
-                        memberList.RemoveAt(index);
-                        found = true;
-                    }
-                }  // end foreach
-                if(found)
-                    Console.WriteLine("Member found & removed from system");
                 
-                if (!found)
-                    Console.WriteLine("Member not found");
-           
-            }//end using "D" 
-    
-    //   TODO: C - create new member
-            if (userChoiceString=="C" || userChoiceString=="c")
-            {
-                //once valid, set the newMemberID to the new object memberID
-                string newMembershipType = InputUtilities.PromptForStringInput("Please enter membership type: ");
-                int newMemberId = InputUtilities.PromptForIntInput("Please enter ID#: ");//TODO: verify ID
-                //TODO: loop through member list and verify no member has newMemberID
-                bool found = false;
-                found = false;
 
-                for(int index = 0; index < memberList.Count; index++)
-                {
-                if ((memberList[index].memberId == newMemberId))
-                    {
-                    found = true;
-                    }
-                }                       
-                if (found)
-                Console.WriteLine("Already used or duplicate ID#!");
-                else
-                {
-                Console.WriteLine("Vaid please continue, ID#!");//want user to continue
-                string newEmailAddress = InputUtilities.PromptForStringInput("Please enter email address: ");
-                int newAnnualCost = InputUtilities.PromptForIntInput("Please enter annual cost: ");//left off here 
-                double newCurrentMonthPurchases = InputUtilities.PromptForDoubleInput("Please enter amount purchases: ");
-
-                //if new membership type = regular
-                switch(newMembershipType)
-                    {
-                    case "Regular":
-                    case "regular":
-                    memberList.Add(new Regular (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases, 0));
-                    Console.WriteLine("Regular member added! Printing out new list.");
-                    break;
-                    case "Executive":
-                    case "executive":
-                    memberList.Add(new Executive (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
-                    Console.WriteLine("Executive member added! Printing out new list.");
-                    break;
-                    case "Non-profit":
-                    case "non-profit":
-                    memberList.Add(new NonProfit (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
-                    Console.WriteLine("Non-Profit member added! Printing out new list.");
-                    break;
-                    case "Corporate":
-                    case "corporate":
-                    memberList.Add(new Corporate (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
-                    Console.WriteLine("Corporate member added! Printing out new list.");
-                    break;
-                    }//end switch case ID lookup/add new account
-
-                foreach (Member anMember in memberList)
-                Console.WriteLine(anMember);
-                }//end else statement 
-           
-            }//end using "C" 
-
-
-        //   TODO: Else if the option is an S or s then store the array of strings into the text file  (DONE 4-14-22)##6 on website
-                else if (userChoiceString=="R" || userChoiceString=="r")
-                {
-                  foreach (Member anMember in memberList)
-                            Console.WriteLine(anMember);
-                }
+            //   TODO: Else if the option is an R or r 
+        else if (userChoiceString=="R" || userChoiceString=="r")
+        {
+            foreach (Member anMember in memberList)
+                    Console.WriteLine(anMember);
+        }
         
         //   TODO: Else if the option is a Q or q then quit the program                
                 else if (userChoiceString=="Q" || userChoiceString=="q")
