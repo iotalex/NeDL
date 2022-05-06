@@ -41,12 +41,18 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         
         // Defining a function as abstract says that all derived classes MUST implement this function.
         public abstract double GetCashBack(double monthlyPurchaseAmount);
-
-        public double MakePurchase(double purchaseAmount)//method to add balance to currentMonthPurchases
+        //method to "add" balance to currentMonthPurchases
+        public double MakePurchase(double purchaseAmount)
         {
-            //TODO: added monthlypurchaseamount + userInputs ConsoleReadline
-        currentMonthPurchases = currentMonthPurchases + purchaseAmount; //put in console.readline() 
-        return currentMonthPurchases; 
+            
+        currentMonthPurchases = currentMonthPurchases + purchaseAmount;//put purchaseAmount in console.readline()  
+        return currentMonthPurchases;
+        }
+        //method to "subract" balance to currentMonthPurchases
+        public double MakeReturn(double returnAmount)
+        {
+        currentMonthPurchases = currentMonthPurchases - returnAmount; //put in console.readline() 
+        return currentMonthPurchases;
         }
         
 

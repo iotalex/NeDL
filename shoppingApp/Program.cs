@@ -170,52 +170,47 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 {
                 double newCurrentMonthPurchases;
                 int memberId;
-                Console.WriteLine("Please enter account number"); 
-                memberId = Convert.ToInt32(Console.ReadLine());//makes sure it's valid 
+                    Console.WriteLine("Please enter member#:"); 
+                    memberId = Convert.ToInt32(Console.ReadLine());//makes sure it's valid 
 
-                Console.WriteLine("Please enter deposit amount: ");// if valid, ask for amount 
-                newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Please enter deposit amount: ");// if valid, ask for amount 
+                    newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
 
-                foreach(Member anMember in memberList)
-                {
-                    if(anMember.memberId==memberId)
-                        {
-                            double updatedPurchaseTotal = anMember.MakePurchase(newCurrentMonthPurchases);//need a method to invoke a purchases 
-                            Console.WriteLine($"Updated amount:$ {updatedPurchaseTotal} ");
-                        }
-                }
-                  
-                  
+                    foreach(Member anMember in memberList)
+                    {
+                        if(anMember.memberId==memberId)
+                            {
+                                double updatedPurchaseTotal = anMember.MakePurchase(newCurrentMonthPurchases);//need a method to invoke a purchases 
+                                Console.WriteLine($"Updated amount:$ {updatedPurchaseTotal} ");
+                            }
+                    }
+
                 }// end "P" purchases
 //   TODO: "T": get membership# from user, return amount; if account exists sub amount from monthly purchase total. (so this is just read?) 
 
                 else if (userChoiceString=="T" || userChoiceString=="t")
                 {
-                bool found = false;
-                Console.WriteLine("Please enter member ID# to update: ");
-                string findMemberId = Console.ReadLine();//gets user input, asks for ID#
-                double currentMonthPurchases = Convert.ToDouble(Console.ReadLine());//get user input, prints member balance
-                found = false;//true or false boolean
-                for (int index = 0; index < memberList.Count; index++)//searches list for ID 
-                {
-                    if ((memberList[index].memberId == Convert.ToInt32(findMemberId)))//if ID is found, give member balance 
-                    {
-                        Console.WriteLine($"Member balance: {currentMonthPurchases} ");
-                        double newBalance = Convert.ToDouble(Console.ReadLine());
-                        found = true;
+                double newCurrentMonthPurchases;
+                int memberId;
+                    Console.WriteLine("Please enter member#:"); 
+                    memberId = Convert.ToInt32(Console.ReadLine());//makes sure it's valid 
 
-                        //TODO: add a return method
-                        memberList[index].currentMonthPurchases= newBalance; 
-                    }
-                }  // end foreach   
-                
-                    if (!found)
-                        Console.WriteLine("Member not found");                
+                    Console.WriteLine("Please enter return amount:");// if valid, ask for amount 
+                    newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
+
+                    foreach(Member anMember in memberList)
+                    {
+                        if(anMember.memberId==memberId)
+                            {
+                                double updatedPurchaseTotal = anMember.MakeReturn(newCurrentMonthPurchases);//need a method to invoke a purchases 
+                                Console.WriteLine($"Updated amount:$ {updatedPurchaseTotal} ");
+                            }
+                    }              
                   
                 }// end "T" return purchase
                 
 
-            //   TODO: Else if the option is an S or s then store the array of strings into the text file  (DONE 4-14-22)##6 on website
+            //   TODO: Else if the option is an R or r 
         else if (userChoiceString=="R" || userChoiceString=="r")
         {
             foreach (Member anMember in memberList)
