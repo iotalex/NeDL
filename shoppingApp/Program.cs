@@ -191,30 +191,28 @@ namespace ShopKo // Note: actual namespace depends on the project name.
 
                 else if (userChoiceString=="T" || userChoiceString=="t")
                 {
-                
-                //this is where you left off 5-5-2022, this is a template for what the soultion might be 
-                /*
                 bool found = false;
                 Console.WriteLine("Please enter member ID# to update: ");
                 string findMemberId = Console.ReadLine();//gets user input, asks for ID#
-                found = false;//true or false 
-                for (int index = 0; index < memberList.Count; index++)//searches the list 
+                double currentMonthPurchases = Convert.ToDouble(Console.ReadLine());//get user input, prints member balance
+                found = false;//true or false boolean
+                for (int index = 0; index < memberList.Count; index++)//searches list for ID 
                 {
-                    if ((memberList[index].memberId == Convert.ToInt32(findMemberId)))
+                    if ((memberList[index].memberId == Convert.ToInt32(findMemberId)))//if ID is found, give member balance 
                     {
-                        Console.WriteLine("Member found. Please enter new email");
-                        string newEmail = Console.ReadLine();
+                        Console.WriteLine($"Member balance: {currentMonthPurchases} ");
+                        double newBalance = Convert.ToDouble(Console.ReadLine());
                         found = true;
-                        memberList[index].emailAddress= newEmail; 
+
+                        //TODO: add a return method
+                        memberList[index].currentMonthPurchases= newBalance; 
                     }
                 }  // end foreach   
                 
-                if (!found)
-                    Console.WriteLine("Member not found");
-                
-                    */ 
+                    if (!found)
+                        Console.WriteLine("Member not found");                
                   
-                }// end "P" purchases
+                }// end "T" return purchase
                 
 
             //   TODO: Else if the option is an S or s then store the array of strings into the text file  (DONE 4-14-22)##6 on website
