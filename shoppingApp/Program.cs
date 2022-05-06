@@ -63,6 +63,68 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             while (!userChoice);
 
 //==============START===ADMIN=MENU==================================================
+//   TODO: C - create new member
+            if (userChoiceString=="C" || userChoiceString=="c")
+            {
+                //once valid, set the newMemberID to the new object memberID
+                string newMembershipType = InputUtilities.PromptForStringInput("Please enter membership type: ");
+                int newMemberId = InputUtilities.PromptForIntInput("Please enter ID#: ");//TODO: verify ID
+                //TODO: loop through member list and verify no member has newMemberID
+                bool found = false;
+                found = false;
+
+                for(int index = 0; index < memberList.Count; index++)
+                {
+                if ((memberList[index].memberId == newMemberId))
+                    {
+                    found = true;
+                    }
+                }                       
+                if (found)
+                Console.WriteLine("Already used or duplicate ID#!");
+                else
+                {
+                Console.WriteLine("Vaid please continue, ID#!");//want user to continue
+                string newEmailAddress = InputUtilities.PromptForStringInput("Please enter email address: ");
+                int newAnnualCost = InputUtilities.PromptForIntInput("Please enter annual cost: ");//left off here 
+                double newCurrentMonthPurchases = InputUtilities.PromptForDoubleInput("Please enter amount purchases: ");
+
+                //if new membership type = regular
+                switch(newMembershipType)
+                    {
+                    case "Regular":
+                    case "regular":
+                    memberList.Add(new Regular (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases, 0));
+                    Console.WriteLine("Regular member added! Printing out new list.");
+                    break;
+                    case "Executive":
+                    case "executive":
+                    memberList.Add(new Executive (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
+                    Console.WriteLine("Executive member added! Printing out new list.");
+                    break;
+                    case "Non-profit":
+                    case "non-profit":
+                    memberList.Add(new NonProfit (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
+                    Console.WriteLine("Non-Profit member added! Printing out new list.");
+                    break;
+                    case "Corporate":
+                    case "corporate":
+                    memberList.Add(new Corporate (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
+                    Console.WriteLine("Corporate member added! Printing out new list.");
+                    break;
+                    }//end switch case ID lookup/add new account
+
+                foreach (Member anMember in memberList)
+                Console.WriteLine(anMember);
+                }//end else statement 
+           
+            }//end using "C"
+//   TODO: Read list is an "R"
+            else if (userChoiceString=="R" || userChoiceString=="r")
+            {
+                foreach (Member anMember in memberList)
+                        Console.WriteLine(anMember);
+            }
 //   TODO: U - UPDATE new member
             if (userChoiceString=="U" || userChoiceString=="u")
             {
@@ -84,7 +146,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 if (!found)
                     Console.WriteLine("Member not found");
                
-            }//end using "C" 
+            }//end using "U" 
     //   TODO: D - delete new member
             if (userChoiceString=="D" || userChoiceString=="d")
             {
@@ -107,201 +169,75 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                     Console.WriteLine("Member not found");
            
             }//end using "D" 
-    
-    //   TODO: C - create new member
-            if (userChoiceString=="C" || userChoiceString=="c")
-            {
-                //once valid, set the newMemberID to the new object memberID
-                string newMembershipType = InputUtilities.PromptForStringInput("Please enter membership type: ");
-                int newMemberId = InputUtilities.PromptForIntInput("Please enter ID#: ");//TODO: verify ID
-                //TODO: loop through member list and verify no member has newMemberID
-                bool found = false;
-                found = false;
-
-                for(int index = 0; index < memberList.Count; index++)
-                {
-                if ((memberList[index].memberId == newMemberId))
-                    {
-                    found = true;
-                    }
-                }                       
-                if (found)
-                Console.WriteLine("Already used or duplicate ID#!");
-                else
-                {
-                Console.WriteLine("Vaid please continue, ID#!");//want user to continue
-                string newEmailAddress = InputUtilities.PromptForStringInput("Please enter email address: ");
-                int newAnnualCost = InputUtilities.PromptForIntInput("Please enter annual cost: ");//left off here 
-                double newCurrentMonthPurchases = InputUtilities.PromptForDoubleInput("Please enter amount purchases: ");
-
-                //if new membership type = regular
-                switch(newMembershipType)
-                    {
-                    case "Regular":
-                    case "regular":
-                    memberList.Add(new Regular (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases, 0));
-                    Console.WriteLine("Regular member added! Printing out new list.");
-                    break;
-                    case "Executive":
-                    case "executive":
-                    memberList.Add(new Executive (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
-                    Console.WriteLine("Executive member added! Printing out new list.");
-                    break;
-                    case "Non-profit":
-                    case "non-profit":
-                    memberList.Add(new NonProfit (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
-                    Console.WriteLine("Non-Profit member added! Printing out new list.");
-                    break;
-                    case "Corporate":
-                    case "corporate":
-                    memberList.Add(new Corporate (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
-                    Console.WriteLine("Corporate member added! Printing out new list.");
-                    break;
-                    }//end switch case ID lookup/add new account
-
-                foreach (Member anMember in memberList)
-                Console.WriteLine(anMember);
-                }//end else statement 
-           
-            }//end using "C" 
-
-        //   TODO: "P": get membership# from user, purchase amount; if account exisists, add amount to monthly purchase total.
-                else if (userChoiceString=="P" || userChoiceString=="p")
-                {
-                double newCurrentMonthPurchases;
-                int memberId;
-                    Console.WriteLine("Please enter member#:"); 
-                    memberId = Convert.ToInt32(Console.ReadLine());//makes sure it's valid 
-
-                    Console.WriteLine("Please enter deposit amount: ");// if valid, ask for amount 
-                    newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
-
-                    foreach(Member anMember in memberList)
-                    {
-                        if(anMember.memberId==memberId)
-                            {
-                                double updatedPurchaseTotal = anMember.MakePurchase(newCurrentMonthPurchases);//need a method to invoke a purchases 
-                                Console.WriteLine($"Updated amount:$ {updatedPurchaseTotal} ");
-                            }
-                    }
-
-                }// end "P" purchases
-                
-//   TODO: "T": get membership# from user, return amount; if account exists sub amount from monthly purchase total. (so this is just read?) 
-
-                else if (userChoiceString=="T" || userChoiceString=="t")
-                {
-                double newCurrentMonthPurchases;
-                int memberId;
-                    Console.WriteLine("Please enter member#:"); 
-                    memberId = Convert.ToInt32(Console.ReadLine());//makes sure it's valid 
-
-                    Console.WriteLine("Please enter return amount:");// if valid, ask for amount 
-                    newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
-
-                    foreach(Member anMember in memberList)
-                    {
-                        if(anMember.memberId==memberId)
-                            {
-                                double updatedPurchaseTotal = anMember.MakeReturn(newCurrentMonthPurchases);//invokes a return 
-                                Console.WriteLine($"Updated amount:$ {updatedPurchaseTotal} ");
-                            }
-                    }              
-                  
-                }// end "T" return purchase
-       
 //===========================================END==OF==ADMIN==MENU===========================================\\
-
-
-
-    
-    //   TODO: D - delete new member
-            if (userChoiceString=="D" || userChoiceString=="d")
+        
+        //   TODO: "P": get membership# from user, purchase amount; if account exisists, add amount to monthly purchase total.
+            else if (userChoiceString=="P" || userChoiceString=="p")
             {
-                bool found = false;
-                Console.WriteLine("Please enter member ID# to delete: ");
-                string findMemberId = Console.ReadLine();//gets user input, asks for ID#
-                found = false;//true or false 
-                for (int index = 0; index < memberList.Count; index++)//searches the list 
+            double newCurrentMonthPurchases;
+            int memberId;
+                Console.WriteLine("Please enter member#:"); 
+                memberId = Convert.ToInt32(Console.ReadLine());//makes sure it's valid 
+
+                Console.WriteLine("Please enter deposit amount: ");// if valid, ask for amount 
+                newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
+
+                foreach(Member anMember in memberList)
                 {
-                    if ((memberList[index].memberId == Convert.ToInt32(findMemberId)))
-                    {         
-                        memberList.RemoveAt(index);
-                        found = true;
-                    }
-                }  // end foreach
-                if(found)
-                    Console.WriteLine("Member found & removed from system");
-                
-                if (!found)
-                    Console.WriteLine("Member not found");
-           
-            }//end using "D" 
-    
-    //   TODO: C - create new member
-            if (userChoiceString=="C" || userChoiceString=="c")
-            {
-                //once valid, set the newMemberID to the new object memberID
-                string newMembershipType = InputUtilities.PromptForStringInput("Please enter membership type: ");
-                int newMemberId = InputUtilities.PromptForIntInput("Please enter ID#: ");//TODO: verify ID
-                //TODO: loop through member list and verify no member has newMemberID
-                bool found = false;
-                found = false;
-
-                for(int index = 0; index < memberList.Count; index++)
-                {
-                if ((memberList[index].memberId == newMemberId))
-                    {
-                    found = true;
-                    }
-                }                       
-                if (found)
-                Console.WriteLine("Already used or duplicate ID#!");
-                else
-                {
-                Console.WriteLine("Vaid please continue, ID#!");//want user to continue
-                string newEmailAddress = InputUtilities.PromptForStringInput("Please enter email address: ");
-                int newAnnualCost = InputUtilities.PromptForIntInput("Please enter annual cost: ");//left off here 
-                double newCurrentMonthPurchases = InputUtilities.PromptForDoubleInput("Please enter amount purchases: ");
-
-                //if new membership type = regular
-                switch(newMembershipType)
-                    {
-                    case "Regular":
-                    case "regular":
-                    memberList.Add(new Regular (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases, 0));
-                    Console.WriteLine("Regular member added! Printing out new list.");
-                    break;
-                    case "Executive":
-                    case "executive":
-                    memberList.Add(new Executive (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
-                    Console.WriteLine("Executive member added! Printing out new list.");
-                    break;
-                    case "Non-profit":
-                    case "non-profit":
-                    memberList.Add(new NonProfit (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
-                    Console.WriteLine("Non-Profit member added! Printing out new list.");
-                    break;
-                    case "Corporate":
-                    case "corporate":
-                    memberList.Add(new Corporate (newMemberId, newEmailAddress, newMembershipType, newAnnualCost, newCurrentMonthPurchases));
-                    Console.WriteLine("Corporate member added! Printing out new list.");
-                    break;
-                    }//end switch case ID lookup/add new account
-
-                foreach (Member anMember in memberList)
-                Console.WriteLine(anMember);
-                }//end else statement 
-           
-            }//end using "C" 
-
-
-        //   TODO: Else if the option is an S or s then store the array of strings into the text file  (DONE 4-14-22)##6 on website
-                else if (userChoiceString=="R" || userChoiceString=="r")
-                {
-                  foreach (Member anMember in memberList)
-                            Console.WriteLine(anMember);
+                    if(anMember.memberId==memberId)
+                        {
+                            double updatedPurchaseTotal = anMember.MakePurchase(newCurrentMonthPurchases);//need a method to invoke a purchases 
+                            Console.WriteLine($"Updated amount:$ {updatedPurchaseTotal} ");
+                        }
                 }
+            }// end "P" purchases            
+//   TODO: "T": perform return transaction 
+            else if (userChoiceString=="T" || userChoiceString=="t")
+            {
+            double newCurrentMonthPurchases;
+            int memberId;
+                Console.WriteLine("Please enter member#:"); 
+                memberId = Convert.ToInt32(Console.ReadLine());//makes sure it's valid 
+
+                Console.WriteLine("Please enter return amount:");// if valid, ask for amount 
+                newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
+
+                foreach(Member anMember in memberList)
+                {
+                    if(anMember.memberId==memberId)
+                        {
+                            double updatedPurchaseTotal = anMember.MakeReturn(newCurrentMonthPurchases);//invokes a return 
+                            Console.WriteLine($"Updated amount:$ {updatedPurchaseTotal} ");
+                        }
+                }              
+                
+            }// end "T" return purchase
+   //   TODO: "A": Apply: cash-back rewards by getting member#  ***YOU ARE HERE*** 5-6-22
+            else if (userChoiceString=="A" || userChoiceString=="a")
+            {
+            double newCurrentMonthPurchases;
+            int memberId;
+                Console.WriteLine("Please enter member#:"); 
+                memberId = Convert.ToInt32(Console.ReadLine());//makes sure it's valid 
+
+                Console.WriteLine("Please enter return amount:");// if valid, ask for amount 
+                newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
+
+                foreach(Member anMember in memberList)
+                {
+                    if(anMember.memberId==memberId)
+                        {
+                            double updatedPurchaseTotal = anMember.MakeReturn(newCurrentMonthPurchases);//invokes a return 
+                            Console.WriteLine($"Updated amount:$ {updatedPurchaseTotal} ");
+                        }
+                }              
+                
+            }// end "A" apply cashback
+    
+     
+
+
+        
         
         //   TODO: Else if the option is a Q or q then quit the program                
                 else if (userChoiceString=="Q" || userChoiceString=="q")
