@@ -37,23 +37,30 @@ namespace ShopKo // Note: actual namespace depends on the project name.
           {
             userChoice = false;
 
-            Console.WriteLine("What's your pleasure?");
+            Console.WriteLine("========Admin Menu========");
             Console.WriteLine("R: Read list.");
             Console.WriteLine("C: Add new member.");
             Console.WriteLine("U: Update current member.");
             Console.WriteLine("D: Delete a current member.");
 
-            
+            Console.WriteLine("========Admin Menu========");
+            Console.WriteLine("P: Add purchase.");
+            Console.WriteLine("T: Transaction: purchase return.");
+            Console.WriteLine("A: Apply cashback.");
+
             Console.WriteLine("Q: Quit the program.");
 
             userChoiceString = Console.ReadLine() ?? "";//?? if userstring is null, asign to next userstring 
 
-            userChoice = (userChoiceString.ToUpper()== "C" || 
-                        userChoiceString.ToUpper()== "R" ||
-                        userChoiceString.ToUpper()== "U" ||
-                        userChoiceString.ToUpper()== "D" ||     
-                        
-                        userChoiceString.ToUpper()== "Q");  
+            userChoice = (  userChoiceString.ToUpper()== "R" ||
+                            userChoiceString.ToUpper()== "C" || 
+                            userChoiceString.ToUpper()== "U" ||
+                            userChoiceString.ToUpper()== "D" ||
+                            
+                            userChoiceString.ToUpper()== "P" ||     
+                            userChoiceString.ToUpper()== "T" ||     
+                            userChoiceString.ToUpper()== "A" ||     
+                            userChoiceString.ToUpper()== "Q");  
                     
                 if(!userChoice)
                 {
