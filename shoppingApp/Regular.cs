@@ -16,22 +16,15 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             cashBack = newCashBack; 
         }
 
-        
-
         //added implement method
         public double GetSpecialOffer()//interface method
         {
             return annualCost * .25;
         }
-//TODO: 
-//define a new method with different parameters
-        //need to say" applyCashBack = newApplyCashBack;??????????????????????????? NO
-        
-
 
         public override string ToString()
         {
-            return base.ToString() + $" || Cashback: {GetCashBack()} Test: {diplayTrueCashBack} Special Offer: ${GetSpecialOffer()} "; //GetSpecialOffer can be removed
+            return base.ToString() + $" || Cashback: {GetCashBack()} Special Offer: ${GetSpecialOffer()} "; //GetSpecialOffer can be removed
         }
 
         public override double GetCashBack()
@@ -39,17 +32,15 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             return 0.02d * currentMonthPurchases;
         }
             //TODO: method to "add" balance to cashBack
-       public double MakeCashBack(double applyCashBack)
-       {
-        //TODO: marry convertCashBack with "Cashback" method() double convertCashBack = Convert.ToDouble(GetCashBack(monthlyPurchaseAmount));
-        double sum = applyCashBack + GetCashBack();
-        return sum;
-        }  
-    public double DisplaceCashBack(double diplayTrueCashBack)
+      
+    public double DisplaceCashBack(double applyCashBack)//this method does not work (yet); 5-6-22
+
+    //Basically I can't get a GetCashBack() or methed to work like a property; unless I can get cashback into a property value, I don't see 
+    //how I can get this to work using logic to salve "A" apply cash back; 5-6-22
     {
         //TODO: grab GetCashBack Method into here
-    diplayTrueCashBack = currentMonthPurchases + diplayTrueCashBack;
-    return diplayTrueCashBack;
+    currentMonthPurchases = currentMonthPurchases;
+    return currentMonthPurchases;
     }
         
     }//end class
