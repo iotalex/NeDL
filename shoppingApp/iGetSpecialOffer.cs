@@ -1,7 +1,7 @@
 ﻿interface IGetSpecialOffer
     {  
-        double GetSpecialOffer();//interface method 
-
+        double GetSpecialOffer();//interface method
+        
     }
 
 

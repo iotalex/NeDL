@@ -10,10 +10,8 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         static void Main(string[] args)
         {
             
-            // Create a list of Employees
+            // List of Employees
         List<Member> memberList = new List<Member>();
-                
-
         memberList.Add(new Regular (1001, "al@bates.com", "Regular", 50, 14000, 50.23));
         memberList.Add(new Regular (1002, "woot@aol.com", "Regular" , 75, 250.00, 50.23));
 
@@ -58,7 +56,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                             userChoiceString.ToUpper()== "T" ||     
                             userChoiceString.ToUpper()== "A" ||     
                             userChoiceString.ToUpper()== "Q");  
-                    
+
                 if(!userChoice)
                 {
                     Console.WriteLine("Please enter a valid option.");
@@ -66,8 +64,8 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             }//ends the second "do" which is to get "valid input"
             while (!userChoice);
 
-//==============START===ADMIN=MENU==================================================
-//   TODO: C - create new membership ID#
+//==================================================START===ADMIN=MENU==================================================
+//   TODO: C - create a new membership
             if (userChoiceString=="C" || userChoiceString=="c")
             {
                 //once valid, set the newMemberID to the new object memberID
@@ -173,7 +171,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                     Console.WriteLine("Member not found");
            
             }//end using "D" 
-//===========================================END==OF==ADMIN==MENU===========================================\\
+//==================================================START===MEMBER=MENU==================================================
         
         //   TODO: "P": get membership# from user, purchase amount; if account exisists, add amount to monthly purchase total.
             else if (userChoiceString=="P" || userChoiceString=="p")
@@ -203,10 +201,10 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 Console.WriteLine("Please enter member#:"); 
                 memberId = Convert.ToInt32(Console.ReadLine());//makes sure it's valid 
 
-                Console.WriteLine("Please enter return amount:");// if valid, ask for amount 
+                Console.WriteLine("Please enter return amount:");//if valid, ask for amount 
                 newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
 
-                foreach(Member anMember in memberList)
+                foreach(Member anMember in memberList)// if valid ID#, ask for amount 
                 {
                     if(anMember.memberId==memberId)
                         {
@@ -216,25 +214,25 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 }              
                 
             }// end "T" return purchase
-   //   TODO: "T": get membership# from user, return amount; if account exists sub amount from monthly purchase total. (so this is just read?) 
-            else if (userChoiceString=="T" || userChoiceString=="t")
+   //   TODO: "A": get membership# from user, return amount; if account exists sub amount from monthly purchase total. (so this is just read?) 
+            else if (userChoiceString=="A" || userChoiceString=="a")
             {
-            double newCurrentMonthPurchases;
+            double applyCashBack;
             int memberId;
                 Console.WriteLine("Please enter member#:"); 
                 memberId = Convert.ToInt32(Console.ReadLine());//makes sure it's valid 
 
-                Console.WriteLine("Please enter return amount:");// if valid, ask for amount 
-                newCurrentMonthPurchases = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Please enter cashback deposit amount: ");//if valid ID#, ask for amount 
+                applyCashBack = Convert.ToDouble(Console.ReadLine());
 
-                foreach(Member anMember in memberList)
+                foreach(Member anMember in memberList)//searches whole list for ID#
                 {
                     if(anMember.memberId==memberId)
                         {
-                            double updatedPurchaseTotal = anMember.MakeReturn(newCurrentMonthPurchases);//invokes a return 
-                            Console.WriteLine($"Updated amount:$ {updatedPurchaseTotal} ");
+                            double updatedCashBackTotal = anMember.GetCashBack();//need a method to invoke a purchases //call method, get cash back
+                            Console.WriteLine($"Updated cashback:$ {updatedCashBackTotal} ");
                         }
-                }              
+                }     
                 
             }// end "A" apply cashcack
     

@@ -40,11 +40,10 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         }
         
         // Defining a function as abstract says that all derived classes MUST implement this function.
-        public abstract double GetCashBack(double monthlyPurchaseAmount);
+        public abstract double GetCashBack();
         //method to "add" balance to currentMonthPurchases
         public double MakePurchase(double purchaseAmount)
-        {
-            
+        {   
         currentMonthPurchases = currentMonthPurchases + purchaseAmount;//put purchaseAmount in console.readline()  
         return currentMonthPurchases;
         }
@@ -54,15 +53,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
         currentMonthPurchases = currentMonthPurchases - returnAmount; //put in console.readline() 
         return currentMonthPurchases;
         }
-        
-
-
-        // Defining a function as virtual says that all derived classes MAY implement and override this function.
-        // If they override it, then their version takes precedence; otherwise, the base class version is used.
-        // public virtual double GetCashBack(double monthlyPurchaseAmount)
-        // {
-        //     return 0.0d;
-        // }
+       
     }//end class
 
 }//end main 

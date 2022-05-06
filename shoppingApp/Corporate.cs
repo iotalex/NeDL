@@ -14,12 +14,12 @@ namespace ShopKo // Note: actual namespace depends on the project name.
      
         public override string ToString()
         {
-            return base.ToString() + $" || Cashback: {GetCashBack(currentMonthPurchases)}";
+            return base.ToString() + $" || Cashback: {GetCashBack()}";
         }
         
-public override double GetCashBack(double monthlyPurchaseAmount)
+public override double GetCashBack()
         {
-            return 0.03d * monthlyPurchaseAmount;
+            return 0.03d * currentMonthPurchases;
         }
     }//end class
 
