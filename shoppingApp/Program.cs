@@ -63,7 +63,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
             while (!userChoice);
 
 //==============START===ADMIN=MENU==================================================
-//   TODO: C - create new member
+//   TODO: C - create new membership ID#
             if (userChoiceString=="C" || userChoiceString=="c")
             {
                 //once valid, set the newMemberID to the new object memberID
@@ -191,7 +191,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                         }
                 }
             }// end "P" purchases            
-//   TODO: "T": perform return transaction 
+//   TODO: "T": get membership# from user, return amount; if account exists sub amount from monthly purchase total. (so this is just read?) 
             else if (userChoiceString=="T" || userChoiceString=="t")
             {
             double newCurrentMonthPurchases;
@@ -212,8 +212,8 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                 }              
                 
             }// end "T" return purchase
-   //   TODO: "A": Apply: cash-back rewards by getting member#  ***YOU ARE HERE*** 5-6-22
-            else if (userChoiceString=="A" || userChoiceString=="a")
+   //   TODO: "T": get membership# from user, return amount; if account exists sub amount from monthly purchase total. (so this is just read?) 
+            else if (userChoiceString=="T" || userChoiceString=="t")
             {
             double newCurrentMonthPurchases;
             int memberId;
@@ -232,7 +232,7 @@ namespace ShopKo // Note: actual namespace depends on the project name.
                         }
                 }              
                 
-            }// end "A" apply cashback
+            }// end "A" apply cashcack
     
      
 
