@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<style> 
+div.ex1 {
+  background-color: lightblue;
+  height: 40px;
+  width: 200px;
+  overflow-y: scroll;
+}
+
+div.ex2 {
+  background-color: lightblue;
+  height: 40px;
+  width: 200px;  
+  overflow-y: scroll;
+}
+
+div.ex3 {
+  background-color: lightblue;
+  height: 40px;
+  width: 200px;  
+  overflow-y: scroll;
+}
+
+div.ex4 {
+  background-color: lightblue;
+  height: 40px;
+  width: 200px;  
+  overflow-y: auto;
+}
+</style>
 </head>
+<title>Document</title>
+
+    <link rel="stylesheet" href="survey.css">
 <body>
-    
+
+<h1>The overflow-x Property</h1>
+
+<p>The overflow-x property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, when it overflows at the left and right edges.</p>
+
+<h2>overflow-x: scroll:</h2>
+<div class="ex1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit...
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</div>
+
+<h2>overflow-x: scroll:</h2>
+<div class="ex2">Lorem ipsuLorem ipsum dolor sit amet, consectetuer adipiscing elit...
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit...
+    m dolor sit amet, consectetuer adipiscing elit..</div>
+
+<h2>overflow-x: scroll:</h2>
+<div class="ex3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</div>
+
+<h2>overflow-x: visible (default):</h2>
+<div class="ex4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</div>
+
 </body>
 </html>
