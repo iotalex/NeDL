@@ -2,32 +2,43 @@
 body {
     background-color: rgb(230, 231, 203);
   }
-
+  * {
+    box-sizing: border-box;
+    background-color: rgb(230, 231, 203);
+  }
   
-  h1 {
-    color: rgb(49, 24, 14);
-    text-align: left;
-    margin-left: 80px;
-  }
-  div {
-    border: 1px solid rgb(123, 48, 24);
-    background-color: lightblue;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
+  * {
+    box-sizing: border-box;
     
-    margin-left: 80px;
   }
- 
-  p {
-    font-family: verdana;
-    font-size: 20px;
+  
+  /* Create two unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
     
-    margin-top: 100px;
-    margin-left: 80px;
+    
+  }
+  
+  .left {
+    width: 25%;
+  }
+  
+  .right {
+    width: 75%;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
 
-  }
+
 
   div.c {
     position: absolute;
