@@ -55,4 +55,8 @@ body {
     width: 200px;  
     overflow-y: auto;
   }
+  p.ex1 {
+    border: 1px solid red; 
+    padding-bottom: 25px;
+  }
   
