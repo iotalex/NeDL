@@ -40,7 +40,7 @@ body {
     background-color: rgb(227, 187, 103);
     height: 40px;
     width: 200px;  
-    overflow-y: hidden;   /* hidden is another feature */
+    overflow-y: scroll;   /* hidden is another feature option */
   }
   div.ex3 {
     background-color: rgb(227, 187, 103);
