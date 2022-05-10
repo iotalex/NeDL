@@ -5,6 +5,7 @@
     display: flex;
     flex-wrap: wrap;
   }
+  /* Create four equal entries in myflexbox */
 .myflexboxColumn {
     flex: 33%;
     padding: 20px;
