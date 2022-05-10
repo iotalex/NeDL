@@ -29,7 +29,7 @@ function validateANDadd() {
         document.forms["myForm"]["newNumber"].value = "";
         return true;
     }
-  }
+  }//end validate function
 
   function clearList1() {
     // clear the table of all rows
