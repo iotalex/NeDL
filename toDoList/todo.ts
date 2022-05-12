@@ -8,10 +8,9 @@ function AddTask() {
 }
 
 
-//clears the first item, not done
+//clears the table of all rows
 function clearTask(){
-    let newTask : string = ""; //want test values
-    newTask = (<HTMLInputElement>document.getElementById("newTask")).value; //value going into alert
+    
     var tableRef = document.getElementById("myTaskList");
-           (document.getElementById("myTaskList")).innerHTML = "";
+    tableRef.innerHTML = " ";
 }

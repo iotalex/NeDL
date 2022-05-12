@@ -5,9 +5,8 @@ function AddTask() {
     (document.getElementById("myTaskList")).innerHTML = newTask + ': ';
     //alert (newTask);
 }
+//clears the first item, not done
 function clearTask() {
-    var newTask = ""; //want test values
-    newTask = document.getElementById("newTask").value; //value going into alert
     var tableRef = document.getElementById("myTaskList");
-    (document.getElementById("myTaskList")).innerHTML = "";
+    tableRef.innerHTML = " ";
 }
