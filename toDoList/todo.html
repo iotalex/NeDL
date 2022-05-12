@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 3 Exercise - Javascript Sampling</title>
+    <title>Competency TS Exercise - TS Sampling</title>
 
     <link rel="stylesheet" href="todo.css">
     <script src="todo.js"></script>
 </head>
 <body>
-    <h1>Palindrom Idendifier</h1>
+    <h1>To-do List Application</h1>
     <div class="myflexboxRow">
         <div class="myflexboxColumn">
-            <h2>Form to obtain a word and check if it's a palindrome</h2>
+            <h2>Add a word to a List</h2>
             <form name="myForm">
-                Word to check: <input type="text" name="newWord" value=""><br />
-                algorithm 1 or 2?: <input type="number" name="newNumber" value=""><br /><br />
-                <input type="button" value="Add to list" onclick="checkPalindrome()">
+                Item to add to the list: <input type="text" name="newWord" value=""><br />
+                <input type="button" value="Add to list" onclick="addToDoList()">
             </form>
         </div>
         <div class="myflexboxColumn">
-            <h2>algorithm 1</h2>
-            <table id="myList1">
+            <h2>To-Do List</h2>
+            <table id="myToDoList">
             </table>
             <br /> <br />
             <input type="button" value="Clear the list" onclick="clearList1()">
