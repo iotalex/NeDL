@@ -12,18 +12,20 @@
     <h1>To-do List Application</h1>
     <div class="myflexboxRow">
         <div class="myflexboxColumn">
-            <h2>Add a word to a List</h2>
+            <h2>Add tasks to the list</h2>
             <form name="myForm">
-                Item to add to the list: <input type="text" name="newWord" value=""><br />
-                <input type="button" value="Add to list" onclick="addToDoList()">
+                Task: <input type="text" name="newTask" value=""><br />
+                <button type="button" onclick="AddTask()">Add Task</button>
+                <button type="button" onclick="removeTask()">Remove Task</button>
+                
             </form>
         </div>
         <div class="myflexboxColumn">
             <h2>To-Do List</h2>
-            <table id="myToDoList">
+            <table id="myTaskList">
             </table>
             <br /> <br />
-            <input type="button" value="Clear the list" onclick="clearList1()">
+            <input type="button" value="Clear all tasks" onclick="clearTask()">
         </div>
         
     </div>    
