@@ -1,10 +1,17 @@
 function AddTask() {
-    let newTask : string = ""; //want test values
-    newTask = (<HTMLInputElement>document.getElementById("newTask")).value; //value going into alert
-    var tableRef = document.getElementById("myTableList");
-    (document.getElementById("myTableList")).innerHTML = newTask + ': '
     
-    //alert (newTask);
+    
+    let newTask : string = ""; //want test values
+    newTask = (<HTMLInputElement>document.getElementById("newTask")).value; //value attached to HTML
+    document.getElementById("myTableList").innerHTML = newTask + ': '//this value is printed into table
+
+
+    //var tableRef = document.getElementById("myTableList");
+    //    var tableRef: HTMLTableElement = <HTMLTableElement> document.getElementById("myTable");
+    // alert (newTask);
+//    var table: HTMLTableElement = document.getElementById("myTableList");
+
+
     
 }
 
