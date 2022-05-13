@@ -1,5 +1,7 @@
 
 const myTasks: string[] = [];
+const arr: string[] = ['one', 'two',];
+
 function AddTask() {
 
     // First we need to get the user input from the text box, and add it to the task list
@@ -8,9 +10,7 @@ function AddTask() {
     newTask = (<HTMLInputElement>document.getElementById("newTask")).value; //value attached to HTML
     // Add the new task to the existing array
     myTasks.push(newTask);
-
-    //*****/ Next, we need to update the page with the list of all tasks the user has already entered
-
+                //*****/ Next, we need to update the page with the list of all tasks the user has already entered
     // Starting off with empty string, but this represents the HTML contained in the list element
     let myTableListHtml = ""; //assigning this to an empty string
 
@@ -29,7 +29,12 @@ function AddTask() {
 
 //clears the table of all rows
 function clearTask() {
-
     var tableRef = document.getElementById("myTableList");
-    tableRef.innerHTML = " ";
+    
+    tableRef.innerHTML = " "
+   
 }
+
+// var tableRef = document.getElementById("myTableList");
+    
+//     tableRef.innerHTML = " ";

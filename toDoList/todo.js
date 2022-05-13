@@ -1,4 +1,5 @@
 var myTasks = [];
+var arr = ['one', 'two',];
 function AddTask() {
     // First we need to get the user input from the text box, and add it to the task list
     var newTask = ""; //want test values
@@ -24,3 +25,5 @@ function clearTask() {
     var tableRef = document.getElementById("myTableList");
     tableRef.innerHTML = " ";
 }
+// var tableRef = document.getElementById("myTableList");
+//     tableRef.innerHTML = " ";
