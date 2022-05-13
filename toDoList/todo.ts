@@ -1,10 +1,22 @@
 
+    const myTasks: string[] = []; 
 function AddTask() {
     
     
     let newTask : string = ""; //want test values
     newTask = (<HTMLInputElement>document.getElementById("newTask")).value; //value attached to HTML
-    document.getElementById("myTableList").innerHTML = newTask + ': '//this value is printed into table
+    myTasks.push(newTask);
+    const myTableListHtml = ""; //assigning this to an empty string
+    for(let i = 0; i < 3; i++) //iteration loop builds up the list 
+    {
+        if ((myTableListHtml))
+                    {
+                        
+                    }
+
+    }
+    document.getElementById("myTableList").innerHTML = myTableListHtml + ': '//this value is printed into table
+    
     //print in a list
     //add a row to the list 
 
