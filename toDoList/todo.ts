@@ -22,7 +22,7 @@ function AddTask() {
         myTableListHtml = myTableListHtml + itemText;
         //console.log(myTasks[index]);//iterates items to the array index 
     }
-    
+    // Some comment
     // Set the inner HTML, which will display the list of tasks on the page
     document.getElementById("myTableList").innerHTML = myTableListHtml 
     //console.log(newTask);
