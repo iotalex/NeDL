@@ -2,18 +2,31 @@
 const myTasks: string[] = [];
 function AddTask() {
 
-
+    // First we need to get the user input from the text box, and add it to the task list
     let newTask: string = ""; //want test values
+    // Get the value of the new task that the user entered
     newTask = (<HTMLInputElement>document.getElementById("newTask")).value; //value attached to HTML
+    // Add the new task to the existing array
     myTasks.push(newTask);
-    const myTableListHtml = ""; //assigning this to an empty string
 
-    for (let task = 0; task < newTask.length; task++) {        //iteration loop builds up the list
-        
-        console.log("Balck statement" + task)
+    // Next, we need to update the page with the list of all tasks the user has already entered
+
+    // Starting off with empty string, but this represents the HTML contained in the list element
+    let myTableListHtml = ""; //assigning this to an empty string
+
+    for (let index = 0; index < myTasks.length; index++) {   //iteration loop builds up the list
+        // Iterating through each item, we need to build the text that will be displayed on the
+        // page for that item
+        let itemText = "<tr>" + myTasks[index] + "</tr><br/>";
+        // Add that text to the table list HTML string
+        myTableListHtml = myTableListHtml + itemText;
+        //console.log(myTasks[index]);//iterates items to the array index 
     }
+    
+    // Set the inner HTML, which will display the list of tasks on the page
+    document.getElementById("myTableList").innerHTML = myTableListHtml 
     //console.log(newTask);
-    document.getElementById("myTableList").innerHTML = myTableListHtml + ': ' + task;//this value is printed into table
+    //*this works* document.getElementById("myTableList").innerHTML = myTableListHtml + ': '//this value is printed into table
     //chunky monkey
 
     // for (var _i = 0, myTasks_1 = myTasks; _i < myTasks_1.length; _i++) {
@@ -46,8 +59,8 @@ function AddTask() {
 
 
 //clears the table of all rows
-// function clearTask() {
+function clearTask() {
 
-//     var tableRef = document.getElementById("myTableList");
-//     tableRef.innerHTML = " ";
-// }
+    var tableRef = document.getElementById("myTableList");
+    tableRef.innerHTML = " ";
+}
