@@ -56,6 +56,13 @@ function removeTask() {
     //var tableRef = document.getElementById("myTableList");
     //tableRef.innerHTML = " "
 }
+function clearTask() {
+    // Remove all tasks from the array
+    //write someething to count the number of strings (array items)
+    myTasks.splice(0, myTasks.length);
+    // Update the UI
+    rerenderTaskList();
+}
 function rerenderTaskList() {
     // Starting off with empty string, but this represents the HTML contained in the list element
     var myTableListHtml = ""; //assigning this to an empty string
