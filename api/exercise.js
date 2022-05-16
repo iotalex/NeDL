@@ -1,6 +1,6 @@
 async function getBaconipsum() {
   // first build the API call string by starting with the URL
-  var apiString = "https://baconipsum.com/api/";
+  var apiString = "https://flipsum-ipsum.net/api/icw/v1";
   // next add the parameters to the string using the drop down lists
   var theNewParagraphs = document.getElementById("newParagraphs").value;
   apiString = apiString + "?type=meat&paras=" + theNewParagraphs;
