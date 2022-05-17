@@ -8,14 +8,23 @@ namespace AboveAverage // Note: actual namespace depends on the project name.
         {
             
         //store array
-        int[] myNum = {0, 0, 0};
+        int[] myNumArray = new int[5];
 
-        myNum[1] = Convert.ToInt16(Console.ReadLine());
-        myNum[2] = Convert.ToInt16(Console.ReadLine());
-        myNum[3] = Convert.ToInt16(Console.ReadLine());
-
-        Console.WriteLine(myNum);
         
+        for (int index = 0; index < 5; index++)//copy the loop; create the array values (get's it from user)
+        {
+            
+            myNumArray[index] = Convert.ToInt16(Console.Read());//changed to "read," stays on one thing
+
+            
+        }//end of forloop
+        
+        for (int index = 0; index < 5; index++)
+        {
+            
+            Console.WriteLine(myNumArray[index]);
+            
+        }//end of forloop
         
         
         // calculat array; 
