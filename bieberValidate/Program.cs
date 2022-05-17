@@ -6,28 +6,39 @@ namespace Ahhh // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            SayAhh[] newThroatArray =new SayAhh[5];
+            SayAhh[] newThroatArray =new SayAhh[25];
             //array of test data (3 a's)
-            //OpenWide[] newOpenMouth = new openMouth("aaah", 3);//This is creating a new openWide object
+            SayAhh newOpenMouth = new SayAhh("aaaah", 4);//This is creating a new openWide object
 
             //promp user to open wide
             Console.WriteLine("Please say open and say 'aaah....'");
             //get input from user 
-            string numberOfConsonants = Console.ReadLine();
+            //string numberOfConsonants = Console.ReadLine();
 
-            
+            //output string or test data
+            /////Console.WriteLine(newThroatArray);
 
-            //newOpenMouthArray[1] = newOpenMouth; //main object
+            //print the array
+            newThroatArray[1] = newOpenMouth; //main object
      
             //validate number of a's from user
-            // for(string index = 0; index < newOpenMouthArray.Length; index++)
-            //             {
-            //                 if(!(newOpenMouthArray[index]==0))
-            //                 {
-            //                     Console.WriteLine(newOpenMouthArray[index]);
-            //                 }
-            //             }
-            //validate 'h' from user
+            for(int index = 0; index < newThroatArray.Length; index++)
+                        {
+                            if(!(newThroatArray[index]==null))
+                            {
+                                Console.WriteLine(newThroatArray[index]);
+                            }
+                        }
+         
+        }//end static void 
+
+
+
+    }//end class program 
+}
+
+
+   //validate 'h' from user
 
             //bool true or false ( line input will contain between 0 an 99 a's followed by a single 'h')
 
@@ -37,9 +48,3 @@ namespace Ahhh // Note: actual namespace depends on the project name.
         
         
         
-        }//end static void 
-
-
-
-    }//end class program 
-}

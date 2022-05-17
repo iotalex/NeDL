@@ -20,7 +20,12 @@ namespace Ahhh // Note: actual namespace depends on the project name.
             openMouth = newOpenMouth;
             numberOfConsonants = newNumberOfConsonants;
         }
-        
+
+        public override string ToString()
+        {
+            string outputString = $"Number of A's: {numberOfConsonants} | Headphone Feedback: '{openMouth}'";
+            return outputString; 
+        }
 
 
 
