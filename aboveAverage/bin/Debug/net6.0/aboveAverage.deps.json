@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "aboveAverage/1.0.0": {
+        "runtime": {
+          "aboveAverage.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "aboveAverage/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
