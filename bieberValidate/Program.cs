@@ -5,31 +5,28 @@ namespace Ahhh // Note: actual namespace depends on the project name.
     internal class Program
     {
         static void Main(string[] args)
+        
         {
             SayAhh[] newThroatArray =new SayAhh[25];
             //array of test data (3 a's)
             SayAhh newOpenMouth = new SayAhh("aaaah", 4);//This is creating a new openWide object
-
             //promp user to open wide
             Console.WriteLine("Please say open and say 'aaah....'");
-            //get input from user 
-            //string numberOfConsonants = Console.ReadLine();
-
-            //output string or test data
-            /////Console.WriteLine(newThroatArray);
+            //get input from user
+            string openMouth = Convert.ToString(Console.ReadLine()); 
+            
+            
 
             //print the array
             newThroatArray[1] = newOpenMouth; //main object
-     
-            //validate number of a's from user
             for(int index = 0; index < newThroatArray.Length; index++)
                         {
                             if(!(newThroatArray[index]==null))
                             {
                                 Console.WriteLine(newThroatArray[index]);
                             }
-                        }
-         
+                        }//end print array 
+            
         }//end static void 
 
 
