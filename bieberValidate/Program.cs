@@ -6,7 +6,7 @@ namespace Ahhh // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            Ahhh[] newThroatArray =new openMouth[];
+            SayAhh[] newThroatArray =new openMouth[];
             //array of test data (3 a's)
             //OpenWide[] newOpenMouth = new openMouth("aaah", 3);//This is creating a new openWide object
 

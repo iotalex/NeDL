@@ -2,22 +2,22 @@
 
 namespace Ahhh // Note: actual namespace depends on the project name.
 {
-    class OpenWide
+    class SayAhh
     {
-        public string openWide
+        public string openMouth
             {get; set;}
         public int numberOfConsonants
             {get; set;}
         
-        public OpenWide()
+        public SayAhh()
         {
-            openWide = "";
+            openMouth = "";
             numberOfConsonants = 0;
         }
 
-        public OpenWide(string newOpenWide, int newNumberOfConsonants)
+        public SayAhh(string newOpenMouth, int newNumberOfConsonants)
         {
-            openWide = newOpenWide;
+            openMouth = newOpenMouth;
             numberOfConsonants = newNumberOfConsonants;
         }
         
