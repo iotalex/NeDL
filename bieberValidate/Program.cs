@@ -11,9 +11,10 @@ namespace Ahhh // Note: actual namespace depends on the project name.
             //array of test data (3 a's)
             SayAhh newOpenMouth = new SayAhh("aaaah", 4);//This is creating a new openWide object
             //promp user to open wide
-            Console.WriteLine("Please say open and say 'aaah....'");
+            Console.WriteLine("");
             //get input from user
-            string openMouth = Convert.ToString(Console.ReadLine()); 
+            string openMouth = InputUtilities.PromptForStringInput("Please say open and say 'aaah....'");
+            
             
             
 
