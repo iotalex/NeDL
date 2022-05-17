@@ -9,7 +9,7 @@ namespace Ahhh // Note: actual namespace depends on the project name.
         public int numberOfConsonants
             {get; set;}
         
-        public Ahhh()
+        public OpenWide()
         {
             openWide = "";
             numberOfConsonants = 0;
