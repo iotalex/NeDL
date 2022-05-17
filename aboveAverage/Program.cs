@@ -2,7 +2,7 @@
 
 namespace AboveAverage // Note: actual namespace depends on the project name.
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -16,7 +16,6 @@ namespace AboveAverage // Note: actual namespace depends on the project name.
             
             myNumArray[index] = Convert.ToInt16(Console.Read());//changed to "read," stays on one thing
 
-            
         }//end of forloop
         
         for (int index = 0; index < 5; index++)

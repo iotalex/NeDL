@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\Desktop\NeDL\nestedLoop\bin\Debug\net6.0\nestedLoop.exe
+C:\Users\ABatenhorst\Desktop\NeDL\nestedLoop\bin\Debug\net6.0\nestedLoop.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\nestedLoop\bin\Debug\net6.0\nestedLoop.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\nestedLoop\bin\Debug\net6.0\nestedLoop.dll
+C:\Users\ABatenhorst\Desktop\NeDL\nestedLoop\bin\Debug\net6.0\nestedLoop.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\nestedLoop\obj\Debug\net6.0\nestedLoop.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\nestedLoop\obj\Debug\net6.0\nestedLoop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\nestedLoop\obj\Debug\net6.0\nestedLoop.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\nestedLoop\obj\Debug\net6.0\nestedLoop.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\nestedLoop\obj\Debug\net6.0\nestedLoop.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\nestedLoop\obj\Debug\net6.0\nestedLoop.dll
+C:\Users\ABatenhorst\Desktop\NeDL\nestedLoop\obj\Debug\net6.0\refint\nestedLoop.dll
+C:\Users\ABatenhorst\Desktop\NeDL\nestedLoop\obj\Debug\net6.0\nestedLoop.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\nestedLoop\obj\Debug\net6.0\nestedLoop.genruntimeconfig.cache
+C:\Users\ABatenhorst\Desktop\NeDL\nestedLoop\obj\Debug\net6.0\ref\nestedLoop.dll
