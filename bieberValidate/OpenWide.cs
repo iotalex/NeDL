@@ -23,7 +23,7 @@ namespace Ahhh // Note: actual namespace depends on the project name.
 
         public override string ToString()
         {
-            string outputString = $"Number of A's: {numberOfConsonants} | Headphone Feedback: '{openMouth}'";
+            string outputString = $"#A's: {numberOfConsonants} | Doctor hear's: '{openMouth}'";
             return outputString; 
         }
 
