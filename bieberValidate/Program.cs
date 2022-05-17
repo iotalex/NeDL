@@ -6,7 +6,13 @@ namespace Ahhh // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Please say open and say 'ahh....'");
+        
+        
+        
         }
+
+
+
     }
 }

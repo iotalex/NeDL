@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\Desktop\NeDL\bieberValidate\bin\Debug\net6.0\bieberValidate.exe
+C:\Users\ABatenhorst\Desktop\NeDL\bieberValidate\bin\Debug\net6.0\bieberValidate.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\bieberValidate\bin\Debug\net6.0\bieberValidate.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\bieberValidate\bin\Debug\net6.0\bieberValidate.dll
+C:\Users\ABatenhorst\Desktop\NeDL\bieberValidate\bin\Debug\net6.0\bieberValidate.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\bieberValidate\obj\Debug\net6.0\bieberValidate.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\bieberValidate\obj\Debug\net6.0\bieberValidate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\bieberValidate\obj\Debug\net6.0\bieberValidate.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\bieberValidate\obj\Debug\net6.0\bieberValidate.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\bieberValidate\obj\Debug\net6.0\bieberValidate.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\bieberValidate\obj\Debug\net6.0\bieberValidate.dll
+C:\Users\ABatenhorst\Desktop\NeDL\bieberValidate\obj\Debug\net6.0\refint\bieberValidate.dll
+C:\Users\ABatenhorst\Desktop\NeDL\bieberValidate\obj\Debug\net6.0\bieberValidate.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\bieberValidate\obj\Debug\net6.0\bieberValidate.genruntimeconfig.cache
+C:\Users\ABatenhorst\Desktop\NeDL\bieberValidate\obj\Debug\net6.0\ref\bieberValidate.dll
