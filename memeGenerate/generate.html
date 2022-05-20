@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <h1>Web Service API Consumer Example</h1>
+    <h1>API Consumer Example</h1>
     <div class="myflexboxRow">
         <div class="myflexboxColumn">
             
@@ -20,7 +20,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <h3>Make a Selection</h3>
+  <h3>Make a Selection, no excuses!</h3>
 
   <ul class="actions">
     <h2>Button Tags</h2>
@@ -41,20 +41,21 @@
   <div class="dropdown-content">
     <li><a class="btn btn-info" role="button" onclick="getOfficeExcuse()">Excuse for the Office</a></li><br>
     <li><a class="btn btn-info" role="button" onclick="getCollegeExcuse()">Excuse for College</a></li><br>
-    <a href="#">Link 3</a>
+    <li><a class="btn btn-info" role="button" onclick="getChildrenExcuse()">Excuse for Children</a></li><br>
 
   </ul>
                
         </div>
         <div class="myflexboxColumn">
-            <h2>Returned data in raw JSON</h2>
-            <p id="myRawData">
-            </p>
+          <h4>I can't .... because.... </h4>
+          <p id="myFormattedData">
+          </p>
         </div>
-        <div class="myflexboxColumn">
-            <h2>Returned data as formatted paragraphs</h2>
-            <p id="myFormattedData">
-            </p>
+        
+            <div class="myflexboxColumn">
+              <h4>Returned data in raw JSON</h4>
+              <p id="myRawData">
+              </p>
         </div>
     </div>    
 </body>
