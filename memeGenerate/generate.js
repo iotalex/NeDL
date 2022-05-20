@@ -34,13 +34,13 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-function getBaconipsum() {
+function getAllMemes() {
     return __awaiter(this, void 0, void 0, function () {
         var apiString, theNewParagraphs, response, jsonData, para;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    apiString = "https://flipsum-ipsum.net/api/icw/v1";
+                    apiString = "https://mememaker.github.io/API/";
                     theNewParagraphs = document.getElementById("newParagraphs").value;
                     apiString = apiString + "?type=meat&paras=" + theNewParagraphs;
                     alert(apiString); // show the API string
@@ -53,6 +53,8 @@ function getBaconipsum() {
                     return [4 /*yield*/, response.json()];
                 case 2:
                     jsonData = _a.sent();
+                    //how many elements do I have in the json? 
+                    //and then iterate through id# that picks it up 
                     // stringify and print out the JSON object in the RawData section
                     document.getElementById("myRawData").innerHTML = JSON.stringify(jsonData);
                     // loop through the JSON object one paragraph at a time and print each in the FormattedData section
