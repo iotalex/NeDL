@@ -33,11 +33,8 @@ namespace ConsoleCalc
 
         public override string ToString()
         {
-            return $"ddd {Name} | Format: {Format} | Year: {Year}";
+            return $"Title: {Name} | Format: {Format} | Year: {Year}";
         }
-
-
-
 
 
 

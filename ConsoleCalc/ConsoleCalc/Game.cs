@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleCalc
 {
-    internal class Movie : Media
+    internal class Game : Media
     {
-        public Movie (string NewName, string NewFormat, int NewYear)//default main string 
+        public Game (string NewName, string NewFormat, int NewYear)//default main string 
         {
             Name = NewName;
             Format = NewFormat;
@@ -17,7 +17,7 @@ namespace ConsoleCalc
 
         public override string ToString()
         {
-            return $"Movie: {Name} | Format: {Format} | Year: {Year}";
+            return $"Game Title: {Name} | Format: {Format} | Year: {Year}";
         }
 
 
