@@ -108,7 +108,7 @@ async function getRandomExcuse() {
         //and then iterate through id# that picks it up     
         let excuseText = JSON.stringify(jsonData[0]['excuse']);                 //starting here, the new function will be different
         //alert(jsonData.length);
-        //alert(excuseText);
+        alert(excuseText);
         //the formated read out text without the ID# and mess etc. 
         document.getElementById("myFormattedData").innerHTML = "<p>" + excuseText + "</p>";
 
@@ -140,7 +140,7 @@ async function getRandomExcuse() {
         let excuseText = JSON.stringify(jsonData[0]['excuse']);                 //starting here, the new function will be different
         //alert(jsonData.length);
         //alert(excuseText);
-        //the formated read out text without the ID# and mess etc. 
+        //the formated read out text without the ID# and mess etc.
         document.getElementById("myFormattedData").innerHTML = "<p>" + excuseText + "</p>";
 
    
@@ -149,7 +149,7 @@ async function getRandomExcuse() {
 
   //TODO: spin through each item (loop) in the array
 
-    //TODO:  
+    //TODO:
 
     return true;
   }
