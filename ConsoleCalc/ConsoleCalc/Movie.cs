@@ -8,6 +8,24 @@ namespace ConsoleCalc
 {
     internal class Movie : Media
     {
+        public Movie (string NewName, string NewFormat, int NewYear)//default main string 
+        {
+            Name = NewName;
+            Format = NewFormat;
+            Year = NewYear;
+        }
+
+        public override string ToString()
+        {
+            return $"ddd {Name} | Format: {Format} | Year: {Year}";
+        }
+        
+       
 
     }
-}
+
+
+    
+
+
+}//end name space

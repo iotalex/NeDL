@@ -12,16 +12,33 @@ namespace ConsoleCalc
         public string Format { get; set; }
         public int Year { get; set; }
 
-
-        public string Media (string NewName, string NewFormat, int NewYear)//main string 
+        public Media()
+        {
+            Name = "";
+            Format = "";
+            Year = 0;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="NewName">describe what this paremeter is</param>
+        /// <param name="NewFormat">can comment here</param>
+        /// <param name="NewYear">this comment will show up later</param>
+        public Media (string NewName, string NewFormat, int NewYear)//default main string 
         {
             Name = NewName;
             Format = NewFormat;
             Year = NewYear;
         }
 
+        public override string ToString()
+        {
+            return $"ddd {Name} | Format: {Format} | Year: {Year}";
+        }
 
-        
+
+
+
 
 
     }

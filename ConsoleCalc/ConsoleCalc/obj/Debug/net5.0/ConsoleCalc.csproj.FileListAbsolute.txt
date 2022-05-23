@@ -1,0 +1,16 @@
+C:\Users\ABatenhorst\Desktop\NeDL\ConsoleCalc\ConsoleCalc\obj\Debug\net5.0\ConsoleCalc.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\ConsoleCalc\ConsoleCalc\obj\Debug\net5.0\ConsoleCalc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\ConsoleCalc\ConsoleCalc\obj\Debug\net5.0\ConsoleCalc.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\ConsoleCalc\ConsoleCalc\obj\Debug\net5.0\ConsoleCalc.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\ConsoleCalc\ConsoleCalc\obj\Debug\net5.0\ConsoleCalc.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\ConsoleCalc\ConsoleCalc\bin\Debug\net5.0\ConsoleCalc.exe
+C:\Users\ABatenhorst\Desktop\NeDL\ConsoleCalc\ConsoleCalc\bin\Debug\net5.0\ConsoleCalc.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\ConsoleCalc\ConsoleCalc\bin\Debug\net5.0\ConsoleCalc.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\ConsoleCalc\ConsoleCalc\bin\Debug\net5.0\ConsoleCalc.runtimeconfig.dev.json
+C:\Users\ABatenhorst\Desktop\NeDL\ConsoleCalc\ConsoleCalc\bin\Debug\net5.0\ConsoleCalc.dll
+C:\Users\ABatenhorst\Desktop\NeDL\ConsoleCalc\ConsoleCalc\bin\Debug\net5.0\ConsoleCalc.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\ConsoleCalc\ConsoleCalc\obj\Debug\net5.0\ConsoleCalc.dll
+C:\Users\ABatenhorst\Desktop\NeDL\ConsoleCalc\ConsoleCalc\obj\Debug\net5.0\refint\ConsoleCalc.dll
+C:\Users\ABatenhorst\Desktop\NeDL\ConsoleCalc\ConsoleCalc\obj\Debug\net5.0\ConsoleCalc.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\ConsoleCalc\ConsoleCalc\obj\Debug\net5.0\ConsoleCalc.genruntimeconfig.cache
+C:\Users\ABatenhorst\Desktop\NeDL\ConsoleCalc\ConsoleCalc\obj\Debug\net5.0\ref\ConsoleCalc.dll
