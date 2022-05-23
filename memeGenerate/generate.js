@@ -51,7 +51,7 @@ async function getRandomExcuse() {
         //and then iterate through id# that picks it up     
         let excuseText = JSON.stringify(jsonData[0]['excuse']);                 //starting here, the new function will be different
         //the formated read out text without the ID# and mess etc. 
-        document.getElementById("myFormattedData").innerHTML = "<p>" + excuseText + "</p>";
+        document.getElementById("myFormattedData").innerHTML += "<p>" + excuseText + "</p>";
 
     return true;
   }
