@@ -8,16 +8,28 @@ namespace ConsoleCalc //handles all the user's inputs (user interaction)
         {
             Console.WriteLine("========Media Program=========");
 
-            var mediaManager = new MediaManager();
-            var media = mediaManager.GetMedia();
+            var mediaManager = new MediaManager();//access to mediaManager.cs
+            
             
 
+            var media = mediaManager.GetMedia();//function to iterate and printer list 
             foreach (Media anMedia in media)//prints the "list" above
             {
                 Console.WriteLine(anMedia);
             }
             Console.ReadKey();//catches program so it doesn't close 
+
+
+
+
+
+
         }
+
+
+
+
+
     }
     //TODO Read
 

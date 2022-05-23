@@ -8,6 +8,9 @@ namespace ConsoleCalc//going to contain all the logic for mainintaing, CRUD
 {
     internal class MediaManager : Media
     {
+        /// <summary>
+        /// put test data here
+        /// </summary>
         public MediaManager ()
 	{
             mediaList = new List<Media>();
@@ -27,7 +30,6 @@ namespace ConsoleCalc//going to contain all the logic for mainintaing, CRUD
 
 
         }
-        //put test data here 
         private List<Media> mediaList;
 
         
