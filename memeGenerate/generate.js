@@ -115,10 +115,6 @@ async function getRandomExcuse() {
     return true;
   }
 
-
-
-
-
   //TODO: build new function 
   async function getNumberExecuse() {
     // first build the API call string by starting with the URL
@@ -133,11 +129,11 @@ async function getRandomExcuse() {
         throw error
     }
   
-    // finally, print the response in the various formats
-    document.getElementById("myRawData").innerHTML = "";   // clear what was previously shown
-    document.getElementById("myFormattedData").innerHTML = "";   // clear what was previously shown
+        // finally, print the response in the various formats
+        document.getElementById("myRawData").innerHTML = "";   // clear what was previously shown
+        document.getElementById("myFormattedData").innerHTML = "";   // clear what was previously shown
 
-    var jsonData = await response.json();  // read the response as JSON
+        var jsonData = await response.json();  // read the response as JSON
         // stringify and print out the JSON object in the RawData section
         document.getElementById("myRawData").innerHTML = JSON.stringify(jsonData);
 
@@ -157,6 +153,3 @@ async function getRandomExcuse() {
 
     return true;
   }
-  
-  
-  
