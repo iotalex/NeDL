@@ -30,12 +30,11 @@ namespace ConsoleCalc//going to contain all the logic for mainintaing, CRUD
 
 
         }
+        //declare method value
         private List<Media> mediaList;
-
-        
+        //method to print the list 
         public List<Media> GetMedia() { 
         
-
             return mediaList;
             
         }
