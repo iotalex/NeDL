@@ -19,7 +19,7 @@ namespace ConsoleCalc //handles all the user's inputs (user interaction)
             }
             Console.ReadKey();//catches program so it doesn't close 
 
-
+            //START CRUD HERE! 
 
 
 
