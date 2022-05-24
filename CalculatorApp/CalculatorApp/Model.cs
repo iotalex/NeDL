@@ -11,7 +11,7 @@ namespace Calculator
         {
             /// 
 
-            /// This class does a very simple tip 
+            /// This class does a very simple tip
             /// calculation. It has two fields amount and
             /// tip percent. We are ignoring tax and whether
             /// we tip before or after tax. The point is the
