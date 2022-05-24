@@ -1,0 +1,14 @@
+C:\Users\ABatenhorst\Desktop\NeDL\CalculatorApp\CalculatorApp\bin\Debug\netcoreapp3.1\CalculatorApp.exe
+C:\Users\ABatenhorst\Desktop\NeDL\CalculatorApp\CalculatorApp\bin\Debug\netcoreapp3.1\CalculatorApp.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\CalculatorApp\CalculatorApp\bin\Debug\netcoreapp3.1\CalculatorApp.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\CalculatorApp\CalculatorApp\bin\Debug\netcoreapp3.1\CalculatorApp.runtimeconfig.dev.json
+C:\Users\ABatenhorst\Desktop\NeDL\CalculatorApp\CalculatorApp\bin\Debug\netcoreapp3.1\CalculatorApp.dll
+C:\Users\ABatenhorst\Desktop\NeDL\CalculatorApp\CalculatorApp\bin\Debug\netcoreapp3.1\CalculatorApp.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.dll
+C:\Users\ABatenhorst\Desktop\NeDL\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.genruntimeconfig.cache
