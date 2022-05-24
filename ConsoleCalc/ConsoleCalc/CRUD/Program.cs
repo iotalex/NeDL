@@ -23,13 +23,13 @@ namespace ConsoleCalc //handles all the user's inputs (user interaction)
 
 
 
-        }
+        }//end static void 
 
 
 
 
 
-    }
+    }//end internal class program 
     //TODO Read
 
 
