@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9GsdFIWQFqHReTGPUgT8jusG53qIjfmIKPKZE4lW5ubn/wnVrWcpgoA3/Bhz9H+EDJmk1dAFXDi+HvtmGHLkeQ==",
+  "dgSpecHash": "iw699ujFs1ziqofcPmtXvIrQ4X7f+4uyWXWAkwzRSNYxAi+EIODWZPxmXP7pppxq1tupiY2sIAC7FozN/ngzxA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\CalculatorApp\\CalculatorApp\\CalculatorApp.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\ABatenhorst\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.24\\microsoft.netcore.app.host.win-x64.3.1.24.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
