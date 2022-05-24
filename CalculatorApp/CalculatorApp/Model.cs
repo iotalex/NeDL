@@ -7,111 +7,79 @@ using System.Threading.Tasks;
 
 namespace Calculator
     {
-    class Calculator
-    {
-        public static double DoOperation(double num1, double num2, string op)
+        class Tip
         {
-            double result = double.NaN; // Default value is "not-a-number" if an operation, such as division, could result in an error.
+            /// 
 
-            // Use a switch statement to do the math.
-            switch (op)
+            /// This class does a very simple tip 
+            /// calculation. It has two fields amount and
+            /// tip percent. We are ignoring tax and whether
+            /// we tip before or after tax. The point is the
+            /// MVC model. This is the model part of MVC.
+            /// It does the calculations and handles the data
+            /// it is totally unaware of the Display class
+            /// or the controller
+            /// 
+
+            /// 
+            //private fields
+            private double amount;
+            private double tipPercent;
+
+            //default constructor
+            public Tip()
             {
-                case "a":
-                    result = num1 + num2;
-                    break;
-                case "s":
-                    result = num1 - num2;
-                    break;
-                case "m":
-                    result = num1 * num2;
-                    break;
-                case "d":
-                    // Ask the user to enter a non-zero divisor.
-                    if (num2 != 0)
-                    {
-                        result = num1 / num2;
-                    }
-                    break;
-                // Return text for an incorrect option entry.
-                default:
-                    break;
+                Amount = 0;
+                TipPercent = 0;
             }
-            return result;
-        }
-    }//end class calculator 
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            bool endApp = false;
-            // Display title as the C# console calculator app.
-            Console.WriteLine("Console Calculator in C#\r");
-            Console.WriteLine("------------------------\n");
 
-            while (!endApp)
+            //overloaded constructor
+            public Tip(double amt, double percent)
             {
-                // Declare variables and set to empty.
-                string numInput1 = "";
-                string numInput2 = "";
-                double result = 0;
-
-                // Ask the user to type the first number.
-                Console.Write("Type a number, and then press Enter: ");
-                numInput1 = Console.ReadLine();
-
-                double cleanNum1 = 0;
-                while (!double.TryParse(numInput1, out cleanNum1))
-                {
-                    Console.Write("This is not valid input. Please enter an integer value: ");
-                    numInput1 = Console.ReadLine();
-                }
-
-                // Ask the user to type the second number.
-                Console.Write("Type another number, and then press Enter: ");
-                numInput2 = Console.ReadLine();
-
-                double cleanNum2 = 0;
-                while (!double.TryParse(numInput2, out cleanNum2))
-                {
-                    Console.Write("This is not valid input. Please enter an integer value: ");
-                    numInput2 = Console.ReadLine();
-                }
-
-                // Ask the user to choose an operator.
-                Console.WriteLine("Choose an operator from the following list:");
-                Console.WriteLine("\ta - Add");
-                Console.WriteLine("\ts - Subtract");
-                Console.WriteLine("\tm - Multiply");
-                Console.WriteLine("\td - Divide");
-                Console.Write("Your option? ");
-
-                string op = Console.ReadLine();
-
-                try
-                {
-                    result = Calculator.DoOperation(cleanNum1, cleanNum2, op);
-                    if (double.IsNaN(result))
-                    {
-                        Console.WriteLine("This operation will result in a mathematical error.\n");
-                    }
-                    else Console.WriteLine("Your result: {0:0.##}\n", result);
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
-                }
-
-                Console.WriteLine("------------------------\n");
-
-                // Wait for the user to respond before closing.
-                Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
-                if (Console.ReadLine() == "n") endApp = true;
-
-                Console.WriteLine("\n"); // Friendly linespacing.
+                Amount = amt;
+                TipPercent = percent;
             }
-            return;
+
+            //public properties
+            public double Amount
+            {
+                get { return amount; }
+                set { amount = value; }
+            }
+
+            public double TipPercent
+            {
+                get { return tipPercent; }
+                set
+                {
+                    //here we check to see if 
+                    //they entered the percent
+                    //as a decimal or a whole number
+                    //if it is a whole number
+                    //larger than 1 we divide it by
+                    //100, so the highest possible tip
+                    //is 100%
+                    if (value > 1)
+                    {
+                        value /= 100;
+                    }
+                    tipPercent = value;
+                }
+            }
+
+            public double CalculateTip()
+            {
+                //very simplistic tip calculation
+                return Amount * TipPercent;
+            }
+
+            public double CalculateTotal()
+            {
+                //simple total calculation
+                return CalculateTip() + Amount;
+            }
+
         }
-    }//end class program 
 
 
 }//end name space
