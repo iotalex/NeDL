@@ -42,9 +42,14 @@
                         Console.WriteLine($"Your result: {num1} * {num2} = " + (num1 * num2));
                         break;
                     case "d":
-                        Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
-                        break;
-                }
+                    while (num2 == 0)
+                    {
+                        Console.WriteLine("Enter a non-zero divisor: ");
+                        num2 = Convert.ToInt32(Console.ReadLine());
+                    }
+                    Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
+                    break;
+            }
                 // Wait for the user to respond before closing.
                 Console.Write("Press any key to close the Calculator console app...");
                 Console.ReadKey();
