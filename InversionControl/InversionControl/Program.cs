@@ -8,7 +8,7 @@ namespace InversionControl
         {
             ILogger logger = new FileLogger();
             ProductService productService = new ProductService(logger);
-            productService.Log("Hello World!");
+            productService.Log($"Hello World!");
         }
     }
 }
