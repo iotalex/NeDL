@@ -4,15 +4,18 @@ namespace InversionControl
 {
     public class ProductService
     {
-        private readonly FileLogger _fileLogger = new FileLogger();
         public void Log(string message)
         {
-            _fileLogger.Log(message);
+            ILogger logger = new FileLogger();
+            logger.Log(message);
         }
-
-
     }//end ProductServices class
 
+
+    /*public void LogToDatabase(string message)
+    {
+        _fileLogger.Log(message);
+    }*/
 
 
 
