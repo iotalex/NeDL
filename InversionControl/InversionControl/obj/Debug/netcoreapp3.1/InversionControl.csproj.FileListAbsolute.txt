@@ -1,0 +1,14 @@
+C:\Users\ABatenhorst\Desktop\NeDL\InversionControl\InversionControl\bin\Debug\netcoreapp3.1\InversionControl.exe
+C:\Users\ABatenhorst\Desktop\NeDL\InversionControl\InversionControl\bin\Debug\netcoreapp3.1\InversionControl.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\InversionControl\InversionControl\bin\Debug\netcoreapp3.1\InversionControl.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\InversionControl\InversionControl\bin\Debug\netcoreapp3.1\InversionControl.runtimeconfig.dev.json
+C:\Users\ABatenhorst\Desktop\NeDL\InversionControl\InversionControl\bin\Debug\netcoreapp3.1\InversionControl.dll
+C:\Users\ABatenhorst\Desktop\NeDL\InversionControl\InversionControl\bin\Debug\netcoreapp3.1\InversionControl.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\InversionControl\InversionControl\obj\Debug\netcoreapp3.1\InversionControl.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\InversionControl\InversionControl\obj\Debug\netcoreapp3.1\InversionControl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\InversionControl\InversionControl\obj\Debug\netcoreapp3.1\InversionControl.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\InversionControl\InversionControl\obj\Debug\netcoreapp3.1\InversionControl.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\InversionControl\InversionControl\obj\Debug\netcoreapp3.1\InversionControl.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\InversionControl\InversionControl\obj\Debug\netcoreapp3.1\InversionControl.dll
+C:\Users\ABatenhorst\Desktop\NeDL\InversionControl\InversionControl\obj\Debug\netcoreapp3.1\InversionControl.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\InversionControl\InversionControl\obj\Debug\netcoreapp3.1\InversionControl.genruntimeconfig.cache
