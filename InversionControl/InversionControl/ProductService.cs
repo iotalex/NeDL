@@ -2,11 +2,18 @@
 
 namespace InversionControl
 {
-    internal class FileLoggers
+    public class ProductService
     {
-        static void Main(string[] args)
+        private readonly FileLogger _fileLogger = new FileLogger();
+        public void Log(string message)
         {
-            Console.WriteLine("Hello World!");
+            _fileLogger.Log(message);
         }
-    }
-}
+
+
+    }//end ProductServices class
+
+
+
+
+}//end name space
