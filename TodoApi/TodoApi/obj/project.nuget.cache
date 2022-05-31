@@ -1,15 +1,30 @@
 {
   "version": 2,
-  "dgSpecHash": "j8/a380r3dTwMkmKjw/1AR/9r2jGDi8vRrxmD++loJTrn/SNJNuQysYD8ktBAwMcozuT8QgdaMhxd5GxFzRk6A==",
+  "dgSpecHash": "HdKB+0+1pUOdTbDvonTqd0nANkAhPW7NZlrwykEPGMHL8PLsFEvIUIRGfSSwRMg1y6UaT9sVya5WiY64TfftTA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\TodoApi\\TodoApi\\TodoApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ABatenhorst\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0-preview.8.20407.4\\microsoft.entityframeworkcore.5.0.0-preview.8.20407.4.nupkg.sha512",
+    "C:\\Users\\ABatenhorst\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0-preview.8.20407.4\\microsoft.entityframeworkcore.abstractions.5.0.0-preview.8.20407.4.nupkg.sha512",
+    "C:\\Users\\ABatenhorst\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.0-preview.8.20407.4\\microsoft.entityframeworkcore.analyzers.5.0.0-preview.8.20407.4.nupkg.sha512",
+    "C:\\Users\\ABatenhorst\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\5.0.0-preview.8.20407.4\\microsoft.entityframeworkcore.inmemory.5.0.0-preview.8.20407.4.nupkg.sha512",
     "C:\\Users\\ABatenhorst\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ABatenhorst\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0-preview.8.20407.11\\microsoft.extensions.caching.abstractions.5.0.0-preview.8.20407.11.nupkg.sha512",
+    "C:\\Users\\ABatenhorst\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0-preview.8.20407.11\\microsoft.extensions.caching.memory.5.0.0-preview.8.20407.11.nupkg.sha512",
+    "C:\\Users\\ABatenhorst\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0-preview.8.20407.11\\microsoft.extensions.dependencyinjection.5.0.0-preview.8.20407.11.nupkg.sha512",
+    "C:\\Users\\ABatenhorst\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0-preview.8.20407.11\\microsoft.extensions.dependencyinjection.abstractions.5.0.0-preview.8.20407.11.nupkg.sha512",
+    "C:\\Users\\ABatenhorst\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0-preview.8.20407.11\\microsoft.extensions.logging.5.0.0-preview.8.20407.11.nupkg.sha512",
+    "C:\\Users\\ABatenhorst\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0-preview.8.20407.11\\microsoft.extensions.logging.abstractions.5.0.0-preview.8.20407.11.nupkg.sha512",
+    "C:\\Users\\ABatenhorst\\.nuget\\packages\\microsoft.extensions.options\\5.0.0-preview.8.20407.11\\microsoft.extensions.options.5.0.0-preview.8.20407.11.nupkg.sha512",
+    "C:\\Users\\ABatenhorst\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0-preview.8.20407.11\\microsoft.extensions.primitives.5.0.0-preview.8.20407.11.nupkg.sha512",
     "C:\\Users\\ABatenhorst\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\ABatenhorst\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\ABatenhorst\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\ABatenhorst\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\ABatenhorst\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+    "C:\\Users\\ABatenhorst\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "C:\\Users\\ABatenhorst\\.nuget\\packages\\system.collections.immutable\\5.0.0-preview.8.20407.11\\system.collections.immutable.5.0.0-preview.8.20407.11.nupkg.sha512",
+    "C:\\Users\\ABatenhorst\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0-preview.8.20407.11\\system.componentmodel.annotations.5.0.0-preview.8.20407.11.nupkg.sha512",
+    "C:\\Users\\ABatenhorst\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0-preview.8.20407.11\\system.diagnostics.diagnosticsource.5.0.0-preview.8.20407.11.nupkg.sha512"
   ],
   "logs": []
 }
