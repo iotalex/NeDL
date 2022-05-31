@@ -26,3 +26,6 @@ C:\Users\ABatenhorst\Desktop\NeDL\WebApplication1\WebApplication1\obj\Debug\net5
 C:\Users\ABatenhorst\Desktop\NeDL\WebApplication1\WebApplication1\obj\Debug\net5.0\WebApplication1.pdb
 C:\Users\ABatenhorst\Desktop\NeDL\WebApplication1\WebApplication1\obj\Debug\net5.0\WebApplication1.genruntimeconfig.cache
 C:\Users\ABatenhorst\Desktop\NeDL\WebApplication1\WebApplication1\obj\Debug\net5.0\ref\WebApplication1.dll
+C:\Users\ABatenhorst\Desktop\NeDL\WebApplication1\WebApplication1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\ABatenhorst\Desktop\NeDL\WebApplication1\WebApplication1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ABatenhorst\Desktop\NeDL\WebApplication1\WebApplication1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll

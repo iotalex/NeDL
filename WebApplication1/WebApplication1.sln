@@ -7,6 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebAppli
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{79557221-1FAB-4F49-B837-473A37625EB0}"
 	ProjectSection(SolutionItems) = preProject
+		TodoContext.cs = TodoContext.cs
 		TodoItem .cs = TodoItem .cs
 	EndProjectSection
 EndProject
