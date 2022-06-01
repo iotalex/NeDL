@@ -4,7 +4,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:29723"
+      "applicationUrl": "http://localhost:5001"
      // "sslPort": 44344
     }
   },
@@ -12,20 +12,20 @@
     "IIS Express": {
         "commandName": "IISExpress",
         "launchBrowser": true,
-        "launchUrl": "api/todoitems",
+        "launchUrl": "api/todoitems", //change to index.html (second tutorial) 
         "environmentVariables": {
             "ASPNETCORE_ENVIRONMENT": "Development"
         }
     },
     "TodoApi": {
-      "commandName": "Project",
-      "dotnetRunMessages": "true",
-      "launchBrowser": true,
-      "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:5001;http://localhost:5000",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+        "commandName": "Project",
+        "dotnetRunMessages": "true",
+        "launchBrowser": true,
+        "launchUrl": "api/todoitems",
+        "applicationUrl": "https://localhost:5001;http://localhost:5000",
+        "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+        }
     }
   }
 }
