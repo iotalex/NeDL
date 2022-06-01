@@ -26,3 +26,8 @@ C:\Users\ABatenhorst\Desktop\NeDL\TodoApi\TodoApi\obj\Debug\net5.0\refint\TodoAp
 C:\Users\ABatenhorst\Desktop\NeDL\TodoApi\TodoApi\obj\Debug\net5.0\TodoApi.pdb
 C:\Users\ABatenhorst\Desktop\NeDL\TodoApi\TodoApi\obj\Debug\net5.0\TodoApi.genruntimeconfig.cache
 C:\Users\ABatenhorst\Desktop\NeDL\TodoApi\TodoApi\obj\Debug\net5.0\ref\TodoApi.dll
+C:\Users\ABatenhorst\Desktop\NeDL\TodoApi\TodoApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\ABatenhorst\Desktop\NeDL\TodoApi\TodoApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ABatenhorst\Desktop\NeDL\TodoApi\TodoApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\ABatenhorst\Desktop\NeDL\TodoApi\TodoApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ABatenhorst\Desktop\NeDL\TodoApi\TodoApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
