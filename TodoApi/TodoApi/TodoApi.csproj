@@ -6,8 +6,8 @@
 
   <ItemGroup>
     <None Include="wwwroot\index.html" />
-    <None Include="wwwroot\wwwroot.css" />
-    <None Include="wwwroot\wwwroot.js" />
+    <None Include="wwwroot\css\wwwroot.css" />
+    <None Include="wwwroot\js\wwwroot.js" />
   </ItemGroup>
 
   <ItemGroup>
