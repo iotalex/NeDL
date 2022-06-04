@@ -1,7 +1,6 @@
-//start here: 
-// https://youtu.be/TlB_eWDSMt4?t=2291
 
+const path = require('path');
 
-const log = require('./logger');
+var pathObj = path.parse(__filename);
 
-log.log('message');
+console.log(pathObj);
