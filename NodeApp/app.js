@@ -4,7 +4,7 @@ const EventEmitter = require('events');  //this line is a class
 const emitter = new EventEmitter;     //emitter is an obejct 
 
 //Register a listener 
-emitter.on('messageLogged', function(arg) { //event, e, or eventarg
+emitter.on('messageLogged', (arg) => { //event, e, or eventarg
     console.log('Listener called', arg);
 });
 //Raise an event 
