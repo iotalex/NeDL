@@ -1,10 +1,13 @@
+//https://nodejs.org/api/events.html  **useful, core info for node .js functions
 
-const fs = require ('fs'); //1st use require syncronus methods 
+const EventEmitter = require('events');  //this line is a class
+const emitter = new EventEmitter;     //emitter is an obejct 
 
-//const files = fs.readdirSync('./');
-//console.log(files);
-
-fs.readdir('$', function(err, files) {
- if(err) console.log('Error', err);
- else console.log('Result', files);
+//Register a listener 
+emitter.on('messageLogged', function(){
+    console.log('Listener called');
 });
+//Raise an event 
+emitter.emit('messageLogged');
+
+//emit = making a noise, produce- signalling an event
