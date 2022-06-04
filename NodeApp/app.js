@@ -1,12 +1,6 @@
 
-const os = require('os');
+const fs = require ('fs');
 
-var totalMemory = os.totalmem();
-var freeMemory = os.freemem();
+const files = fs.readdirSync('./');
 
-//console.log('Total memory: ' + totalMemory);
-
-//Template string 
-
-console.log(`Total Memory: ${totalMemory}`);
-console.log(`Free Memory: ${freeMemory}`);
+console.log(files);
