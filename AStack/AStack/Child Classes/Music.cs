@@ -8,9 +8,9 @@ namespace AStack
 {
     internal class Music : Media//TODO: add a public abstract method here
     {
-        public Music (string NewName, string NewFormat, int NewYear, string NewGenre)//default main string 
+        public Music (string NewTitle, string NewFormat, int NewYear, string NewGenre)//default main string 
         {
-            Name = NewName;
+            Title = NewTitle;
             Format = NewFormat;
             Year = NewYear;
             Genre = NewGenre; 
@@ -22,7 +22,7 @@ namespace AStack
 
         public override string ToString()
         {
-            return $"Song Name: {Name} | Format: {Format} | Year: {Year} | Genre: {Genre}";
+            return $"Song Name: {Title} | Format: {Format} | Year: {Year} | Genre: {Genre}";
         }
 
 

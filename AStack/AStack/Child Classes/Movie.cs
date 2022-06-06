@@ -8,9 +8,9 @@ namespace AStack
 {
     internal class Movie : Media
     {
-        public Movie (string NewName, string NewFormat, int NewYear, string NewGenre)//default main string 
+        public Movie (string NewTitle, string NewFormat, int NewYear, string NewGenre)//default main string 
         {
-            Name = NewName;
+            Title = NewTitle;
             Format = NewFormat;
             Year = NewYear;
             Genre = NewGenre;
@@ -18,7 +18,7 @@ namespace AStack
 
         public override string ToString()
         {
-            return $"Song Name: {Name} | Format: {Format} | Year: {Year} | Genre: {Genre}";
+            return $"Song Name: {Title} | Format: {Format} | Year: {Year} | Genre: {Genre}";
         }
 
 

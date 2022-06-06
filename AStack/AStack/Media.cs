@@ -8,14 +8,14 @@ namespace AStack
 {
     internal class Media
     {
-        public string Name { get; set; }
+        public string Title { get; set; }
         public string Format { get; set; }
         public int Year { get; set; }
         public string Genre {get; set; }
 
         public Media()
         {
-            Name = "";
+            Title = "";
             Format = "";
             Year = 0;
             Genre = "";
@@ -23,14 +23,14 @@ namespace AStack
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="NewName">describe what this paremeter is</param>
+        /// <param name="NewTitle">describe what this paremeter is</param>
         /// <param name="NewFormat">can comment here</param>
         /// <param name="NewYear">this comment will show up later</param>
         /// <param name="NewGenre">this comment will show up later</param>
 
-        public Media (string NewName, string NewFormat, int NewYear, string NewGenre)//default main string 
+        public Media (string NewTitle, string NewFormat, int NewYear, string NewGenre)//default main string 
         {
-            Name = NewName;
+            Title = NewTitle;
             Format = NewFormat;
             Year = NewYear;
             Genre = NewGenre;
@@ -38,7 +38,7 @@ namespace AStack
 
         public override string ToString()
         {
-            return $"Title: {Name} | Format: {Format} | Year: {Year} | Genre: {Genre}";
+            return $"Title: {Title} | Format: {Format} | Year: {Year} | Genre: {Genre}";
         }
 
 
