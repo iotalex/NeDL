@@ -1,4 +1,4 @@
-const express = require ('express');
+const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
@@ -9,6 +9,11 @@ app.get('/api/courses', (req, res) => {
     res.send([1, 2, 3]);
 });
 
-app.listen(3000, () => console.log('Listening on port 3000...'));
+// /api/course/1
+app.get('/api/posts/:year/:month', (req, res) => {
+    res.send(res.params.id);
+});
 
-//NodeApp\express-demo> nodemon index.js
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Listening on port ${port}...`));
+
