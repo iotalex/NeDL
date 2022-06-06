@@ -23,10 +23,10 @@ namespace AStack
             services.AddControllers();
 
             services.AddDbContext<AStackContext>(opt =>
-                                               opt.UseInMemoryDatabase("TodoList"));
+                                               opt.UseInMemoryDatabase("AStackItem")); //check later 
             //services.AddSwaggerGen(c =>
             //{
-            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoApi", Version = "v1" });
+            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "AStackApi", Version = "v1" });
             //});
         }
 
@@ -36,7 +36,7 @@ namespace AStack
             {
                 app.UseDeveloperExceptionPage();
                 //app.UseSwagger();
-                //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TodoApi v1"));
+                //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "AStack v1"));
             }
 
             app.UseHttpsRedirection();
