@@ -1,5 +1,4 @@
-//https://nodejs.org/api/http.html  - for HTML module// Class:net.Server class
-//type in "http://localhost:3000/api/courses" to view the array build, it's a tiny backend server using node
+
 const { Socket } = require('dgram');
 const http = require('http');
 
