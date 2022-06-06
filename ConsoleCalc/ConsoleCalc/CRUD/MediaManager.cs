@@ -15,16 +15,16 @@ namespace ConsoleCalc//going to contain all the logic for mainintaing, CRUD
 	{
             mediaList = new List<Media>();
             
-            Media newMedia = new Media("Terminator II\n", "4K BluRay\n", 1991);
+            Media newMedia = new Media("Terminator II\n", "4K BluRay\n", 1991, "Sci-Fi");
             mediaList.Add(newMedia);
 
-            Movie newMovie = new Movie("Baby Driver\n", "4K BluRay\n", 2017);
+            Movie newMovie = new Movie("Baby Driver\n", "4K BluRay\n", 2017, "Heist");
             mediaList.Add(newMovie);
 
-            Game newGame = new Game("Halo", "DVD/Xbox\n", 2001);
+            Game newGame = new Game("Halo", "DVD/Xbox\n", 2001, "FPS");
             mediaList.Add(newGame);
             
-            Music newMusic = new Music("An Insult to the Dead\n", "Compact Disc\n", 2017);
+            Music newMusic = new Music("An Insult to the Dead\n", "Compact Disc\n", 2017, "Indy");
             mediaList.Add(newMusic);
 
 

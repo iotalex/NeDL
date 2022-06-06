@@ -8,16 +8,17 @@ namespace ConsoleCalc
 {
     internal class Game : Media
     {
-        public Game (string NewName, string NewFormat, int NewYear)//default main string 
+        public Game (string NewName, string NewFormat, int NewYear, string NewGenre)//default main string 
         {
             Name = NewName;
             Format = NewFormat;
             Year = NewYear;
+            Genre = NewGenre;
         }
 
         public override string ToString()
         {
-            return $"Game Title: {Name} | Format: {Format} | Year: {Year}";
+            return $"Song Name: {Name} | Format: {Format} | Year: {Year} | Genre: {Genre}";
         }
 
 
