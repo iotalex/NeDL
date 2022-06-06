@@ -9,12 +9,6 @@
 
         public string NewFormat { get; set; }
 
-        public string Title { get; set; }
-        public string Format { get; set; }
-        public int Year { get; set; }
-        public string Genre { get; set; }
-
-        
 
 
 
