@@ -17,6 +17,7 @@ namespace ConsoleCalc
             Name = "";
             Format = "";
             Year = 0;
+            Genre = "";
         }
         /// <summary>
         /// 
