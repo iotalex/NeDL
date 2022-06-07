@@ -103,5 +103,13 @@ namespace WebMVP.Controllers
         {
             return _context.LogItems.Any(e => e.Id == id);
         }
+        public class LogItemDTO
+        {
+            public long Id { get; set; }
+            public string Title { get; set; }
+            public int Year { get; set; }   
+            public string Format { get; set; }
+            public bool IsComplete { get; set; }
+        }
     }
 }
