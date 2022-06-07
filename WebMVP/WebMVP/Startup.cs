@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
-using WebMVPApi.Models;
+using WebMVP.Models;
 
 namespace WebMVP
 {
@@ -22,8 +22,8 @@ namespace WebMVP
         {
             services.AddControllers();
 
-            services.AddDbContext<TodoContext>(opt =>
-                                               opt.UseInMemoryDatabase("TodoList"));
+            services.AddDbContext<LogItemContext>(opt =>
+                                               opt.UseInMemoryDatabase("LogList"));
             //services.AddSwaggerGen(c =>
             //{
             //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoApi", Version = "v1" });

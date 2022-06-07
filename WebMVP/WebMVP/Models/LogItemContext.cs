@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace TodoApi.Models
+namespace WebMVP.Models
 {
     public class LogItemContext : DbContext
     {
