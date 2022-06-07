@@ -79,8 +79,8 @@ namespace WebMVP.Controllers
         {
             _context.LogItems.Add(logItem);
             await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetLogItem", new { id = logItem.Id }, logItem);
+            //return CreatedAtAction("GetLogItem", new { id = logItem.Id }, logItem);
+            return CreatedAtAction(nameof(GetLogItem), new { id = logItem.Id }, logItem);
         }
 
         // DELETE: api/LogItems/5
