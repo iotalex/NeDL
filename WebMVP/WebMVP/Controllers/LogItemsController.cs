@@ -35,7 +35,7 @@ namespace WebMVP.Controllers
 
             if (logItem == null)
             {
-                return NotFound();
+                return NotFound();//message if ID doesn't match, a message can be inserted here
             }
 
             return logItem;
