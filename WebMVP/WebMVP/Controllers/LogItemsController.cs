@@ -58,7 +58,7 @@ namespace WebMVP.Controllers
                 return NotFound();
             }
 
-            logItem.Title = logItemDTO.Title; //updated "Name" to "Title" 2 X times; unconventional, may have to change back? (1of3)
+            logItem.Name = logItemDTO.Name; //updated "Name" to "Name" 2 X times; unconventional, may have to change back? (1of3)
             logItem.IsComplete = logItemDTO.IsComplete;
 
             try
@@ -81,7 +81,7 @@ namespace WebMVP.Controllers
             var logItem = new LogItem
             {
                 IsComplete = logItemDTO.IsComplete,
-                Title = logItemDTO.Title //updated "Name" to "Title" 2 X times; unconventional, may have to change back? (2 of 3)
+                Name = logItemDTO.Name //updated "Name" to "Name" 2 X times; unconventional, may have to change back? (2 of 3)
             };
 
             _context.LogItems.Add(logItem);
@@ -117,7 +117,7 @@ namespace WebMVP.Controllers
             new LogItemDTO
             {
                 Id = logItem.Id,
-                Title = logItem.Title,//updated "Name" to "Title" 2 X times; unconventional, may have to change back? (3 of 3)
+                Name = logItem.Name,//updated "Name" to "Name" 2 X times; unconventional, may have to change back? (3 of 3)
                 IsComplete = logItem.IsComplete
             };
         
