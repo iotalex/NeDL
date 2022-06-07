@@ -9,7 +9,7 @@ using WebMVP.Models;
 
 namespace WebMVP.Controllers
 {
-    [Route("api/WebMVP")]
+    [Route("api/LogItems")]
     [ApiController]
     public class LogItemsController : ControllerBase
     {
