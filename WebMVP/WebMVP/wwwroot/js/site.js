@@ -1,4 +1,4 @@
-﻿const uri = 'api/todoitems';
+﻿const uri = 'api/logitems';
 let todos = [];
 
 function getItems() {
