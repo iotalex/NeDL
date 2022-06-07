@@ -7,6 +7,7 @@
         public int Year { get; set; }
         public string Format { get; set; }   
         public bool IsComplete { get; set; }
+        public string Secret { get; set; }
     }
 
     public class LogItemDTO //optional secret class 
