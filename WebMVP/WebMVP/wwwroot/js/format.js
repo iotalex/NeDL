@@ -9,11 +9,11 @@ function getItems() {
 }
 
 function addItem() {
-    const addNameTextbox = document.getElementById('add-name');
+    const addFormatTextbox = document.getElementById('add-format');
 
     const item = {
         isComplete: false,
-        name: addNameTextbox.value.trim()
+        format: addFormatTextbox.value.trim()
     };
 
     fetch(uri, {
@@ -27,10 +27,43 @@ function addItem() {
         .then(response => response.json())
         .then(() => {
             getItems();
-            addNameTextbox.value = '';
+            addFormatTextbox.value = '';
         })
         .catch(error => console.error('Unable to add item.', error));
 }
+
+
+//TODO: Add "Format" 6-8-22
+
+function addFormat() {
+    const addTitleTextbox = document.getElementById('add-title');
+
+    const item = {
+        isComplete: false,
+        title: addTitleTextbox.value.trim()
+    };
+
+    fetch(uri, {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(item)
+    })
+        .then(response => response.json())
+        .then(() => {
+            getItems();
+            addTitleTextbox.value = '';
+        })
+        .catch(error => console.error('Unable to add item.', error));
+}
+
+
+
+
+
+
 
 function deleteItem(id) {
     fetch(`${uri}/${id}`, {
@@ -54,7 +87,7 @@ function updateItem() {
     const item = {
         id: parseInt(itemId, 10),
         isComplete: document.getElementById('edit-isComplete').checked,
-        name: document.getElementById('edit-name').value.trim()
+        format: document.getElementById('edit-format').value.trim()
     };
 
     fetch(`${uri}/${itemId}`, {
@@ -78,9 +111,9 @@ function closeInput() {
 }
 
 function _displayCount(itemCount) {
-    const name = (itemCount === 1) ? 'to-do' : 'to-dos';
+    const format = (itemCount === 1) ? 'to-do' : 'to-dos';
 
-    document.getElementById('counter').innerText = `${itemCount} ${name}`;
+    document.getElementById('counter').innerText = `${itemCount} ${format}`;
 }
 
 function _displayItems(data) {
@@ -111,7 +144,7 @@ function _displayItems(data) {
         td1.appendChild(isCompleteCheckbox);
 
         let td2 = tr.insertCell(1);
-        let textNode = document.createTextNode(item.name);
+        let textNode = document.createTextNode(item.format);
         td2.appendChild(textNode);
 
         let td3 = tr.insertCell(2);
