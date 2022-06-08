@@ -8,6 +8,15 @@ function getItems() {
         .catch(error => console.error('Unable to get items.', error));
 }
 
+//attempt format function text
+function getFormat() {
+    fetch(uri)
+        .then(response => response.json())
+        .then(data => _displayFormat(data))
+        .catch(error => console.error('Unable to get format.', error));
+}
+
+
 function addItem() {
     const addNameTextbox = document.getElementById('add-name');
 
@@ -32,7 +41,7 @@ function addItem() {
         .catch(error => console.error('Unable to add item.', error));
 }
 
-/*attempt formation function */
+/*attempt format function *//*
 function addItem() {
     const addNameTextbox = document.getElementById('add-format');
 
@@ -55,7 +64,7 @@ function addItem() {
             addNameTextbox.value = '';
         })
         .catch(error => console.error('Unable to add item.', error));
-}
+}*/
 
 
 function deleteItem(id) {
@@ -134,12 +143,11 @@ function _displayItems(data) {
 
         let tr = tBody.insertRow();
 
-        let td1 = tr.insertCell(0);
-        /*let textNode = document.createTextNode(item.format);*/
-        /*td1.appendChild(textNode);*/
+        let td1 = tr.insertCell(0); //where "title" will live 
+        
 
-        let td2 = tr.insertCell(1);             //enter "format" lives
-        let textNode = document.createTextNode(item.name);
+        let td2 = tr.insertCell(1);             //where enter first text lives
+        let textNode = document.createTextNode(item.name + " | " + "format");
         td2.appendChild(textNode);
 
         let td3 = tr.insertCell(2);
