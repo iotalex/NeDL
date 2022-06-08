@@ -23,14 +23,15 @@ function addItem() {
     const item = {
         isComplete: false,
         name: addNameTextbox.value.trim()
+        
     };
     //attempt media function text **start add-format
-    function addMedia() {
+    function addFormat() {
         const addNameTextbox = document.getElementById('add-format');
 
-        const media = {
+        const format = {
             isComplete: false,
-            name: addFormatTextbox.value.trim()  //add html element or "addnam textbox" 
+            format: addFormatTextbox.value.trim()  //add html element or "addnam textbox" 
         };
 
         fetch(uri, {
@@ -173,7 +174,7 @@ function _displayItems(data) {
         
        
         let td2 = tr.insertCell(1);             //where "format" first text lives
-        let textNode = document.createTextNode(item.name + " | " + "format");
+        let textNode = document.createTextNode("Title: " + item.name + " | Format: " + item.format + " |  " + "Year: " + item.year);
 
         
 
