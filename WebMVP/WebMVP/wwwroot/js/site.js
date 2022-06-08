@@ -8,12 +8,12 @@ function getItems() {
         .catch(error => console.error('Unable to get items.', error));
 }
 
-//attempt format function text
-function getFormat() {
+//attempt media function text
+function getMedia() {
     fetch(uri)
         .then(response => response.json())
-        .then(data => _displayFormat(data))
-        .catch(error => console.error('Unable to get format.', error));
+        .then(data => _displayMedia(data))
+        .catch(error => console.error('Unable to get media format.', error));
 }
 
 
@@ -24,6 +24,32 @@ function addItem() {
         isComplete: false,
         name: addNameTextbox.value.trim()
     };
+    //attempt media function text **start add-format
+    function addMedia() {
+        const addNameTextbox = document.getElementById('add-format');
+
+        const media = {
+            isComplete: false,
+            name: addFormatTextbox.value.trim()  //add html element or "addnam textbox" 
+        };
+
+        fetch(uri, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(media)
+        })
+            .then(response => response.json())
+            .then(() => {
+                getMedia();
+                addFormatTextbox.value = '';
+            })
+            .catch(error => console.error('Unable to add format.', error));
+    }
+
+        //end format function attempt 
 
     fetch(uri, {
         method: 'POST',
@@ -143,7 +169,7 @@ function _displayItems(data) {
 
         let tr = tBody.insertRow();
 
-        let td1 = tr.insertCell(0); //where "title" will live 
+        let td1 = tr.insertCell(0); //where "title" will live (maybe)
         
 
         let td2 = tr.insertCell(1);             //where enter first text lives
