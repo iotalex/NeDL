@@ -11,6 +11,7 @@
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
         <input type="text" id="add-name" placeholder="Enter Title">
         <input type="text" id="add-format" placeholder="Enter Format"> <!--new field-->
+        <input type="text" id="add-year" placeholder="Enter Year"> <!--new field-->
         <input type="submit" value="Add">
     </form>
 
@@ -23,9 +24,11 @@
         <form action="javascript:void(0);" onsubmit="updateItem()">
             <input type="hidden" id="edit-id">
             <input type="checkbox" id="edit-isComplete">  <!--where "textbox lives"-->
-            
-            <input type="text" id="edit-name"> <!--where the "edit name or ID" lives-->
-            
+
+            <input type="text" id="edit-name" placeholder="Edit Title"> <!--where the "edit name or ID" lives-->
+            <input type="text" id="edit-format" placeholder="Edit Format">
+            <input type="text" id="edit-format" placeholder="Edit Year">
+
             <input type="submit" value="Save">
             <a onclick="closeInput()" aria-label="Close">&#10006;</a>
         </form>
