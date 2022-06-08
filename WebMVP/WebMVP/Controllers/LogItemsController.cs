@@ -40,7 +40,7 @@ namespace WebMVP.Controllers
                 return NotFound();
             }
 
-            return ItemToDTO(logItem);
+            return ItemToDTO(logItem); 
         }
 
         // PUT: api/LogItems/5
@@ -85,8 +85,9 @@ namespace WebMVP.Controllers
                 IsComplete = logItemDTO.IsComplete,
                 Name = logItemDTO.Name, //updated "Name" to "Name" 2 X times; unconventional, may have to change back? (2 of 3)
                 Format = logItemDTO.Format,// add item 2 of 3 object
-                Year = logItemDTO.Year// add item 2 of 3 object
+                Year = logItemDTO.Year// add item 3 of 3 object
             };
+          
 
             _context.LogItems.Add(logItem);
             await _context.SaveChangesAsync();
