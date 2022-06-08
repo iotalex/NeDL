@@ -171,9 +171,12 @@ function _displayItems(data) {
 
         let td1 = tr.insertCell(0); //where "title" will live (maybe)
         
-
-        let td2 = tr.insertCell(1);             //where enter first text lives
+       
+        let td2 = tr.insertCell(1);             //where "format" first text lives
         let textNode = document.createTextNode(item.name + " | " + "format");
+
+        
+
         td2.appendChild(textNode);
 
         let td3 = tr.insertCell(2);

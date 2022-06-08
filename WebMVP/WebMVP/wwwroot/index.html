@@ -14,12 +14,18 @@
         <input type="submit" value="Add">
     </form>
 
-    <div id="editForm"> <!--this is where edit lives-->
+    <div id="editForm">
+        <!--this is where edit lives-->
+ 
+        <pre class="editable" contentEditable="true">{{text}}</pre>
+
         <h3>Edit</h3>
         <form action="javascript:void(0);" onsubmit="updateItem()">
             <input type="hidden" id="edit-id">
             <input type="checkbox" id="edit-isComplete">  <!--where "textbox lives"-->
+            
             <input type="text" id="edit-name"> <!--where the "edit name or ID" lives-->
+            
             <input type="submit" value="Save">
             <a onclick="closeInput()" aria-label="Close">&#10006;</a>
         </form>

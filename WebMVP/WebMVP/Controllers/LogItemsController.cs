@@ -59,6 +59,7 @@ namespace WebMVP.Controllers
             }
 
             logItem.Name = logItemDTO.Name; //updated "Name" to "Name" 2 X times; unconventional, may have to change back? (1of3)
+            logItem.Format = logItemDTO.Format;  //add format object 
             logItem.IsComplete = logItemDTO.IsComplete;
 
             try
@@ -81,7 +82,8 @@ namespace WebMVP.Controllers
             var logItem = new LogItem
             {
                 IsComplete = logItemDTO.IsComplete,
-                Name = logItemDTO.Name //updated "Name" to "Name" 2 X times; unconventional, may have to change back? (2 of 3)
+                Name = logItemDTO.Name, //updated "Name" to "Name" 2 X times; unconventional, may have to change back? (2 of 3)
+                Format = logItemDTO.Format// add item 2 of 3 object
             };
 
             _context.LogItems.Add(logItem);
@@ -118,6 +120,7 @@ namespace WebMVP.Controllers
             {
                 Id = logItem.Id,
                 Name = logItem.Name,//updated "Name" to "Name" 2 X times; unconventional, may have to change back? (3 of 3)
+                Format = logItem.Format, //add item 3 of 3 object for "format" 
                 IsComplete = logItem.IsComplete
             };
         
