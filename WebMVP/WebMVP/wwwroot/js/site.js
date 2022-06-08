@@ -9,11 +9,11 @@ function getItems() {
 }
 
 function addItem() {
-    const addNameTextbox = document.getElementById('add-name');
+    const addTitleTextbox = document.getElementById('add-title');
 
     const item = {
         isComplete: false,
-        name: addNameTextbox.value.trim()
+        title: addTitleTextbox.value.trim()
     };
 
     fetch(uri, {
@@ -27,7 +27,7 @@ function addItem() {
         .then(response => response.json())
         .then(() => {
             getItems();
-            addNameTextbox.value = '';
+            addTitleTextbox.value = '';
         })
         .catch(error => console.error('Unable to add item.', error));
 }
@@ -35,12 +35,12 @@ function addItem() {
 
 //TODO: Add "Format" 6-8-22
 
-function addItem() {
-    const addNameTextbox = document.getElementById('add-name');
+function addFormat() {
+    const addTitleTextbox = document.getElementById('add-title');
 
     const item = {
         isComplete: false,
-        name: addNameTextbox.value.trim()
+        title: addTitleTextbox.value.trim()
     };
 
     fetch(uri, {
@@ -54,7 +54,7 @@ function addItem() {
         .then(response => response.json())
         .then(() => {
             getItems();
-            addNameTextbox.value = '';
+            addTitleTextbox.value = '';
         })
         .catch(error => console.error('Unable to add item.', error));
 }
@@ -76,7 +76,7 @@ function deleteItem(id) {
 function displayEditForm(id) {
     const item = todos.find(item => item.id === id);
 
-    document.getElementById('edit-name').value = item.name;
+    document.getElementById('edit-title').value = item.title;
     document.getElementById('edit-id').value = item.id;
     document.getElementById('edit-isComplete').checked = item.isComplete;
     document.getElementById('editForm').style.display = 'block';
@@ -87,7 +87,7 @@ function updateItem() {
     const item = {
         id: parseInt(itemId, 10),
         isComplete: document.getElementById('edit-isComplete').checked,
-        name: document.getElementById('edit-name').value.trim()
+        title: document.getElementById('edit-title').value.trim()
     };
 
     fetch(`${uri}/${itemId}`, {
@@ -111,9 +111,9 @@ function closeInput() {
 }
 
 function _displayCount(itemCount) {
-    const name = (itemCount === 1) ? 'to-do' : 'to-dos';
+    const title = (itemCount === 1) ? 'to-do' : 'to-dos';
 
-    document.getElementById('counter').innerText = `${itemCount} ${name}`;
+    document.getElementById('counter').innerText = `${itemCount} ${title}`;
 }
 
 function _displayItems(data) {
@@ -144,7 +144,7 @@ function _displayItems(data) {
         td1.appendChild(isCompleteCheckbox);
 
         let td2 = tr.insertCell(1);
-        let textNode = document.createTextNode(item.name);
+        let textNode = document.createTextNode(item.title);
         td2.appendChild(textNode);
 
         let td3 = tr.insertCell(2);
