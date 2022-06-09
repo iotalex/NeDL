@@ -90,7 +90,7 @@ namespace WebMVP.Controllers
             var logItem1 = new LogItem      // attempt to post format 1 *********************
             {                                   //this causes two to post 2 X rows
                 /*IsComplete = logItemDTO.IsComplete,*/
-                Format = logItemDTO.Format,
+                Year = logItemDTO.Year,
             };
             
             _context.LogItems.Add(logItem);
@@ -99,6 +99,7 @@ namespace WebMVP.Controllers
             return CreatedAtAction(
                 nameof(GetLogItem),
                 new { id = logItem.Id },
+                //new { id = logItem.Format },
                 ItemToDTO(logItem));
         }
 

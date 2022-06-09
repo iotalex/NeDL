@@ -22,11 +22,35 @@ function addItem() {
 
     const item = {
         isComplete: false,
-        name: addNameTextbox.value.trim(),
-        year: addFormatTextbox.value.trim() //added ************
+        name: addNameTextbox.value.trim()
 
     };
+    //attempt media function text **start add-format
+    function addFormat() {
+        const addNameTextbox = document.getElementById('add-format');
 
+        const format = {
+            isComplete: false,
+            format: addFormatTextbox.value.trim()  //add html element or "addnam textbox" 
+        };
+
+        fetch(uri, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(media)
+        })
+            .then(response => response.json())
+            .then(() => {
+                getMedia();
+                addFormatTextbox.value = '';
+            })
+            .catch(error => console.error('Unable to add format.', error));
+    }
+
+    //end format function attempt 
 
     fetch(uri, {
         method: 'POST',
@@ -40,7 +64,6 @@ function addItem() {
         .then(() => {
             getItems();
             addNameTextbox.value = '';
-            addYearTextbox.value = ''; //add************
         })
         .catch(error => console.error('Unable to add item.', error));
 }
@@ -83,7 +106,6 @@ function displayEditForm(id) {
     const item = todos.find(item => item.id === id);
 
     document.getElementById('edit-name').value = item.name;
-    document.getElementById('edit-name').value = item.year; ///added********
     document.getElementById('edit-id').value = item.id;
     document.getElementById('edit-isComplete').checked = item.isComplete;
     document.getElementById('editForm').style.display = 'block';
@@ -94,8 +116,7 @@ function updateItem() {
     const item = {
         id: parseInt(itemId, 10),
         isComplete: document.getElementById('edit-isComplete').checked,
-        name: document.getElementById('edit-name').value.trim(),
-        year: document.getElementById('edit-name').value.trim() //added************
+        name: document.getElementById('edit-name').value.trim()
     };
 
     fetch(`${uri}/${itemId}`, {
@@ -119,10 +140,9 @@ function closeInput() {
 }
 
 function _displayCount(itemCount) {
-    const name = (itemCount === 1) ? 'to-do' : 'titles of media in your collection';
-    const year = (addItem = addYearTextbox) ?
+    const name = (itemCount === 1) ? 'to-do' : 'to-dos';
 
-        document.getElementById('counter').innerText = `${itemCount} ${name}`;
+    document.getElementById('counter').innerText = `${itemCount} ${name}`;
 }
 
 function _displayItems(data) {
@@ -154,7 +174,7 @@ function _displayItems(data) {
 
 
         let td2 = tr.insertCell(1);             //where "format" first text lives
-        let textNode = document.createTextNode([item.name, item.year]);
+        let textNode = document.createTextNode("Title: " + item.name + " | Format: " + item.format + " |  " + "Year: " + item.year);
 
 
 
