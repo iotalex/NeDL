@@ -8,49 +8,21 @@ function getItems() {
         .catch(error => console.error('Unable to get items.', error));
 }
 
-//attempt media function text
-function getMedia() {
-    fetch(uri)
-        .then(response => response.json())
-        .then(data => _displayMedia(data))
-        .catch(error => console.error('Unable to get media format.', error));
-}
-
-
 function addItem() {
+    
     const addNameTextbox = document.getElementById('add-name');
+    const addYearTextbox = document.getElementById('add-year');
+    const addFormatTextbox = document.getElementById('add-format');
+    
 
     const item = {
         isComplete: false,
-        name: addNameTextbox.value.trim()
+        name: addNameTextbox.value.trim(),
+        year: addYearTextbox.value.trim(),
+        format: addFormatTextbox.value.trim()
 
     };
-    //attempt media function text **start add-format
-    function addFormat() {
-        const addNameTextbox = document.getElementById('add-format');
-
-        const format = {
-            isComplete: false,
-            format: addFormatTextbox.value.trim()  //add html element or "addnam textbox" 
-        };
-
-        fetch(uri, {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(media)
-        })
-            .then(response => response.json())
-            .then(() => {
-                getMedia();
-                addFormatTextbox.value = '';
-            })
-            .catch(error => console.error('Unable to add format.', error));
-    }
-
-    //end format function attempt 
+   
 
     fetch(uri, {
         method: 'POST',
