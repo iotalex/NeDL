@@ -140,7 +140,7 @@ function closeInput() {
 }
 
 function _displayCount(itemCount) {
-    const name = (itemCount === 1) ? 'to-do' : 'to-dos';
+    const name = (itemCount === 1) ? 'to-do' : 'forms of media in your collection.';
 
     document.getElementById('counter').innerText = `${itemCount} ${name}`;
 }
@@ -158,7 +158,6 @@ function _displayItems(data) {
         isCompleteCheckbox.type = 'checkbox';
         isCompleteCheckbox.disabled = true;
         isCompleteCheckbox.checked = item.isComplete;
-
 
         let editButton = button.cloneNode(false);
         editButton.innerText = 'Edit';
@@ -193,7 +192,22 @@ function _displayItems(data) {
 
     todos = data;
 
+    const EventEmitter = require('events');  //this line is a class
 
+    var url = 'https://localhost:5001/index.html';
+
+    class Logger extends EventEmitter {  //class will have function define in emitter 
+        log(message) {               //ability to log a message. 
+            //Send an HTTP request 
+            console.log(message);
+
+            //Raise an event 
+            this.emit('messageLogged', { id: 0, url: 'https://localhost:5001/index.html' }); //use "this" as it it exents alert for the class "Logger"
+            //and EventEmitter class 
+        }
+    }
+
+    module.exports = Logger;
 
 
 

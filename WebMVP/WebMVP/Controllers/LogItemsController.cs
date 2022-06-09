@@ -53,6 +53,7 @@ namespace WebMVP.Controllers
             }
 
             var logItem = await _context.LogItems.FindAsync(id);
+            
             if (logItem == null)
             {
                 return NotFound();
