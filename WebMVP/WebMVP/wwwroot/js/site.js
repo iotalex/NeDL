@@ -69,7 +69,7 @@ function updateItem() {
         name: document.getElementById('edit-name').value.trim(),
         format: document.getElementById('edit-format').value.trim(),
         
-           //edit not working 
+           //edit not working for year
         
     };
 
