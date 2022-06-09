@@ -87,8 +87,12 @@ namespace WebMVP.Controllers
                 Format = logItemDTO.Format,// add item 2 of 3 object
                 Year = logItemDTO.Year// add item 3 of 3 object
             };
-          
-
+            var logItem1 = new LogItem      // attempt to post format 1 *********************
+            {                                   //this causes two to post 2 X rows
+                /*IsComplete = logItemDTO.IsComplete,*/
+                Format = logItemDTO.Format,
+            };
+            
             _context.LogItems.Add(logItem);
             await _context.SaveChangesAsync();
 

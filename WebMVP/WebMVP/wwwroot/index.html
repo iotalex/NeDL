@@ -14,10 +14,24 @@
         <input type="text" id="add-year" placeholder="Enter Year"> <!--new field-->
         <input type="submit" value="Add">
     </form>
+    <div>
+        <body>
 
+            <h2>Create a JSON string from a JavaScript object.</h2>
+            <p id="demo"></p>
+
+            <script>
+                const obj = { name: "John", age: 30, city: "New York" };
+                const myJSON = JSON.stringify(obj);
+                document.getElementById("demo").innerHTML = myJSON;
+            </script>
+
+        </body>
+
+    </div>
     <div id="editForm">
         <!--this is where edit lives-->
- 
+
         <pre class="editable" contentEditable="true">{{text}}</pre>
 
         <h3>Edit</h3>
@@ -33,8 +47,8 @@
             <a onclick="closeInput()" aria-label="Close">&#10006;</a>
         </form>
     </div>
-    
-    <H4>You have...</H4><p id= "counter"></p>
+   
+    <p>You have...</p><p id="counter"></p>
 
     <table>
         <tr>
