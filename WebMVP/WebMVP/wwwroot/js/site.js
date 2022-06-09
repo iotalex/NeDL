@@ -22,8 +22,7 @@ function addItem() {
         format: addFormatTextbox.value.trim()
 
     };
-   
-
+  
     fetch(uri, {
         method: 'POST',
         headers: {
@@ -39,31 +38,6 @@ function addItem() {
         })
         .catch(error => console.error('Unable to add item.', error));
 }
-
-/*attempt format function *//*
-function addItem() {
-    const addNameTextbox = document.getElementById('add-format');
-
-    const item = {
-        isComplete: false,
-        name: addNameTextbox.value.trim()
-    };
-
-    fetch(uri, {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(item)
-    })
-        .then(response => response.json())
-        .then(() => {
-            getItems();
-            addNameTextbox.value = '';
-        })
-        .catch(error => console.error('Unable to add item.', error));
-}*/
 
 
 function deleteItem(id) {
@@ -78,17 +52,25 @@ function displayEditForm(id) {
     const item = todos.find(item => item.id === id);
 
     document.getElementById('edit-name').value = item.name;
+    document.getElementById('edit-format').value = item.format;
+    /*document.getElementById('edit-year').value = item.year;*/
     document.getElementById('edit-id').value = item.id;
     document.getElementById('edit-isComplete').checked = item.isComplete;
     document.getElementById('editForm').style.display = 'block';
 }
 
+
 function updateItem() {
     const itemId = document.getElementById('edit-id').value;
     const item = {
-        id: parseInt(itemId, 10),
+        id: parseInt(itemId),
+
         isComplete: document.getElementById('edit-isComplete').checked,
-        name: document.getElementById('edit-name').value.trim()
+        name: document.getElementById('edit-name').value.trim(),
+        format: document.getElementById('edit-format').value.trim(),
+        
+           //edit not working 
+        
     };
 
     fetch(`${uri}/${itemId}`, {
@@ -142,7 +124,7 @@ function _displayItems(data) {
         let tr = tBody.insertRow();
 
         let td1 = tr.insertCell(0); //where "title" will live (maybe)
-
+        td1.appendChild(isCompleteCheckbox);
 
         let td2 = tr.insertCell(1);             //where "format" first text lives
         let textNode = document.createTextNode("Title: " + item.name + " | Format: " + item.format + " |  " + "Year: " + item.year);
@@ -157,29 +139,11 @@ function _displayItems(data) {
         let td4 = tr.insertCell(3);
         td4.appendChild(deleteButton);
 
-        /*let td5 = tr.insertCell(4);     //where format lives
-        let textNode = document.createTextNode(item.format);
-        td5.appendChild(textNode);*/
     });
 
     todos = data;
 
-    const EventEmitter = require('events');  //this line is a class
-
-    var url = 'https://localhost:5001/index.html';
-
-    class Logger extends EventEmitter {  //class will have function define in emitter 
-        log(message) {               //ability to log a message. 
-            //Send an HTTP request 
-            console.log(message);
-
-            //Raise an event 
-            this.emit('messageLogged', { id: 0, url: 'https://localhost:5001/index.html' }); //use "this" as it it exents alert for the class "Logger"
-            //and EventEmitter class 
-        }
-    }
-
-    module.exports = Logger;
+    
 
 
 
