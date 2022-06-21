@@ -1,5 +1,9 @@
-import { Injectable } from '@angular/core';
+import { OnInit } from "@angular/core";
+
 export class MyListComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error("Method not implemented.");
+  }
   shoppingList: ShoppingListItem[] | undefined;
 
   
