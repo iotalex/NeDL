@@ -1,29 +1,17 @@
-import { OnInit } from "@angular/core";
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { firstValueFrom, Observable } from 'rxjs';
+import { ShoppingListItem } from './shopping-list-item';
 
-export class MyListComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error("Method not implemented.");
-  }
-  shoppingList: ShoppingListItem[] | undefined;
-
-  
-}
-
-export interface ShoppingListItem {
-  title: string;
-}
+@Injectable({
+  providedIn: 'root',
+})
 export class BackendService {
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   async shoppingList(): Promise<ShoppingListItem[]> {
-    return new Promise((resolve) => {
-      resolve([
-        { title: 'Milk' },
-        { title: 'Eggs' },
-        { title: 'Stick of Butter' },
-      ] as ShoppingListItem[]);
-    });
+    return firstValueFrom(
+      this.http.get<ShoppingListItem[]>('https://localhost:7027/ShoppingList')
+    );
   }
 }
-
-
