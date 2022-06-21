@@ -12,7 +12,7 @@ public class ShoppingListController : ControllerBase
     {
         _logger = logger;
     }
-
+    /*test for changes*/
     [HttpGet(Name = "GetShoppingList")]
     public ShoppingListItem[] Get()
     {
