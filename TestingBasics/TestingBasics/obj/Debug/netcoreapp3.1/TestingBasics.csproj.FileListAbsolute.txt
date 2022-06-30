@@ -1,5 +1,0 @@
-C:\Users\ABatenhorst\Desktop\NeDL\TestingBasics\TestingBasics\obj\Debug\netcoreapp3.1\TestingBasics.csproj.AssemblyReference.cache
-C:\Users\ABatenhorst\Desktop\NeDL\TestingBasics\TestingBasics\obj\Debug\netcoreapp3.1\TestingBasics.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ABatenhorst\Desktop\NeDL\TestingBasics\TestingBasics\obj\Debug\netcoreapp3.1\TestingBasics.AssemblyInfoInputs.cache
-C:\Users\ABatenhorst\Desktop\NeDL\TestingBasics\TestingBasics\obj\Debug\netcoreapp3.1\TestingBasics.AssemblyInfo.cs
-C:\Users\ABatenhorst\Desktop\NeDL\TestingBasics\TestingBasics\obj\Debug\netcoreapp3.1\TestingBasics.csproj.CoreCompileInputs.cache
