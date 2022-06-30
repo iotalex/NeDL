@@ -1,0 +1,5 @@
+C:\Users\ABatenhorst\Desktop\NeDL\TestingBasics\PricingEngineTests\obj\Debug\netcoreapp3.1\EngineTests.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\TestingBasics\PricingEngineTests\obj\Debug\netcoreapp3.1\EngineTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\TestingBasics\PricingEngineTests\obj\Debug\netcoreapp3.1\EngineTests.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\TestingBasics\PricingEngineTests\obj\Debug\netcoreapp3.1\EngineTests.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\TestingBasics\PricingEngineTests\obj\Debug\netcoreapp3.1\EngineTests.csproj.CoreCompileInputs.cache
