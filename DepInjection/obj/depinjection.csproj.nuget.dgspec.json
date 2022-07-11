@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ABatenhorst\\desktop\\nedl\\depinjection\\depinjection.csproj": {}
+    "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\DepInjection\\depinjection.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ABatenhorst\\desktop\\nedl\\depinjection\\depinjection.csproj": {
+    "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\DepInjection\\depinjection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ABatenhorst\\desktop\\nedl\\depinjection\\depinjection.csproj",
+        "projectUniqueName": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\DepInjection\\depinjection.csproj",
         "projectName": "depinjection",
-        "projectPath": "C:\\Users\\ABatenhorst\\desktop\\nedl\\depinjection\\depinjection.csproj",
+        "projectPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\DepInjection\\depinjection.csproj",
         "packagesPath": "C:\\Users\\ABatenhorst\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ABatenhorst\\desktop\\nedl\\depinjection\\obj\\",
+        "outputPath": "C:\\Users\\ABatenhorst\\Desktop\\NeDL\\DepInjection\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ABatenhorst\\AppData\\Roaming\\NuGet\\NuGet.Config",

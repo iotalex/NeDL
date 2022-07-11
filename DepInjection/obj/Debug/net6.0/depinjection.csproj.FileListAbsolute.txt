@@ -1,0 +1,15 @@
+C:\Users\ABatenhorst\Desktop\NeDL\DepInjection\bin\Debug\net6.0\depinjection.exe
+C:\Users\ABatenhorst\Desktop\NeDL\DepInjection\bin\Debug\net6.0\depinjection.deps.json
+C:\Users\ABatenhorst\Desktop\NeDL\DepInjection\bin\Debug\net6.0\depinjection.runtimeconfig.json
+C:\Users\ABatenhorst\Desktop\NeDL\DepInjection\bin\Debug\net6.0\depinjection.dll
+C:\Users\ABatenhorst\Desktop\NeDL\DepInjection\bin\Debug\net6.0\depinjection.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\DepInjection\obj\Debug\net6.0\depinjection.csproj.AssemblyReference.cache
+C:\Users\ABatenhorst\Desktop\NeDL\DepInjection\obj\Debug\net6.0\depinjection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABatenhorst\Desktop\NeDL\DepInjection\obj\Debug\net6.0\depinjection.AssemblyInfoInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\DepInjection\obj\Debug\net6.0\depinjection.AssemblyInfo.cs
+C:\Users\ABatenhorst\Desktop\NeDL\DepInjection\obj\Debug\net6.0\depinjection.csproj.CoreCompileInputs.cache
+C:\Users\ABatenhorst\Desktop\NeDL\DepInjection\obj\Debug\net6.0\depinjection.dll
+C:\Users\ABatenhorst\Desktop\NeDL\DepInjection\obj\Debug\net6.0\refint\depinjection.dll
+C:\Users\ABatenhorst\Desktop\NeDL\DepInjection\obj\Debug\net6.0\depinjection.pdb
+C:\Users\ABatenhorst\Desktop\NeDL\DepInjection\obj\Debug\net6.0\depinjection.genruntimeconfig.cache
+C:\Users\ABatenhorst\Desktop\NeDL\DepInjection\obj\Debug\net6.0\ref\depinjection.dll
