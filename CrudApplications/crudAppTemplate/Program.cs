@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace HelloWorld
+namespace CRUDTemplate
 {
   class Program
   {
